@@ -203,9 +203,9 @@ body {
   margin: 0 auto;
 }
 
-.section-header h2 {
+.section-title {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 1rem;
   color: #333;
