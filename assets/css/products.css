@@ -1,0 +1,403 @@
+/* Products Page Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main Content */
+.products-main {
+  margin-top: 205px;
+}
+
+/* Category Hero */
+.category-hero {
+  padding: 60px 0 40px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.category-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+.category-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Filters Section */
+.filters-section {
+  padding: 30px 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 150px;
+}
+
+.filter-group label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-select {
+  font-family: 'Lato', sans-serif;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.clear-filters-btn {
+  font-family: 'Lato', sans-serif;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.clear-filters-btn:hover {
+  background: #555;
+}
+
+/* Products Section */
+.products-section {
+  padding: 40px 0 80px;
+  background: #fff;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 0;
+  font-family: 'Lato', sans-serif;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.no-products {
+  text-align: center;
+  padding: 60px 0;
+  font-family: 'Lato', sans-serif;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-made-to {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-name {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.product-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.product-fabric {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.price-standard {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.price-range {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.product-colors {
+  margin-bottom: 15px;
+}
+
+.product-colors h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.color-dots {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-dot:hover {
+  transform: scale(1.1);
+}
+
+.product-sizes {
+  margin-bottom: 20px;
+}
+
+.product-sizes h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.sizes-list {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  font-family: 'Lato', sans-serif;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  flex: 1;
+}
+
+.btn-primary:hover {
+  background: #555;
+}
+
+.btn-secondary {
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  color: #333;
+  border: 1px solid #333;
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.btn-secondary:hover {
+  background: #333;
+  color: white;
+}
+
+/* Color mapping for dots */
+.color-dot[data-color*="black"] { background: #000; }
+.color-dot[data-color*="white"] { background: #fff; }
+.color-dot[data-color*="red"] { background: #dc3545; }
+.color-dot[data-color*="blue"] { background: #0066cc; }
+.color-dot[data-color*="navy"] { background: #001f3f; }
+.color-dot[data-color*="green"] { background: #28a745; }
+.color-dot[data-color*="gray"] { background: #6c757d; }
+.color-dot[data-color*="pink"] { background: #e91e63; }
+.color-dot[data-color*="purple"] { background: #6f42c1; }
+.color-dot[data-color*="beige"] { background: #f5f5dc; }
+.color-dot[data-color*="cream"] { background: #fffdd0; }
+.color-dot[data-color*="ivory"] { background: #fffff0; }
+.color-dot[data-color*="brown"] { background: #8b4513; }
+.color-dot[data-color*="yellow"] { background: #ffc107; }
+.color-dot[data-color*="orange"] { background: #fd7e14; }
+.color-dot[data-color*="burgundy"] { background: #800020; }
+.color-dot[data-color*="emerald"] { background: #50c878; }
+.color-dot[data-color*="champagne"] { background: #f7e7ce; }
+.color-dot[data-color*="sage"] { background: #9caf88; }
+.color-dot[data-color*="charcoal"] { background: #36454f; }
+.color-dot[data-color*="camel"] { background: #c19a6b; }
+.color-dot[data-color*="olive"] { background: #808000; }
+.color-dot[data-color*="khaki"] { background: #c3b091; }
+.color-dot[data-color*="lavender"] { background: #e6e6fa; }
+.color-dot[data-color*="mint"] { background: #98fb98; }
+.color-dot[data-color*="rose"] { background: #ff69b4; }
+.color-dot[data-color*="gold"] { background: #ffd700; }
+.color-dot[data-color*="silver"] { background: #c0c0c0; }
+.color-dot[data-color*="royal"] { background: #4169e1; }
+.color-dot[data-color*="crimson"] { background: #dc143c; }
+.color-dot[data-color*="midnight"] { background: #191970; }
+.color-dot[data-color*="dusty"] { background: #b19cd9; }
+.color-dot[data-color*="powder"] { background: #b0e0e6; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products-main {
+    margin-top: 160px;
+  }
+  
+  .category-title {
+    font-size: 2rem;
+  }
+  
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-group {
+    min-width: auto;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .product-image {
+    height: 300px;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+  }
+}
