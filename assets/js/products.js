@@ -488,25 +488,7 @@ function requestQuote(productId) {
 
 // View details functionality
 function viewDetails(productId) {
-  const product = allProducts.find(p => p.id === productId);
-  if (product) {
-    // For now, we'll show product details in an alert. In a real application, this would open a detailed product page
-    const details = `
-${product.name}
-
-${product.description}
-
-Fabric: ${product.fabric}
-Made to: ${product.madeTo}
-
-Standard Price: ${formatPrice(product.prices.standard)}
-Price Range: ${formatPrice(product.prices.minimum)} - ${formatPrice(product.prices.maximum)}
-
-Available Colors: ${product.colors.join(', ')}
-Available Sizes: ${product.sizes.join(', ')}
-    `;
-    alert(details);
-  }
+  window.location.href = `product-detail.html?id=${productId}`;
 }
 
 // Initialize page
