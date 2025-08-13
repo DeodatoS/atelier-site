@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 
-function buildPage(pageContent, title, outputPath) {
+function buildPage(pageContent, title, outputPath, pageCss = '', pageJs = '') {
   // Read components
   const template = fs.readFileSync('components/base-template.html', 'utf8');
   const header = fs.readFileSync('components/header.html', 'utf8');
@@ -13,7 +13,9 @@ function buildPage(pageContent, title, outputPath) {
     .replace('{{TITLE}}', title)
     .replace('<!-- HEADER_PLACEHOLDER -->', header)
     .replace('<!-- CONTENT_PLACEHOLDER -->', pageContent)
-    .replace('<!-- FOOTER_PLACEHOLDER -->', footer);
+    .replace('<!-- FOOTER_PLACEHOLDER -->', footer)
+    .replace('<!-- PAGE_CSS_PLACEHOLDER -->', pageCss ? `<link rel="stylesheet" href="${pageCss}">` : '')
+    .replace('<!-- PAGE_JS_PLACEHOLDER -->', pageJs ? `<script src="${pageJs}"></script>` : '');
   
   // Write output file
   fs.writeFileSync(outputPath, html);
@@ -155,5 +157,8 @@ const homeContent = `
 `;
 
 buildPage(homeContent, 'Luxury Fashion', 'index.html');
+
+// Note: pages/made-to-measure.html and pages/our-brand.html are complete standalone files
+// and should not be rebuilt by this script to avoid corruption
 
 console.log('🎉 Build complete!');
