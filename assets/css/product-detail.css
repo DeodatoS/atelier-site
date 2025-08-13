@@ -1,0 +1,610 @@
+/* Product Detail Page Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main Content */
+.product-detail-main {
+  margin-top: 205px;
+  padding: 40px 0;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #666;
+}
+
+.breadcrumb span {
+  color: #ccc;
+}
+
+/* Loading and Error States */
+.loading, .error-state {
+  text-align: center;
+  padding: 80px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.loading {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.error-state h2 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.error-state p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Product Page Layout - Force side by side */
+.product-detail-main .product-page {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 60px;
+  align-items: start;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* Ensure sections don't break layout */
+.product-detail-main .product-gallery {
+  grid-column: 1;
+}
+
+.product-detail-main .product-details {
+  grid-column: 2;
+}
+
+/* Product Gallery - New Layout: Thumbnails left, Main image right */
+.product-gallery {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  height: fit-content;
+}
+
+/* Force thumbnails to be visible - only in product detail page */
+.product-detail-main .product-gallery .thumbnail,
+.product-detail-main .product-gallery .main-image {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.thumbnails-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 150px; /* Increased height */
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border: 2px solid transparent;
+  display: block !important;
+  flex-shrink: 0;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+}
+
+.thumbnail.active {
+  border-color: #333;
+}
+
+.main-image-container {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: 550px; /* Increased from 450px to 550px */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.01);
+}
+
+.image-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Product Details Section - Compact */
+.product-details {
+  padding: 0;
+}
+
+.product-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.product-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+/* Pricing Section - Ultra Compact */
+.pricing-section {
+  margin-bottom: 15px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.price-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.price {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Color Section - Ultra Compact */
+.color-section {
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+  border-color: #333;
+}
+
+.color-option.selected {
+  border-color: #333;
+  transform: scale(1.1);
+}
+
+/* Size Section - Ultra Compact */
+.size-section {
+  margin-bottom: 15px;
+}
+
+.size-options {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.size-option {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  background: #333;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-option:hover {
+  background: white;
+  color: #333;
+}
+
+.size-option.selected {
+  background: #333;
+  border-color: #333;
+  color: white;
+}
+
+.size-note {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.size-note a {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Craftsmanship Info */
+.craftsmanship-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.craft-badge {
+  display: inline-flex;
+}
+
+.craft-type {
+  background: #f8f8f8;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.craft-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Buy Buttons - Ultra Compact */
+.buy-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: 1px solid #333;
+  background: white;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #333;
+  color: white;
+}
+
+.btn-primary {
+  background: #333;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #555;
+}
+
+.made-to-measure-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* Accordion */
+.accordion {
+  border-top: 1px solid #eee;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-header {
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.accordion-header:hover {
+  color: #666;
+}
+
+.accordion-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  padding-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.accordion-content p {
+  margin-bottom: 15px;
+}
+
+.accordion-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Color mapping for color options */
+.color-option[data-color*="black"] { background: #000; }
+.color-option[data-color*="white"] { background: #fff; }
+.color-option[data-color*="red"] { background: #dc3545; }
+.color-option[data-color*="blue"] { background: #0066cc; }
+.color-option[data-color*="navy"] { background: #001f3f; }
+.color-option[data-color*="green"] { background: #28a745; }
+.color-option[data-color*="gray"] { background: #6c757d; }
+.color-option[data-color*="pink"] { background: #e91e63; }
+.color-option[data-color*="purple"] { background: #6f42c1; }
+.color-option[data-color*="beige"] { background: #f5f5dc; }
+.color-option[data-color*="cream"] { background: #fffdd0; }
+.color-option[data-color*="ivory"] { background: #fffff0; }
+.color-option[data-color*="brown"] { background: #8b4513; }
+.color-option[data-color*="yellow"] { background: #ffc107; }
+.color-option[data-color*="orange"] { background: #fd7e14; }
+.color-option[data-color*="burgundy"] { background: #800020; }
+.color-option[data-color*="emerald"] { background: #50c878; }
+.color-option[data-color*="champagne"] { background: #f7e7ce; }
+.color-option[data-color*="sage"] { background: #9caf88; }
+.color-option[data-color*="charcoal"] { background: #36454f; }
+.color-option[data-color*="camel"] { background: #c19a6b; }
+.color-option[data-color*="olive"] { background: #808000; }
+.color-option[data-color*="khaki"] { background: #c3b091; }
+.color-option[data-color*="lavender"] { background: #e6e6fa; }
+.color-option[data-color*="mint"] { background: #98fb98; }
+.color-option[data-color*="rose"] { background: #ff69b4; }
+.color-option[data-color*="gold"] { background: #ffd700; }
+.color-option[data-color*="silver"] { background: #c0c0c0; }
+.color-option[data-color*="royal"] { background: #4169e1; }
+.color-option[data-color*="crimson"] { background: #dc143c; }
+.color-option[data-color*="midnight"] { background: #191970; }
+.color-option[data-color*="dusty"] { background: #b19cd9; }
+.color-option[data-color*="powder"] { background: #b0e0e6; }
+
+/* Desktop Large */
+@media (min-width: 1201px) {
+  .product-detail-main .product-page {
+    gap: 80px;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  
+  .main-image {
+    height: 600px; /* Taller on large screens */
+  }
+  
+  .thumbnail {
+    height: 160px; /* Proportionally taller */
+  }
+}
+
+/* Tablet */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .product-detail-main .product-page {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  
+  .main-image {
+    height: 480px; /* Taller on tablet */
+  }
+  
+  .thumbnail {
+    height: 130px; /* Proportionally taller */
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail-main {
+    margin-top: 160px;
+    padding: 20px 0;
+  }
+  
+  .container {
+    padding: 15px;
+    overflow-x: hidden;
+  }
+  
+  /* Mobile: Full vertical layout - NO GRID */
+  .product-detail-main .product-page {
+    display: block !important;
+    grid-template-columns: unset !important;
+    width: 100%;
+    gap: 0;
+  }
+  
+  /* Gallery takes full width */
+  .product-detail-main .product-gallery {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 30px;
+    grid-column: unset !important;
+  }
+  
+  .main-image-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+  
+  .thumbnails-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 90px;
+    flex-shrink: 0;
+  }
+  
+  /* Details take full width below gallery */
+  .product-detail-main .product-details {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    grid-column: unset !important;
+  }
+  
+  .product-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .product-subtitle {
+    margin-bottom: 15px;
+  }
+  
+  .product-description {
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb {
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .color-option {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .size-option {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+  
+  .buy-buttons {
+    position: sticky;
+    bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+    margin: 30px -20px 0;
+    z-index: 100;
+  }
+}

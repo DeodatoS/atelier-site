@@ -1,0 +1,319 @@
+// Product Detail Page functionality
+let currentProduct = null;
+let allProductsData = null;
+
+// Get product ID from URL parameter
+function getProductIdFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('id');
+}
+
+// Load products data (reuse the same data structure as products.js)
+async function loadProductsData() {
+  // First try to get data from products.js if it's already loaded
+  if (typeof PRODUCTS_DATA !== 'undefined') {
+    console.log('Using embedded products data');
+    return PRODUCTS_DATA;
+  }
+  
+  try {
+    // Try to fetch from JSON file
+    const response = await fetch('../assets/data/products.json');
+    if (response.ok) {
+      const data = await response.json();
+      console.log('Loaded products from JSON file');
+      return data;
+    }
+  } catch (fetchError) {
+    console.log('Fetch failed, falling back to embedded data');
+  }
+  
+  // If products.js hasn't loaded PRODUCTS_DATA yet, wait a bit and try again
+  if (typeof PRODUCTS_DATA === 'undefined') {
+    await new Promise(resolve => setTimeout(resolve, 100));
+    if (typeof PRODUCTS_DATA !== 'undefined') {
+      console.log('Using embedded products data (delayed)');
+      return PRODUCTS_DATA;
+    }
+  }
+  
+  throw new Error('Could not load products data');
+}
+
+// Find product by ID across all categories
+function findProductById(data, productId) {
+  for (const categoryKey in data.categories) {
+    const category = data.categories[categoryKey];
+    const product = category.products.find(p => p.id === productId);
+    if (product) {
+      return { product, category: categoryKey, categoryData: category };
+    }
+  }
+  return null;
+}
+
+// Format price
+function formatPrice(price) {
+  return new Intl.NumberFormat('it-IT', {
+    style: 'currency',
+    currency: 'EUR',
+    minimumFractionDigits: 0
+  }).format(price);
+}
+
+// Get color class for styling
+function getColorClass(colorName) {
+  return colorName.toLowerCase().replace(/\s+/g, '');
+}
+
+// Get color for color swatch
+function getColorForSwatch(colorName) {
+  const colorMap = {
+    'black': '#000',
+    'white': '#fff',
+    'red': '#dc3545',
+    'blue': '#0066cc',
+    'navy': '#001f3f',
+    'green': '#28a745',
+    'gray': '#6c757d',
+    'pink': '#e91e63',
+    'purple': '#6f42c1',
+    'beige': '#f5f5dc',
+    'cream': '#fffdd0',
+    'ivory': '#fffff0',
+    'brown': '#8b4513',
+    'yellow': '#ffc107',
+    'orange': '#fd7e14',
+    'burgundy': '#800020',
+    'emerald': '#50c878',
+    'champagne': '#f7e7ce',
+    'sage': '#9caf88',
+    'charcoal': '#36454f',
+    'camel': '#c19a6b',
+    'olive': '#808000',
+    'midnight': '#191970'
+  };
+  
+  const colorKey = colorName.toLowerCase();
+  for (const key in colorMap) {
+    if (colorKey.includes(key)) {
+      return colorMap[key];
+    }
+  }
+  return '#333'; // default color
+}
+
+// Set main image
+function setMainImage(imageSrc, thumbnailIndex) {
+  const mainImage = document.getElementById('main-product-image');
+  mainImage.src = imageSrc;
+  
+  // Update active state on thumbnails
+  document.querySelectorAll('.thumbnail').forEach((thumb, index) => {
+    thumb.classList.remove('active');
+    if (index === thumbnailIndex) {
+      thumb.classList.add('active');
+    }
+  });
+}
+
+// Populate product details
+function populateProductDetails(productData) {
+  const { product, category, categoryData } = productData;
+  
+  // Update page title and meta
+  document.getElementById('product-title').textContent = `${product.name} - ELISA SANNA`;
+  document.title = `${product.name} - ELISA SANNA`;
+  
+  // Update breadcrumb
+  const categoryLink = document.getElementById('category-link');
+  categoryLink.textContent = categoryData.name;
+  
+  // Map categories to their respective pages
+  const categoryPages = {
+    'prive_ceremonial': 'prive-ceremonial.html',
+    'collections': 'collections.html', 
+    'kids': 'kids.html'
+  };
+  
+  categoryLink.href = categoryPages[category] || '#';
+  document.getElementById('product-breadcrumb').textContent = product.name;
+  
+  // Populate main image and thumbnails
+  const mainImage = document.getElementById('main-product-image');
+  mainImage.src = product.image;
+  mainImage.alt = product.name;
+  
+  // Thumbnails - use main image for all 3 thumbnails for now
+  const thumbnail1 = document.getElementById('thumbnail-1');
+  const thumbnail2 = document.getElementById('thumbnail-2');
+  const thumbnail3 = document.getElementById('thumbnail-3');
+  
+  // Ensure thumbnails exist and set their sources
+  if (thumbnail1) {
+    thumbnail1.src = product.image;
+    thumbnail1.style.display = 'block';
+  }
+  if (thumbnail2) {
+    thumbnail2.src = product.image;
+    thumbnail2.style.display = 'block';
+  }
+  if (thumbnail3) {
+    thumbnail3.src = product.image;
+    thumbnail3.style.display = 'block';
+  }
+  
+  // Product information
+  document.getElementById('product-name').textContent = product.name;
+  document.getElementById('product-subtitle').textContent = product.fabric;
+  
+  // Product description
+  const descriptionContainer = document.getElementById('product-description');
+  descriptionContainer.innerHTML = `<p>${product.description}</p>`;
+  
+  // Pricing
+  document.getElementById('price-standard').textContent = formatPrice(product.prices.standard);
+  document.getElementById('price-minimum').textContent = formatPrice(product.prices.minimum);
+  document.getElementById('price-maximum').textContent = formatPrice(product.prices.maximum);
+  
+  // Colors
+  const colorsContainer = document.getElementById('product-colors');
+  colorsContainer.innerHTML = product.colors.map((color, index) => 
+    `<div class="color-option ${index === 0 ? 'selected' : ''}" data-color="${getColorClass(color)}" title="${color}" style="background-color: ${getColorForSwatch(color)}"></div>`
+  ).join('');
+  
+  // Sizes
+  const sizesContainer = document.getElementById('product-sizes');
+  sizesContainer.innerHTML = product.sizes.map((size, index) => 
+    `<div class="size-option ${index === 0 ? 'selected' : ''}" data-size="${size}">${size}</div>`
+  ).join('');
+  
+  // Fabric info in accordion
+  document.getElementById('product-fabric').textContent = product.fabric;
+  
+  // Add click handlers for colors and sizes
+  addColorSizeHandlers();
+  
+  currentProduct = product;
+}
+
+// Add click handlers for color and size selection
+function addColorSizeHandlers() {
+  // Color selection
+  document.querySelectorAll('.color-option').forEach(option => {
+    option.addEventListener('click', () => {
+      document.querySelectorAll('.color-option').forEach(o => o.classList.remove('selected'));
+      option.classList.add('selected');
+    });
+  });
+  
+  // Size selection
+  document.querySelectorAll('.size-option').forEach(option => {
+    option.addEventListener('click', () => {
+      document.querySelectorAll('.size-option').forEach(o => o.classList.remove('selected'));
+      option.classList.add('selected');
+    });
+  });
+}
+
+// Action handlers
+function requestConsultation() {
+  if (currentProduct) {
+    alert(`Personal Consultation Request for "${currentProduct.name}"\n\nThank you for your interest! Our personal stylist will contact you within 24 hours to schedule a consultation.\n\nFor immediate assistance, please call our atelier directly.`);
+  }
+}
+
+function contactAtelier() {
+  alert(`Contact Elisa Sanna Atelier\n\nPhone: +39 [phone number]\nEmail: info@elisasanna.com\nAddress: [atelier address]\n\nAtelier Hours:\nMon-Fri: 9:00am - 6:00pm\nSat: 10:00am - 4:00pm\nSun: By appointment only`);
+}
+
+// Buy standard size
+function buyStandardSize() {
+  if (currentProduct) {
+    const selectedColor = document.querySelector('.color-option.selected');
+    const selectedSize = document.querySelector('.size-option.selected');
+    
+    let orderDetails = `Order: "${currentProduct.name}" - Standard Size`;
+    if (selectedColor) {
+      orderDetails += `\nColor: ${selectedColor.title}`;
+    }
+    if (selectedSize) {
+      orderDetails += `\nSize: ${selectedSize.getAttribute('data-size')}`;
+    }
+    orderDetails += `\nPrice: ${formatPrice(currentProduct.prices.standard)}`;
+    orderDetails += `\n\nThank you for your order! Our team will contact you shortly to confirm details and arrange payment.`;
+    
+    alert(orderDetails);
+  }
+}
+
+// Buy made to measure
+function buyMadeToMeasure() {
+  if (currentProduct) {
+    alert(`Made to Measure Order: "${currentProduct.name}"\n\nThank you for choosing our Made to Measure service! Our master tailor will contact you within 24 hours to schedule your personal consultation and measurements.\n\nPrice range: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nEach piece is crafted exclusively for you in our Italian atelier.`);
+  }
+}
+
+// Toggle accordion
+function toggleAccordion(header) {
+  const content = header.nextElementSibling;
+  const icon = header.querySelector('.accordion-icon');
+  
+  if (content.style.display === 'none' || !content.style.display) {
+    content.style.display = 'block';
+    icon.textContent = '−';
+    header.classList.add('active');
+  } else {
+    content.style.display = 'none';
+    icon.textContent = '+';
+    header.classList.remove('active');
+  }
+}
+
+// Initialize page
+async function initializeProductDetail() {
+  const productId = getProductIdFromURL();
+  
+  if (!productId) {
+    showError('No product specified');
+    return;
+  }
+  
+  try {
+    // Load products data
+    const data = await loadProductsData();
+    allProductsData = data;
+    
+    // Find the specific product
+    const productData = findProductById(data, productId);
+    
+    if (!productData) {
+      showError('Product not found');
+      return;
+    }
+    
+    // Hide loading, show content
+    document.getElementById('product-loading').style.display = 'none';
+    document.getElementById('product-content').style.display = 'block';
+    
+    // Populate product details
+    populateProductDetails(productData);
+    
+  } catch (error) {
+    console.error('Error loading product:', error);
+    showError('Error loading product details');
+  }
+}
+
+// Show error state
+function showError(message) {
+  document.getElementById('product-loading').style.display = 'none';
+  document.getElementById('product-content').style.display = 'none';
+  
+  const errorElement = document.getElementById('product-error');
+  errorElement.querySelector('p').textContent = message;
+  errorElement.style.display = 'block';
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeProductDetail);
