@@ -153,6 +153,9 @@ body {
 .column {
   position: relative;
   overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .column-image {

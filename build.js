@@ -44,14 +44,14 @@ const homeContent = `
         <div class="column-title">Personalized For You</div>
       </div>
     </div>
-    <div class="column">
+    <a href="pages/made-to-measure.html" class="column">
       <div class="column-image">
         <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Made to measure" />
       </div>
       <div class="column-content">
         <div class="column-title">Made To Measure</div>
       </div>
-    </div>
+    </a>
   </section>
 
   <!-- Prive Section -->

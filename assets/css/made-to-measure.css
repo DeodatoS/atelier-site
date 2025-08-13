@@ -1,0 +1,282 @@
+/* Made to Measure Specific Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.mtm-hero {
+  margin-top: 205px;
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mtm-hero-content {
+  text-align: center;
+  color: white;
+}
+
+.mtm-hero-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.mtm-hero-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Made to Measure Intro Section */
+.mtm-intro {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.mtm-description {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  font-weight: 300;
+}
+
+/* Services Grid */
+.mtm-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.mtm-service-image {
+  width: 100%;
+}
+
+.mtm-service-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mtm-service-content {
+  text-align: left;
+}
+
+.mtm-service-content h3 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.mtm-service-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.mtm-service-content strong {
+  color: #333;
+  font-weight: 400;
+}
+
+/* Process Section */
+.mtm-process {
+  background: #f9f9f9;
+  padding: 5rem 0;
+}
+
+.mtm-process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.mtm-process-content {
+  text-align: left;
+}
+
+.mtm-process-step {
+  margin-bottom: 2rem;
+}
+
+.mtm-process-step h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.mtm-process-step p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.mtm-process-step em {
+  color: #999;
+  font-style: italic;
+}
+
+.mtm-process-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.mtm-process-image {
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mtm-process-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mtm-process-image.mtm-large {
+  grid-column: 1 / -1;
+  height: 250px;
+}
+
+/* Booking Section */
+.mtm-booking {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.mtm-booking-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.mtm-booking-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.mtm-booking-card h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.mtm-booking-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.mtm-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.mtm-btn:hover {
+  background: #555;
+}
+
+.mtm-btn-outline {
+  background: transparent;
+  color: #333;
+  border: 1px solid #333;
+  margin-top: 1rem;
+}
+
+.mtm-btn-outline:hover {
+  background: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mtm-hero {
+    height: 50vh;
+    margin-top: 225px;
+  }
+  
+  .mtm-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .mtm-services-grid,
+  .mtm-process-grid,
+  .mtm-booking-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .mtm-service-content,
+  .mtm-process-content {
+    text-align: center;
+  }
+  
+  .mtm-process-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .mtm-process-image.mtm-large {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .mtm-hero-title {
+    font-size: 2rem;
+  }
+  
+  .mtm-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
