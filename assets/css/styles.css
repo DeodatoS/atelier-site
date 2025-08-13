@@ -182,14 +182,15 @@ body {
   text-align: center;
 }
 
-.column-content h2 {
+.column-title {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
 }
 
 .column-content p {
@@ -569,6 +570,10 @@ body {
   
   .column {
     height: 50vh;
+  }
+  
+  .column-title {
+    font-size: 2rem;
   }
   
   .section-header h2 {
