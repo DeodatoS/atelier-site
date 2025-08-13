@@ -1,41 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Fashion - ELISA SANNA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <!-- Header -->
-<header class="header">
-  <div class="topbar">
-    <a href="/" class="logo" aria-label="Elisa Sanna Home">
-      <img src="assets/images/logo.png" alt="Elisa Sanna logo" />
-    </a>
-  </div>
-  <div class="meta-bar">
-    <span>100% Italian handmade - Worldwide Shipping</span>
-  </div>
-  <nav class="nav">
-    <div class="nav-left">
-      <a href="/pages/prive.html" class="nav-link">PRIVE' & CERIMONIAL</a>
-      <a href="/pages/collections.html" class="nav-link">COLLECTIONS</a>
-      <a href="/pages/kids.html" class="nav-link">KIDS</a>
-      <a href="/pages/accessories.html" class="nav-link">ACCESSORIES</a>
-      <a href="/pages/special-prices.html" class="nav-link">SPECIAL PRICES</a>
-      <a href="/pages/handcrafted.html" class="nav-link">HANDCRAFTED EXPERIENCES</a>
-      <a href="/pages/about.html" class="nav-link">OUR BRAND</a>
-    </div>
-  </nav>
-</header>
+// Simple build script to combine components
+import fs from 'fs';
+import path from 'path';
 
+function buildPage(pageContent, title, outputPath) {
+  // Read components
+  const template = fs.readFileSync('components/base-template.html', 'utf8');
+  const header = fs.readFileSync('components/header.html', 'utf8');
+  const footer = fs.readFileSync('components/footer.html', 'utf8');
   
+  // Replace placeholders
+  let html = template
+    .replace('{{TITLE}}', title)
+    .replace('<!-- HEADER_PLACEHOLDER -->', header)
+    .replace('<!-- CONTENT_PLACEHOLDER -->', pageContent)
+    .replace('<!-- FOOTER_PLACEHOLDER -->', footer);
   
+  // Write output file
+  fs.writeFileSync(outputPath, html);
+  console.log(`✅ Built: ${outputPath}`);
+}
+
+// Build index page
+const homeContent = `
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
@@ -166,77 +152,8 @@
       </div>
     </div>
   </section>
+`;
 
-  
-  <!-- Footer -->
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-section">
-      <h4>ATELIER ELSA SPCA</h4>
-      <p>A luxury fashion house creating timeless pieces with exceptional craftsmanship.</p>
-    </div>
-    <div class="footer-section">
-      <h4>ATELIER OPENING HOURS</h4>
-      <p>Mon-Fri: 9:00am - 6:00pm<br>
-      Sat: 10:00am - 4:00pm<br>
-      Sun: By appointment only</p>
-    </div>
-    <div class="footer-section">
-      <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-      <p>Stay updated with our latest collections, exclusive events, and fashion insights.</p>
-      <div class="newsletter">
-        <input type="email" placeholder="Enter your email">
-        <button>Subscribe</button>
-      </div>
-    </div>
-  </div>
-  <div class="footer-links">
-    <div class="footer-column">
-      <h5>OUR WORLD</h5>
-      <ul>
-        <li><a href="/pages/boutique.html">The Boutique</a></li>
-        <li><a href="/pages/sustainability.html">Sustainability and Values</a></li>
-        <li><a href="/pages/careers.html">Careers</a></li>
-        <li><a href="/pages/services.html">Services</a></li>
-        <li><a href="/pages/press.html">Press</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h5>FIND US ONLINE</h5>
-      <ul>
-        <li><a href="/pages/size-guide.html">Size Guide</a></li>
-        <li><a href="/pages/contact.html">Contact Us</a></li>
-        <li><a href="/pages/shipping.html">Shipping and Returns</a></li>
-        <li><a href="/pages/faq.html">Frequently Asked Questions</a></li>
-        <li><a href="/pages/care.html">Care Instructions</a></li>
-        <li><a href="/pages/account.html">Create your Account</a></li>
-        <li><a href="/pages/appointments.html">Appointments</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h5>EXCLUSIVE SERVICES</h5>
-      <ul>
-        <li><a href="/pages/made-to-measure.html">Made to Measure</a></li>
-        <li><a href="/pages/personal-styling.html">Personal Styling</a></li>
-        <li><a href="/pages/alterations.html">Alterations</a></li>
-        <li><a href="/pages/vip.html">VIP Services</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h5>LEGAL TERMS AND CONDITIONS</h5>
-      <ul>
-        <li><a href="/pages/terms.html">Terms and Conditions</a></li>
-        <li><a href="/pages/privacy.html">Privacy Policy</a></li>
-        <li><a href="/pages/cookies.html">Cookie Settings</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Copyright © 2024 Elsa Spca SPA - All rights reserved</p>
-  </div>
-</footer>
+buildPage(homeContent, 'Luxury Fashion', 'index.html');
 
-
-  <script src="assets/js/script.js"></script>
-</body>
-</html>
+console.log('🎉 Build complete!');
