@@ -166,3 +166,11 @@ window.addEventListener('resize', () => {
 
 // Initialize mobile menu on load
 createMobileMenu();
+
+// Mobile menu toggle function for the menu icon in meta-bar
+function toggleMobileMenu() {
+  // For now, this will just provide visual feedback
+  // Later can be expanded to show a mobile menu overlay
+  console.log('Mobile menu toggle clicked');
+  alert('Menu mobile - funzionalità in sviluppo');
+}
