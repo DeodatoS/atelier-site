@@ -510,6 +510,13 @@
     margin-top: 160px;
     padding: 20px 0;
   }
+}
+
+@media (max-width: 480px) {
+  .product-detail-main {
+    margin-top: 100px;
+    padding: 20px 0;
+  }
   
   .container {
     padding: 15px;

@@ -629,6 +629,11 @@ body {
     flex: 1;
   }
   
+  /* Reduced spacing for mobile */
+  .hero {
+    margin-top: 100px;
+  }
+  
   .hero-text {
     font-size: 1rem;
   }

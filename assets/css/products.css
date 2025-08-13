@@ -383,6 +383,12 @@
   .products-main {
     margin-top: 160px;
   }
+}
+
+@media (max-width: 480px) {
+  .products-main {
+    margin-top: 100px;
+  }
   
   .category-title {
     font-size: 2rem;
