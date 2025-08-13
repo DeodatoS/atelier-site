@@ -96,29 +96,43 @@ document.querySelector('.newsletter button').addEventListener('click', (e) => {
   }
 });
 
-// Mobile menu toggle (for future enhancement)
+// Mobile menu toggle - place in meta-bar
 const createMobileMenu = () => {
-  const nav = document.querySelector('.nav');
+  const metaBar = document.querySelector('.meta-bar');
   const navLeft = document.querySelector('.nav-left');
   
-  if (window.innerWidth <= 768) {
-    if (!document.querySelector('.mobile-menu-toggle')) {
+  if (window.innerWidth <= 480) {
+    if (!document.querySelector('.mobile-menu-toggle') && metaBar) {
       const menuToggle = document.createElement('button');
       menuToggle.className = 'mobile-menu-toggle';
       menuToggle.innerHTML = '☰';
       menuToggle.style.cssText = `
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        color: #fff;
         cursor: pointer;
         display: block;
+        padding: 0;
+        margin-right: 15px;
       `;
       
-      nav.insertBefore(menuToggle, navLeft);
+      // Insert at the beginning of meta-bar
+      metaBar.insertBefore(menuToggle, metaBar.firstChild);
       
       menuToggle.addEventListener('click', () => {
-        navLeft.style.display = navLeft.style.display === 'none' ? 'flex' : 'none';
+        if (navLeft) {
+          navLeft.style.display = navLeft.style.display === 'none' ? 'flex' : 'none';
+        } else {
+          alert('Menu mobile - navigazione tramite homepage');
+        }
       });
+    }
+  } else {
+    // Remove mobile menu toggle if screen is larger
+    const existingToggle = document.querySelector('.mobile-menu-toggle');
+    if (existingToggle) {
+      existingToggle.remove();
     }
   }
 };
@@ -167,10 +181,4 @@ window.addEventListener('resize', () => {
 // Initialize mobile menu on load
 createMobileMenu();
 
-// Mobile menu toggle function for the menu icon in meta-bar
-function toggleMobileMenu() {
-  // For now, this will just provide visual feedback
-  // Later can be expanded to show a mobile menu overlay
-  console.log('Mobile menu toggle clicked');
-  alert('Menu mobile - funzionalità in sviluppo');
-}
+// Mobile menu toggle function removed - now handled by createMobileMenu()
