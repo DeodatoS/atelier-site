@@ -1,14 +1,10 @@
+/* The Designer Page - Based on Trash Template */
+
+/* Global Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
 }
 
 .container {
@@ -17,75 +13,13 @@ body {
   padding: 0 20px;
 }
 
-/* Header Styles */
-.header {
-  background-color: #fff;
-  border-bottom: 1px solid #e5e5e5;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #333;
-}
-
-.header-icons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-/* Navigation */
-.nav {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.nav-content {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 15px 0;
-}
-
-.nav-item {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #666;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.nav-item:hover {
-  color: #333;
-}
-
-/* Main Content */
+/* Page Spacing - Override site default */
 .main-content {
+  margin-top: 205px;
   padding: 60px 0;
 }
 
+/* Page Title */
 .page-title {
   text-align: center;
   margin-bottom: 60px;
@@ -107,6 +41,7 @@ body {
   font-style: italic;
 }
 
+/* Intro Text */
 .intro-text {
   max-width: 800px;
   margin: 0 auto 60px;
@@ -240,7 +175,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+/* Footer Overrides */
 .footer {
   background-color: #333;
   color: #fff;
@@ -287,24 +222,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .header-content {
-    padding: 10px 0;
-  }
-  
-  .logo {
-    font-size: 20px;
-  }
-  
-  .nav-content {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px 0;
-  }
-  
-  .nav-item {
-    font-size: 11px;
-  }
-  
   .page-title h1 {
     font-size: 28px;
   }
@@ -341,6 +258,7 @@ body {
   }
   
   .main-content {
+    margin-top: 100px;
     padding: 40px 0;
   }
   
