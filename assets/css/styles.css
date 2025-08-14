@@ -52,6 +52,7 @@ body {
 .nav-left {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-link {
@@ -71,6 +72,7 @@ body {
 .nav-dropdown {
   position: relative;
   display: inline-block;
+  vertical-align: top;
 }
 
 .dropdown-toggle::after {

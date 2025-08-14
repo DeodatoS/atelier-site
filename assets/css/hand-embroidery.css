@@ -1,0 +1,293 @@
+/* Hand Embroidery Page Specific Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 205px; /* Account for fixed header */
+  padding: 60px 0;
+}
+
+.embroidery-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+.section-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.philosophy-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.scroll-indicator {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.scroll-indicator:hover {
+  transform: translateY(5px);
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #333;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.image-section {
+  position: relative;
+}
+
+.embroidery-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-section {
+  padding: 40px;
+}
+
+.embroidery-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+.embroidery-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Techniques Section */
+.techniques-section {
+  margin-bottom: 100px;
+}
+
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.technique-item {
+  text-align: center;
+}
+
+.technique-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.technique-content h3 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+.technique-content p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Heritage Section */
+.heritage-section {
+  background: #f9f9f9;
+  padding: 80px 0;
+  margin: 0 -20px;
+}
+
+.heritage-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.heritage-text h2 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+.heritage-text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.heritage-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 160px;
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .text-section {
+    padding: 20px;
+  }
+  
+  .embroidery-title {
+    font-size: 1.5rem;
+  }
+  
+  .techniques-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .heritage-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .heritage-text h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-top: 100px;
+    padding: 20px 0;
+  }
+  
+  .embroidery-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    font-size: 12px;
+  }
+  
+  .philosophy-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  
+  .content-grid {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .embroidery-image {
+    height: 300px;
+  }
+  
+  .text-section {
+    padding: 15px;
+  }
+  
+  .technique-image {
+    height: 200px;
+  }
+  
+  .heritage-section {
+    padding: 40px 0;
+  }
+  
+  .heritage-image img {
+    height: 250px;
+  }
+}
