@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Navigation */
+.nav {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+}
+
+.nav-item {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #333;
+}
+
+/* Main Content */
+.main-content {
+  padding: 60px 0;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Content Sections */
+.content-section {
+  margin-bottom: 80px;
+}
+
+.section-with-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.section-with-image.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-with-image.reverse .image-container {
+  order: 2;
+}
+
+.section-with-image.reverse .text-content {
+  order: 1;
+}
+
+.image-container {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-content h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 25px 0 15px;
+}
+
+.text-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-content li {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.text-content li::before {
+  content: "•";
+  color: #999;
+  position: absolute;
+  left: 0;
+}
+
+.text-content li strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  margin: 80px 0;
+}
+
+.philosophy-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.philosophy-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  text-align: justify;
+}
+
+.philosophy-text p {
+  margin-bottom: 20px;
+}
+
+.philosophy-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Images */
+.bottom-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.bottom-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: none;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 10px 0;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  .nav-content {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .nav-item {
+    font-size: 11px;
+  }
+  
+  .page-title h1 {
+    font-size: 28px;
+  }
+  
+  .section-with-image {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .section-with-image.reverse .image-container,
+  .section-with-image.reverse .text-content {
+    order: unset;
+  }
+  
+  .philosophy-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .bottom-images {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .main-content {
+    padding: 40px 0;
+  }
+  
+  .page-title {
+    margin-bottom: 40px;
+  }
+  
+  .page-title h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
