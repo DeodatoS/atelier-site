@@ -181,4 +181,39 @@ window.addEventListener('resize', () => {
 // Initialize mobile menu on load
 createMobileMenu();
 
-// Mobile menu toggle function removed - now handled by createMobileMenu()
+// Dropdown menu functionality
+function toggleDropdown(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  
+  const dropdownMenu = event.target.nextElementSibling;
+  const isCurrentlyOpen = dropdownMenu.classList.contains('show');
+  
+  // Close all other dropdowns
+  document.querySelectorAll('.dropdown-menu').forEach(menu => {
+    menu.classList.remove('show');
+  });
+  
+  // Toggle current dropdown
+  if (!isCurrentlyOpen) {
+    dropdownMenu.classList.add('show');
+  }
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+      menu.classList.remove('show');
+    });
+  }
+});
+
+// Close dropdown on escape key
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+      menu.classList.remove('show');
+    });
+  }
+});
