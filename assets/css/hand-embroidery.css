@@ -53,6 +53,37 @@
   margin-top: 205px;
 }
 
+/* Force hero centering - override any conflicts */
+.hand-embroidery-page .hero-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.hand-embroidery-page .hero-section .hero-image {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hand-embroidery-page .hero-section .hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+}
+
+.hand-embroidery-page .hero-section .hero-content {
+  text-align: center !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
@@ -80,11 +111,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .hero-content {
   text-align: center;
-  color: #333;
+  color: #fff;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-logo h2 {
@@ -93,7 +127,8 @@
   font-weight: 400;
   letter-spacing: 4px;
   margin-bottom: 10px;
-  color: #2c3e2c;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-logo p {
@@ -102,7 +137,8 @@
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #5a6b5a;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* Hand Embroidery Section */
