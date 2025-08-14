@@ -207,18 +207,31 @@
   width: 100%;
   height: 250px;
   position: relative;
+  display: block;
 }
 
 .process-img {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .process-img:hover {
   transform: scale(1.05);
+}
+
+/* Force image visibility - override any conflicting styles */
+.process-section .process-images .image-container .embroidery-image img {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Mobile Responsive */
