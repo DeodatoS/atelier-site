@@ -53,6 +53,12 @@
   margin-top: 205px;
 }
 
+/* Override home margin for hand embroidery page */
+.hand-embroidery-page {
+  margin-top: 0 !important;
+  padding-top: 205px;
+}
+
 /* Force hero centering - override any conflicts with global CSS */
 .hand-embroidery-page .hero-section {
   position: relative !important;
@@ -83,16 +89,19 @@
   left: unset !important;
   top: 0 !important;
   right: 0 !important;
+  /* Add extra top padding to push content down */
+  padding-top: 50px !important;
 }
 
 .hand-embroidery-page .hero-section .hero-content {
   text-align: center !important;
-  position: relative !important;
+  position: absolute !important;
   z-index: 2 !important;
-  /* Ensure content is centered and not affected by global styles */
-  bottom: unset !important;
-  left: unset !important;
-  transform: none !important;
+  /* Perfect centering with transform */
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 100% !important;
 }
 
 .hand-embroidery-page .hero-section .hero-logo {
