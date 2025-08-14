@@ -53,35 +53,52 @@
   margin-top: 205px;
 }
 
-/* Force hero centering - override any conflicts */
+/* Force hero centering - override any conflicts with global CSS */
 .hand-embroidery-page .hero-section {
-  position: relative;
-  height: 60vh;
-  min-height: 400px;
-  overflow: hidden;
+  position: relative !important;
+  height: 60vh !important;
+  min-height: 400px !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
 }
 
 .hand-embroidery-page .hero-section .hero-image {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  position: relative !important;
 }
 
 .hand-embroidery-page .hero-section .hero-overlay {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  position: relative;
+  position: relative !important;
+  /* Override global CSS that puts overlay at bottom-left */
+  bottom: unset !important;
+  left: unset !important;
+  top: 0 !important;
+  right: 0 !important;
 }
 
 .hand-embroidery-page .hero-section .hero-content {
   text-align: center !important;
   position: relative !important;
   z-index: 2 !important;
+  /* Ensure content is centered and not affected by global styles */
+  bottom: unset !important;
+  left: unset !important;
+  transform: none !important;
+}
+
+.hand-embroidery-page .hero-section .hero-logo {
+  display: block !important;
+  text-align: center !important;
+  margin: 0 auto !important;
 }
 
 /* Hero Section */
