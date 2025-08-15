@@ -81,6 +81,39 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateButtons);
     updateButtons();
   }
+
+  // Journey Carousel functionality
+  const journeyCarousel = document.querySelector('.journey-section .journey-carousel');
+  const journeyScroller = document.querySelector('.journey-section .journey-steps');
+  const journeyPrevBtn = document.querySelector('.journey-section .journey-button.prev');
+  const journeyNextBtn = document.querySelector('.journey-section .journey-button.next');
+
+  if (journeyCarousel && journeyScroller && journeyPrevBtn && journeyNextBtn) {
+    const getJourneyScrollAmount = () => journeyScroller.clientWidth * 0.7;
+
+    const updateJourneyButtons = () => {
+      const maxScrollLeft = journeyScroller.scrollWidth - journeyScroller.clientWidth - 1;
+      journeyPrevBtn.disabled = journeyScroller.scrollLeft <= 0;
+      journeyNextBtn.disabled = journeyScroller.scrollLeft >= maxScrollLeft;
+      const opacity = (btn) => btn.disabled ? '0.4' : '1';
+      journeyPrevBtn.style.opacity = opacity(journeyPrevBtn);
+      journeyNextBtn.style.opacity = opacity(journeyNextBtn);
+    };
+
+    journeyPrevBtn.addEventListener('click', () => {
+      journeyScroller.scrollBy({ left: -getJourneyScrollAmount(), behavior: 'smooth' });
+      setTimeout(updateJourneyButtons, 350);
+    });
+    
+    journeyNextBtn.addEventListener('click', () => {
+      journeyScroller.scrollBy({ left: getJourneyScrollAmount(), behavior: 'smooth' });
+      setTimeout(updateJourneyButtons, 350);
+    });
+
+    journeyScroller.addEventListener('scroll', updateJourneyButtons, { passive: true });
+    window.addEventListener('resize', updateJourneyButtons);
+    updateJourneyButtons();
+  }
 });
 
 // Newsletter form handling
