@@ -116,6 +116,17 @@
   align-items: start;
 }
 
+.mtm-process-single-image {
+  width: 100%;
+}
+
+.mtm-single-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
 .mtm-process-content {
   text-align: left;
 }
@@ -251,6 +262,10 @@
   .mtm-booking-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .mtm-single-img {
+    height: 300px;
   }
   
   .mtm-service-content,
