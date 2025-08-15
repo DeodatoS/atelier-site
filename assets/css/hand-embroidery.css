@@ -260,7 +260,7 @@
 }
 
 .image-container {
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
@@ -276,7 +276,7 @@
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0;
   transition: transform 0.3s ease;
   display: block !important;
   visibility: visible !important;
