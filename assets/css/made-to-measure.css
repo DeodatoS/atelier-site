@@ -69,7 +69,7 @@
 
 .mtm-image {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   object-fit: cover;
   border-radius: 0;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -151,7 +151,7 @@
 
 .mtm-single-img {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   object-fit: cover;
   border-radius: 0;
 }
@@ -294,11 +294,11 @@
   }
   
   .mtm-single-img {
-    height: 450px;
+    height: 550px;
   }
   
   .mtm-image {
-    height: 450px;
+    height: 550px;
   }
   
   .mtm-service-content,
