@@ -1,4 +1,4 @@
-/* Made to Measure Specific Styles */
+/* Made to Measure Specific Styles - Updated v2.0 */
 
 .container {
   max-width: 1200px;
@@ -68,11 +68,18 @@
 }
 
 .mtm-image {
-  width: 100%;
-  height: 1000px;
-  object-fit: cover;
-  border-radius: 0;
+  width: 100% !important;
+  height: 1000px !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mtm-service-image .mtm-image {
+  width: 100% !important;
+  height: 1000px !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
 }
 
 .mtm-features {
@@ -150,10 +157,10 @@
 }
 
 .mtm-single-img {
-  width: 100%;
-  height: 1000px;
-  object-fit: cover;
-  border-radius: 0;
+  width: 100% !important;
+  height: 1000px !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
 }
 
 .mtm-process-content {
@@ -294,11 +301,11 @@
   }
   
   .mtm-single-img {
-    height: 550px;
+    height: 550px !important;
   }
   
   .mtm-image {
-    height: 550px;
+    height: 550px !important;
   }
   
   .mtm-service-content,
