@@ -8,7 +8,7 @@
           "id": "pc001",
           "name": "Silk Evening Gown",
           "category": "prive_ceremonial",
-          "description": "Elegant DEO 128 silk evening gown with intricate hand-embroidered details",
+          "description": "Elegant DEO 129 silk evening gown with intricate hand-embroidered details",
           "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
           "gallery": [
             "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446"
@@ -138,7 +138,7 @@
             "12Y"
           ],
           "fabric": "Cotton Blend",
-          "madeTo": "order# Test trigger"
+          "madeTo": "order"
         }
       ]
     }
