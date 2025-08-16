@@ -31,7 +31,7 @@ jobs:
         ls -la assets/data/
         echo "🔄 Converting products CSV to JSON..."
         cd assets/data
-        python3 csv-to-json-converter.py
+        python3 csv-to-json-converter.py products-template.csv products.json
         echo "✅ Products conversion completed"
         ls -la products.json
         
