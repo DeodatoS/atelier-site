@@ -3,7 +3,7 @@ on:
   push:
     paths:
       - 'assets/data/pages-content-template.csv'
-      - 'assets/data/products-template.csv'
+  
     branches:
       - main
 
@@ -26,13 +26,13 @@ jobs:
       with:
         python-version: '3.x'
         
-    - name: Convert all CSV to JSON
+    - name: Convert pages CSV to JSON
       run: |
         echo "🔍 Checking files..."
         ls -la assets/data/
-        echo "🔄 Converting all CSV files to JSON..."
+        echo "🔄 Converting pages CSV to JSON..."
         cd assets/data
-        python3 unified-cms-converter.py
+        python3 pages-csv-to-json-converter.py
         echo "✅ Conversion completed"
         ls -la *.json
         
@@ -53,7 +53,7 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions Bot"
         git add assets/data/*.json
-        git commit -m "🤖 Auto-update: All CSV to JSON conversion from Google Sheets"
+        git commit -m "🤖 Auto-update: Pages CSV to JSON conversion from Google Sheets"
         git push origin main
         
     - name: Trigger Netlify Deploy

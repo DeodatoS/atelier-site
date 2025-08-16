@@ -1,0 +1,366 @@
+{
+  "homepage": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "ELISA SANNA",
+        "subtitle": "The Art of Italian Craftsmanship",
+        "description": "Welcome to a world where tradition meets innovation, where every stitch tells a story of passion and excellence.",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Italian craftsmanship atelier",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "two_column": [
+      {
+        "section_id": "two_column_1",
+        "content_type": "two_column",
+        "title": "Made in Italy",
+        "subtitle": "Each piece is thoughtfully designed and meticulously crafted in our Italian atelier, where traditional techniques meet contemporary design.",
+        "description": "Our commitment to excellence is reflected in every detail, from the selection of premium fabrics to the final hand-stitched finish.",
+        "image_url": "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Made in Italy craftsmanship",
+        "order_position": 2,
+        "is_active": true
+      },
+      {
+        "section_id": "two_column_2",
+        "content_type": "two_column",
+        "title": "Timeless Elegance",
+        "subtitle": "Creating pieces that transcend seasons and trends, designed to be cherished for generations.",
+        "description": "Our designs embody the perfect balance between classic sophistication and modern sensibility.",
+        "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Timeless elegant designs",
+        "order_position": 3,
+        "is_active": true
+      }
+    ],
+    "journey_step": [
+      {
+        "section_id": "journey_step_1",
+        "content_type": "journey_step",
+        "title": "01. DESIGN deo6 & CONCEPTION",
+        "description": "Every!  DEO 15 creation begins with a spark of inspiration. Our designers carefully study fashion trends, client preferences, and artistic vision to create unique concepts that blend tradition with modernity. ",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Design and conception process",
+        "order_position": 4,
+        "is_active": true
+      },
+      {
+        "section_id": "journey_step_2",
+        "content_type": "journey_step",
+        "title": "02. MATERIAL SELECTION",
+        "description": "DEO 16We source the finest fabrics from renowned Italian mills, selecting each material for its quality, texture, and ability to bring our designs to life. Only the best materials meet our standards.",
+        "image_url": "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Material selection process",
+        "order_position": 5,
+        "is_active": true
+      },
+      {
+        "section_id": "journey_step_3",
+        "content_type": "journey_step",
+        "title": "03. HANDCRAFT & EMBROIDERY",
+        "description": "Our master artisans bring each piece to life through meticulous handwork. Every stitch, every embroidered detail, and every finish is crafted with the precision of generations of Italian craftsmanship.",
+        "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Handcraft and embroidery",
+        "order_position": 6,
+        "is_active": true
+      },
+      {
+        "section_id": "journey_step_4",
+        "content_type": "journey_step",
+        "title": "04. FINAL CREATION",
+        "description": "After careful attention to every detail, our creations are born. Each piece represents not just a garment, but a story of passion, tradition, and the pursuit of perfection that defines Elisa Sanna.",
+        "image_url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Final creation process",
+        "order_position": 7,
+        "is_active": true
+      }
+    ]
+  },
+  "made_to_measure": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "MADE TO MEASURE",
+        "subtitle": "Tailored to Perfection",
+        "description": "Made to Measure is our solution to ethical elegance crafted especially for you.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Made to measure hero",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "MADE TO MEASURE",
+        "description": "Made to Measure is our solution to ethical elegance crafted especially for you. Collaborate with our artisans to choose the finest fabrics and fits, creating your own design.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Made to measure consultation",
+        "order_position": 2,
+        "is_active": true
+      }
+    ],
+    "feature": [
+      {
+        "section_id": "feature_1",
+        "content_type": "feature",
+        "title": "Precision",
+        "description": "A beautifully tailored custom garment created from a thoughtful assessment to perfectly reflect the client's measurements and personal preferences.",
+        "order_position": 3,
+        "is_active": true
+      },
+      {
+        "section_id": "feature_2",
+        "content_type": "feature",
+        "title": "Fit and Design",
+        "description": "Made-to-measure provides a refined fit that surpasses off-the-rack options, ensuring a tailored silhouette that flatters your measurements and preferences.",
+        "order_position": 4,
+        "is_active": true
+      },
+      {
+        "section_id": "feature_3",
+        "content_type": "feature",
+        "title": "Exclusive",
+        "description": "Made-to-measure reflects perfect balance between personalization and efficiency, delivering a unique garment alongside your needs in mind.",
+        "order_position": 5,
+        "is_active": true
+      }
+    ],
+    "process_content": [
+      {
+        "section_id": "process_section",
+        "content_type": "process_content",
+        "title": "THE PROCESS",
+        "description": "Our made-to-measure process combines traditional craftsmanship with modern precision to create garments that perfectly fit your body and lifestyle.",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Made to measure process",
+        "order_position": 6,
+        "is_active": true
+      }
+    ]
+  },
+  "personalized_for_you": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "PERSONALIZED FOR YOU",
+        "subtitle": "Your Vision Realized",
+        "description": "Transform your style dreams into reality with our personalized design service.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Personalized for you hero",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "PERSONALISED FOR YOU",
+        "description": "Made DEO2  to Measure is not intended to replace custom tailoring for you. Collaborate with our artisans to choose the finest fabrics and styles every detail. Each design is tailored to your personal style, bringing Italian craftsmanship with modern sophistication.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Personalized garments display",
+        "order_position": 2,
+        "is_active": true
+      }
+    ],
+    "feature": [
+      {
+        "section_id": "feature_1",
+        "content_type": "feature",
+        "title": "Precision",
+        "description": "A beautifully tailored custom garment is created from a thoughtful design process, perfectly crafted to the client's measurements and personal preferences.",
+        "order_position": 3,
+        "is_active": true
+      },
+      {
+        "section_id": "feature_2",
+        "content_type": "feature",
+        "title": "Fit and Design",
+        "description": "Made to measure starts with an existing base pattern that is modified to fit the client. Options like fabric, style and other design elements are available, but the structure of the garment remains largely pre-determined.",
+        "order_position": 4,
+        "is_active": true
+      },
+      {
+        "section_id": "feature_3",
+        "content_type": "feature",
+        "title": "Exclusivity",
+        "description": "Made to measure provides a personal fit and variation in fabrics, options, offering a unique garment designed with your needs in mind.",
+        "order_position": 5,
+        "is_active": true
+      }
+    ],
+    "process_content": [
+      {
+        "section_id": "process_section",
+        "content_type": "process_content",
+        "title": "THE PROCESS",
+        "description": "Our personalized design process ensures every detail reflects your unique style and preferences.",
+        "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Personalized design process",
+        "order_position": 6,
+        "is_active": true
+      }
+    ]
+  },
+  "hand_embroidery": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "HAND EMBROIDERY",
+        "subtitle": "The Art of Italian Needlework",
+        "description": "Discover the ancient art of hand embroidery, where every thread tells a story of tradition and mastery.",
+        "image_url": "https://picsum.photos/1200/800?random=1",
+        "image_alt": "Hand embroidery hero",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "The Art of Hand Embroidery",
+        "subtitle": "Preserving Ancient Traditions",
+        "description": "Hand embroidery represents the pinnacle of Italian craftsmanship, where skilled artisans transform simple threads into works of art. Each piece tells a story of dedication, precision, and the timeless beauty of handmade creation.",
+        "image_url": "https://picsum.photos/800/600?random=2",
+        "image_alt": "Hand embroidery craftsmanship",
+        "order_position": 2,
+        "is_active": true
+      }
+    ],
+    "technique": [
+      {
+        "section_id": "technique_1",
+        "content_type": "technique",
+        "title": "Traditional Stitching",
+        "description": "Master artisans use time-honored techniques passed down through generations, creating intricate patterns that showcase the beauty of Italian needlework.",
+        "image_url": "https://picsum.photos/400/300?random=3",
+        "image_alt": "Traditional stitching",
+        "order_position": 3,
+        "is_active": true
+      },
+      {
+        "section_id": "technique_2",
+        "content_type": "technique",
+        "title": "Contemporary Designs",
+        "description": "While honoring tradition, our embroidery incorporates modern design elements, creating pieces that are both timeless and contemporary.",
+        "image_url": "https://picsum.photos/400/300?random=4",
+        "image_alt": "Contemporary embroidery designs",
+        "order_position": 4,
+        "is_active": true
+      },
+      {
+        "section_id": "technique_3",
+        "content_type": "technique",
+        "title": "Premium Materials",
+        "description": "Only the finest threads and fabrics are selected for our embroidery work, ensuring both beauty and longevity in every creation.",
+        "image_url": "https://picsum.photos/400/300?random=5",
+        "image_alt": "Premium embroidery materials",
+        "order_position": 5,
+        "is_active": true
+      }
+    ],
+    "heritage_content": [
+      {
+        "section_id": "heritage_section",
+        "content_type": "heritage_content",
+        "title": "A Heritage of Excellence",
+        "description": "Our embroidery tradition spans generations, with techniques and patterns that have been carefully preserved and passed down through our master artisans. This heritage forms the foundation of every piece we create.",
+        "image_url": "https://picsum.photos/800/600?random=6",
+        "image_alt": "Heritage of embroidery excellence",
+        "order_position": 6,
+        "is_active": true
+      }
+    ]
+  },
+  "the_designer": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "THE DESIGNER",
+        "subtitle": "Elisa Sanna",
+        "description": "Meet the visionary behind our timeless creations.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "The designer Elisa Sanna",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "about_content": [
+      {
+        "section_id": "about_section",
+        "content_type": "about_content",
+        "title": "About Elisa Sanna",
+        "description": "Elisa Sanna is a renowned Italian fashion designer whose passion for craftsmanship and attention to detail have made her a respected name in luxury fashion. Her designs blend traditional Italian techniques with contemporary aesthetics.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Elisa Sanna portrait",
+        "order_position": 2,
+        "is_active": true
+      }
+    ]
+  },
+  "our_atelier": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "OUR ATELIER",
+        "subtitle": "Where Craftsmanship Lives",
+        "description": "Step into our world of Italian artistry and traditional craftsmanship.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Our atelier workspace",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "The Heart of Creation",
+        "description": "Our atelier is where passion meets precision, where traditional Italian craftsmanship techniques are honored and preserved. Here, master artisans dedicate their expertise to creating pieces of exceptional quality and beauty.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Atelier craftsmanship",
+        "order_position": 2,
+        "is_active": true
+      }
+    ]
+  },
+  "craftsmanship_values": {
+    "hero_section": [
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "CRAFTSMANSHIP & VALUES",
+        "subtitle": "The Foundation of Excellence",
+        "description": "Our commitment to exceptional craftsmanship and timeless values guides everything we create.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Craftsmanship and values",
+        "order_position": 1,
+        "is_active": true
+      }
+    ],
+    "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "Our Values",
+        "description": "At the heart of our atelier lies an unwavering commitment to excellence, tradition, and the finest Italian craftsmanship. These values guide every decision we make and every piece we create.",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_alt": "Our values and craftsmanship",
+        "order_position": 2,
+        "is_active": true
+      }
+    ]
+  }
+}
