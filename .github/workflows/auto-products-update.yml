@@ -1,0 +1,62 @@
+name: Auto Products Update
+on:
+  push:
+    paths:
+      - 'assets/data/products-template.csv'
+    branches:
+      - main
+
+jobs:
+  update-products:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Convert products CSV to JSON
+      run: |
+        echo "🔍 Checking products files..."
+        ls -la assets/data/
+        echo "🔄 Converting products CSV to JSON..."
+        cd assets/data
+        python3 csv-to-json-converter.py
+        echo "✅ Products conversion completed"
+        ls -la products.json
+        
+    - name: Check for products changes
+      id: check-changes
+      run: |
+        if git diff --quiet assets/data/products.json; then
+          echo "No products JSON changes detected"
+          echo "has-changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "Products JSON changes detected"
+          echo "has-changes=true" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Commit and push products JSON updates
+      if: steps.check-changes.outputs.has-changes == 'true'
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions Bot"
+        git add assets/data/products.json
+        git commit -m "🤖 Auto-update: Products CSV to JSON conversion from Google Sheets"
+        git push origin main
+        
+    - name: Trigger Netlify Deploy
+      if: steps.check-changes.outputs.has-changes == 'true'
+      run: |
+        echo "🚀 Products JSON updated successfully - Netlify will auto-deploy"
+
