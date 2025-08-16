@@ -115,7 +115,7 @@
 
 .pfy-image {
   width: 100%;
-  height: 600px;
+  height: 800px;
   object-fit: cover;
   border-radius: 0;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -150,7 +150,7 @@
 
 .pfy-single-img {
   width: 100%;
-  height: 600px;
+  height: 800px;
   object-fit: cover;
   border-radius: 0;
 }
@@ -290,7 +290,7 @@
   }
   
   .pfy-image {
-    height: 350px;
+    height: 450px;
   }
   
   .pfy-process-grid {
@@ -299,7 +299,7 @@
   }
   
   .pfy-single-img {
-    height: 350px;
+    height: 450px;
   }
   
   .pfy-section-title {

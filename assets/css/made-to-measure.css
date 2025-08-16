@@ -67,6 +67,35 @@
   align-items: center;
 }
 
+.mtm-image {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mtm-features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.mtm-feature h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.mtm-feature p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+}
+
 .mtm-service-image {
   width: 100%;
 }
@@ -122,7 +151,7 @@
 
 .mtm-single-img {
   width: 100%;
-  height: 600px;
+  height: 800px;
   object-fit: cover;
   border-radius: 0;
 }
@@ -265,7 +294,11 @@
   }
   
   .mtm-single-img {
-    height: 350px;
+    height: 450px;
+  }
+  
+  .mtm-image {
+    height: 450px;
   }
   
   .mtm-service-content,
