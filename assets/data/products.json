@@ -139,6 +139,72 @@
           ],
           "fabric": "Cotton Blend",
           "madeTo": "order"
+        },
+        {
+          "id": "kid002",
+          "name": "Little Prince Suit2",
+          "category": "kids",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b",
+          "gallery": [
+            "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Cotton Blend",
+          "madeTo": "order"
+        },
+        {
+          "id": "kid003",
+          "name": "Little Prince Suit3",
+          "category": "kids",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b",
+          "gallery": [
+            "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Cotton Blend",
+          "madeTo": "order"
         }
       ]
     }
