@@ -67,9 +67,10 @@
     const links = footerElement.querySelectorAll('a[href^="/pages/"]');
     links.forEach(link => {
       const href = link.getAttribute('href');
-      // Convert /pages/xyz.html to ../pages/xyz.html for subdirectory pages
+      // Convert /pages/xyz.html to xyz.html for subdirectory pages (remove /pages/ prefix)
       if (href.startsWith('/pages/')) {
-        link.setAttribute('href', '.' + href);
+        const fileName = href.replace('/pages/', '');
+        link.setAttribute('href', fileName);
       }
     });
   }
