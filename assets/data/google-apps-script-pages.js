@@ -1,7 +1,7 @@
 /**
- * Google Apps Script for Elisa Sanna PRODUCTS Management
+ * Google Apps Script for Elisa Sanna PAGES Content Management
  * Auto-syncs Google Sheets changes to GitHub repository
- * SEPARATE SYSTEM from pages content management
+ * SEPARATE SYSTEM from products management
  */
 
 // 🔧 CONFIGURATION - UPDATE THESE VALUES
@@ -12,9 +12,9 @@ const CONFIG = {
   GITHUB_BRANCH: 'main', // Branch to update
   NOTIFICATION_EMAIL: 'your-email@example.com', // Email for notifications
   
-  // Single CSV file for products only
-  CSV_FILE_PATH: 'assets/data/products-template.csv',
-  SHEET_NAME: 'Products'
+  // Single CSV file for pages only
+  CSV_FILE_PATH: 'assets/data/pages-content-template.csv',
+  SHEET_NAME: 'Pages Content'
 };
 
 /**
@@ -22,13 +22,13 @@ const CONFIG = {
  */
 function onOpen() {
   const ui = SpreadsheetApp.getUi();
-  ui.createMenu('🚀 Elisa Sanna - Prodotti')
-    .addItem('📤 Pubblica Prodotti sul Sito', 'syncProductsToGitHub')
+  ui.createMenu('🚀 Elisa Sanna - Pagine')
+    .addItem('📤 Pubblica Pagine sul Sito', 'syncPagesToGitHub')
     .addSeparator()
     .addItem('ℹ️ Info Sistema', 'showSystemInfo')
     .addToUi();
   
-  console.log('✅ Menu prodotti aggiunto alla barra superiore');
+  console.log('✅ Menu pagine aggiunto alla barra superiore');
 }
 
 /**
@@ -37,21 +37,21 @@ function onOpen() {
 function showSystemInfo() {
   const ui = SpreadsheetApp.getUi();
   ui.alert(
-    '🚀 Sistema Prodotti Elisa Sanna',
-    '📤 Clicca "Pubblica Prodotti sul Sito" per aggiornare il sito web\n\n' +
+    '🚀 Sistema Pagine Elisa Sanna',
+    '📤 Clicca "Pubblica Pagine sul Sito" per aggiornare il sito web\n\n' +
     '⏱️ Il sistema ora pubblica SOLO quando richiesto\n' +
-    '✅ Modifica tutti i prodotti che vuoi, poi pubblica una volta sola\n\n' +
+    '✅ Modifica tutti i contenuti che vuoi, poi pubblica una volta sola\n\n' +
     '🔄 Tempo di aggiornamento: 2-3 minuti',
     ui.ButtonSet.OK
   );
 }
 
 /**
- * 🚀 Main function - converts products sheet to CSV and uploads to GitHub
+ * 🚀 Main function - converts pages sheet to CSV and uploads to GitHub
  */
-function syncProductsToGitHub() {
+function syncPagesToGitHub() {
   try {
-    console.log('🔄 Starting products sync process...');
+    console.log('🔄 Starting pages sync process...');
     
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = spreadsheet.getSheetByName(CONFIG.SHEET_NAME);
@@ -62,21 +62,21 @@ function syncProductsToGitHub() {
     
     // Convert sheet to CSV
     const csvContent = sheetToCsv(sheet);
-    console.log('✅ Products CSV generated');
+    console.log('✅ Pages CSV generated');
     
     // Upload to GitHub
     const result = uploadToGitHub(csvContent);
     
     if (result.success) {
-      console.log('✅ Products successfully synced to GitHub!');
-      sendNotification('✅ Products Updated', 'Products data has been successfully updated on the website.');
+      console.log('✅ Pages successfully synced to GitHub!');
+      sendNotification('✅ Pages Updated', 'Pages content has been successfully updated on the website.');
     } else {
       throw new Error(`GitHub upload failed: ${result.error}`);
     }
     
   } catch (error) {
-    console.error('❌ Products sync failed:', error);
-    sendNotification('❌ Products Sync Failed', `Error: ${error.toString()}`);
+    console.error('❌ Pages sync failed:', error);
+    sendNotification('❌ Pages Sync Failed', `Error: ${error.toString()}`);
     throw error;
   }
 }
@@ -92,7 +92,7 @@ function sheetToCsv(sheet) {
       throw new Error('Sheet is empty');
     }
     
-    console.log(`📊 Processing ${data.length} rows from products sheet`);
+    console.log(`📊 Processing ${data.length} rows from pages sheet`);
     
     // Convert to CSV with proper escaping
     const csvRows = data.map(row => 
@@ -134,7 +134,7 @@ function uploadToGitHub(csvContent) {
         headers: {
           'Authorization': `Bearer ${CONFIG.GITHUB_TOKEN}`,
           'Accept': 'application/vnd.github.v3+json',
-          'User-Agent': 'GoogleAppsScript-ProductsSync'
+          'User-Agent': 'GoogleAppsScript-PagesSync'
         }
       });
       
@@ -149,7 +149,7 @@ function uploadToGitHub(csvContent) {
     
     // Prepare commit data
     const commitData = {
-      message: `Update products from Google Sheets - ${new Date().toISOString()}`,
+      message: `Update pages content from Google Sheets - ${new Date().toISOString()}`,
       content: Utilities.base64Encode(csvContent),
       branch: CONFIG.GITHUB_BRANCH
     };
@@ -158,7 +158,7 @@ function uploadToGitHub(csvContent) {
       commitData.sha = sha;
     }
     
-    console.log('🚀 Uploading products to GitHub...');
+    console.log('🚀 Uploading pages to GitHub...');
     
     // Upload to GitHub
     const response = UrlFetchApp.fetch(url, {
@@ -167,7 +167,7 @@ function uploadToGitHub(csvContent) {
         'Authorization': `Bearer ${CONFIG.GITHUB_TOKEN}`,
         'Content-Type': 'application/json',
         'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'GoogleAppsScript-ProductsSync'
+        'User-Agent': 'GoogleAppsScript-PagesSync'
       },
       payload: JSON.stringify(commitData)
     });
@@ -176,7 +176,7 @@ function uploadToGitHub(csvContent) {
     const responseText = response.getContentText();
     
     if (responseCode === 200 || responseCode === 201) {
-      console.log('✅ Products file uploaded successfully');
+      console.log('✅ Pages file uploaded successfully');
       return { success: true };
     } else {
       console.error('❌ GitHub API error:', responseCode, responseText);
@@ -197,8 +197,8 @@ function sendNotification(subject, message) {
     if (CONFIG.NOTIFICATION_EMAIL && CONFIG.NOTIFICATION_EMAIL !== 'your-email@example.com') {
       MailApp.sendEmail({
         to: CONFIG.NOTIFICATION_EMAIL,
-        subject: `[Elisa Sanna Products] ${subject}`,
-        body: `${message}\n\nTime: ${new Date().toString()}\nSheet: Products Management`
+        subject: `[Elisa Sanna Pages] ${subject}`,
+        body: `${message}\n\nTime: ${new Date().toString()}\nSheet: Pages Content Management`
       });
       console.log('📧 Notification sent');
     }
@@ -208,11 +208,11 @@ function sendNotification(subject, message) {
 }
 
 /**
- * 🔄 Setup the products sheet with headers and sample data
+ * 🔄 Setup the pages sheet with headers and sample data
  */
-function setupProductsSheet() {
+function setupPagesSheet() {
   try {
-    console.log('🔧 Setting up products sheet...');
+    console.log('🔧 Setting up pages sheet...');
     
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     let sheet;
@@ -222,20 +222,20 @@ function setupProductsSheet() {
       sheet = spreadsheet.getSheetByName(CONFIG.SHEET_NAME);
       if (!sheet) {
         sheet = spreadsheet.insertSheet(CONFIG.SHEET_NAME);
-        console.log('📄 Created new products sheet');
+        console.log('📄 Created new pages sheet');
       }
     } catch (error) {
       sheet = spreadsheet.insertSheet(CONFIG.SHEET_NAME);
-      console.log('📄 Created new products sheet');
+      console.log('📄 Created new pages sheet');
     }
     
     // Clear existing content
     sheet.clear();
     
-    // Import existing products CSV from GitHub
-    importExistingProductsCsv(sheet);
+    // Import existing pages CSV from GitHub
+    importExistingPagesCsv(sheet);
     
-    console.log('✅ Products sheet setup completed');
+    console.log('✅ Pages sheet setup completed');
     return sheet;
     
   } catch (error) {
@@ -245,11 +245,11 @@ function setupProductsSheet() {
 }
 
 /**
- * 📥 Import existing products CSV from GitHub
+ * 📥 Import existing pages CSV from GitHub
  */
-function importExistingProductsCsv(sheet) {
+function importExistingPagesCsv(sheet) {
   try {
-    console.log('📥 Importing existing products CSV from GitHub...');
+    console.log('📥 Importing existing pages CSV from GitHub...');
     
     const url = `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/contents/${CONFIG.CSV_FILE_PATH}`;
     
@@ -258,7 +258,7 @@ function importExistingProductsCsv(sheet) {
       headers: {
         'Authorization': `Bearer ${CONFIG.GITHUB_TOKEN}`,
         'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'GoogleAppsScript-ProductsSync'
+        'User-Agent': 'GoogleAppsScript-PagesSync'
       }
     });
     
@@ -266,7 +266,7 @@ function importExistingProductsCsv(sheet) {
       const fileData = JSON.parse(response.getContentText());
       const csvContent = Utilities.newBlob(Utilities.base64Decode(fileData.content)).getDataAsString();
       
-      console.log('📄 Products CSV downloaded from GitHub');
+      console.log('📄 Pages CSV downloaded from GitHub');
       
       // Parse CSV and populate sheet
       const lines = csvContent.split('\n');
@@ -300,35 +300,35 @@ function importExistingProductsCsv(sheet) {
         });
         
         sheet.getRange(1, 1, paddedData.length, maxCols).setValues(paddedData);
-        console.log(`✅ Imported ${paddedData.length} rows of products data`);
+        console.log(`✅ Imported ${paddedData.length} rows of pages data`);
       }
       
     } else {
-      console.log('⚠️ Products CSV not found on GitHub, creating sample data...');
-      populateWithSampleProductsData(sheet);
+      console.log('⚠️ Pages CSV not found on GitHub, creating sample data...');
+      populateWithSamplePagesData(sheet);
     }
     
   } catch (error) {
-    console.log('⚠️ Failed to import products CSV, creating sample data:', error);
-    populateWithSampleProductsData(sheet);
+    console.log('⚠️ Failed to import pages CSV, creating sample data:', error);
+    populateWithSamplePagesData(sheet);
   }
 }
 
 /**
- * 📝 Populate sheet with sample products data
+ * 📝 Populate sheet with sample pages data
  */
-function populateWithSampleProductsData(sheet) {
-  console.log('📝 Creating sample products data...');
+function populateWithSamplePagesData(sheet) {
+  console.log('📝 Creating sample pages data...');
   
   const sampleData = [
-    ['id', 'name', 'category', 'subcategory', 'description', 'price', 'images', 'features', 'care_instructions', 'material'],
-    ['dress-001', 'Elegant Evening Dress', 'private_ceremonial', 'dresses', 'A stunning evening dress perfect for special occasions', '1200', 'dress-001-1.jpg,dress-001-2.jpg', 'Hand-embroidered details,Premium silk fabric', 'Dry clean only', 'Silk'],
-    ['jacket-002', 'Tailored Blazer', 'collections', 'jackets', 'A sophisticated blazer for the modern woman', '800', 'jacket-002-1.jpg', 'Classic cut,Italian tailoring', 'Dry clean recommended', 'Wool blend'],
-    ['coat-003', 'Winter Coat', 'collections', 'outerwear', 'Luxurious winter coat with premium materials', '1500', 'coat-003-1.jpg,coat-003-2.jpg', 'Cashmere lining,Handcrafted buttons', 'Professional cleaning only', 'Cashmere']
+    ['page_id', 'section_type', 'element_id', 'title', 'subtitle', 'description', 'image_url', 'button_text', 'button_link', 'additional_data'],
+    ['home', 'hero', 'hero-section', 'Atelier Elisa Sanna', 'Handcrafted Excellence', 'Where tradition meets innovation in bespoke Italian fashion.', 'assets/images/hero-home.jpg', 'Discover Our Collections', 'pages/collections.html', ''],
+    ['our-atelier', 'hero', 'hero-section', 'Our Atelier', 'Where Magic Happens', 'Step inside our world where traditional Italian craftsmanship meets contemporary design.', 'assets/images/atelier-hero.jpg', '', '', ''],
+    ['hand-embroidery', 'hero', 'hero-section', 'Hand Embroidery', 'Artistry in Every Thread', 'Discover the ancient art of hand embroidery, where each stitch tells a story.', 'assets/images/embroidery-hero.jpg', '', '', '']
   ];
   
   sheet.getRange(1, 1, sampleData.length, sampleData[0].length).setValues(sampleData);
-  console.log('✅ Sample products data created');
+  console.log('✅ Sample pages data created');
 }
 
 /**
@@ -342,7 +342,9 @@ function removeOldTriggers() {
     let removedCount = 0;
     
     triggers.forEach(trigger => {
-      if (trigger.getHandlerFunction() === 'syncProductsToGitHub') {
+      if (trigger.getHandlerFunction() === 'syncPagesToGitHub' || 
+          trigger.getHandlerFunction() === 'syncToGitHub' ||
+          trigger.getHandlerFunction() === 'onSheetEdit') {
         ScriptApp.deleteTrigger(trigger);
         removedCount++;
       }
@@ -357,11 +359,11 @@ function removeOldTriggers() {
   }
 }
 
-// 🎯 PRODUCTS-ONLY MANUAL SYNC SYSTEM
-console.log('🚀 Products Google Apps Script loaded - Manual Sync Mode');
+// 🎯 PAGES-ONLY MANUAL SYNC SYSTEM
+console.log('🚀 Pages Google Apps Script loaded - Manual Sync Mode');
 console.log('📋 Available functions:');
-console.log('  - setupProductsSheet(): Setup products sheet with data');
-console.log('  - syncProductsToGitHub(): Publish products to website (use menu button)');
+console.log('  - setupPagesSheet(): Setup pages sheet with data');
+console.log('  - syncPagesToGitHub(): Publish pages to website (use menu button)');
 console.log('  - removeOldTriggers(): Clean up old automatic triggers');
 console.log('');
-console.log('🎯 NEW: Use the menu "🚀 Elisa Sanna - Prodotti" → "📤 Pubblica Prodotti sul Sito"');
+console.log('🎯 NEW: Use the menu "🚀 Elisa Sanna - Pagine" → "📤 Pubblica Pagine sul Sito"');
