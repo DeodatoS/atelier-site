@@ -1,0 +1,96 @@
+/**
+ * Universal Footer Loader for Elisa Sanna Website
+ * Loads consistent footer across all pages
+ */
+
+(function() {
+  'use strict';
+
+  /**
+   * Load footer content from external file
+   */
+  function loadFooter() {
+    // Create footer placeholder if it doesn't exist
+    let footerPlaceholder = document.getElementById('footer-placeholder');
+    
+    if (!footerPlaceholder) {
+      // Look for existing footer and replace it
+      const existingFooter = document.querySelector('footer.footer');
+      if (existingFooter) {
+        footerPlaceholder = document.createElement('div');
+        footerPlaceholder.id = 'footer-placeholder';
+        existingFooter.parentNode.replaceChild(footerPlaceholder, existingFooter);
+      } else {
+        // Create footer placeholder before closing body tag
+        footerPlaceholder = document.createElement('div');
+        footerPlaceholder.id = 'footer-placeholder';
+        document.body.appendChild(footerPlaceholder);
+      }
+    }
+
+    // Determine the correct path based on current location
+    const currentPath = window.location.pathname;
+    let footerPath = '/components/footer-unified.html';
+    
+    // Adjust path for pages in subdirectories
+    if (currentPath.includes('/pages/')) {
+      footerPath = '../components/footer-unified.html';
+    }
+
+    // Load footer content
+    fetch(footerPath)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Failed to load footer: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(html => {
+        footerPlaceholder.innerHTML = html;
+        console.log('✅ Unified footer loaded successfully');
+        
+        // Fix relative links for pages in subdirectories
+        if (currentPath.includes('/pages/')) {
+          fixFooterLinks(footerPlaceholder);
+        }
+      })
+      .catch(error => {
+        console.error('❌ Error loading footer:', error);
+        // Fallback: keep existing footer if load fails
+      });
+  }
+
+  /**
+   * Fix relative links in footer for pages in subdirectories
+   */
+  function fixFooterLinks(footerElement) {
+    const links = footerElement.querySelectorAll('a[href^="/pages/"]');
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      // Convert /pages/xyz.html to ../pages/xyz.html for subdirectory pages
+      if (href.startsWith('/pages/')) {
+        link.setAttribute('href', '.' + href);
+      }
+    });
+  }
+
+  /**
+   * Initialize footer loader when DOM is ready
+   */
+  function initFooterLoader() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadFooter);
+    } else {
+      loadFooter();
+    }
+  }
+
+  // Start the footer loader
+  initFooterLoader();
+
+  // Global debug function
+  window.reloadFooter = loadFooter;
+
+})();
+
+console.log('🚀 Footer Loader initialized - Universal footer system active');
