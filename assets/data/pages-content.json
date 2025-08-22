@@ -406,39 +406,48 @@
       {
         "section_id": "process_step_1",
         "content_type": "process_step",
-        "title": "1. Ideation & Design",
-        "description": "Conceptualization: Begin with a theme or inspiration. Sketching: Create a design on paper or digitally. Customization: Tailor the design to suit the fabric, purpose, and personal style.",
+        "title": "prova booo",
+        "description": "salta la quaglia Conceptualization: Begin with a theme or inspiration. Sketching: Create a design on paper or digitally. Customization: Tailor the design to suit the fabric, purpose, and personal style.",
         "order_position": 3,
         "is_active": true
       },
       {
         "section_id": "process_step_2",
         "content_type": "process_step",
-        "title": "2. sdsdsdsdsd",
+        "title": "ignorata",
+        "subtitle": "ignorata",
         "order_position": 4,
         "is_active": true
       },
       {
         "section_id": "process_step_3",
         "content_type": "process_step",
+        "title": "ignorata",
+        "subtitle": "ignorata",
         "order_position": 5,
         "is_active": true
       },
       {
         "section_id": "process_step_4",
         "content_type": "process_step",
+        "title": "ignorata",
+        "subtitle": "ignorata",
         "order_position": 6,
         "is_active": true
       },
       {
         "section_id": "process_step_5",
         "content_type": "process_step",
+        "title": "ignorata",
+        "subtitle": "ignorata",
         "order_position": 7,
         "is_active": true
       },
       {
         "section_id": "process_step_6",
         "content_type": "process_step",
+        "title": "ignorata",
+        "subtitle": "ignorata",
         "order_position": 8,
         "is_active": true
       }
