@@ -216,6 +216,36 @@ function populateFeatures(pageId) {
 }
 
 /**
+ * Populate two column sections (homepage)
+ */
+function populateTwoColumn(pageId) {
+  const twoColumnContent = getTwoColumnContent(pageId);
+  if (twoColumnContent.length === 0) return;
+
+  twoColumnContent.forEach((column, index) => {
+    const columnElement = document.querySelector(`.two-column .column:nth-child(${index + 1})`);
+    
+    if (columnElement) {
+      const columnTitle = columnElement.querySelector('.column-title');
+      const columnImage = columnElement.querySelector('.column-image img');
+      
+      if (columnTitle) {
+        columnTitle.textContent = column.title;
+        console.log(`🖼️ Updated two-column ${index + 1} title to:`, column.title);
+      }
+      
+      if (columnImage && column.image_url) {
+        columnImage.src = column.image_url;
+        if (column.image_alt) {
+          columnImage.alt = column.image_alt;
+        }
+        console.log(`🖼️ Updated two-column ${index + 1} image to:`, column.image_url);
+      }
+    }
+  });
+}
+
+/**
  * Populate journey steps (homepage)
  */
 function populateJourneySteps(pageId) {
@@ -273,11 +303,13 @@ async function initializePageContent() {
     populateHero(pageId);
     populateMainContent(pageId);
     populateFeatures(pageId);
-    console.log('✅ Content population completed');
     
     if (pageId === 'homepage') {
+      populateTwoColumn(pageId);
       populateJourneySteps(pageId);
     }
+    
+    console.log('✅ Content population completed');
 
     console.log(`✅ Page content initialized for: ${pageId}`);
     
