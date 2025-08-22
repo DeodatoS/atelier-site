@@ -553,7 +553,7 @@
         "subtitle": "Where Craftsmanship Lives",
         "description": "Step into our world of Italian artistry and traditional craftsmanship.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "image_alt": "Atelier workspace",
+        "image_alt": "Our atelier workspace",
         "order_position": 1,
         "is_active": true
       }
@@ -585,11 +585,7 @@
         "section_id": "section_title",
         "content_type": "section_header",
         "title": "Atelier",
-        "subtitle": "3",
-        "description": "true",
-        "image_url": null,
-        "image_alt": null,
-        "order_position": 0,
+        "order_position": 3,
         "is_active": true
       }
     ],
