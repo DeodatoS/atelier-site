@@ -53,11 +53,37 @@
         if (currentPath.includes('/pages/')) {
           fixFooterLinks(footerPlaceholder);
         }
+        
+        // Initialize newsletter form after footer is loaded
+        initializeNewsletterForm();
       })
       .catch(error => {
         console.error('❌ Error loading footer:', error);
         // Fallback: keep existing footer if load fails
       });
+  }
+
+  /**
+   * Initialize newsletter form functionality
+   */
+  function initializeNewsletterForm() {
+    const newsletterButton = document.querySelector('.newsletter button');
+    if (newsletterButton) {
+      newsletterButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const email = document.querySelector('.newsletter input').value;
+        
+        if (email && email.includes('@')) {
+          alert('Thank you for subscribing to our newsletter!');
+          document.querySelector('.newsletter input').value = '';
+        } else {
+          alert('Please enter a valid email address.');
+        }
+      });
+      console.log('✅ Newsletter form initialized');
+    } else {
+      console.log('⚠️ Newsletter form not found in loaded footer');
+    }
   }
 
   /**

@@ -116,29 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Newsletter form handling
-document.querySelector('.newsletter button').addEventListener('click', (e) => {
-  e.preventDefault();
-  const email = document.querySelector('.newsletter input').value;
-  
-  if (email && email.includes('@')) {
-    alert('Thank you for subscribing to our newsletter!');
-    document.querySelector('.newsletter input').value = '';
-  } else {
-    alert('Please enter a valid email address.');
-  }
-});
+// Newsletter form handling moved to footer-loader.js
+// This ensures it initializes after the footer is dynamically loaded
 
 // Mobile menu toggle - place in meta-bar
 const createMobileMenu = () => {
-  console.log('🔧 createMobileMenu called, window width:', window.innerWidth);
   const metaBar = document.querySelector('.meta-bar');
   const navLeft = document.querySelector('.nav-left');
   
-  console.log('📱 metaBar found:', !!metaBar, 'navLeft found:', !!navLeft);
-  
   if (window.innerWidth <= 480) {
-    console.log('📱 Mobile width detected, creating menu toggle');
     if (!document.querySelector('.mobile-menu-toggle') && metaBar) {
       const menuToggle = document.createElement('button');
       menuToggle.className = 'mobile-menu-toggle';
@@ -156,7 +142,6 @@ const createMobileMenu = () => {
       
       // Insert at the beginning of meta-bar
       metaBar.insertBefore(menuToggle, metaBar.firstChild);
-      console.log('✅ Mobile menu toggle added to meta-bar');
       
       menuToggle.addEventListener('click', () => {
         if (navLeft) {
