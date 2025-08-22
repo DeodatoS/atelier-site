@@ -1,7 +1,7 @@
 page_id,section_id,content_type,title,subtitle,description,image_url,image_alt,order_position,is_active
 homepage,hero,hero_section,ELISA SANNA,The Art of Italian Craftsmanship,"Welcome to a world where tradition meets innovation, where every stitch tells a story of passion and excellence.",https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80,Italian craftsmanship atelier,1,true
-homepage,two_column_1,two_column,Personalized For You,,Transform your style dreams into reality,,,2,true
-homepage,two_column_2,two_column,Made To Measure,,Tailored to perfection,,,3,true
+homepage,two_column_1,two_column,Personalized For You,,,,,2,true
+homepage,two_column_2,two_column,Made To Measure,,,,,3,true
 homepage,couture_section,section_header,Couture e Cerimonia,,Curated looks for special occasions and refined experiences,,,4,true
 homepage,craftsmanship_section,section_header,Our Craftsmanship and Values,,Curated looks for women with our artisans,,,5,true
 homepage,journey_section,section_header,Our Journey,,Discover the story behind each creation through our craftsmanship journey,,,6,true
@@ -56,11 +56,11 @@ our_atelier,text_3,text_content,,,Elisa Sanna is more than a brand. It's a famil
 hand_embroidery,hero,hero_section,ELISA SANNA,HAND EMBROIDERY,"Discover the ancient art of hand embroidery, where every thread tells a story of tradition and mastery.",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80,Hand embroidery hero,1,true
 hand_embroidery,main_section,main_content,HAND EMBROIDERY,,"Hand embroidery is the art of decorating fabric using a needle and thread. Unlike machine embroidery, it's entirely done by hand allowing for a personal touch, intricate details, and endless creative possibilities.",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80,Hand embroidery craftsmanship,2,true
 hand_embroidery,process_step_1,process_step,1. Ideation & Design,,"Conceptualization: Begin with a theme or inspiration. Sketching: Create a design on paper or digitally. Customization: Tailor the design to suit the fabric, purpose, and personal style.",,,3,true
-hand_embroidery,process_step_2,process_step,2. Material Selection,,"Fabric: Choose cotton, linen, silk, or velvet. Threads: Use embroidery floss in various colors. Tools: Gather embroidery needles, hoops, scissors, and tracing tools.",,,4,true
-hand_embroidery,process_step_3,process_step,3. Transferring the Design,,"Techniques: Use tracing paper, water-soluble pens, or friction pens to transfer the design onto the fabric. Accuracy: Ensure every detail is preserved to guide your stitching.",,,5,true
-hand_embroidery,process_step_4,process_step,4. Preparing the Fabric,,"Hooping: Stretch the fabric tightly in an embroidery hoop or frame to prevent wrinkles and distortion. Stabilizing: This step ensures clean, symmetrical stitching.",,,6,true
-hand_embroidery,process_step_5,process_step,5. Stitching the Design,,"Basic Stitches: Start with foundational stitches like running stitch, back stitch, stem stitch, and satin stitch. Layering: Add texture and depth with advanced techniques.",,,7,true
-hand_embroidery,process_step_6,process_step,6. Finishing Touches,,Trimming Threads: Neatly trim excess thread and secure the back. Backing: Optionally add felt or fabric backing for durability. Display: Frame your piece or turn it into wearable art.,,,8,true
+hand_embroidery,process_step_2,process_step,,,,,,4,true
+hand_embroidery,process_step_3,process_step,,,,,,5,true
+hand_embroidery,process_step_4,process_step,,,,,,6,true
+hand_embroidery,process_step_5,process_step,,,,,,7,true
+hand_embroidery,process_step_6,process_step,,,,,,8,true
 the_designer,hero,hero_section,THE DESIGNER,Elisa Sanna,Get to know her,https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80,The designer Elisa Sanna,1,true
 the_designer,intro_section,main_content,,,Hand embroidery is the art of decorating fabric using a needle and thread. Unlike machine embroidery,it's entirely done by hand,allowing for a personal touch,intricate detail,and endless creative possibilities.
 the_designer,philosophy_1,text_content,,,We believe in building garments through deep research?with those who share our values,heritage,and our future. Understanding how our manufacturers work is not just practical and essential to us.,,
