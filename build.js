@@ -145,13 +145,7 @@ const homeContent = `
           <p>Effortless sophistication meets contemporary design in this versatile ensemble.</p>
         </div>
       </div>
-      <div class="piece-item">
-        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Black accessories" />
-        <div class="piece-info">
-          <h4>ACCESSORIES</h4>
-          <p>The perfect finishing touches that elevate any outfit with understated luxury.</p>
-        </div>
-      </div>
+
     </div>
   </section>
 `;
