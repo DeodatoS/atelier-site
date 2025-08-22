@@ -350,16 +350,24 @@ function populateProcessSteps(pageId) {
   const processSteps = getProcessSteps(pageId);
   if (processSteps.length === 0) return;
 
+  // Special case for hand_embroidery: use single text instead of multiple steps
+  if (pageId === 'hand_embroidery') {
+    const singleProcessText = document.querySelector('.single-process-text p');
+    if (singleProcessText && processSteps.length > 0) {
+      // Use the first process step's description as the single text
+      singleProcessText.textContent = processSteps[0].description;
+      console.log('✅ Updated hand embroidery single process text');
+    }
+    return;
+  }
+
+  // For other pages: normal process steps handling
   processSteps.forEach((step, index) => {
     // Try different selectors for different page layouts
     // For MTM: account for .section-title as first child, so steps start at nth-child(2)
     let stepElement = document.querySelector(`.mtm-process-step:nth-child(${index + 2})`);
     if (!stepElement) {
       stepElement = document.querySelector(`.pfy-process-step:nth-child(${index + 1})`);
-    }
-    // For Hand Embroidery: direct .process-step selector
-    if (!stepElement) {
-      stepElement = document.querySelector(`.process-step:nth-child(${index + 1})`);
     }
     
     if (stepElement) {

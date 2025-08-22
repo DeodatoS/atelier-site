@@ -202,23 +202,16 @@
   align-items: start;
 }
 
-.process-step {
-  margin-bottom: 40px;
+.single-process-text {
+  max-width: 100%;
 }
 
-.process-step h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.process-step p {
-  font-size: 14px;
-  line-height: 1.6;
+.single-process-text p {
+  font-size: 16px;
+  line-height: 1.8;
   color: #666;
   margin: 0;
+  text-align: left;
 }
 
 .process-images {
