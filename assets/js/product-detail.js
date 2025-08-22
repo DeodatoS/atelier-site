@@ -151,7 +151,15 @@ function populateProductDetails(productData) {
   const thumbnail3 = document.getElementById('thumbnail-3');
   
   const thumbnails = [thumbnail1, thumbnail2, thumbnail3];
+  
+  // Debug logging
+  console.log('🔍 Product images debug:');
+  console.log('Image 1:', product.image);
+  console.log('Image 2:', product.image_2);
+  console.log('Image 3:', product.image_3);
+  
   const images = [product.image, product.image_2, product.image_3].filter(img => img && img.trim());
+  console.log('🖼️ Filtered images:', images);
   
   // Set up thumbnails with available images
   thumbnails.forEach((thumbnail, index) => {
@@ -161,8 +169,10 @@ function populateProductDetails(productData) {
         thumbnail.style.display = 'block';
         thumbnail.onclick = () => setMainImage(images[index], index);
         thumbnail.classList.toggle('active', index === 0);
+        console.log(`✅ Set thumbnail ${index + 1}:`, images[index]);
       } else {
         thumbnail.style.display = 'none';
+        console.log(`❌ No image for thumbnail ${index + 1}`);
       }
     }
   });
