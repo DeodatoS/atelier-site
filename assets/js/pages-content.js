@@ -352,7 +352,8 @@ function populateProcessSteps(pageId) {
 
   processSteps.forEach((step, index) => {
     // Try different selectors for different page layouts
-    let stepElement = document.querySelector(`.mtm-process-step:nth-child(${index + 1})`);
+    // For MTM: account for .section-title as first child, so steps start at nth-child(2)
+    let stepElement = document.querySelector(`.mtm-process-step:nth-child(${index + 2})`);
     if (!stepElement) {
       stepElement = document.querySelector(`.pfy-process-step:nth-child(${index + 1})`);
     }
