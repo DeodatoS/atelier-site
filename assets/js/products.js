@@ -493,6 +493,12 @@ function viewDetails(productId) {
 
 // Initialize page
 async function initializePage() {
+  // Only run on products pages (not product-detail pages)
+  if (!document.getElementById('products-grid')) {
+    console.log('Not a products listing page, skipping initialization');
+    return;
+  }
+  
   currentCategory = getCategoryFromURL();
   console.log('Initializing page for category:', currentCategory);
   
@@ -529,7 +535,10 @@ async function initializePage() {
     
   } catch (error) {
     console.error('Error initializing page:', error);
-    document.getElementById('products-loading').innerHTML = 'Error loading products. Please try again later.';
+    const loadingElement = document.getElementById('products-loading');
+    if (loadingElement) {
+      loadingElement.innerHTML = 'Error loading products. Please try again later.';
+    }
   }
 }
 
