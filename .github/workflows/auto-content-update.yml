@@ -32,7 +32,7 @@ jobs:
         ls -la assets/data/
         echo "🔄 Converting pages CSV to JSON..."
         cd assets/data
-        python3 pages-csv-to-json-converter.py
+        python3 pages-csv-to-json-converter.py pages-content-template.csv pages-content.json
         echo "✅ Conversion completed"
         ls -la *.json
         
