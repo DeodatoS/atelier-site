@@ -357,6 +357,10 @@ function populateProcessSteps(pageId) {
     if (!stepElement) {
       stepElement = document.querySelector(`.pfy-process-step:nth-child(${index + 1})`);
     }
+    // For Hand Embroidery: direct .process-step selector
+    if (!stepElement) {
+      stepElement = document.querySelector(`.process-step:nth-child(${index + 1})`);
+    }
     
     if (stepElement) {
       const titleElement = stepElement.querySelector('h3, h4');
