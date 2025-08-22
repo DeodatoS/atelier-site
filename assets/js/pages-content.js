@@ -14,11 +14,14 @@ async function loadPagesContent() {
   }
 
   try {
-    const response = await fetch('../assets/data/pages-content.json');
+    // Add cache busting to force fresh data
+    const timestamp = new Date().getTime();
+    const response = await fetch(`../assets/data/pages-content.json?v=${timestamp}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     PAGES_CONTENT_DATA = await response.json();
+    console.log('🔄 Pages content loaded with cache bust:', timestamp);
     return PAGES_CONTENT_DATA;
   } catch (error) {
     console.error('Error loading pages content:', error);
@@ -150,6 +153,16 @@ function populateHero(pageId, heroSelector = '#hero-title, .hero-content h1, .he
   if (heroImage && heroContent.image_url) {
     heroImage.style.backgroundImage = `url('${heroContent.image_url}')`;
   }
+  
+  // Update hero img tag if exists (for homepage)
+  const heroImgTag = document.querySelector('#hero-image, .hero-image img');
+  if (heroImgTag && heroContent.image_url) {
+    heroImgTag.src = heroContent.image_url;
+    if (heroContent.image_alt) {
+      heroImgTag.alt = heroContent.image_alt;
+    }
+    console.log('🖼️ Updated hero image to:', heroContent.image_url);
+  }
 }
 
 /**
@@ -222,6 +235,7 @@ function populateJourneySteps(pageId) {
       if (stepImage && step.image_url) {
         stepImage.src = step.image_url;
         if (step.image_alt) stepImage.alt = step.image_alt;
+        console.log(`🖼️ Updated journey step ${index + 1} image to:`, step.image_url);
       }
     }
   });
