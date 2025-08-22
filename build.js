@@ -59,7 +59,7 @@ const homeContent = `
   <!-- Prive Section -->
   <section class="prive-section">
     <div class="section-header">
-      <div class="section-title">Prive And Ceremonial</div>
+      <div class="section-title">Couture e Cerimonia</div>
       <p>Curated looks for special occasions and refined experiences</p>
     </div>
     <div class="product-carousel">

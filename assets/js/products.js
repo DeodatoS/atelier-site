@@ -13,7 +13,7 @@ function getCategoryFromURL() {
 const PRODUCTS_DATA = {
   "categories": {
     "prive_ceremonial": {
-      "name": "Privé & Ceremonial",
+      "name": "Couture e Cerimonia",
       "description": "Exquisite pieces for special occasions and refined experiences",
       "products": [
         {
@@ -541,7 +541,7 @@ function updateNavigationActiveState() {
     const linkText = link.textContent.toUpperCase();
     
     if (
-      (currentCategory === 'prive_ceremonial' && linkText.includes('PRIVE')) ||
+      (currentCategory === 'prive_ceremonial' && linkText.includes('COUTURE')) ||
       (currentCategory === 'collections' && linkText.includes('COLLECTIONS')) ||
       (currentCategory === 'kids' && linkText.includes('KIDS'))
     ) {

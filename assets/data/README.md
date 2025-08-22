@@ -72,7 +72,7 @@ Edit `products.json` directly using any text editor. The structure is:
    ```
 
 ## Category Keys
-- `prive_ceremonial` → "Privé & Ceremonial"
+- `prive_ceremonial` → "Couture e Cerimonia"
 - `collections` → "Collections"  
 - `kids` → "Kids"
 

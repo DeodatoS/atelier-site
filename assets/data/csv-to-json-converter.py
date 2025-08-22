@@ -15,7 +15,7 @@ def convert_csv_to_json(csv_file, json_file):
     # Category information
     category_info = {
         'prive_ceremonial': {
-            'name': 'Privé & Ceremonial',
+            'name': 'Couture e Cerimonia',
             'description': 'Exquisite pieces for special occasions and refined experiences'
         },
         'collections': {
