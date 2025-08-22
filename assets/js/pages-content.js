@@ -88,6 +88,34 @@ function getTwoColumnContent(pageId) {
 }
 
 /**
+ * Get section headers content
+ */
+function getSectionHeaders(pageId) {
+  return getContentByType(pageId, 'section_header').filter(item => item.is_active !== false);
+}
+
+/**
+ * Get process steps content
+ */
+function getProcessSteps(pageId) {
+  return getContentByType(pageId, 'process_step').filter(item => item.is_active !== false);
+}
+
+/**
+ * Get booking options content
+ */
+function getBookingOptions(pageId) {
+  return getContentByType(pageId, 'booking_option').filter(item => item.is_active !== false);
+}
+
+/**
+ * Get latest pieces content
+ */
+function getLatestPieces(pageId) {
+  return getContentByType(pageId, 'latest_piece').filter(item => item.is_active !== false);
+}
+
+/**
  * Get techniques content (for hand embroidery)
  */
 function getTechniques(pageId) {
@@ -216,6 +244,80 @@ function populateFeatures(pageId) {
 }
 
 /**
+ * Populate all homepage sections (two-column, sections, latest pieces)
+ */
+function populateHomepageAllSections(pageId) {
+  // Populate two-column section
+  const twoColumnContent = getTwoColumnContent(pageId);
+  twoColumnContent.forEach((column, index) => {
+    const columnElement = document.querySelector(`.two-column .column:nth-child(${index + 1}) .column-title`);
+    if (columnElement && column.title) {
+      columnElement.textContent = column.title;
+      console.log(`🏛️ Updated two-column ${index + 1} title to:`, column.title);
+    }
+  });
+
+  // Populate section headers (Couture, Craftsmanship, Latest Pieces)
+  const sectionHeaders = getSectionHeaders(pageId);
+  sectionHeaders.forEach((section, index) => {
+    let selector = '';
+    switch(section.section_id) {
+      case 'couture_section':
+        selector = '.prive-section .section-title';
+        break;
+      case 'craftsmanship_section':
+        selector = '.craftsmanship-section .section-title';
+        break;
+      case 'journey_section':
+        selector = '.journey-section .section-title';
+        break;
+      case 'latest_pieces_section':
+        selector = '.latest-pieces .section-title';
+        break;
+    }
+    
+    if (selector) {
+      const titleElement = document.querySelector(selector);
+      const descElement = document.querySelector(selector.replace('.section-title', ' p'));
+      
+      if (titleElement && section.title) {
+        titleElement.textContent = section.title;
+        console.log(`📝 Updated ${section.section_id} title to:`, section.title);
+      }
+      if (descElement && section.description) {
+        descElement.textContent = section.description;
+        console.log(`📝 Updated ${section.section_id} description`);
+      }
+    }
+  });
+
+  // Populate latest pieces
+  const latestPieces = getLatestPieces(pageId);
+  latestPieces.forEach((piece, index) => {
+    const pieceElement = document.querySelector(`.pieces-grid .piece-item:nth-child(${index + 1})`);
+    if (pieceElement) {
+      const titleElement = pieceElement.querySelector('.piece-info h4');
+      const descElement = pieceElement.querySelector('.piece-info p');
+      const imageElement = pieceElement.querySelector('img');
+      
+      if (titleElement && piece.title) {
+        titleElement.textContent = piece.title;
+      }
+      if (descElement && piece.description) {
+        descElement.textContent = piece.description;
+      }
+      if (imageElement && piece.image_url) {
+        imageElement.src = piece.image_url;
+        if (piece.image_alt) {
+          imageElement.alt = piece.image_alt;
+        }
+      }
+      console.log(`🖼️ Updated latest piece ${index + 1}:`, piece.title);
+    }
+  });
+}
+
+/**
  * Populate journey steps (homepage)
  */
 function populateJourneySteps(pageId) {
@@ -237,6 +339,64 @@ function populateJourneySteps(pageId) {
         if (step.image_alt) stepImage.alt = step.image_alt;
         console.log(`🖼️ Updated journey step ${index + 1} image to:`, step.image_url);
       }
+    }
+  });
+}
+
+/**
+ * Populate process steps (for MTM, PFY pages)
+ */
+function populateProcessSteps(pageId) {
+  const processSteps = getProcessSteps(pageId);
+  if (processSteps.length === 0) return;
+
+  processSteps.forEach((step, index) => {
+    // Try different selectors for different page layouts
+    let stepElement = document.querySelector(`.mtm-process-step:nth-child(${index + 1})`);
+    if (!stepElement) {
+      stepElement = document.querySelector(`.pfy-process-step:nth-child(${index + 1})`);
+    }
+    
+    if (stepElement) {
+      const titleElement = stepElement.querySelector('h3, h4');
+      const descElement = stepElement.querySelector('p');
+      
+      if (titleElement && step.title) {
+        titleElement.textContent = step.title;
+      }
+      if (descElement && step.description) {
+        descElement.textContent = step.description;
+      }
+      console.log(`⚙️ Updated process step ${index + 1}:`, step.title);
+    }
+  });
+}
+
+/**
+ * Populate booking options (for MTM, PFY pages)
+ */
+function populateBookingOptions(pageId) {
+  const bookingOptions = getBookingOptions(pageId);
+  if (bookingOptions.length === 0) return;
+
+  bookingOptions.forEach((option, index) => {
+    // Try different selectors for different page layouts
+    let optionElement = document.querySelector(`.mtm-booking-card:nth-child(${index + 1})`);
+    if (!optionElement) {
+      optionElement = document.querySelector(`.pfy-booking-option:nth-child(${index + 1})`);
+    }
+    
+    if (optionElement) {
+      const titleElement = optionElement.querySelector('h3');
+      const descElement = optionElement.querySelector('p');
+      
+      if (titleElement && option.title) {
+        titleElement.textContent = option.title;
+      }
+      if (descElement && option.description) {
+        descElement.textContent = option.description;
+      }
+      console.log(`📞 Updated booking option ${index + 1}:`, option.title);
     }
   });
 }
@@ -273,9 +433,12 @@ async function initializePageContent() {
     populateHero(pageId);
     populateMainContent(pageId);
     populateFeatures(pageId);
+    populateProcessSteps(pageId);
+    populateBookingOptions(pageId);
     console.log('✅ Content population completed');
     
     if (pageId === 'homepage') {
+      populateHomepageAllSections(pageId);
       populateJourneySteps(pageId);
     }
 
