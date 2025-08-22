@@ -18,7 +18,6 @@
         "section_id": "two_column_1",
         "content_type": "two_column",
         "title": "Personalized For You",
-        "description": "Transform your style dreams into reality",
         "order_position": 2,
         "is_active": true
       },
@@ -26,7 +25,6 @@
         "section_id": "two_column_2",
         "content_type": "two_column",
         "title": "Made To Measure",
-        "description": "Tailored to perfection",
         "order_position": 3,
         "is_active": true
       }
@@ -416,40 +414,30 @@
       {
         "section_id": "process_step_2",
         "content_type": "process_step",
-        "title": "2. Material Selection",
-        "description": "Fabric: Choose cotton, linen, silk, or velvet. Threads: Use embroidery floss in various colors. Tools: Gather embroidery needles, hoops, scissors, and tracing tools.",
         "order_position": 4,
         "is_active": true
       },
       {
         "section_id": "process_step_3",
         "content_type": "process_step",
-        "title": "3. Transferring the Design",
-        "description": "Techniques: Use tracing paper, water-soluble pens, or friction pens to transfer the design onto the fabric. Accuracy: Ensure every detail is preserved to guide your stitching.",
         "order_position": 5,
         "is_active": true
       },
       {
         "section_id": "process_step_4",
         "content_type": "process_step",
-        "title": "4. Preparing the Fabric",
-        "description": "Hooping: Stretch the fabric tightly in an embroidery hoop or frame to prevent wrinkles and distortion. Stabilizing: This step ensures clean, symmetrical stitching.",
         "order_position": 6,
         "is_active": true
       },
       {
         "section_id": "process_step_5",
         "content_type": "process_step",
-        "title": "5. Stitching the Design",
-        "description": "Basic Stitches: Start with foundational stitches like running stitch, back stitch, stem stitch, and satin stitch. Layering: Add texture and depth with advanced techniques.",
         "order_position": 7,
         "is_active": true
       },
       {
         "section_id": "process_step_6",
         "content_type": "process_step",
-        "title": "6. Finishing Touches",
-        "description": "Trimming Threads: Neatly trim excess thread and secure the back. Backing: Optionally add felt or fabric backing for durability. Display: Frame your piece or turn it into wearable art.",
         "order_position": 8,
         "is_active": true
       }
