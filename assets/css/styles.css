@@ -824,11 +824,32 @@ body {
   }
   
   .section-header {
-    padding: 2rem 1rem 1rem;
+    padding: 1rem 1rem 0.5rem;
   }
   
   .section-header h2 {
     font-size: 1.8rem;
+  }
+  
+  /* Reduce spacing for specific sections on mobile */
+  .craftsmanship-section {
+    padding: 1rem 0 2rem;
+  }
+  
+  .journey-section {
+    padding: 1.5rem 0 2rem;
+  }
+  
+  .latest-pieces {
+    padding: 1rem 0 2rem;
+  }
+  
+  .prive-section {
+    padding: 1rem 0 2rem;
+  }
+  
+  .prive-section .section-header {
+    padding: 1rem 1rem 0.5rem;
   }
   
   .journey-text h3 {
