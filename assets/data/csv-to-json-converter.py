@@ -44,6 +44,13 @@ def convert_csv_to_json(csv_file, json_file):
                 colors = [color.strip() for color in row['colors'].split(',')]
                 sizes = [size.strip() for size in row['sizes'].split(',')]
                 
+                # Build gallery array with all available images
+                gallery = [row['image']]  # Main image always first
+                if row.get('image_2') and row['image_2'].strip():
+                    gallery.append(row['image_2'])
+                if row.get('image_3') and row['image_3'].strip():
+                    gallery.append(row['image_3'])
+                
                 # Create product object
                 product = {
                     'id': row['id'],
@@ -51,7 +58,10 @@ def convert_csv_to_json(csv_file, json_file):
                     'category': row['category'],
                     'description': row['description'],
                     'image': row['image'],
-                    'gallery': [row['image']],  # Single image for now
+                    'image_2': row.get('image_2', ''),
+                    'image_3': row.get('image_3', ''),
+                    'video_url': row.get('video_url', ''),
+                    'gallery': gallery,
                     'prices': prices,
                     'colors': colors,
                     'sizes': sizes,

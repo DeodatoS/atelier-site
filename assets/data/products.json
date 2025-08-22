@@ -10,8 +10,13 @@
           "category": "prive_ceremonial",
           "description": "Elegant DEO 129 silk evening gown with intricate hand-embroidered details",
           "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_3": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+          "video_url": "https://www.youtube.com/watch?v=example123",
           "gallery": [
-            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446"
+            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256"
           ],
           "prices": {
             "standard": 2800,
@@ -40,8 +45,13 @@
           "category": "prive_ceremonial",
           "description": "Tailored ceremonial blazer with gold thread detailing",
           "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+          "image_2": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "video_url": "",
           "gallery": [
-            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256"
+            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
           ],
           "prices": {
             "standard": 1800,
@@ -76,8 +86,13 @@
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
           "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_2": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+          "image_3": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+          "video_url": "",
           "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446"
           ],
           "prices": {
             "standard": 980,
@@ -113,8 +128,12 @@
           "category": "kids",
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_2": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+          "image_3": "",
+          "video_url": "",
           "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256"
           ],
           "prices": {
             "standard": 380,
@@ -146,8 +165,12 @@
           "category": "kids",
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_3": "",
+          "video_url": "",
           "gallery": [
-            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256"
+            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256",
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
           ],
           "prices": {
             "standard": 380,
@@ -179,8 +202,12 @@
           "category": "kids",
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_2": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+          "image_3": "",
+          "video_url": "",
           "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446"
           ],
           "prices": {
             "standard": 380,

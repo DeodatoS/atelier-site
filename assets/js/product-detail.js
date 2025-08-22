@@ -109,7 +109,8 @@ function setMainImage(imageSrc, thumbnailIndex) {
   mainImage.src = imageSrc;
   
   // Update active state on thumbnails
-  document.querySelectorAll('.thumbnail').forEach((thumb, index) => {
+  const thumbnails = document.querySelectorAll('.product-thumbnails img');
+  thumbnails.forEach((thumb, index) => {
     thumb.classList.remove('active');
     if (index === thumbnailIndex) {
       thumb.classList.add('active');
@@ -144,24 +145,27 @@ function populateProductDetails(productData) {
   mainImage.src = product.image;
   mainImage.alt = product.name;
   
-  // Thumbnails - use main image for all 3 thumbnails for now
+  // Thumbnails - use gallery array with multiple images
   const thumbnail1 = document.getElementById('thumbnail-1');
   const thumbnail2 = document.getElementById('thumbnail-2');
   const thumbnail3 = document.getElementById('thumbnail-3');
   
-  // Ensure thumbnails exist and set their sources
-  if (thumbnail1) {
-    thumbnail1.src = product.image;
-    thumbnail1.style.display = 'block';
-  }
-  if (thumbnail2) {
-    thumbnail2.src = product.image;
-    thumbnail2.style.display = 'block';
-  }
-  if (thumbnail3) {
-    thumbnail3.src = product.image;
-    thumbnail3.style.display = 'block';
-  }
+  const thumbnails = [thumbnail1, thumbnail2, thumbnail3];
+  const images = [product.image, product.image_2, product.image_3].filter(img => img && img.trim());
+  
+  // Set up thumbnails with available images
+  thumbnails.forEach((thumbnail, index) => {
+    if (thumbnail) {
+      if (images[index]) {
+        thumbnail.src = images[index];
+        thumbnail.style.display = 'block';
+        thumbnail.onclick = () => setMainImage(images[index], index);
+        thumbnail.classList.toggle('active', index === 0);
+      } else {
+        thumbnail.style.display = 'none';
+      }
+    }
+  });
   
   // Product information
   document.getElementById('product-name').textContent = product.name;
