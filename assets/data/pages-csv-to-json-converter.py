@@ -23,8 +23,13 @@ def csv_to_json():
                 content_type = row['content_type']
                 
                 # Convert string boolean to actual boolean
-                is_active = row['is_active'].lower() == 'true'
-                order_position = int(row['order_position']) if row['order_position'] else 0
+                is_active = row['is_active'].lower() == 'true' if row['is_active'] else True
+                
+                # Safe conversion of order_position
+                try:
+                    order_position = int(row['order_position']) if row['order_position'] and row['order_position'].isdigit() else 0
+                except (ValueError, AttributeError):
+                    order_position = 0
                 
                 content_item = {
                     'section_id': row['section_id'],
@@ -54,7 +59,7 @@ def csv_to_json():
     # Sort content by order_position within each content type
     for page_id in pages_data:
         for content_type in pages_data[page_id]:
-            pages_data[page_id][content_type].sort(key=lambda x: x.get('order_position', 0))
+            pages_data[page_id][content_type].sort(key=lambda x: int(x.get('order_position', 0)) if str(x.get('order_position', 0)).isdigit() else 0)
     
     # Convert defaultdict to regular dict for JSON serialization
     final_data = {}
