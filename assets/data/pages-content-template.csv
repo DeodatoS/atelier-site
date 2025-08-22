@@ -55,12 +55,12 @@ our_atelier,text_2,text_content,,,We are proud to partner with master artisans w
 our_atelier,text_3,text_content,,,Elisa Sanna is more than a brand. It's a family bound by respect,creativity,and a commitment to timeless Italian craftsmanship.,,
 hand_embroidery,hero,hero_section,ELISA SANNA,HAND EMBROIDERY,"Discover the ancient art of hand embroidery, where every thread tells a story of tradition and mastery.",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80,Hand embroidery hero,1,true
 hand_embroidery,main_section,main_content,HAND EMBROIDERY,,"Hand embroidery is the art of decorating fabric using a needle and thread. Unlike machine embroidery, it's entirely done by hand allowing for a personal touch, intricate details, and endless creative possibilities.",https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80,Hand embroidery craftsmanship,2,true
-hand_embroidery,process_step_1,process_step,1. Ideation & Design,,"Conceptualization: Begin with a theme or inspiration. Sketching: Create a design on paper or digitally. Customization: Tailor the design to suit the fabric, purpose, and personal style.",,,3,true
-hand_embroidery,process_step_2,process_step,2. sdsdsdsdsd,,,,,4,true
-hand_embroidery,process_step_3,process_step,,,,,,5,true
-hand_embroidery,process_step_4,process_step,,,,,,6,true
-hand_embroidery,process_step_5,process_step,,,,,,7,true
-hand_embroidery,process_step_6,process_step,,,,,,8,true
+hand_embroidery,process_step_1,process_step,prova booo,,"salta la quaglia Conceptualization: Begin with a theme or inspiration. Sketching: Create a design on paper or digitally. Customization: Tailor the design to suit the fabric, purpose, and personal style.",,,3,true
+hand_embroidery,process_step_2,process_step,ignorata,ignorata,,,,4,true
+hand_embroidery,process_step_3,process_step,ignorata,ignorata,,,,5,true
+hand_embroidery,process_step_4,process_step,ignorata,ignorata,,,,6,true
+hand_embroidery,process_step_5,process_step,ignorata,ignorata,,,,7,true
+hand_embroidery,process_step_6,process_step,ignorata,ignorata,,,,8,true
 the_designer,hero,hero_section,THE DESIGNER,Elisa Sanna,Get to know her,https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80,The designer Elisa Sanna,1,true
 the_designer,intro_section,main_content,,,Hand embroidery is the art of decorating fabric using a needle and thread. Unlike machine embroidery,it's entirely done by hand,allowing for a personal touch,intricate detail,and endless creative possibilities.
 the_designer,philosophy_1,text_content,,,We believe in building garments through deep research?with those who share our values,heritage,and our future. Understanding how our manufacturers work is not just practical and essential to us.,,
