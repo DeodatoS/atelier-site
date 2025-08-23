@@ -295,8 +295,8 @@
       {
         "section_id": "process_step_1",
         "content_type": "process_step",
-        "title": "First step: Appointment",
-        "description": "Schedule them to Mauro's specialist by appointment only. Please note that fittings can be made without immediate attention of placing an order.",
+        "title": "Realizzazione e prove",
+        "description": "Una volta definita la proposta, il capo prende forma grazie al lavoro delle sarte dell?Atelier. Le prove consentono di perfezionare vestibilit? e dettagli, fino al risultato finale: un abito che racconta una storia personale, attraverso la visione stilistica di Elisa Sanna.",
         "order_position": 6,
         "is_active": true
       },
