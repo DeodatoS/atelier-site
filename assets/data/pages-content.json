@@ -277,8 +277,8 @@
       {
         "section_id": "feature_2",
         "content_type": "feature",
-        "title": "Fit and Design",
-        "description": "Made to measure starts with an existing base pattern that is modified to fit the client. Options like fabric, style and other design elements are available, but the structure of the garment remains largely pre-determined.",
+        "title": "Creazione o personalizzazione",
+        "description": "Il servizio pu? svilupparsi in due direzioni:\n    ? la realizzazione di un modello ideato e disegnato interamente per la cliente, unico e irripetibile;\n    ? la trasformazione di un modello esistente della collezione attraverso scelte mirate di tessuti, colori, accessori e dettagli di stile.",
         "order_position": 4,
         "is_active": true
       },
