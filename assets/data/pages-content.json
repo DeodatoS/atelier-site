@@ -17,14 +17,14 @@
       {
         "section_id": "two_column_1",
         "content_type": "two_column",
-        "title": "Personalized For You",
+        "title": "Personalizzazione",
         "order_position": 2,
         "is_active": true
       },
       {
         "section_id": "two_column_2",
         "content_type": "two_column",
-        "title": "Made To Measure",
+        "title": "Su Misura",
         "order_position": 3,
         "is_active": true
       }
