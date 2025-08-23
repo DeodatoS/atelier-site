@@ -155,6 +155,7 @@
         "section_id": "feature_1",
         "content_type": "feature",
         "title": "Accoglienza in Atelier",
+        "description": "All?interno dell?Atelier milanese, la cliente viene accolta in un ambiente riservato e accompagnata nella scelta del modello di collezione pi? vicino al suo stile e alle sue esigenze.",
         "order_position": 3,
         "is_active": true
       },
