@@ -156,16 +156,16 @@
       {
         "section_id": "feature_1",
         "content_type": "feature",
-        "title": "Precision",
-        "description": "A beautifully tailored custom garment created from a thoughtful assessment to perfectly reflect the client's measurements and personal preferences.",
+        "title": "Accoglienza in Atelier",
+        "description": "All?interno dell?Atelier milanese, la cliente viene accolta in un ambiente riservato e accompagnata nella scelta del modello di collezione pi? vicino al suo stile e alle sue esigenze.",
         "order_position": 3,
         "is_active": true
       },
       {
         "section_id": "feature_2",
         "content_type": "feature",
-        "title": "Fit and Design",
-        "description": "Made-to-measure provides a refined fit that surpasses off-the-rack options, ensuring a tailored silhouette that flatters your measurements and preferences.",
+        "title": "Presa misure",
+        "description": "Una volta stabilito il modello, una sarta dedicata segue ogni fase del processo, rilevando le misure personali traducendole in proporzioni armoniose. Questa passaggio permette di tradurre il modello scelto in proporzioni armoniche, garantendo una linea equilibrata e una vestibilit? corretta in base alla propria fisionomia.",
         "order_position": 4,
         "is_active": true
       },
