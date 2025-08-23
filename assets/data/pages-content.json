@@ -41,7 +41,7 @@
       {
         "section_id": "craftsmanship_section",
         "content_type": "section_header",
-        "title": "Our Craftsmanship and Values",
+        "title": "ARTIGINALITA' E VALORI",
         "description": "Curated looks for women with our artisans",
         "order_position": 5,
         "is_active": true
@@ -49,7 +49,7 @@
       {
         "section_id": "journey_section",
         "content_type": "section_header",
-        "title": "Our Journey",
+        "title": "ARCHIVIO",
         "description": "Discover the story behind each creation through our craftsmanship journey",
         "order_position": 6,
         "is_active": true
