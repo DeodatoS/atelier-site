@@ -133,7 +133,6 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "description": "Il servizio Made to Measure di Elisa Sanna rappresenta la massima espressione della sartoria del brand. Ogni capo nasce da un modello esistente della collezione e viene ricreato sulle misure della cliente, trasformandosi in un abito unico per precisione e vestibilit?.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "image_alt": "Made to measure hero",
         "order_position": 1,
