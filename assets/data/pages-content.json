@@ -133,7 +133,7 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "description": "Il servizio Made to Measure di Elisa Sanna trasforma i modelli della collezione in capi unici, realizzati sulle misure personali di ogni cliente.",
+        "description": "Il servizio Made to Measure di Elisa Sanna trasforma i modelli della collezione in capi unici, realizzati sulle misure personali di ogni cliente. Un percorso sartoriale esclusivo che unisce precisione, cura artigianale e raffinatezza, per un?eleganza che veste in modo impeccabile e senza tempo.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "image_alt": "Made to measure hero",
         "order_position": 1,
@@ -144,7 +144,6 @@
       {
         "section_id": "main_section",
         "content_type": "main_content",
-        "description": "Un percorso sartoriale esclusivo che unisce precisione, cura artigianale e raffinatezza, per un?eleganza che veste in modo impeccabile e senza tempo.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         "image_alt": "Made to measure consultation",
         "order_position": 2,
