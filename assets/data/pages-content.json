@@ -128,7 +128,7 @@
       }
     ]
   },
-  "": {
+  "made_to_measure": {
     "hero_section": [
       {
         "section_id": "hero",
@@ -140,9 +140,7 @@
         "order_position": 1,
         "is_active": true
       }
-    ]
-  },
-  "made_to_measure": {
+    ],
     "main_content": [
       {
         "section_id": "main_section",
