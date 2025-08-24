@@ -18,6 +18,7 @@
         "content_type": "two_column",
         "title": "Personalizzazione",
         "subtitle": "Prenota il tuo appuntamento",
+        "description": "Prenota il tuo appuntamento",
         "order_position": 2,
         "is_active": true
       },
