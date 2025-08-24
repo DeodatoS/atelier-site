@@ -17,6 +17,7 @@
         "section_id": "two_column_1",
         "content_type": "two_column",
         "title": "Personalizzazione",
+        "subtitle": "Prenota il tuo appuntamento",
         "order_position": 2,
         "is_active": true
       },
@@ -24,6 +25,7 @@
         "section_id": "two_column_2",
         "content_type": "two_column",
         "title": "Su Misura",
+        "subtitle": "Prenota il tuo appuntamento",
         "order_position": 3,
         "is_active": true
       }
