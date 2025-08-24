@@ -324,10 +324,13 @@ async function loadProducts() {
   try {
     // Try to fetch from JSON file first (for production)
     try {
+      console.log('🔄 Attempting to fetch products.json...');
       const response = await fetch('../assets/data/products.json');
+      console.log('📡 Fetch response status:', response.status);
       if (response.ok) {
         const data = await response.json();
-        console.log('Loaded products from JSON file');
+        console.log('✅ Loaded products from JSON file');
+        console.log('📊 Products data:', data);
         
         // Try to load and merge category hero images
         const heroImages = await loadCategoryHeroImages();
@@ -345,7 +348,8 @@ async function loadProducts() {
         return data;
       }
     } catch (fetchError) {
-      console.log('Fetch failed, using embedded data for local testing');
+      console.log('❌ Fetch failed, using embedded data for local testing');
+      console.log('🔍 Fetch error:', fetchError);
     }
     
     // Fallback to embedded data (for local testing) - but still try to load hero images
