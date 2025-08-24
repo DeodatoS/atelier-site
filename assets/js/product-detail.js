@@ -18,14 +18,18 @@ async function loadProductsData() {
   
   try {
     // Try to fetch from JSON file
+    console.log('🔄 Product detail: Attempting to fetch products.json...');
     const response = await fetch('../assets/data/products.json');
+    console.log('📡 Product detail: Fetch response status:', response.status);
     if (response.ok) {
       const data = await response.json();
-      console.log('Loaded products from JSON file');
+      console.log('✅ Product detail: Loaded products from JSON file');
+      console.log('📊 Product detail: Products data:', data);
       return data;
     }
   } catch (fetchError) {
-    console.log('Fetch failed, falling back to embedded data');
+    console.log('❌ Product detail: Fetch failed, falling back to embedded data');
+    console.log('🔍 Product detail: Fetch error:', fetchError);
   }
   
   // If products.js hasn't loaded PRODUCTS_DATA yet, wait a bit and try again
@@ -42,13 +46,19 @@ async function loadProductsData() {
 
 // Find product by ID across all categories
 function findProductById(data, productId) {
+  console.log('🔍 Product detail: Looking for product ID:', productId);
+  console.log('🔍 Product detail: Available categories:', Object.keys(data.categories));
+  
   for (const categoryKey in data.categories) {
     const category = data.categories[categoryKey];
+    console.log(`🔍 Product detail: Checking category ${categoryKey}, products:`, category.products.map(p => p.id));
     const product = category.products.find(p => p.id === productId);
     if (product) {
+      console.log('✅ Product detail: Found product:', product);
       return { product, category: categoryKey, categoryData: category };
     }
   }
+  console.log('❌ Product detail: Product not found');
   return null;
 }
 
