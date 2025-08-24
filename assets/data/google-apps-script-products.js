@@ -39,9 +39,10 @@ function showSystemInfo() {
   ui.alert(
     '🚀 Sistema Prodotti Elisa Sanna',
     '📤 Clicca "Pubblica Prodotti sul Sito" per aggiornare il sito web\n\n' +
-    '⏱️ Il sistema ora pubblica SOLO quando richiesto\n' +
+    '🚀 SISTEMA COMPLETAMENTE AUTOMATICO\n' +
+    '✅ CSV → JSON → Sito Web (tutto in un click)\n' +
     '✅ Modifica tutti i prodotti che vuoi, poi pubblica una volta sola\n\n' +
-    '🔄 Tempo di aggiornamento: 2-3 minuti',
+    '🔄 Tempo di aggiornamento: 1-2 minuti',
     ui.ButtonSet.OK
   );
 }
@@ -64,14 +65,25 @@ function syncProductsToGitHub() {
     const csvContent = sheetToCsv(sheet);
     console.log('✅ Products CSV generated');
     
-    // Upload to GitHub
-    const result = uploadToGitHub(csvContent);
+    // Upload CSV to GitHub
+    const csvResult = uploadToGitHub(csvContent, CONFIG.CSV_FILE_PATH);
     
-    if (result.success) {
-      console.log('✅ Products successfully synced to GitHub!');
-      sendNotification('✅ Products Updated', 'Products data has been successfully updated on the website.');
+    if (csvResult.success) {
+      console.log('✅ Products CSV successfully synced to GitHub!');
+      
+      // Convert CSV to JSON and upload JSON as well
+      const jsonContent = convertCsvToJson(csvContent);
+      const jsonResult = uploadToGitHub(jsonContent, 'assets/data/products.json');
+      
+      if (jsonResult.success) {
+        console.log('✅ Products JSON successfully synced to GitHub!');
+        sendNotification('✅ Products Updated', 'Products data (CSV + JSON) has been successfully updated on the website.');
+      } else {
+        console.log('⚠️ JSON upload failed, but CSV was successful');
+        sendNotification('⚠️ Partial Update', 'Products CSV updated, but JSON conversion failed.');
+      }
     } else {
-      throw new Error(`GitHub upload failed: ${result.error}`);
+      throw new Error(`GitHub upload failed: ${csvResult.error}`);
     }
     
   } catch (error) {
@@ -118,11 +130,11 @@ function sheetToCsv(sheet) {
 }
 
 /**
- * 🚀 Upload CSV content to GitHub
+ * 🚀 Upload content to GitHub
  */
-function uploadToGitHub(csvContent) {
+function uploadToGitHub(content, filePath) {
   try {
-    const url = `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/contents/${CONFIG.CSV_FILE_PATH}`;
+    const url = `https://api.github.com/repos/${CONFIG.GITHUB_OWNER}/${CONFIG.GITHUB_REPO}/contents/${filePath}`;
     
     console.log('🔍 Checking current file on GitHub...');
     
@@ -149,8 +161,10 @@ function uploadToGitHub(csvContent) {
     
     // Prepare commit data
     const commitData = {
-      message: `Update products from Google Sheets - ${new Date().toISOString()}`,
-      content: Utilities.base64Encode(csvContent),
+      message: filePath.includes('.json') ? 
+        `Auto-convert products CSV to JSON - ${new Date().toISOString()}` :
+        `Update products CSV from Google Sheets - ${new Date().toISOString()}`,
+      content: Utilities.base64Encode(content),
       branch: CONFIG.GITHUB_BRANCH
     };
     
@@ -187,6 +201,140 @@ function uploadToGitHub(csvContent) {
     console.error('❌ Upload error:', error);
     return { success: false, error: error.toString() };
   }
+}
+
+/**
+ * 🔄 Convert CSV content to JSON format
+ */
+function convertCsvToJson(csvContent) {
+  try {
+    console.log('🔄 Converting CSV to JSON...');
+    
+    const lines = csvContent.split('\n');
+    const headers = lines[0].split(',').map(h => h.trim());
+    
+    // Category information
+    const categoryInfo = {
+      'prive_ceremonial': {
+        'name': 'Couture e Cerimonia',
+        'description': 'Exquisite pieces for special occasions and refined experiences'
+      },
+      'collections': {
+        'name': 'Collections',
+        'description': 'Curated seasonal collections showcasing contemporary Italian elegance'
+      },
+      'kids': {
+        'name': 'Kids',
+        'description': 'Charming and comfortable pieces designed especially for children'
+      }
+    };
+    
+    const productsByCategory = {};
+    
+    // Parse CSV rows (skip header)
+    for (let i = 1; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (!line) continue;
+      
+      // Simple CSV parsing
+      const cells = parseCsvLine(line);
+      if (cells.length < headers.length) continue;
+      
+      const row = {};
+      headers.forEach((header, index) => {
+        row[header] = cells[index] || '';
+      });
+      
+      // Skip empty rows
+      if (!row.id || !row.name || !row.image) continue;
+      
+      // Convert prices
+      const prices = {
+        standard: parseInt(row.prices_standard) || 0,
+        minimum: parseInt(row.prices_minimum) || 0,
+        maximum: parseInt(row.prices_maximum) || 0
+      };
+      
+      // Convert comma-separated lists
+      const colors = row.colors ? row.colors.split(',').map(c => c.trim()) : [];
+      const sizes = row.sizes ? row.sizes.split(',').map(s => s.trim()) : [];
+      
+      // Build gallery array
+      const gallery = [row.image];
+      if (row.image_2 && row.image_2.trim()) gallery.push(row.image_2);
+      if (row.image_3 && row.image_3.trim()) gallery.push(row.image_3);
+      
+      // Create product object
+      const product = {
+        id: row.id,
+        name: row.name,
+        category: row.category,
+        description: row.description,
+        image: row.image,
+        image_2: row.image_2 || '',
+        image_3: row.image_3 || '',
+        video_url: row.video_url || '',
+        gallery: gallery,
+        prices: prices,
+        colors: colors,
+        sizes: sizes,
+        fabric: row.fabric,
+        madeTo: row.madeTo
+      };
+      
+      // Add to category
+      if (!productsByCategory[row.category]) {
+        productsByCategory[row.category] = [];
+      }
+      productsByCategory[row.category].push(product);
+    }
+    
+    // Create final JSON structure
+    const jsonStructure = {
+      categories: {}
+    };
+    
+    for (const category in productsByCategory) {
+      jsonStructure.categories[category] = {
+        name: categoryInfo[category] ? categoryInfo[category].name : category,
+        description: categoryInfo[category] ? categoryInfo[category].description : '',
+        products: productsByCategory[category]
+      };
+    }
+    
+    const jsonContent = JSON.stringify(jsonStructure, null, 2);
+    console.log(`✅ Converted ${Object.keys(productsByCategory).length} categories to JSON`);
+    
+    return jsonContent;
+    
+  } catch (error) {
+    console.error('❌ Error converting CSV to JSON:', error);
+    throw error;
+  }
+}
+
+/**
+ * 📝 Parse CSV line with proper quote handling
+ */
+function parseCsvLine(line) {
+  const cells = [];
+  let current = '';
+  let inQuotes = false;
+  
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === ',' && !inQuotes) {
+      cells.push(current);
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  cells.push(current); // Add the last cell
+  
+  return cells;
 }
 
 /**
