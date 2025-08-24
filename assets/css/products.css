@@ -20,7 +20,69 @@
   margin-top: 205px;
 }
 
-/* Category Hero */
+/* Category Hero Image */
+.category-hero-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+}
+
+.hero-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Category Hero (fallback) */
 .category-hero {
   padding: 60px 0 40px;
   text-align: center;
@@ -383,11 +445,39 @@
   .products-main {
     margin-top: 160px;
   }
+  
+  .category-hero-image {
+    height: 400px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 480px) {
   .products-main {
     margin-top: 100px;
+  }
+  
+  .category-hero-image {
+    height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 15px;
   }
   
   .category-title {

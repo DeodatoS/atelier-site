@@ -52,8 +52,21 @@
 
   <!-- Main Content -->
   <main class="products-main">
-    <!-- Category Header -->
-    <section class="category-hero">
+    <!-- Category Hero Image -->
+    <section class="category-hero-image" id="category-hero-image" style="display: none;">
+      <div class="hero-image-container">
+        <img id="hero-image" src="" alt="" class="hero-image">
+        <div class="hero-overlay">
+          <div class="container">
+            <h1 id="hero-title" class="hero-title">Products</h1>
+            <p id="hero-description" class="hero-description">Discover our exquisite collection</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Header (fallback when no hero image) -->
+    <section class="category-hero" id="category-hero-fallback">
       <div class="container">
         <h1 id="category-title" class="category-title">Products</h1>
         <p id="category-description" class="category-description">Discover our exquisite collection</p>

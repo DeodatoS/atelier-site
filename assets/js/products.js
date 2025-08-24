@@ -328,15 +328,44 @@ async function loadProducts() {
       if (response.ok) {
         const data = await response.json();
         console.log('Loaded products from JSON file');
+        
+        // Try to load and merge category hero images
+        const heroImages = await loadCategoryHeroImages();
+        if (heroImages) {
+          // Merge hero images into categories
+          Object.keys(data.categories).forEach(categoryId => {
+            if (heroImages[categoryId]) {
+              data.categories[categoryId].heroImage = heroImages[categoryId].hero_image_url;
+              data.categories[categoryId].heroImageAlt = heroImages[categoryId].hero_image_alt;
+            }
+          });
+          console.log('Merged category hero images with products data');
+        }
+        
         return data;
       }
     } catch (fetchError) {
       console.log('Fetch failed, using embedded data for local testing');
     }
     
-    // Fallback to embedded data (for local testing)
+    // Fallback to embedded data (for local testing) - but still try to load hero images
     console.log('Using embedded products data');
-    return PRODUCTS_DATA;
+    const data = JSON.parse(JSON.stringify(PRODUCTS_DATA)); // Deep copy
+    
+    // Try to load and merge category hero images even with embedded data
+    const heroImages = await loadCategoryHeroImages();
+    if (heroImages) {
+      // Merge hero images into categories
+      Object.keys(data.categories).forEach(categoryId => {
+        if (heroImages[categoryId]) {
+          data.categories[categoryId].heroImage = heroImages[categoryId].hero_image_url;
+          data.categories[categoryId].heroImageAlt = heroImages[categoryId].hero_image_alt;
+        }
+      });
+      console.log('Merged category hero images with embedded products data');
+    }
+    
+    return data;
   } catch (error) {
     console.error('Error loading products:', error);
     return null;
@@ -491,6 +520,85 @@ function viewDetails(productId) {
   window.location.href = `product-detail.html?id=${productId}`;
 }
 
+// Load category hero images from pages-content system
+async function loadCategoryHeroImages() {
+  try {
+    const response = await fetch('../assets/data/pages-content.json');
+    if (response.ok) {
+      const data = await response.json();
+      console.log('Loaded pages content data');
+      
+      // Extract hero images for categories
+      const heroImages = {};
+      ['prive_ceremonial', 'collections', 'kids'].forEach(categoryId => {
+        if (data[categoryId] && data[categoryId].category_hero && data[categoryId].category_hero.length > 0) {
+          const heroData = data[categoryId].category_hero[0];
+          if (heroData.is_active) {
+            heroImages[categoryId] = {
+              hero_image_url: heroData.image_url,
+              hero_image_alt: heroData.image_alt
+            };
+          }
+        }
+      });
+      
+      console.log('Extracted category hero images:', heroImages);
+      return heroImages;
+    }
+  } catch (fetchError) {
+    console.log('Pages content fetch failed, using embedded data');
+  }
+  return null;
+}
+
+// Setup hero section with image or fallback
+function setupHeroSection(categoryData) {
+  console.log('🔍 Setting up hero section for:', categoryData.name);
+  console.log('🔍 Category data:', categoryData);
+  
+  const heroImageSection = document.getElementById('category-hero-image');
+  const heroFallbackSection = document.getElementById('category-hero-fallback');
+  const heroImage = document.getElementById('hero-image');
+  const heroTitle = document.getElementById('hero-title');
+  const heroDescription = document.getElementById('hero-description');
+  const categoryTitle = document.getElementById('category-title');
+  const categoryDescription = document.getElementById('category-description');
+  
+  console.log('🔍 DOM elements found:', {
+    heroImageSection: !!heroImageSection,
+    heroFallbackSection: !!heroFallbackSection,
+    heroImage: !!heroImage,
+    heroTitle: !!heroTitle,
+    heroDescription: !!heroDescription
+  });
+  
+  if (categoryData.heroImage) {
+    console.log(`✅ Hero image found: ${categoryData.heroImage}`);
+    
+    // Show hero image section
+    heroImageSection.style.display = 'flex';
+    heroFallbackSection.style.display = 'none';
+    
+    // Set image and content
+    heroImage.src = categoryData.heroImage;
+    heroImage.alt = categoryData.heroImageAlt || `${categoryData.name} collection`;
+    heroTitle.textContent = categoryData.name;
+    heroDescription.textContent = categoryData.description;
+    
+    console.log(`✅ Hero image section displayed for ${categoryData.name}`);
+  } else {
+    console.log(`⚠️ No hero image found for ${categoryData.name}, using fallback`);
+    
+    // Show fallback section
+    heroImageSection.style.display = 'none';
+    heroFallbackSection.style.display = 'block';
+    
+    // Set fallback content
+    categoryTitle.textContent = categoryData.name;
+    categoryDescription.textContent = categoryData.description;
+  }
+}
+
 // Initialize page
 async function initializePage() {
   // Only run on products pages (not product-detail pages)
@@ -515,10 +623,11 @@ async function initializePage() {
     allProducts = categoryData.products;
     filteredProducts = [...allProducts];
     
+    // Setup hero image or fallback
+    setupHeroSection(categoryData);
+    
     // Update page title and content
     document.getElementById('page-title').textContent = `${categoryData.name} - ELISA SANNA`;
-    document.getElementById('category-title').textContent = categoryData.name;
-    document.getElementById('category-description').textContent = categoryData.description;
     
     // Populate filters and display products
     populateFilters(allProducts);
