@@ -41,20 +41,21 @@
 .pfy-hero-content {
   text-align: center;
   color: white;
-  max-width: 800px;
-  padding: 0 2rem;
+  max-width: 400px;
+  padding: 1rem;
 }
 
 .pfy-hero-logo {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin: 0;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  line-height: 1.1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  white-space: nowrap;
 }
 
 /* Personalized Section */
@@ -279,12 +280,13 @@
   }
   
   .pfy-hero-logo {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
   
   .pfy-hero-content {
-    padding: 0 1rem;
+    padding: 0.5rem;
+    max-width: 300px;
   }
   
   .pfy-personalised-content {
@@ -341,11 +343,12 @@
   }
   
   .pfy-hero-logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
   
   .pfy-hero-content {
-    padding: 0 0.5rem;
+    padding: 0.5rem;
+    max-width: 250px;
   }
 }

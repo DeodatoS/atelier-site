@@ -23,31 +23,33 @@
 .mtm-hero-content {
   text-align: center;
   color: white;
-  max-width: 800px;
-  padding: 0 2rem;
+  max-width: 500px;
+  padding: 1rem;
 }
 
 .mtm-hero-title {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 1rem;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  white-space: nowrap;
 }
 
 .mtm-hero-subtitle {
   font-family: 'Lato', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 /* Made to Measure Intro Section */
@@ -297,16 +299,17 @@
   }
   
   .mtm-hero-title {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
   
   .mtm-hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   
   .mtm-hero-content {
-    padding: 0 1rem;
+    padding: 0.5rem;
+    max-width: 350px;
   }
   
   .mtm-services-grid,
@@ -345,16 +348,17 @@
   }
   
   .mtm-hero-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
   
   .mtm-hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
   .mtm-hero-content {
-    padding: 0 0.5rem;
+    padding: 0.5rem;
+    max-width: 250px;
   }
   
   .container {
