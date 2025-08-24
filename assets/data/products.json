@@ -8,7 +8,7 @@
           "id": "pc001",
           "name": "Silk deo 1Evening Gown",
           "category": "prive_ceremonial",
-          "description": "ABITO IN DOPPIO CREPE DI LANA",
+          "description": "DEO ABITO IN DOPPIO CREPE DI LANA",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
           "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
           "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
@@ -19,7 +19,7 @@
             "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
           ],
           "prices": {
-            "standard": 850,
+            "standard": 0,
             "minimum": 2400,
             "maximum": 3500
           },
