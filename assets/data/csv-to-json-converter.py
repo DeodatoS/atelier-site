@@ -33,12 +33,20 @@ def convert_csv_to_json(csv_file, json_file):
             reader = csv.DictReader(file)
             
             for row in reader:
+                # Skip empty rows or rows without essential data
+                if not row.get('id') or not row.get('name') or not row.get('image'):
+                    continue
+                    
                 # Convert prices to integers
-                prices = {
-                    'standard': int(row['prices_standard']),
-                    'minimum': int(row['prices_minimum']),
-                    'maximum': int(row['prices_maximum'])
-                }
+                try:
+                    prices = {
+                        'standard': int(row['prices_standard']) if row['prices_standard'] else 0,
+                        'minimum': int(row['prices_minimum']) if row['prices_minimum'] else 0,
+                        'maximum': int(row['prices_maximum']) if row['prices_maximum'] else 0
+                    }
+                except ValueError:
+                    print(f"⚠️ Skipping row with invalid price data: {row.get('id', 'unknown')}")
+                    continue
                 
                 # Convert comma-separated lists
                 colors = [color.strip() for color in row['colors'].split(',')]
