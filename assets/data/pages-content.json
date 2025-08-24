@@ -676,7 +676,7 @@
         "content_type": "category_hero",
         "title": "Couture e Cerimonia",
         "description": "Exquisite pieces for special occasions and refined experiences",
-        "image_url": "https://images.unsplash.com/photo-1566479179817-c63f37e91285?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "image_alt": "Elegant formal gown for ceremonial occasions",
         "order_position": 1,
         "is_active": true
@@ -690,7 +690,7 @@
         "content_type": "category_hero",
         "title": "Collections",
         "description": "Curated seasonal collections showcasing contemporary Italian elegance",
-        "image_url": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "image_alt": "Contemporary fashion collection showcase",
         "order_position": 1,
         "is_active": true
@@ -704,7 +704,7 @@
         "content_type": "category_hero",
         "title": "Kids",
         "description": "Charming and comfortable pieces designed especially for children",
-        "image_url": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "image_alt": "Children's fashion and special occasion wear",
         "order_position": 1,
         "is_active": true
