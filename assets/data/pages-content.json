@@ -34,7 +34,7 @@
       {
         "section_id": "couture_section",
         "content_type": "section_header",
-        "title": "COUTURE E CERIMONIA",
+        "title": "Couture e cerimonia",
         "description": "Curated looks for special occasions and refined experiences",
         "order_position": 4,
         "is_active": true
@@ -42,7 +42,7 @@
       {
         "section_id": "craftsmanship_section",
         "content_type": "section_header",
-        "title": "ARTIGIANALITA' E VALORI",
+        "title": "Artigianalita' e valori",
         "description": "Curated looks for women with our artisans",
         "order_position": 5,
         "is_active": true
@@ -50,7 +50,7 @@
       {
         "section_id": "journey_section",
         "content_type": "section_header",
-        "title": "ARCHIVIO",
+        "title": "Archivio",
         "description": "Discover the story behind each creation through our craftsmanship journey",
         "order_position": 6,
         "is_active": true
@@ -58,7 +58,7 @@
       {
         "section_id": "latest_pieces_section",
         "content_type": "section_header",
-        "title": "SCOPRI LE NOSTRE ULTIME CREAZIONI",
+        "title": "Scopri le nostre ultime creazioni",
         "description": "Discover the fashion that expresses different life goals, stories of style, handcrafted with care, designed to inspire.",
         "order_position": 7,
         "is_active": true
