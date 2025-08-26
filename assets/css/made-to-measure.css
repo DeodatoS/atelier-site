@@ -34,10 +34,11 @@
   margin-bottom: 0.5rem;
   letter-spacing: 2px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  line-height: 1;
+  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  white-space: nowrap;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .mtm-hero-subtitle {
@@ -49,7 +50,8 @@
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   margin: 0;
   line-height: 1.2;
-  white-space: nowrap;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Made to Measure Intro Section */

@@ -52,10 +52,11 @@
   letter-spacing: 2px;
   margin: 0;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  line-height: 1;
+  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  white-space: nowrap;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Personalized Section */
