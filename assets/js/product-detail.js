@@ -10,12 +10,7 @@ function getProductIdFromURL() {
 
 // Load products data (reuse the same data structure as products.js)
 async function loadProductsData() {
-  // First try to get data from products.js if it's already loaded
-  if (typeof PRODUCTS_DATA !== 'undefined') {
-    console.log('Using embedded products data');
-    return PRODUCTS_DATA;
-  }
-  
+  // Always try to fetch from JSON file first
   try {
     // Try to fetch from JSON file
     console.log('🔄 Product detail: Attempting to fetch products.json...');
@@ -30,6 +25,12 @@ async function loadProductsData() {
   } catch (fetchError) {
     console.log('❌ Product detail: Fetch failed, falling back to embedded data');
     console.log('🔍 Product detail: Fetch error:', fetchError);
+  }
+  
+  // Fallback to embedded data only if fetch fails
+  if (typeof PRODUCTS_DATA !== 'undefined') {
+    console.log('Using embedded products data (fallback)');
+    return PRODUCTS_DATA;
   }
   
   // If products.js hasn't loaded PRODUCTS_DATA yet, wait a bit and try again
