@@ -546,7 +546,7 @@
   
   .main-image {
     width: 100%;
-    height: 400px;
+    height: 600px; /* Increased for better vertical proportions on mobile */
     display: block;
   }
   
@@ -613,5 +613,21 @@
     box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
     margin: 30px -20px 0;
     z-index: 100;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .main-image {
+    height: 500px; /* Slightly smaller for very small screens */
+  }
+  
+  .thumbnails-column {
+    padding: 0 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 80px;
   }
 }
