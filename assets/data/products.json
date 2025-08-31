@@ -6,7 +6,7 @@
       "products": [
         {
           "id": "pc001",
-          "name": "ABITO IN DOPPIO CREPE DI LANA",
+          "name": "ABITO IN DOPPIO CREPE DI LANA CON CRISTALLI",
           "category": "prive_ceremonial",
           "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
@@ -73,48 +73,6 @@
           ],
           "fabric": "Wool & Cashmere Blend",
           "madeTo": "measure"
-        }
-      ]
-    },
-    "collections": {
-      "name": "Collections",
-      "description": "Curated seasonal collections showcasing contemporary Italian elegance",
-      "products": [
-        {
-          "id": "col001",
-          "name": "Spring Linen Suit",
-          "category": "collections",
-          "description": "Lightweight linen suit perfect for spring occasions",
-          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "video_url": "",
-          "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
-          ],
-          "prices": {
-            "standard": 980,
-            "minimum": 850,
-            "maximum": 1200
-          },
-          "colors": [
-            "Natural Beige",
-            "Soft White",
-            "Light Gray",
-            "Pale Blue"
-          ],
-          "sizes": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "fabric": "100% Linen",
-          "madeTo": "order"
         }
       ]
     },
