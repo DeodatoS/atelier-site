@@ -80,11 +80,13 @@
           "category": "prive_ceremonial",
           "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756653132/ELI_00986_2_b2kxw5.jpg",
-          "image_2": "",
-          "image_3": "",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756654450/ELI_00963-1_v5gzsl.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756654452/ELI_00995-1_nwd41s.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756653132/ELI_00986_2_b2kxw5.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756653132/ELI_00986_2_b2kxw5.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756654450/ELI_00963-1_v5gzsl.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756654452/ELI_00995-1_nwd41s.jpg"
           ],
           "prices": {
             "standard": 850,
