@@ -54,9 +54,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756652536/ELI_00567-1_yvhkgz.jpg"
           ],
           "prices": {
-            "standard": 1800,
-            "minimum": 1500,
-            "maximum": 2200
+            "standard": 850,
+            "minimum": 850,
+            "maximum": 1100
           },
           "colors": [
             "Charcoal Gray",
