@@ -73,6 +73,39 @@
           ],
           "fabric": "",
           "madeTo": "measure"
+        },
+        {
+          "id": "pc002",
+          "name": "ABITO IN DOPPIO CREPE DI LANA CON DETTAGLIO GIOIELLO",
+          "category": "prive_ceremonial",
+          "description": "",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756653132/ELI_00986_2_b2kxw5.jpg",
+          "image_2": "",
+          "image_3": "",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756653132/ELI_00986_2_b2kxw5.jpg"
+          ],
+          "prices": {
+            "standard": 850,
+            "minimum": 850,
+            "maximum": 1100
+          },
+          "colors": [
+            "Charcoal Gray",
+            "Deep Navy",
+            "Classic Black"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "",
+          "madeTo": "measure"
         }
       ]
     },
