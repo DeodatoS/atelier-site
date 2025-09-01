@@ -173,6 +173,40 @@
             "XXL"
           ],
           "fabric": "100% Linen"
+        },
+        {
+          "id": "pc006",
+          "name": "TOP CON SCOLLATURA PROFONDA E CRISTALLI",
+          "category": "prive_ceremonial",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729149/06122022_Elisa_Sanna5514bis_copia_1_h5w44s.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729158/06122022_Elisa_Sanna5527BIS_copia_krgczk.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729160/06122022_Elisa_Sanna5534BIS_copia_pjxrut.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729149/06122022_Elisa_Sanna5514bis_copia_1_h5w44s.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729158/06122022_Elisa_Sanna5527BIS_copia_krgczk.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729160/06122022_Elisa_Sanna5534BIS_copia_pjxrut.jpg"
+          ],
+          "prices": {
+            "standard": 650,
+            "minimum": 650,
+            "maximum": 850
+          },
+          "colors": [
+            "Charcoal Gray",
+            "Deep Navy",
+            "Classic Black"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
         }
       ]
     },
