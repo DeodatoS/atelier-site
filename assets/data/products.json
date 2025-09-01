@@ -180,6 +180,41 @@
             "XXL"
           ],
           "fabric": "100% Linen"
+        },
+        {
+          "id": "col002",
+          "name": "Little Prince DEO",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "video_url": "",
+          "gallery": [
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+          ],
+          "prices": {
+            "standard": 980,
+            "minimum": 850,
+            "maximum": 1200
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
         }
       ]
     },
