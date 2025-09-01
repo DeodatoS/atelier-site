@@ -9,354 +9,37 @@ function getCategoryFromURL() {
   return urlParams.get('category') || 'prive_ceremonial';
 }
 
-// Products data - embedded for local testing, can be loaded via fetch when on server
-const PRODUCTS_DATA = {
-  "categories": {
-    "prive_ceremonial": {
-      "name": "Couture e Cerimonia",
-      "description": "Exquisite pieces for special occasions and refined experiences",
-      "products": [
-        {
-          "id": "pc001",
-          "name": "Silk Evening Gown",
-          "category": "prive_ceremonial",
-          "description": "Elegant silk evening gown with intricate hand-embroidered details",
-          "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=1988&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=1988&q=80",
-            "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-          ],
-          "prices": {
-            "standard": 2800,
-            "minimum": 2400,
-            "maximum": 3500
-          },
-          "colors": ["Midnight Black", "Burgundy", "Navy Blue", "Emerald Green"],
-          "sizes": ["XS", "S", "M", "L", "XL"],
-          "fabric": "100% Silk",
-          "madeTo": "measure"
-        },
-        {
-          "id": "pc002",
-          "name": "Ceremonial Blazer",
-          "category": "prive_ceremonial",
-          "description": "Tailored ceremonial blazer with gold thread detailing",
-          "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-          ],
-          "prices": {
-            "standard": 1800,
-            "minimum": 1500,
-            "maximum": 2200
-          },
-          "colors": ["Charcoal Gray", "Deep Navy", "Classic Black"],
-          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-          "fabric": "Wool & Cashmere Blend",
-          "madeTo": "measure"
-        },
-        {
-          "id": "pc003",
-          "name": "Cocktail Dress",
-          "category": "prive_ceremonial",
-          "description": "Sophisticated cocktail dress with asymmetrical hem",
-          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 1600,
-            "minimum": 1300,
-            "maximum": 2000
-          },
-          "colors": ["Ivory", "Dusty Rose", "Sage Green", "Champagne"],
-          "sizes": ["XS", "S", "M", "L", "XL"],
-          "fabric": "Silk Crepe",
-          "madeTo": "measure"
-        },
-        {
-          "id": "pc004",
-          "name": "Tuxedo Jacket",
-          "category": "prive_ceremonial",
-          "description": "Classic tuxedo jacket with satin lapels",
-          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 2200,
-            "minimum": 1900,
-            "maximum": 2800
-          },
-          "colors": ["Classic Black", "Midnight Navy"],
-          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-          "fabric": "Premium Wool",
-          "madeTo": "measure"
-        },
-        {
-          "id": "pc005",
-          "name": "Formal Gown",
-          "category": "prive_ceremonial",
-          "description": "Floor-length formal gown with beaded bodice",
-          "image": "https://images.unsplash.com/photo-1566479179817-c63f37e91285?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1566479179817-c63f37e91285?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 3200,
-            "minimum": 2800,
-            "maximum": 4000
-          },
-          "colors": ["Royal Blue", "Deep Purple", "Crimson Red", "Black"],
-          "sizes": ["XS", "S", "M", "L", "XL"],
-          "fabric": "Silk Taffeta",
-          "madeTo": "measure"
-        }
-      ]
-    },
-    "collections": {
-      "name": "Collections",
-      "description": "Curated seasonal collections showcasing contemporary Italian elegance",
-      "products": [
-        {
-          "id": "col001",
-          "name": "Spring Linen Suit",
-          "category": "collections",
-          "description": "Lightweight linen suit perfect for spring occasions",
-          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 980,
-            "minimum": 850,
-            "maximum": 1200
-          },
-          "colors": ["Natural Beige", "Soft White", "Light Gray", "Pale Blue"],
-          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-          "fabric": "100% Linen",
-          "madeTo": "order"
-        },
-        {
-          "id": "col002",
-          "name": "Wool Coat",
-          "category": "collections",
-          "description": "Classic wool coat with minimalist design",
-          "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-          ],
-          "prices": {
-            "standard": 1400,
-            "minimum": 1200,
-            "maximum": 1700
-          },
-          "colors": ["Camel", "Black", "Charcoal", "Navy"],
-          "sizes": ["XS", "S", "M", "L", "XL"],
-          "fabric": "Virgin Wool",
-          "madeTo": "order"
-        },
-        {
-          "id": "col003",
-          "name": "Silk Blouse",
-          "category": "collections",
-          "description": "Elegant silk blouse with French seams",
-          "image": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-          ],
-          "prices": {
-            "standard": 650,
-            "minimum": 550,
-            "maximum": 800
-          },
-          "colors": ["Ivory", "Powder Pink", "Sage", "Midnight Blue"],
-          "sizes": ["XS", "S", "M", "L", "XL"],
-          "fabric": "Silk Crepe de Chine",
-          "madeTo": "order"
-        },
-        {
-          "id": "col004",
-          "name": "Cashmere Sweater",
-          "category": "collections",
-          "description": "Luxurious cashmere sweater with ribbed details",
-          "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=1988&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=1988&q=80"
-          ],
-          "prices": {
-            "standard": 890,
-            "minimum": 750,
-            "maximum": 1100
-          },
-          "colors": ["Cream", "Soft Gray", "Dusty Rose", "Navy"],
-          "sizes": ["XS", "S", "M", "L", "XL"],
-          "fabric": "100% Cashmere",
-          "madeTo": "order"
-        },
-        {
-          "id": "col005",
-          "name": "Tailored Trousers",
-          "category": "collections",
-          "description": "Perfectly tailored trousers with elegant fit",
-          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 420,
-            "minimum": 350,
-            "maximum": 550
-          },
-          "colors": ["Black", "Navy", "Charcoal", "Olive"],
-          "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
-          "fabric": "Wool Blend",
-          "madeTo": "order"
-        }
-      ]
-    },
-    "kids": {
-      "name": "Kids",
-      "description": "Charming and comfortable pieces designed especially for children",
-      "products": [
-        {
-          "id": "kid001",
-          "name": "Little Prince Suit",
-          "category": "kids",
-          "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
-          },
-          "colors": ["Navy Blue", "Charcoal Gray", "Black"],
-          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y"],
-          "fabric": "Cotton Blend",
-          "madeTo": "order"
-        },
-        {
-          "id": "kid002",
-          "name": "Princess Dress",
-          "category": "kids",
-          "description": "Elegant dress for little princesses",
-          "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 280,
-            "minimum": 240,
-            "maximum": 350
-          },
-          "colors": ["Pink", "Ivory", "Light Blue", "Lavender"],
-          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y"],
-          "fabric": "Soft Cotton",
-          "madeTo": "order"
-        },
-        {
-          "id": "kid003",
-          "name": "Casual Shirt",
-          "category": "kids",
-          "description": "Comfortable cotton shirt for everyday wear",
-          "image": "https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 120,
-            "minimum": 100,
-            "maximum": 150
-          },
-          "colors": ["White", "Light Blue", "Mint Green", "Soft Yellow"],
-          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y", "14Y"],
-          "fabric": "100% Cotton",
-          "madeTo": "order"
-        },
-        {
-          "id": "kid004",
-          "name": "Formal Shorts",
-          "category": "kids",
-          "description": "Smart formal shorts for young gentlemen",
-          "image": "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1503944168184-93f8d2e12c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 150,
-            "minimum": 130,
-            "maximum": 180
-          },
-          "colors": ["Navy", "Khaki", "Gray", "Black"],
-          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y", "14Y"],
-          "fabric": "Cotton Twill",
-          "madeTo": "order"
-        },
-        {
-          "id": "kid005",
-          "name": "Party Dress",
-          "category": "kids",
-          "description": "Special occasion dress with delicate embroidery",
-          "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80",
-          "gallery": [
-            "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
-          ],
-          "prices": {
-            "standard": 320,
-            "minimum": 280,
-            "maximum": 400
-          },
-          "colors": ["Rose Gold", "Ivory", "Dusty Blue", "Soft Pink"],
-          "sizes": ["2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "10Y", "12Y"],
-          "fabric": "Silk Blend",
-          "madeTo": "order"
-        }
-      ]
-    }
+// Products data will be loaded from JSON file
+
+// Determine the correct path for JSON files based on current location
+function getJsonPath(filename) {
+  // Check if we're in a subdirectory (like pages/)
+  if (window.location.pathname.includes('/pages/')) {
+    return `../assets/data/${filename}`;
   }
-};
+  // Otherwise assume we're in root
+  return `assets/data/${filename}`;
+}
 
 // Load products data
 async function loadProducts() {
   try {
-    // Try to fetch from JSON file first (for production)
-    try {
-      console.log('🔄 Attempting to fetch products.json...');
-      const response = await fetch('../assets/data/products.json');
-      console.log('📡 Fetch response status:', response.status);
-      if (response.ok) {
-        const data = await response.json();
-        console.log('✅ Loaded products from JSON file');
-        console.log('📊 Products data:', data);
-        
-        // Try to load and merge category hero images
-        const heroImages = await loadCategoryHeroImages();
-        if (heroImages) {
-          // Merge hero images into categories
-          Object.keys(data.categories).forEach(categoryId => {
-            if (heroImages[categoryId]) {
-              data.categories[categoryId].heroImage = heroImages[categoryId].hero_image_url;
-              data.categories[categoryId].heroImageAlt = heroImages[categoryId].hero_image_alt;
-            }
-          });
-          console.log('Merged category hero images with products data');
-        }
-        
-        return data;
-      }
-    } catch (fetchError) {
-      console.log('❌ Fetch failed, using embedded data for local testing');
-      console.log('🔍 Fetch error:', fetchError);
+    console.log('🔄 Attempting to fetch products.json...');
+    const productsPath = getJsonPath('products.json');
+    console.log('📍 Fetch path:', productsPath);
+    
+    const response = await fetch(productsPath);
+    console.log('📡 Fetch response status:', response.status);
+    
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
     
-    // Fallback to embedded data (for local testing) - but still try to load hero images
-    console.log('Using embedded products data');
-    const data = JSON.parse(JSON.stringify(PRODUCTS_DATA)); // Deep copy
+    const data = await response.json();
+    console.log('✅ Loaded products from JSON file');
+    console.log('📊 Products data:', data);
     
-    // Try to load and merge category hero images even with embedded data
+    // Try to load and merge category hero images
     const heroImages = await loadCategoryHeroImages();
     if (heroImages) {
       // Merge hero images into categories
@@ -366,13 +49,13 @@ async function loadProducts() {
           data.categories[categoryId].heroImageAlt = heroImages[categoryId].hero_image_alt;
         }
       });
-      console.log('Merged category hero images with embedded products data');
+      console.log('Merged category hero images with products data');
     }
     
     return data;
   } catch (error) {
-    console.error('Error loading products:', error);
-    return null;
+    console.error('❌ Error loading products:', error);
+    throw error; // Re-throw to handle in calling function
   }
 }
 
@@ -527,7 +210,8 @@ function viewDetails(productId) {
 // Load category hero images from pages-content system
 async function loadCategoryHeroImages() {
   try {
-    const response = await fetch('../assets/data/pages-content.json');
+    const pagesPath = getJsonPath('pages-content.json');
+    const response = await fetch(pagesPath);
     if (response.ok) {
       const data = await response.json();
       console.log('Loaded pages content data');
@@ -550,7 +234,7 @@ async function loadCategoryHeroImages() {
       return heroImages;
     }
   } catch (fetchError) {
-    console.log('Pages content fetch failed, using embedded data');
+    console.log('Pages content fetch failed:', fetchError);
   }
   return null;
 }
