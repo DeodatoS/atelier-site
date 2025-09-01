@@ -139,6 +139,40 @@
             "XXL"
           ],
           "fabric": "100% Linen"
+        },
+        {
+          "id": "pc005",
+          "name": "TOP CON VOLANTS IN SETA",
+          "category": "prive_ceremonial",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730552/ELISA__104336_1_yzv7rj.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730669/ELISA__104351_lprqxe.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730552/ELISA__104336_1_yzv7rj.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730669/ELISA__104351_lprqxe.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg"
+          ],
+          "prices": {
+            "standard": 850,
+            "minimum": 850,
+            "maximum": 1100
+          },
+          "colors": [
+            "Charcoal Gray",
+            "Deep Navy",
+            "Classic Black"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
         }
       ]
     },
