@@ -176,6 +176,40 @@
         },
         {
           "id": "pc006",
+          "name": "ABITO CON SCOLLO IN SETA",
+          "category": "prive_ceremonial",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730710/ELI_01076_ce6gou.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730705/ELI_01058_1_l0dawr.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730749/ELI_01064_nl4piz.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730710/ELI_01076_ce6gou.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730705/ELI_01058_1_l0dawr.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730749/ELI_01064_nl4piz.jpg"
+          ],
+          "prices": {
+            "standard": 1150,
+            "minimum": 1150,
+            "maximum": 1350
+          },
+          "colors": [
+            "Charcoal Gray",
+            "Deep Navy",
+            "Classic Black"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
+          "id": "pc007",
           "name": "TOP IN CREPE CADY CON SCOLLATURA PROFONDA E CRISTALLI",
           "category": "prive_ceremonial",
           "description": "Adorable mini suit perfect for special occasions",
@@ -209,7 +243,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "pc007",
+          "id": "pc008",
           "name": "TOP IN CREPE CADY CON CRISTALLI SU SCOLLATURA",
           "category": "prive_ceremonial",
           "description": "Adorable mini suit perfect for special occasions",
@@ -243,7 +277,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "pc008",
+          "id": "pc009",
           "name": "TOP/SCIARPA IN SETA CON CRISTALLI",
           "category": "prive_ceremonial",
           "description": "Adorable mini suit perfect for special occasions",
@@ -277,7 +311,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "pc009",
+          "id": "pc010",
           "name": "TOP/SCIARPA IN SETA CON CRISTALLI",
           "category": "prive_ceremonial",
           "description": "Adorable mini suit perfect for special occasions",
@@ -311,7 +345,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "pc010",
+          "id": "pc011",
           "name": "GONNA IN CREPE CADY CON CRISTALLI",
           "category": "prive_ceremonial",
           "description": "Adorable mini suit perfect for special occasions",
