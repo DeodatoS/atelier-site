@@ -453,6 +453,41 @@
             "XXL"
           ],
           "fabric": "100% Linen"
+        },
+        {
+          "id": "col003",
+          "name": "ABITO IN FRESCO DI LANA CON DETTAGLIO",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729106/ELISA_102771_jbidsn.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729142/ELISA_102774_jxyqmo.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729096/ELISA_102786_lkexp5.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729106/ELISA_102771_jbidsn.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729142/ELISA_102774_jxyqmo.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729096/ELISA_102786_lkexp5.jpg"
+          ],
+          "prices": {
+            "standard": 390,
+            "minimum": 390,
+            "maximum": 560
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
         }
       ]
     },
