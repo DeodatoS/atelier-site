@@ -352,7 +352,7 @@
       "products": [
         {
           "id": "col001",
-          "name": "Little Prince DEO",
+          "name": "BLUSA IN CADY DI SETA",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756732003/82356752-CB07-471F-9F9B-B4CCEB556D43_vaifqd.jpg",
@@ -387,17 +387,17 @@
         },
         {
           "id": "col002",
-          "name": "Little Prince DEO",
+          "name": "BLUSA CON DETTAGLIO GIOIELLO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
-          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736389/567CF7C9-8B4B-4E99-B968-0E43C76D7C82_nw01yw.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819864/ELI_00707-1_vke3b1.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819867/ELI_00724-1_vcj3cp.jpg",
           "video_url": "",
           "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736389/567CF7C9-8B4B-4E99-B968-0E43C76D7C82_nw01yw.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819864/ELI_00707-1_vke3b1.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819867/ELI_00724-1_vcj3cp.jpg"
           ],
           "prices": {
             "standard": 980,
