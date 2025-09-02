@@ -77,12 +77,6 @@ function getColorForDot(colorName) {
 function createProductCard(product) {
   const standardPrice = formatPrice(product.prices.standard);
   
-  const colorDots = product.colors.map(color => 
-    `<div class="color-dot" data-color="${getColorForDot(color)}" title="${color}"></div>`
-  ).join('');
-  
-  const sizesList = product.sizes.join(', ');
-  
   return `
     <div class="product-card" data-product-id="${product.id}">
       <div class="product-image" onclick="viewDetails('${product.id}')" style="cursor: pointer;">
@@ -95,16 +89,6 @@ function createProductCard(product) {
         <p class="product-fabric">${product.fabric}</p>
         <div class="product-price">
           <span class="price-standard">${standardPrice}</span>
-        </div>
-        <div class="product-colors">
-          <h4>Available Colors</h4>
-          <div class="color-dots">
-            ${colorDots}
-          </div>
-        </div>
-        <div class="product-sizes">
-          <h4>Available Sizes</h4>
-          <div class="sizes-list">${sizesList}</div>
         </div>
         <div class="product-actions">
           <button class="btn-primary" onclick="requestQuote('${product.id}')">Request Quote</button>
