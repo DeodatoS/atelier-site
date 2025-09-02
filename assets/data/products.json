@@ -365,9 +365,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736322/ELI_00439-1_grobso_ooapjz.jpg"
           ],
           "prices": {
-            "standard": 980,
-            "minimum": 850,
-            "maximum": 1200
+            "standard": 520,
+            "minimum": 520,
+            "maximum": 690
           },
           "colors": [
             "Natural Beige",
@@ -400,9 +400,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg"
           ],
           "prices": {
-            "standard": 980,
-            "minimum": 850,
-            "maximum": 1200
+            "standard": 390,
+            "minimum": 390,
+            "maximum": 560
           },
           "colors": [
             "Natural Beige",
