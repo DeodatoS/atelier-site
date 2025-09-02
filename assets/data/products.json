@@ -377,40 +377,6 @@
             "XXL"
           ],
           "fabric": "100% Linen"
-        },
-        {
-          "id": "pc012",
-          "name": "BLUSA IN VELLUTO DI SETA ",
-          "category": "prive_ceremonial",
-          "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824431/06122022_Elisa_Sanna5030BIS_mswdkf.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824434/06122022_Elisa_Sanna5012BIS_slidw7.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824428/05122022_Elisa_Sanna3295_copia_glz8ts.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824431/06122022_Elisa_Sanna5030BIS_mswdkf.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824434/06122022_Elisa_Sanna5012BIS_slidw7.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824428/05122022_Elisa_Sanna3295_copia_glz8ts.jpg"
-          ],
-          "prices": {
-            "standard": 630,
-            "minimum": 630,
-            "maximum": 730
-          },
-          "colors": [
-            "Charcoal Gray",
-            "Deep Navy",
-            "Classic Black"
-          ],
-          "sizes": [
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL"
-          ],
-          "fabric": "100% Linen"
         }
       ]
     },
@@ -455,6 +421,41 @@
         },
         {
           "id": "col002",
+          "name": "BLUSA IN VELLUTO DI SETA",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824431/06122022_Elisa_Sanna5030BIS_mswdkf.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824434/06122022_Elisa_Sanna5012BIS_slidw7.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824428/05122022_Elisa_Sanna3295_copia_glz8ts.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824431/06122022_Elisa_Sanna5030BIS_mswdkf.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824434/06122022_Elisa_Sanna5012BIS_slidw7.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756824428/05122022_Elisa_Sanna3295_copia_glz8ts.jpg"
+          ],
+          "prices": {
+            "standard": 520,
+            "minimum": 520,
+            "maximum": 690
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
+          "id": "col003",
           "name": "BLUSA CON DETTAGLIO GIOIELLO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -489,7 +490,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "col003",
+          "id": "col004",
           "name": "ABITO IN FRESCO DI LANA CON DETTAGLIO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
