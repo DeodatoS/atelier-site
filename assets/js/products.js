@@ -76,7 +76,6 @@ function getColorForDot(colorName) {
 // Create product card HTML
 function createProductCard(product) {
   const standardPrice = formatPrice(product.prices.standard);
-  const priceRange = `${formatPrice(product.prices.minimum)} - ${formatPrice(product.prices.maximum)}`;
   
   const colorDots = product.colors.map(color => 
     `<div class="color-dot" data-color="${getColorForDot(color)}" title="${color}"></div>`
@@ -86,7 +85,7 @@ function createProductCard(product) {
   
   return `
     <div class="product-card" data-product-id="${product.id}">
-      <div class="product-image">
+      <div class="product-image" onclick="viewDetails('${product.id}')" style="cursor: pointer;">
         <img src="${product.image}" alt="${product.name}" loading="lazy">
         <div class="product-made-to">Made to ${product.madeTo}</div>
       </div>
@@ -96,7 +95,6 @@ function createProductCard(product) {
         <p class="product-fabric">${product.fabric}</p>
         <div class="product-price">
           <span class="price-standard">${standardPrice}</span>
-          <span class="price-range">(${priceRange})</span>
         </div>
         <div class="product-colors">
           <h4>Available Colors</h4>

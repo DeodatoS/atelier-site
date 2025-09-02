@@ -238,9 +238,11 @@
   transition: transform 0.3s ease;
 }
 
-.product-card:hover .product-image img {
-  transform: scale(1.05);
+.product-image:hover img {
+  transform: scale(1.02);
 }
+
+
 
 .product-made-to {
   position: absolute;
@@ -289,7 +291,7 @@
 .product-price {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -298,12 +300,6 @@
   font-size: 1.2rem;
   font-weight: 600;
   color: #333;
-}
-
-.price-range {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  color: #888;
 }
 
 .product-colors {
