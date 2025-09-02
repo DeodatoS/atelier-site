@@ -559,6 +559,41 @@
           "fabric": "100% Linen"
         },
         {
+          "id": "col005",
+          "name": "ABITO IN LANA E SETA CON RICAMI A MANO",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729070/ELISA_102903_ujlcrm.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729079/ELISA_102937_rkoc21.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729084/ELISA_102896_slthcl.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729070/ELISA_102903_ujlcrm.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729079/ELISA_102937_rkoc21.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729084/ELISA_102896_slthcl.jpg"
+          ],
+          "prices": {
+            "standard": 580,
+            "minimum": 580,
+            "maximum": 830
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
           "id": "col002",
           "name": "TOP IN TULLE RICAMATO",
           "category": "collections",
