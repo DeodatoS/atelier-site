@@ -421,6 +421,41 @@
         },
         {
           "id": "col002",
+          "name": "TOP IN TULLE RICAMATO",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823794/_DSC1621_cpqrid.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823797/_DSC1629_cwemrq.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823791/_DSC1587_yws69r.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823794/_DSC1621_cpqrid.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823797/_DSC1629_cwemrq.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823791/_DSC1587_yws69r.jpg"
+          ],
+          "prices": {
+            "standard": 520,
+            "minimum": 520,
+            "maximum": 690
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
+          "id": "col002",
           "name": "BLUSA CON DETTAGLIO GIOIELLO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -469,9 +504,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729096/ELISA_102786_lkexp5.jpg"
           ],
           "prices": {
-            "standard": 390,
-            "minimum": 390,
-            "maximum": 560
+            "standard": 540,
+            "minimum": 540,
+            "maximum": 740
           },
           "colors": [
             "Natural Beige",
