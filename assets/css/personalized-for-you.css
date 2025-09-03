@@ -30,22 +30,20 @@
   justify-content: center;
 }
 
-.pfy-hero-text {
+.pfy-hero-content {
   text-align: center;
   padding: 40px 0;
-  background: red !important; /* DEBUG: sfondo rosso per vedere se esiste */
-  border: 5px solid blue !important; /* DEBUG: bordo blu spesso */
+  background: #f9f9f9;
   margin: 20px 0;
-  min-height: 100px; /* DEBUG: altezza minima per vedere */
 }
 
-.pfy-hero-text h1 {
+.pfy-hero-logo {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0;
-  color: #000;
+  color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -271,7 +269,7 @@
     margin-top: 160px;
   }
   
-  .pfy-hero-text h1 {
+  .pfy-hero-logo {
     font-size: 2rem;
     letter-spacing: 1px;
   }
@@ -329,7 +327,7 @@
     margin-top: 120px;
   }
   
-  .pfy-hero-text h1 {
+  .pfy-hero-logo {
     font-size: 1.8rem;
     letter-spacing: 1px;
   }
