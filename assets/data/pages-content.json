@@ -272,9 +272,9 @@
       {
         "section_id": "second_section",
         "content_type": "section_content",
-        "title": "Confronto creativo",
+        "title": "L'esperienza",
         "subtitle": "rrrrr",
-        "description": "Il percorso inizia in Atelier, con un incontro riservato tra Elisa e la cliente. Da questo scambio personale prende vita un processo sartoriale intimo ed esclusivo.",
+        "description": "Il servizio di personalizzazione prende avvio in Atelier, con un incontro riservato tra Elisa e la cliente. Da questo scambio nasce un processo sartoriale intimo ed esclusivo, in cui ogni dettaglio ? pensato per riflettere la sua personalit?. Non ? soltanto un percorso sartoriale, ma un?esperienza condivisa, in cui l?artigianalit? italiana incontra la sensibilit? stilistica, dando vita a creazioni che esistono in un solo esemplare.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         "order_position": 3,
         "is_active": true
@@ -284,7 +284,7 @@
         "content_type": "section_content",
         "title": "Creazione o personalizzazione",
         "subtitle": "tttttt",
-        "description": "Il servizio pu? svilupparsi in due direzioni:\n    ? la realizzazione di un modello ideato e disegnato interamente per la cliente, unico e irripetibile;\n    ? la trasformazione di un modello esistente della collezione attraverso scelte mirate di tessuti, colori, accessori e dettagli di stile.",
+        "description": "L?esperienza pu? tradursi nella creazione di un modello ideato e disegnato interamente per la cliente, unico e irripetibile, oppure nella personalizzazione di un capo della collezione attraverso scelte mirate di tessuti, colori, accessori e dettagli di stile. A guidare questa fase sono i bozzetti e le cartelle materiali, che aprono un ventaglio di possibilit?. Una volta definita la proposta, l?abito prende forma grazie alle mani delle sarte dell?Atelier: le prove successive consentono di perfezionare vestibilit? e particolari fino a raggiungere il risultato finale, un capo che racconta una storia personale attraverso la visione creativa di Elisa Sanna.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         "order_position": 4,
         "is_active": true
