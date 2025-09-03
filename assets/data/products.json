@@ -538,6 +538,41 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729096/ELISA_102786_lkexp5.jpg"
           ],
           "prices": {
+            "standard": 670,
+            "minimum": 670,
+            "maximum": 890
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
+          "id": "col005",
+          "name": "MAGLIA IN MOHAIR E TULLE",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756830187/ELI_00064_kgmc8w.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888916/ELI_00085_1_-1_kmwkay.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888867/ELI_00049-1_l7vmgj.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756830187/ELI_00064_kgmc8w.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888916/ELI_00085_1_-1_kmwkay.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888867/ELI_00049-1_l7vmgj.jpg"
+          ],
+          "prices": {
             "standard": 540,
             "minimum": 540,
             "maximum": 740
@@ -573,9 +608,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729084/ELISA_102896_slthcl.jpg"
           ],
           "prices": {
-            "standard": 580,
-            "minimum": 580,
-            "maximum": 830
+            "standard": 700,
+            "minimum": 700,
+            "maximum": 960
           },
           "colors": [
             "Natural Beige",
