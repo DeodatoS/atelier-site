@@ -838,6 +838,41 @@
           "fabric": "100% Linen"
         },
         {
+          "id": "col011",
+          "name": "GIACCA IN CREPE CADY ",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756911847/06122022_Elisa_Sanna5287bis_vm8lps.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756911845/06122022_Elisa_Sanna5276BIS_upww6o.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756911844/06122022_Elisa_Sanna5285BIS_a9ztq8.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756911847/06122022_Elisa_Sanna5287bis_vm8lps.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756911845/06122022_Elisa_Sanna5276BIS_upww6o.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756911844/06122022_Elisa_Sanna5285BIS_a9ztq8.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 940,
+            "maximum": 1140
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
           "id": "col002",
           "name": "TOP CON TULLE RICAMATO",
           "category": "collections",
