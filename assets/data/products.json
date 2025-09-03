@@ -573,9 +573,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888867/ELI_00049-1_l7vmgj.jpg"
           ],
           "prices": {
-            "standard": 540,
-            "minimum": 540,
-            "maximum": 740
+            "standard": 640,
+            "minimum": 640,
+            "maximum": 840
           },
           "colors": [
             "Natural Beige",
