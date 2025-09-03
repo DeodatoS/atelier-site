@@ -30,10 +30,19 @@
   justify-content: center;
 }
 
+.pfy-hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .pfy-hero-content {
   text-align: center;
-  padding: 40px 0;
-  background: #f9f9f9;
+  color: white;
+  max-width: 400px;
+  padding: 1rem;
 }
 
 .pfy-hero-logo {
@@ -42,9 +51,41 @@
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  white-space: nowrap;
+}
+
+/* Main Content Section (from CSV) */
+.pfy-main-content-section {
+  background: #fff;
+  text-align: center;
+}
+
+.pfy-main-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pfy-main-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.pfy-main-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
 }
 
 /* Personalized Section */
@@ -273,6 +314,15 @@
     letter-spacing: 1px;
   }
   
+  .pfy-main-title {
+    font-size: 2rem;
+  }
+  
+  .pfy-hero-content {
+    padding: 0.5rem;
+    max-width: 300px;
+  }
+  
   .pfy-personalised-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -327,7 +377,16 @@
   }
   
   .pfy-hero-logo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
+  }
+  
+  .pfy-hero-content {
+    padding: 0.5rem;
+    max-width: 250px;
+  }
+  
+  .pfy-main-title {
+    font-size: 1.8rem;
   }
 }
