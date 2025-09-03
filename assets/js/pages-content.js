@@ -209,13 +209,13 @@ function populateMainContent(pageId) {
   if (!mainContent) return;
 
   // Update main section title
-  const mainTitle = document.querySelector('.pfy-personalised-text h2, .mtm-service-content h3, .text-content h2');
+  const mainTitle = document.querySelector('.pfy-main-title, .pfy-personalised-text h2, .mtm-service-content h3, .text-content h2');
   if (mainTitle) {
     mainTitle.textContent = mainContent.title;
   }
 
   // Update main section description
-  const mainDescription = document.querySelector('.pfy-personalised-text > p, .mtm-service-content > p, .text-content > p');
+  const mainDescription = document.querySelector('.pfy-main-description, .pfy-personalised-text > p, .mtm-service-content > p, .text-content > p');
   if (mainDescription) {
     mainDescription.textContent = mainContent.description;
   }
