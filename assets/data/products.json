@@ -155,9 +155,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg"
           ],
           "prices": {
-            "standard": 900,
-            "minimum": 900,
-            "maximum": 1100
+            "standard": 960,
+            "minimum": 960,
+            "maximum": 1140
           },
           "colors": [
             "Charcoal Gray",
