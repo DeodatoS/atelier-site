@@ -34,6 +34,8 @@
   text-align: center;
   padding: 40px 0;
   background: #f9f9f9;
+  border: 3px solid blue; /* DEBUG: per vedere dove si trova */
+  margin: 20px 0;
 }
 
 .pfy-hero-text h1 {
