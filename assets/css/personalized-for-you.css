@@ -30,13 +30,13 @@
   justify-content: center;
 }
 
-.hero-text-section {
+.pfy-hero-content {
   text-align: center;
   padding: 40px 0;
   background: #f9f9f9;
 }
 
-.hero-text-section h1 {
+.pfy-hero-logo {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
   font-size: 2.5rem;
   font-weight: 400;
@@ -268,7 +268,7 @@
     margin-top: 160px;
   }
   
-  .hero-text-section h1 {
+  .pfy-hero-logo {
     font-size: 2rem;
     letter-spacing: 1px;
   }
@@ -326,7 +326,7 @@
     margin-top: 120px;
   }
   
-  .hero-text-section h1 {
+  .pfy-hero-logo {
     font-size: 1.8rem;
     letter-spacing: 1px;
   }
