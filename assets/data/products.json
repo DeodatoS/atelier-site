@@ -734,6 +734,41 @@
           "fabric": "100% Linen"
         },
         {
+          "id": "col009",
+          "name": "ABITO IN LANA CON NAPPINE",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897901/ELISA_102873_zqto9c.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897906/ELISA_102885_iuzpe7.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897897/ELISA_102890_k4mifg.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897901/ELISA_102873_zqto9c.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897906/ELISA_102885_iuzpe7.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897897/ELISA_102890_k4mifg.jpg"
+          ],
+          "prices": {
+            "standard": 880,
+            "minimum": 880,
+            "maximum": 1080
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
           "id": "col002",
           "name": "TOP CON TULLE RICAMATO",
           "category": "collections",
