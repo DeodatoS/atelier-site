@@ -629,6 +629,41 @@
           "fabric": "100% Linen"
         },
         {
+          "id": "col006",
+          "name": "ABITO IN CADY E SETA",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894011/DSC3329-scaled_qxe1ii.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894076/DSC3309-scaled_rfyefu.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894045/DSC3316-Enhanced-NR-scaled_co2cu7.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894011/DSC3329-scaled_qxe1ii.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894076/DSC3309-scaled_rfyefu.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894045/DSC3316-Enhanced-NR-scaled_co2cu7.jpg"
+          ],
+          "prices": {
+            "standard": 950,
+            "minimum": 950,
+            "maximum": 1150
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
           "id": "col002",
           "name": "TOP CON TULLE RICAMATO",
           "category": "collections",
