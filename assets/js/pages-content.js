@@ -147,6 +147,14 @@ function getProcessContent(pageId) {
 }
 
 /**
+ * Get section content by section_id
+ */
+function getSectionContent(pageId, sectionId) {
+  const sectionContent = getContentByType(pageId, 'section_content');
+  return sectionContent.find(item => item.section_id === sectionId) || null;
+}
+
+/**
  * Populate hero section
  */
 function populateHero(pageId, heroSelector = '#hero-title, .hero-content h1, .hero-logo h2, .pfy-hero-logo, .mtm-hero-title') {
@@ -386,6 +394,64 @@ function populateProcessSteps(pageId) {
 }
 
 /**
+ * Populate second section (for PFY pages)
+ */
+function populateSecondSection(pageId) {
+  const secondSection = getSectionContent(pageId, 'second_section');
+  if (!secondSection) return;
+
+  // Update second section title
+  const secondTitle = document.querySelector('.pfy-second-title');
+  if (secondTitle && secondSection.title) {
+    secondTitle.textContent = secondSection.title;
+  }
+
+  // Update second section description
+  const secondDescription = document.querySelector('.pfy-second-description');
+  if (secondDescription && secondSection.description) {
+    secondDescription.textContent = secondSection.description;
+  }
+
+  // Update second section image
+  const secondImage = document.querySelector('.pfy-second-image img');
+  if (secondImage && secondSection.image_url) {
+    secondImage.src = secondSection.image_url;
+    if (secondSection.image_alt) {
+      secondImage.alt = secondSection.image_alt;
+    }
+  }
+}
+
+/**
+ * Populate third section (for PFY pages)
+ */
+function populateThirdSection(pageId) {
+  const thirdSection = getSectionContent(pageId, 'third_section');
+  if (!thirdSection) return;
+
+  // Update third section title
+  const thirdTitle = document.querySelector('.pfy-third-title');
+  if (thirdTitle && thirdSection.title) {
+    thirdTitle.textContent = thirdSection.title;
+  }
+
+  // Update third section description
+  const thirdDescription = document.querySelector('.pfy-third-description');
+  if (thirdDescription && thirdSection.description) {
+    thirdDescription.textContent = thirdSection.description;
+  }
+
+  // Update third section image
+  const thirdImage = document.querySelector('.pfy-third-image img');
+  if (thirdImage && thirdSection.image_url) {
+    thirdImage.src = thirdSection.image_url;
+    if (thirdSection.image_alt) {
+      thirdImage.alt = thirdSection.image_alt;
+    }
+  }
+}
+
+/**
  * Populate booking options (for MTM, PFY pages)
  */
 function populateBookingOptions(pageId) {
@@ -448,6 +514,13 @@ async function initializePageContent() {
     populateFeatures(pageId);
     populateProcessSteps(pageId);
     populateBookingOptions(pageId);
+    
+    // Populate new sections for PFY page
+    if (pageId === 'personalized_for_you') {
+      populateSecondSection(pageId);
+      populateThirdSection(pageId);
+    }
+    
     console.log('✅ Content population completed');
     
     if (pageId === 'homepage') {
