@@ -246,7 +246,7 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "title": "titolo AAA",
+        "title": "Servizio di personalizzazione",
         "subtitle": "bbbb",
         "description": "ccccc",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
@@ -261,7 +261,7 @@
         "content_type": "main_content",
         "title": "Personalizzato per te",
         "subtitle": "eeeee",
-        "description": "Questo servizio di personalizzazione offre l?opportunit? di avere abiti irripetibili, nati dal confronto diretto con la designer e modellati sui desideri di ogni cliente.\nUn?esperienza esclusiva che unisce creativit?, savoir-faire artigianale e cura del dettaglio, trasformando ogni idea personale in un capo unico e senza tempo. Il servizio di Personalizzazione ? l'espressione pi? esclusiva del brand Elisa Sanna.\nNasce dal dialogo diretto con la designer, che interpreta desideri e suggestioni trasformandoli in creazioni uniche, pensate per celebrare l?individualit? di chi le indossa.",
+        "description": "Il servizio Personalized for You ? l?espressione pi? esclusiva del brand Elisa Sanna.\nNasce dal dialogo diretto con la designer, che interpreta desideri e suggestioni trasformandoli in creazioni uniche, pensate per celebrare l?individualit? di chi le indossa.Questo servizio di personalizzazione offre l?opportunit? di avere abiti irripetibili, nati dal confronto diretto con la designer e modellati sui desideri di ogni cliente.\nUn?esperienza esclusiva che unisce creativit?, savoir-faire artigianale e cura del dettaglio, trasformando ogni idea personale in un capo unico e senza tempo.",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         "image_alt": "Personalized garments display",
         "order_position": 2,
