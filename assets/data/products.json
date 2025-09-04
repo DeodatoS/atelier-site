@@ -445,6 +445,40 @@
             "XXL"
           ],
           "fabric": "100% Linen"
+        },
+        {
+          "id": "pc014",
+          "name": "TOP IN SETA CON DETTAGLIO GIOIELLO",
+          "category": "prive_ceremonial",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990159/ELISA_84368-1_ahcdra.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990152/ELISA_84341-1_xuxpnl.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990274/ELISA_84343-1_uyxnau.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990159/ELISA_84368-1_ahcdra.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990152/ELISA_84341-1_xuxpnl.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990274/ELISA_84343-1_uyxnau.jpg"
+          ],
+          "prices": {
+            "standard": 1050,
+            "minimum": 1050,
+            "maximum": 1250
+          },
+          "colors": [
+            "Charcoal Gray",
+            "Deep Navy",
+            "Classic Black"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
         }
       ]
     },
