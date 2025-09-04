@@ -342,6 +342,12 @@
     gap: 40px;
   }
   
+  /* Invert order for second section on mobile: image first, then text */
+  .pfy-second-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
   .pfy-second-text h2,
   .pfy-third-text h2 {
     font-size: 2rem;
