@@ -209,13 +209,13 @@ function populateMainContent(pageId) {
   if (!mainContent) return;
 
   // Update main section title
-  const mainTitle = document.querySelector('.pfy-main-title, .pfy-personalised-text h2, .mtm-service-content h3, .text-content h2');
+  const mainTitle = document.querySelector('.pfy-main-title, .mtm-main-title, .pfy-personalised-text h2, .mtm-service-content h3, .text-content h2');
   if (mainTitle) {
     mainTitle.textContent = mainContent.title;
   }
 
   // Update main section description
-  const mainDescription = document.querySelector('.pfy-main-description, .pfy-personalised-text > p, .mtm-service-content > p, .text-content > p');
+  const mainDescription = document.querySelector('.pfy-main-description, .mtm-main-description, .pfy-personalised-text > p, .mtm-service-content > p, .text-content > p');
   if (mainDescription) {
     mainDescription.textContent = mainContent.description;
   }
@@ -452,6 +452,64 @@ function populateThirdSection(pageId) {
 }
 
 /**
+ * Populate second section for MTM pages
+ */
+function populateMtmSecondSection(pageId) {
+  const secondSection = getSectionContent(pageId, 'second_section');
+  if (!secondSection) return;
+
+  // Update second section title
+  const secondTitle = document.querySelector('.mtm-second-title');
+  if (secondTitle && secondSection.title) {
+    secondTitle.textContent = secondSection.title;
+  }
+
+  // Update second section description
+  const secondDescription = document.querySelector('.mtm-second-description');
+  if (secondDescription && secondSection.description) {
+    secondDescription.textContent = secondSection.description;
+  }
+
+  // Update second section image
+  const secondImage = document.querySelector('.mtm-second-image img');
+  if (secondImage && secondSection.image_url) {
+    secondImage.src = secondSection.image_url;
+    if (secondSection.image_alt) {
+      secondImage.alt = secondSection.image_alt;
+    }
+  }
+}
+
+/**
+ * Populate third section for MTM pages
+ */
+function populateMtmThirdSection(pageId) {
+  const thirdSection = getSectionContent(pageId, 'third_section');
+  if (!thirdSection) return;
+
+  // Update third section title
+  const thirdTitle = document.querySelector('.mtm-third-title');
+  if (thirdTitle && thirdSection.title) {
+    thirdTitle.textContent = thirdSection.title;
+  }
+
+  // Update third section description
+  const thirdDescription = document.querySelector('.mtm-third-description');
+  if (thirdDescription && thirdSection.description) {
+    thirdDescription.textContent = thirdSection.description;
+  }
+
+  // Update third section image
+  const thirdImage = document.querySelector('.mtm-third-image img');
+  if (thirdImage && thirdSection.image_url) {
+    thirdImage.src = thirdSection.image_url;
+    if (thirdSection.image_alt) {
+      thirdImage.alt = thirdSection.image_alt;
+    }
+  }
+}
+
+/**
  * Populate booking options (for MTM, PFY pages)
  */
 function populateBookingOptions(pageId) {
@@ -519,6 +577,12 @@ async function initializePageContent() {
     if (pageId === 'personalized_for_you') {
       populateSecondSection(pageId);
       populateThirdSection(pageId);
+    }
+    
+    // Populate new sections for MTM page
+    if (pageId === 'made_to_measure') {
+      populateMtmSecondSection(pageId);
+      populateMtmThirdSection(pageId);
     }
     
     console.log('✅ Content population completed');

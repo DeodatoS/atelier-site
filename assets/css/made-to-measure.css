@@ -1,16 +1,26 @@
-/* Made to Measure Specific Styles - Updated v2.0 */
+/* Made to Measure Page Specific Styles */
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
+}
+
+.section-padding {
+  padding: 60px 0;
 }
 
 /* Hero Section */
 .mtm-hero {
   margin-top: 205px;
+  height: 70vh;
   position: relative;
-  height: 60vh;
+  overflow: hidden;
+}
+
+.mtm-hero-image {
+  width: 100%;
+  height: 100%;
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
               url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80');
   background-size: cover;
@@ -20,326 +30,184 @@
   justify-content: center;
 }
 
+.mtm-hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mtm-hero-content {
   text-align: center;
   color: white;
-  max-width: 500px;
+  max-width: 400px;
   padding: 1rem;
 }
 
-.mtm-hero-title {
+.mtm-hero-logo {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 0.5rem;
   letter-spacing: 2px;
+  margin: 0;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  line-height: 1.1;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  word-wrap: break-word;
-  hyphens: auto;
+  white-space: nowrap;
 }
 
-.mtm-hero-subtitle {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  margin: 0;
-  line-height: 1.2;
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
-/* Made to Measure Intro Section */
-.mtm-intro {
-  padding: 5rem 0;
+/* Main Content Section (from CSV) */
+.mtm-main-content-section {
+  background: #fff;
   text-align: center;
 }
 
-.mtm-description {
-  max-width: 700px;
-  margin: 0 auto 4rem;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #666;
-  font-weight: 300;
+.mtm-main-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Services Grid */
-.mtm-services-grid {
+.mtm-main-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mtm-main-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
+/* Second Section: Text Left + Image Right */
+.mtm-second-section {
+  background: #f9f9f9;
+}
+
+.mtm-second-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-bottom: 5rem;
+  gap: 80px;
+  align-items: center;
+}
+
+.mtm-second-text h2 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mtm-second-text > p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.mtm-second-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Third Section: Image Left + Text Right */
+.mtm-third-section {
+  background: #fff;
+}
+
+.mtm-third-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.mtm-third-text h2 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mtm-third-text > p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.mtm-third-image {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .mtm-image {
-  width: 100% !important;
-  height: 1000px !important;
-  object-fit: cover !important;
-  border-radius: 0 !important;
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 0;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.mtm-service-image .mtm-image {
-  width: 100% !important;
-  height: 1000px !important;
-  object-fit: cover !important;
-  border-radius: 0 !important;
-}
-
-.mtm-features {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.mtm-feature h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.mtm-feature p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #666;
-}
-
-.mtm-service-image {
-  width: 100%;
-}
-
-.mtm-service-image img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 0;
-}
-
-.mtm-service-content {
-  text-align: left;
-}
-
-.mtm-service-content h3 {
-  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
-.mtm-service-content p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #666;
-  margin-bottom: 1rem;
-  font-weight: 300;
-}
-
-.mtm-service-content strong {
-  color: #333;
-  font-weight: 400;
-}
-
-/* Process Section */
-.mtm-process {
-  background: #f9f9f9;
-  padding: 5rem 0;
-}
-
-.mtm-process-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
-}
-
-.mtm-process-single-image {
-  width: 100%;
-}
-
-.mtm-single-img {
-  width: 100% !important;
-  height: 1000px !important;
-  object-fit: cover !important;
-  border-radius: 0 !important;
-}
-
-.mtm-process-content {
-  text-align: left;
-}
-
-.mtm-process-step {
-  margin-bottom: 2rem;
-}
-
-.mtm-process-step h4 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-  color: #333;
-}
-
-.mtm-process-step p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #666;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-
-.mtm-process-step em {
-  color: #999;
-  font-style: italic;
-}
-
-.mtm-process-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.mtm-process-image {
-  height: 200px;
-  border-radius: 0;
-  overflow: hidden;
-}
-
-.mtm-process-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mtm-process-image.mtm-large {
-  grid-column: 1 / -1;
-  height: 250px;
-}
-
-/* Booking Section */
-.mtm-booking {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.mtm-booking-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin-bottom: 4rem;
-}
-
-.mtm-booking-card {
-  text-align: center;
-  padding: 2rem;
-}
-
-.mtm-booking-card h3 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.mtm-booking-card p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-}
-
-.mtm-btn {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background: #333;
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-  border: none;
-  cursor: pointer;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-.mtm-btn:hover {
-  background: #555;
-}
-
-.mtm-btn-outline {
-  background: transparent;
-  color: #333;
-  border: 1px solid #333;
-  margin-top: 1rem;
-}
-
-.mtm-btn-outline:hover {
-  background: #333;
-  color: white;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .mtm-hero {
     height: 50vh;
-    margin-top: 225px;
+    margin-top: 160px;
   }
   
-  .mtm-hero-title {
-    font-size: 1.2rem;
+  .mtm-hero-logo {
+    font-size: 2rem;
     letter-spacing: 1px;
   }
   
-  .mtm-hero-subtitle {
-    font-size: 0.9rem;
+  .mtm-main-title {
+    font-size: 2rem;
   }
   
   .mtm-hero-content {
     padding: 0.5rem;
-    max-width: 350px;
+    max-width: 300px;
   }
   
-  .mtm-services-grid,
-  .mtm-process-grid,
-  .mtm-booking-grid {
+  .mtm-second-content,
+  .mtm-third-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 40px;
   }
   
-  .mtm-single-img {
-    height: 550px !important;
+  /* Invert order for second section on mobile: image first, then text */
+  .mtm-second-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .mtm-second-text h2,
+  .mtm-third-text h2 {
+    font-size: 2rem;
   }
   
   .mtm-image {
-    height: 550px !important;
-  }
-  
-  .mtm-service-content,
-  .mtm-process-content {
-    text-align: center;
-  }
-  
-  .mtm-process-images {
-    grid-template-columns: 1fr;
-  }
-  
-  .mtm-process-image.mtm-large {
-    grid-column: 1;
+    height: 450px;
   }
 }
 
@@ -349,13 +217,9 @@
     margin-top: 120px;
   }
   
-  .mtm-hero-title {
+  .mtm-hero-logo {
     font-size: 1.5rem;
     letter-spacing: 1px;
-  }
-  
-  .mtm-hero-subtitle {
-    font-size: 0.8rem;
   }
   
   .mtm-hero-content {
@@ -363,7 +227,7 @@
     max-width: 250px;
   }
   
-  .container {
-    padding: 0 1rem;
+  .mtm-main-title {
+    font-size: 1.8rem;
   }
 }
