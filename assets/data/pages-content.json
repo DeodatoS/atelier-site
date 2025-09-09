@@ -145,7 +145,7 @@
     ],
     "main_content": [
       {
-        "section_id": "main_section_description",
+        "section_id": "main_section",
         "content_type": "main_content",
         "title": "Personalizzato per te",
         "subtitle": "eeeee",
@@ -158,7 +158,7 @@
     ],
     "section_content": [
       {
-        "section_id": "second_section_description",
+        "section_id": "second_section",
         "content_type": "section_content",
         "title": "L'esperienza",
         "subtitle": "rrrrr",
@@ -168,13 +168,39 @@
         "is_active": true
       },
       {
-        "section_id": "third_section_description",
+        "section_id": "third_section",
         "content_type": "section_content",
         "title": "Creazione o personalizzazione",
         "subtitle": "tttttt",
         "description": "L?esperienza pu? tradursi nella creazione di un modello ideato e disegnato interamente per la cliente, unico e irripetibile, oppure nella personalizzazione di un capo della collezione attraverso scelte mirate di tessuti, colori, accessori e dettagli di stile. A guidare questa fase sono i bozzetti e le cartelle materiali, che aprono un ventaglio di possibilit?. Una volta definita la proposta, l?abito prende forma grazie alle mani delle sarte dell?Atelier: le prove successive consentono di perfezionare vestibilit? e particolari fino a raggiungere il risultato finale, un capo che racconta una storia personale attraverso la visione creativa di Elisa Sanna.",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756896717/12-scaled_vpi9ix.jpg",
         "order_position": 4,
+        "is_active": true
+      }
+    ],
+    "booking_option": [
+      {
+        "section_id": "booking_1",
+        "content_type": "booking_option",
+        "title": "\"Virtual Appointment\"",
+        "subtitle": "\"Schedule a virtual appointment with our expert tailors. We'll guide you through the measurement process and fabric selection from the comfort of your home.\"",
+        "order_position": 0,
+        "is_active": true
+      },
+      {
+        "section_id": "booking_2",
+        "content_type": "booking_option",
+        "title": "\"Virtual Appointment\"",
+        "subtitle": "\"Schedule a virtual appointment with our expert tailors. We'll guide you through the measurement process and fabric selection from the comfort of your home.\"",
+        "order_position": 0,
+        "is_active": true
+      },
+      {
+        "section_id": "booking_3",
+        "content_type": "booking_option",
+        "title": "\"Virtual Appointment\"",
+        "subtitle": "\"Schedule a virtual appointment with our expert tailors. We'll guide you through the measurement process and fabric selection from the comfort of your home.\"",
+        "order_position": 0,
         "is_active": true
       }
     ]
