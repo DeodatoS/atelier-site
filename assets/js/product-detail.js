@@ -200,11 +200,11 @@ function populateProductDetails(productData) {
   document.getElementById('price-standard').textContent = formatPrice(product.prices.standard);
   document.getElementById('price-range').textContent = `${formatPrice(product.prices.minimum)} - ${formatPrice(product.prices.maximum)}`;
   
-  // Colors
-  const colorsContainer = document.getElementById('product-colors');
-  colorsContainer.innerHTML = product.colors.map((color, index) => 
-    `<div class="color-option ${index === 0 ? 'selected' : ''}" data-color="${getColorClass(color)}" title="${color}" style="background-color: ${getColorForSwatch(color)}"></div>`
-  ).join('');
+  // Colors - Commented out for now
+  // const colorsContainer = document.getElementById('product-colors');
+  // colorsContainer.innerHTML = product.colors.map((color, index) => 
+  //   `<div class="color-option ${index === 0 ? 'selected' : ''}" data-color="${getColorClass(color)}" title="${color}" style="background-color: ${getColorForSwatch(color)}"></div>`
+  // ).join('');
   
   // Sizes
   const sizesContainer = document.getElementById('product-sizes');
