@@ -198,8 +198,7 @@ function populateProductDetails(productData) {
   
   // Pricing
   document.getElementById('price-standard').textContent = formatPrice(product.prices.standard);
-  document.getElementById('price-minimum').textContent = formatPrice(product.prices.minimum);
-  document.getElementById('price-maximum').textContent = formatPrice(product.prices.maximum);
+  document.getElementById('price-range').textContent = `${formatPrice(product.prices.minimum)} - ${formatPrice(product.prices.maximum)}`;
   
   // Colors
   const colorsContainer = document.getElementById('product-colors');

@@ -109,6 +109,14 @@ function getBookingOptions(pageId) {
 }
 
 /**
+ * Get section content by section_id
+ */
+function getSectionContent(pageId, sectionId) {
+  const sectionContent = getContentByType(pageId, 'section_content');
+  return sectionContent.find(section => section.section_id === sectionId) || null;
+}
+
+/**
  * Get latest pieces content
  */
 function getLatestPieces(pageId) {
@@ -226,6 +234,64 @@ function populateMainContent(pageId) {
     mainImage.src = mainContent.image_url;
     if (mainContent.image_alt) {
       mainImage.alt = mainContent.image_alt;
+    }
+  }
+}
+
+/**
+ * Populate second section for MTM pages
+ */
+function populateMtmSecondSection(pageId) {
+  const secondSection = getSectionContent(pageId, 'second_section');
+  if (!secondSection) return;
+
+  // Update second section title
+  const secondTitle = document.querySelector('.mtm-second-title');
+  if (secondTitle && secondSection.title) {
+    secondTitle.textContent = secondSection.title;
+  }
+
+  // Update second section description
+  const secondDescription = document.querySelector('.mtm-second-description');
+  if (secondDescription && secondSection.description) {
+    secondDescription.textContent = secondSection.description;
+  }
+
+  // Update second section image
+  const secondImage = document.querySelector('.mtm-second-image img');
+  if (secondImage && secondSection.image_url) {
+    secondImage.src = secondSection.image_url;
+    if (secondSection.image_alt) {
+      secondImage.alt = secondSection.image_alt;
+    }
+  }
+}
+
+/**
+ * Populate third section for MTM pages
+ */
+function populateMtmThirdSection(pageId) {
+  const thirdSection = getSectionContent(pageId, 'third_section');
+  if (!thirdSection) return;
+
+  // Update third section title
+  const thirdTitle = document.querySelector('.mtm-third-title');
+  if (thirdTitle && thirdSection.title) {
+    thirdTitle.textContent = thirdSection.title;
+  }
+
+  // Update third section description
+  const thirdDescription = document.querySelector('.mtm-third-description');
+  if (thirdDescription && thirdSection.description) {
+    thirdDescription.textContent = thirdSection.description;
+  }
+
+  // Update third section image
+  const thirdImage = document.querySelector('.mtm-third-image img');
+  if (thirdImage && thirdSection.image_url) {
+    thirdImage.src = thirdSection.image_url;
+    if (thirdSection.image_alt) {
+      thirdImage.alt = thirdSection.image_alt;
     }
   }
 }
