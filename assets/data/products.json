@@ -24,9 +24,6 @@
             "maximum": 1500
           },
           "colors": [
-            "Midnight Black",
-            "Burgundy",
-            "Navy Blue",
             "Emerald Green"
           ],
           "sizes": [
@@ -452,18 +449,18 @@
           "category": "prive_ceremonial",
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990159/ELISA_84368-1_ahcdra.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990152/ELISA_84341-1_xuxpnl.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990673/ELISA_84341-1_xuxpnl.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990274/ELISA_84343-1_uyxnau.jpg",
           "video_url": "",
           "gallery": [
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990159/ELISA_84368-1_ahcdra.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990152/ELISA_84341-1_xuxpnl.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990673/ELISA_84341-1_xuxpnl.jpg",
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756990274/ELISA_84343-1_uyxnau.jpg"
           ],
           "prices": {
-            "standard": 1050,
-            "minimum": 1050,
-            "maximum": 1250
+            "standard": 940,
+            "minimum": 940,
+            "maximum": 1140
           },
           "colors": [
             "Charcoal Gray",
@@ -803,6 +800,41 @@
         },
         {
           "id": "col009",
+          "name": "ABITO IN SETA E CADY",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1757168712/ELISA_84127-1_phuzj3.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1757169147/ELISA_84124-1_sqaokm.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1757168830/ELISA_84121-1_u3t0tv.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1757168712/ELISA_84127-1_phuzj3.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1757169147/ELISA_84124-1_sqaokm.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1757168830/ELISA_84121-1_u3t0tv.jpg"
+          ],
+          "prices": {
+            "standard": 750,
+            "minimum": 750,
+            "maximum": 920
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
+          "id": "col010",
           "name": "ABITO IN LANA CON NAPPINE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -837,7 +869,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "col010",
+          "id": "col011",
           "name": "CARDIGAN IN LANA CON BAGUETTE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -872,7 +904,7 @@
           "fabric": "100% Linen"
         },
         {
-          "id": "col011",
+          "id": "col012",
           "name": "GIACCA IN CREPE CADY ",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
