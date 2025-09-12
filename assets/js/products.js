@@ -118,7 +118,6 @@ function displayProducts(products) {
 // Populate filter options
 function populateFilters(products) {
   const colorFilter = document.getElementById('color-filter');
-  const sizeFilter = document.getElementById('size-filter');
   
   // Get unique colors
   const allColors = [...new Set(products.flatMap(p => p.colors))].sort();
@@ -126,20 +125,12 @@ function populateFilters(products) {
   allColors.forEach(color => {
     colorFilter.innerHTML += `<option value="${color}">${color}</option>`;
   });
-  
-  // Get unique sizes
-  const allSizes = [...new Set(products.flatMap(p => p.sizes))].sort();
-  sizeFilter.innerHTML = '<option value="">All Sizes</option>';
-  allSizes.forEach(size => {
-    sizeFilter.innerHTML += `<option value="${size}">${size}</option>`;
-  });
 }
 
 // Filter products
 function filterProducts() {
   const priceFilter = document.getElementById('price-filter').value;
   const colorFilter = document.getElementById('color-filter').value;
-  const sizeFilter = document.getElementById('size-filter').value;
   
   filteredProducts = allProducts.filter(product => {
     // Price filter
@@ -154,9 +145,6 @@ function filterProducts() {
     // Color filter
     if (colorFilter && !product.colors.includes(colorFilter)) return false;
     
-    // Size filter
-    if (sizeFilter && !product.sizes.includes(sizeFilter)) return false;
-    
     return true;
   });
   
@@ -167,7 +155,6 @@ function filterProducts() {
 function clearFilters() {
   document.getElementById('price-filter').value = '';
   document.getElementById('color-filter').value = '';
-  document.getElementById('size-filter').value = '';
   filteredProducts = [...allProducts];
   displayProducts(filteredProducts);
 }
@@ -294,7 +281,6 @@ async function initializePage() {
     // Add event listeners
     document.getElementById('price-filter').addEventListener('change', filterProducts);
     document.getElementById('color-filter').addEventListener('change', filterProducts);
-    document.getElementById('size-filter').addEventListener('change', filterProducts);
     document.getElementById('clear-filters').addEventListener('click', clearFilters);
     
     // Update navigation active state

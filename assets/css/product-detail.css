@@ -109,7 +109,7 @@
   width: 100px;
   height: 150px; /* Increased height */
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0;
   cursor: pointer;
   transition: opacity 0.3s ease;
   border: 2px solid transparent;
