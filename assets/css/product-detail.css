@@ -604,6 +604,11 @@
     font-size: 0.7rem;
   }
   
+  /* Make SIZE title same size as price labels on mobile */
+  .section-title {
+    font-size: 0.75rem !important;
+  }
+  
   .buy-buttons {
     position: sticky;
     bottom: 20px;
