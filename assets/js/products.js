@@ -85,13 +85,10 @@ function createProductCard(product) {
       </div>
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
-        <p class="product-description">${product.description}</p>
-        <p class="product-fabric">${product.fabric}</p>
         <div class="product-price">
           <span class="price-standard">${standardPrice}</span>
         </div>
         <div class="product-actions">
-          <button class="btn-primary" onclick="requestQuote('${product.id}')">Request Quote</button>
           <button class="btn-secondary" onclick="viewDetails('${product.id}')">View Details</button>
         </div>
       </div>
@@ -173,15 +170,6 @@ function clearFilters() {
   document.getElementById('size-filter').value = '';
   filteredProducts = [...allProducts];
   displayProducts(filteredProducts);
-}
-
-// Request quote functionality
-function requestQuote(productId) {
-  const product = allProducts.find(p => p.id === productId);
-  if (product) {
-    // For now, we'll show an alert. In a real application, this would open a contact form
-    alert(`Quote request for "${product.name}"\n\nWe'll be in touch soon to discuss your custom piece.\n\nFor immediate assistance, please contact our atelier directly.`);
-  }
 }
 
 // View details functionality
