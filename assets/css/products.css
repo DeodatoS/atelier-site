@@ -506,4 +506,32 @@
   .product-actions {
     flex-direction: column;
   }
+  
+  /* Compact mobile layout */
+  .product-info {
+    padding: 15px; /* Reduced from 25px */
+  }
+  
+  .product-name {
+    font-size: 1.1rem; /* Reduced from 1.4rem */
+    margin-bottom: 8px; /* Reduced from 10px */
+  }
+  
+  .product-price {
+    margin-bottom: 10px; /* Reduced from 15px */
+  }
+  
+  .price-standard {
+    font-size: 1rem; /* Reduced from 1.2rem */
+  }
+  
+  .product-actions {
+    gap: 8px; /* Reduced from 10px */
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 16px; /* Reduced from 12px 20px */
+    font-size: 0.75rem; /* Reduced from 0.8rem */
+  }
 }
