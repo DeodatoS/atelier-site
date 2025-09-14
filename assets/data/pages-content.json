@@ -410,17 +410,6 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "title": "ELISA SANNA",
-        "subtitle": "OUR ATELIER",
-        "description": "Faithful to the Italian origins of the brand",
-        "image_url": "our Atelier and team pays tribute to craftsmanship",
-        "image_alt": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "order_position": 0,
-        "is_active": false
-      },
-      {
-        "section_id": "hero",
-        "content_type": "hero_section",
         "title": "OUR ATELIER",
         "subtitle": "Where Craftsmanship Lives",
         "description": "Step into our world of Italian artistry and traditional craftsmanship.",
@@ -428,9 +417,31 @@
         "image_alt": "Our atelier workspace",
         "order_position": 1,
         "is_active": true
+      },
+      {
+        "section_id": "hero",
+        "content_type": "hero_section",
+        "title": "Craftsmanship and Values",
+        "subtitle": "bbbb",
+        "description": "ccccc",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "Personalized for you hero",
+        "order_position": 1,
+        "is_active": true
       }
     ],
     "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "Elisa Sanna SANTA",
+        "subtitle": "ARTIGIANALITA' E VALORI",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Craftsmanship and values",
+        "order_position": 1,
+        "is_active": true
+      },
       {
         "section_id": "main_section",
         "content_type": "main_content",
@@ -440,53 +451,26 @@
         "image_alt": "Atelier craftsmanship",
         "order_position": 2,
         "is_active": true
-      },
-      {
-        "section_id": "main_section",
-        "content_type": "main_content",
-        "title": "Our Atelier",
-        "description": "In fashion, we embrace slowness?choosing quality over quantity, and timeless design over fleeting trends. Sustainability means crafting pieces with care, sourcing responsibly, and honoring the planet with every stitch.",
-        "image_url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "image_alt": "Atelier Workshop",
-        "order_position": 2,
-        "is_active": true
       }
     ],
-    "section_header": [
+    "section_content": [
       {
-        "section_id": "section_title",
-        "content_type": "section_header",
-        "title": "Atelier",
+        "section_id": "second_section",
+        "content_type": "section_content",
+        "title": "VAI VIA AI CIAPP",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
-        "order_position": 3,
-        "is_active": true
-      }
-    ],
-    "text_content": [
-      {
-        "section_id": "text_1",
-        "content_type": "text_content",
-        "description": "We believe in building garments through deep research?with those who share our values",
-        "image_url": "our heritage",
-        "image_alt": "and our future. Understanding how our manufacturers work is not just important and essential to us.",
+        "image_alt": "with every detail receiving the attention it deserves.",
         "order_position": 0,
         "is_active": true
       },
       {
-        "section_id": "text_2",
-        "content_type": "text_content",
-        "description": "We are proud to partner with master artisans who embody the spirit of Italian excellence. Their expertise",
-        "image_url": "rooted in generations of craftsmanship",
-        "image_alt": "brings our vision to life with every stitch and detail.",
-        "order_position": 0,
-        "is_active": true
-      },
-      {
-        "section_id": "text_3",
-        "content_type": "text_content",
-        "description": "Elisa Sanna is more than a brand. It's a family bound by respect",
-        "image_url": "creativity",
-        "image_alt": "and a commitment to timeless Italian craftsmanship.",
+        "section_id": "third_section",
+        "content_type": "section_content",
+        "title": "Mi sono rotto",
+        "description": "Our craftsmen are the guardians of centuries-old techniques",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "with every detail receiving the attention it deserves.",
         "order_position": 0,
         "is_active": true
       }
