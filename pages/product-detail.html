@@ -91,39 +91,37 @@
             <p>Product description will be loaded here...</p>
           </div>
 
-          <div class="pricing-section" id="pricing-section">
+          <!-- Standard Size Section -->
+          <div class="standard-size-section">
             <div class="price-row">
               <span class="price-label">STANDARD SIZE</span>
               <span id="price-standard" class="price">€0</span>
             </div>
+            
+            <div class="size-section">
+              <h3 class="section-title">Standard sizes</h3>
+              <div id="product-sizes" class="size-options">
+                <!-- Size options will be populated by JavaScript -->
+              </div>
+              <p class="size-note">Need help finding your size? <a href="#" onclick="contactAtelier()">Contact our Atelier</a></p>
+            </div>
+            
+            <div class="buy-buttons">
+              <button class="btn btn-primary" onclick="buyStandardSize()">Buy Standard Size</button>
+            </div>
+          </div>
+
+          <!-- Made to Measure Section -->
+          <div class="made-to-measure-section">
             <div class="price-row">
               <span class="price-label">MADE TO MEASURE</span>
               <span id="price-range" class="price">€0 - €0</span>
             </div>
             <p class="made-to-measure-note">Il prezzo può variare in base alle singole richieste</p>
-          </div>
-
-          <!-- <div class="color-section">
-            <h3 class="section-title">Color</h3>
-            <div id="product-colors" class="color-options">
-              Color options will be populated by JavaScript
+            
+            <div class="buy-buttons">
+              <button class="btn" onclick="buyMadeToMeasure()">Buy Made to Measure</button>
             </div>
-          </div> -->
-
-          <div class="size-section">
-            <h3 class="section-title">Standard sizes</h3>
-            <div id="product-sizes" class="size-options">
-              <!-- Size options will be populated by JavaScript -->
-            </div>
-            <p class="size-note">Need help finding your size? <a href="#" onclick="contactAtelier()">Contact our Atelier</a></p>
-          </div>
-
-          <div class="buy-buttons">
-            <button class="btn btn-primary" onclick="buyStandardSize()">Buy Standard Size</button>
-            <p class="made-to-measure-text">
-              Have your own made to measure experience with our Atelier
-            </p>
-            <button class="btn" onclick="buyMadeToMeasure()">Buy Made to Measure</button>
           </div>
 
           <div class="accordion">
