@@ -651,6 +651,12 @@ async function initializePageContent() {
       populateMtmThirdSection(pageId);
     }
     
+    // Populate new sections for Craftsmanship Values page
+    if (pageId === 'craftsmanship_values') {
+      populateSecondSection(pageId);
+      populateThirdSection(pageId);
+    }
+    
     console.log('✅ Content population completed');
     
     if (pageId === 'homepage') {
