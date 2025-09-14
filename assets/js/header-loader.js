@@ -10,7 +10,6 @@
    * Load header content from external file
    */
   function loadHeader() {
-    console.log('🚀 Header loader starting...');
     // Create header placeholder if it doesn't exist
     let headerPlaceholder = document.getElementById('header-placeholder');
     
@@ -38,8 +37,6 @@
       headerPath = '../components/header.html';
     }
     
-    console.log('📍 Current path:', currentPath);
-    console.log('📁 Header path:', headerPath);
 
     // Load header content
     fetch(headerPath)
@@ -52,7 +49,6 @@
       .then(html => {
         headerPlaceholder.innerHTML = html;
         console.log('✅ Unified header loaded successfully');
-        console.log('📄 Header HTML length:', html.length);
         
         // Fix relative links for pages in subdirectories
         if (currentPath.includes('/pages/')) {
@@ -122,7 +118,6 @@
         const logoImg = logoLink.querySelector('img');
         if (logoImg && logoImg.getAttribute('src') === 'assets/images/logo.png') {
           logoImg.setAttribute('src', '../assets/images/logo.png');
-          console.log('🔧 Fixed logo path to:', '../assets/images/logo.png');
         }
       }
     }
