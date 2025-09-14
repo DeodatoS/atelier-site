@@ -589,6 +589,30 @@
         "order_position": 0,
         "is_active": false
       }
+    ],
+    "section_content": [
+      {
+        "section_id": "second_section",
+        "content_type": "section_content",
+        "title": "Masterful Craftsmanship",
+        "subtitle": "Guardians of tradition",
+        "description": "Our craftsmen are the guardians of centuries-old techniques, passed down through generations of Italian artisans. Each garment is meticulously constructed by hand, with every detail receiving the attention it deserves. From the initial pattern cutting to the final finishing touches, precision and passion guide every step.",
+        "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        "image_alt": "Master craftsman at work",
+        "order_position": 3,
+        "is_active": true
+      },
+      {
+        "section_id": "third_section",
+        "content_type": "section_content",
+        "title": "Premium Materials & Sustainability",
+        "subtitle": "Ethical luxury",
+        "description": "We source only the finest materials from trusted Italian suppliers who share our commitment to excellence. Premium fabrics, hand-selected threads, and traditional tools come together in our atelier to create pieces that transcend fashion trends and become timeless treasures. Our values of sustainability and ethical production are woven into every aspect of our process.",
+        "image_url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        "image_alt": "Premium materials and sustainable practices",
+        "order_position": 4,
+        "is_active": true
+      }
     ]
   },
   "prive_ceremonial": {
