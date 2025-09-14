@@ -214,12 +214,15 @@ function populateHero(pageId, heroSelector = '#hero-title, .hero-content h1, .he
  */
 function populateMainContent(pageId) {
   const mainContent = getMainContent(pageId);
+  console.log('🔍 populateMainContent for', pageId, ':', mainContent);
   if (!mainContent) return;
 
   // Update main section title
   const mainTitle = document.querySelector('.pfy-main-title, .mtm-main-title, .pfy-personalised-text h2, .mtm-service-content h3, .text-content h2');
+  console.log('🔍 mainTitle element found:', mainTitle);
   if (mainTitle) {
     mainTitle.textContent = mainContent.title;
+    console.log('✅ mainTitle updated with:', mainContent.title);
   }
 
   // Update main section description
