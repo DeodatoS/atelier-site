@@ -106,10 +106,16 @@
       }
     });
     
-    // Fix logo link for pages in subdirectories
+    // Fix logo link and image for pages in subdirectories
     const logoLink = headerElement.querySelector('.logo');
-    if (logoLink && logoLink.getAttribute('href') === '#') {
+    if (logoLink) {
       logoLink.setAttribute('href', '../index.html');
+      
+      // Fix logo image path for subdirectories
+      const logoImg = logoLink.querySelector('img');
+      if (logoImg && logoImg.getAttribute('src') === 'assets/images/logo.png') {
+        logoImg.setAttribute('src', '../assets/images/logo.png');
+      }
     }
   }
 
