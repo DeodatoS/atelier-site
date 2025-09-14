@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
-  <link rel="stylesheet" href="../assets/css/hand-embroidery.css">
+  <link rel="stylesheet" href="../assets/css/personalized-for-you.css">
 </head>
 <body>
   <!-- Header -->
@@ -50,76 +50,93 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <div class="home hand-embroidery-page">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-image">
-        <div class="hero-overlay">
-          <div class="hero-content">
-            <div class="hero-logo">
-              <h2>ELISA SANNA</h2>
-              <p>HAND EMBROIDERY</p>
-            </div>
-          </div>
+  <!-- Hero Section -->
+  <section class="pfy-hero">
+    <div class="pfy-hero-image">
+      <div class="pfy-hero-overlay">
+        <div class="pfy-hero-content">
+          <h1 class="pfy-hero-logo">ELISA SANNA</h1>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Hand Embroidery Section -->
-    <section class="hand-embroidery-section py-5">
-      <div class="container">
-        <div class="section-header text-center mb-5">
-          <h2>HAND EMBROIDERY</h2>
+  <!-- Main Content Section (from CSV) -->
+  <section class="pfy-main-content-section section-padding">
+    <div class="container">
+      <div class="pfy-main-content">
+        <h2 class="pfy-main-title"></h2>
+        <p class="pfy-main-description">
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Section: Text Left + Image Right -->
+  <section class="pfy-second-section section-padding">
+    <div class="container">
+      <div class="pfy-second-content">
+        <div class="pfy-second-text">
+          <h2 class="pfy-second-title"></h2>
+          <p class="pfy-second-description">
+          </p>
+        </div>
+        <div class="pfy-second-image">
+          <img src="" alt="Second section image" class="pfy-image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Third Section: Image Left + Text Right -->
+  <section class="pfy-third-section section-padding">
+    <div class="container">
+      <div class="pfy-third-content">
+        <div class="pfy-third-image">
+          <img src="" alt="Third section image" class="pfy-image" />
+        </div>
+        <div class="pfy-third-text">
+          <h2 class="pfy-third-title"></h2>
+          <p class="pfy-third-description">
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="pfy-booking-section section-padding">
+    <div class="container">
+      <h2 class="pfy-section-title">BOOK YOUR APPOINTMENT</h2>
+      
+      <div class="pfy-booking-options">
+        <div class="pfy-booking-option">
+          <h3>Appointment at your convenience</h3>
+          <p>
+            We would love to help you find the perfect fit. Please contact us to schedule an appointment at your convenience. We look forward to working with you.
+          </p>
+          <button class="pfy-btn">BOOK YOUR MEETING</button>
         </div>
         
-        <div class="content-wrapper">
-          <div class="text-content">
-            <p class="intro-text">
-              Hand embroidery is the art of decorating fabric using a needle and thread. Unlike 
-              machine embroidery, it's entirely done by hand allowing for a personal touch, intricate 
-              details, and endless creative possibilities. Whether you're stitching a delicate floral motif 
-              or a bold geometric design, hand embroidery transforms simple cloth into expressive 
-              artwork.
-            </p>
-          </div>
+        <div class="pfy-booking-option">
+          <h3>Virtual Appointment</h3>
+          <p>
+            Schedule a virtual appointment with our expert tailors. We'll guide you through the measurement process and fabric selection from the comfort of your home.
+          </p>
+          <button class="pfy-btn">BOOK YOUR MEETING</button>
+          <a href="#" class="pfy-download-link">DOWNLOAD WHATSAPP</a>
+        </div>
+        
+        <div class="pfy-booking-option">
+          <h3>Appointment in our Atelier</h3>
+          <p>
+            Visit our atelier for a complete bespoke experience. Our master tailors will provide personalized consultation and precise measurements in our luxury showroom.
+          </p>
+          <button class="pfy-btn">BOOK YOUR MEETING</button>
         </div>
       </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process-section py-5">
-      <div class="container">
-        <div class="process-grid">
-          <div class="process-images">
-            <div class="image-container">
-              <div class="embroidery-image">
-                <img src="https://picsum.photos/400/250?random=1" alt="Hands embroidering detailed work" class="process-img">
-              </div>
-            </div>
-            
-            <div class="image-container">
-              <div class="embroidery-image">
-                <img src="https://picsum.photos/400/250?random=2" alt="Close-up of embroidered fabric texture" class="process-img">
-              </div>
-            </div>
-            
-            <div class="image-container">
-              <div class="embroidery-image">
-                <img src="https://picsum.photos/400/250?random=3" alt="Finished embroidery pieces" class="process-img">
-              </div>
-            </div>
-          </div>
-          
-          <div class="process-content">
-            <div class="single-process-text">
-              <p>Hand embroidery represents the pinnacle of Italian craftsmanship, where skilled artisans transform simple threads into works of art. Our process begins with careful design conceptualization, followed by meticulous material selection of the finest fabrics and threads. Each piece is then brought to life through precise stitching techniques passed down through generations, resulting in unique creations that tell a story of tradition, beauty, and excellence.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- Footer Placeholder - Loaded dynamically -->
   <div id="footer-placeholder"></div>

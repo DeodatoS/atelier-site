@@ -630,9 +630,11 @@ async function initializePageContent() {
       pageId = 'the_designer';
     } else if (window.location.pathname.includes('our-atelier')) {
       pageId = 'our_atelier';
-    } else if (window.location.pathname.includes('craftsmanship-values')) {
-      pageId = 'craftsmanship_values';
-    }
+        } else if (window.location.pathname.includes('craftsmanship-values')) {
+          pageId = 'craftsmanship_values';
+        } else if (window.location.pathname.includes('hand-embroidery')) {
+          pageId = 'hand_embroidery';
+        }
 
     // Populate content based on page
     console.log('🎯 Populating content for:', pageId);
@@ -655,10 +657,14 @@ async function initializePageContent() {
     }
     
     // Populate new sections for Craftsmanship Values page
-    if (pageId === 'craftsmanship_values') {
-      populateSecondSection(pageId);
-      populateThirdSection(pageId);
-    }
+        if (pageId === 'craftsmanship_values') {
+          populateSecondSection(pageId);
+          populateThirdSection(pageId);
+        }
+        if (pageId === 'hand_embroidery') {
+          populateSecondSection(pageId);
+          populateThirdSection(pageId);
+        }
     
     console.log('✅ Content population completed');
     
