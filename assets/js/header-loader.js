@@ -97,13 +97,12 @@
    * Fix relative links in header for pages in subdirectories
    */
   function fixHeaderLinks(headerElement) {
-    const links = headerElement.querySelectorAll('a[href^="/pages/"]');
+    const links = headerElement.querySelectorAll('a[href^="pages/"]');
     links.forEach(link => {
       const href = link.getAttribute('href');
-      // Convert /pages/xyz.html to xyz.html for subdirectory pages (remove /pages/ prefix)
-      if (href.startsWith('/pages/')) {
-        const fileName = href.replace('/pages/', '');
-        link.setAttribute('href', fileName);
+      // Convert pages/xyz.html to ../pages/xyz.html for subdirectory pages
+      if (href.startsWith('pages/')) {
+        link.setAttribute('href', '../' + href);
       }
     });
     
