@@ -57,6 +57,9 @@
         
         // Initialize dropdown functionality after header is loaded
         initializeDropdowns();
+        
+        // Initialize mobile menu after header is loaded
+        initializeMobileMenu();
       })
       .catch(error => {
         console.error('❌ Error loading header:', error);
@@ -136,6 +139,56 @@
 
   // Start the header loader
   initHeaderLoader();
+
+  /**
+   * Initialize mobile menu functionality
+   */
+  function initializeMobileMenu() {
+    const metaBar = document.querySelector('.meta-bar');
+    const navLeft = document.querySelector('.nav-left');
+    
+    if (window.innerWidth <= 480) {
+      if (!document.querySelector('.mobile-menu-toggle') && metaBar) {
+        const menuToggle = document.createElement('button');
+        menuToggle.className = 'mobile-menu-toggle';
+        menuToggle.innerHTML = '☰';
+        menuToggle.style.cssText = `
+          background: none;
+          border: none;
+          font-size: 1.2rem;
+          color: #fff;
+          cursor: pointer;
+          display: block;
+          padding: 0;
+          margin-right: 15px;
+        `;
+        
+        metaBar.appendChild(menuToggle);
+        
+        menuToggle.addEventListener('click', () => {
+          if (navLeft) {
+            if (navLeft.style.display === 'none' || navLeft.style.display === '') {
+              navLeft.style.display = 'flex';
+              navLeft.style.flexDirection = 'column';
+              navLeft.style.gap = '0.5rem';
+              navLeft.style.padding = '1rem';
+              navLeft.style.backgroundColor = '#fff';
+              navLeft.style.borderRadius = '8px';
+              navLeft.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+            } else {
+              navLeft.style.display = 'none';
+            }
+          }
+        });
+      }
+    } else {
+      // Remove mobile menu toggle if screen is larger
+      const existingToggle = document.querySelector('.mobile-menu-toggle');
+      if (existingToggle) {
+        existingToggle.remove();
+      }
+    }
+  }
 
   // Global debug function
   window.reloadHeader = loadHeader;
