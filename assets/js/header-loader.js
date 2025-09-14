@@ -56,7 +56,7 @@
         
         // Fix relative links for pages in subdirectories
         if (currentPath.includes('/pages/')) {
-          fixHeaderLinks(headerPlaceholder);
+          fixHeaderLinks(headerPlaceholder, currentPath);
         }
         
         // Initialize dropdown functionality after header is loaded
@@ -101,7 +101,7 @@
   /**
    * Fix relative links in header for pages in subdirectories
    */
-  function fixHeaderLinks(headerElement) {
+  function fixHeaderLinks(headerElement, currentPath) {
     const links = headerElement.querySelectorAll('a[href^="pages/"]');
     links.forEach(link => {
       const href = link.getAttribute('href');
@@ -122,6 +122,7 @@
         const logoImg = logoLink.querySelector('img');
         if (logoImg && logoImg.getAttribute('src') === 'assets/images/logo.png') {
           logoImg.setAttribute('src', '../assets/images/logo.png');
+          console.log('🔧 Fixed logo path to:', '../assets/images/logo.png');
         }
       }
     }
