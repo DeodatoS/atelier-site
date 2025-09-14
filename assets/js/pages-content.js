@@ -634,6 +634,8 @@ async function initializePageContent() {
           pageId = 'craftsmanship_values';
         } else if (window.location.pathname.includes('hand-embroidery')) {
           pageId = 'hand_embroidery';
+        } else if (window.location.pathname.includes('our-atelier')) {
+          pageId = 'our_atelier';
         }
 
     // Populate content based on page
@@ -662,6 +664,10 @@ async function initializePageContent() {
           populateThirdSection(pageId);
         }
         if (pageId === 'hand_embroidery') {
+          populateSecondSection(pageId);
+          populateThirdSection(pageId);
+        }
+        if (pageId === 'our_atelier') {
           populateSecondSection(pageId);
           populateThirdSection(pageId);
         }
