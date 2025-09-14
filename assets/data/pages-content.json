@@ -271,16 +271,27 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "title": "ELISA SANNA",
-        "subtitle": "HAND EMBROIDERY",
-        "description": "Discover the ancient art of hand embroidery, where every thread tells a story of tradition and mastery.",
-        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "image_alt": "Hand embroidery hero",
+        "title": "Craftsmanship and Values",
+        "subtitle": "bbbb",
+        "description": "ccccc",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "Personalized for you hero",
         "order_position": 1,
         "is_active": true
       }
     ],
     "main_content": [
+      {
+        "section_id": "main_section",
+        "content_type": "main_content",
+        "title": "Elisa Sanna gnucca",
+        "subtitle": "ARTIGIANALITA' E VALORI",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Craftsmanship and values",
+        "order_position": 1,
+        "is_active": true
+      },
       {
         "section_id": "main_section",
         "content_type": "main_content",
@@ -291,65 +302,27 @@
         "image_alt": "Hand embroidery craftsmanship",
         "order_position": 2,
         "is_active": true
-      },
-      {
-        "section_id": "main_section",
-        "content_type": "main_content",
-        "title": "HAND EMBROIDERY",
-        "description": "Hand embroidery is the art of decorating fabric using a needle and thread. Unlike machine embroidery, it's entirely done by hand allowing for a personal touch, intricate details, and endless creative possibilities.",
-        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "image_alt": "Hand embroidery craftsmanship",
-        "order_position": 2,
-        "is_active": true
       }
     ],
-    "process_step": [
+    "section_content": [
       {
-        "section_id": "process_step_1",
-        "content_type": "process_step",
-        "title": "prova booo",
-        "description": "salta la quaglia Conceptualization: Begin with a theme or inspiration. Sketching: Create a design on paper or digitally. Customization: Tailor the design to suit the fabric, purpose, and personal style.",
-        "order_position": 3,
+        "section_id": "second_section",
+        "content_type": "section_content",
+        "title": "Champagne",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "with every detail receiving the attention it deserves.",
+        "order_position": 0,
         "is_active": true
       },
       {
-        "section_id": "process_step_2",
-        "content_type": "process_step",
-        "title": "ignorata",
-        "subtitle": "ignorata",
-        "order_position": 4,
-        "is_active": true
-      },
-      {
-        "section_id": "process_step_3",
-        "content_type": "process_step",
-        "title": "ignorata",
-        "subtitle": "ignorata",
-        "order_position": 5,
-        "is_active": true
-      },
-      {
-        "section_id": "process_step_4",
-        "content_type": "process_step",
-        "title": "ignorata",
-        "subtitle": "ignorata",
-        "order_position": 6,
-        "is_active": true
-      },
-      {
-        "section_id": "process_step_5",
-        "content_type": "process_step",
-        "title": "ignorata",
-        "subtitle": "ignorata",
-        "order_position": 7,
-        "is_active": true
-      },
-      {
-        "section_id": "process_step_6",
-        "content_type": "process_step",
-        "title": "ignorata",
-        "subtitle": "ignorata",
-        "order_position": 8,
+        "section_id": "third_section",
+        "content_type": "section_content",
+        "title": "Viva il toro",
+        "description": "Our craftsmen are the guardians of centuries-old techniques",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "with every detail receiving the attention it deserves.",
+        "order_position": 0,
         "is_active": true
       }
     ]
