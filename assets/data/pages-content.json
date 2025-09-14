@@ -343,11 +343,11 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "title": "THE DESIGNER",
-        "subtitle": "Elisa Sanna",
-        "description": "Get to know her",
-        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "image_alt": "The designer Elisa Sanna",
+        "title": "vomito",
+        "subtitle": "bbbb",
+        "description": "ccccc",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "Personalized for you hero",
         "order_position": 1,
         "is_active": true
       }
@@ -366,40 +366,35 @@
     ],
     "main_content": [
       {
-        "section_id": "intro_section",
+        "section_id": "main_section",
         "content_type": "main_content",
-        "description": "Hand embroidery is the art of decorating fabric using a needle and thread. Unlike machine embroidery",
-        "image_url": "it's entirely done by hand",
-        "image_alt": "allowing for a personal touch",
-        "order_position": 0,
-        "is_active": false
+        "title": "Elisa Sanna si lamenta sempre",
+        "subtitle": "ARTIGIANALITA' E VALORI",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Craftsmanship and values",
+        "order_position": 1,
+        "is_active": true
       }
     ],
-    "text_content": [
+    "section_content": [
       {
-        "section_id": "philosophy_1",
-        "content_type": "text_content",
-        "description": "We believe in building garments through deep research?with those who share our values",
-        "image_url": "heritage",
-        "image_alt": "and our future. Understanding how our manufacturers work is not just practical and essential to us.",
+        "section_id": "second_section",
+        "content_type": "section_content",
+        "title": "Caviale",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "with every detail receiving the attention it deserves.",
         "order_position": 0,
         "is_active": true
       },
       {
-        "section_id": "philosophy_2",
-        "content_type": "text_content",
-        "description": "We are proud to partner with master artisans who embody the spirit of Italian excellence. Their expertise",
-        "image_url": "rooted in generations of craftsmanship",
-        "image_alt": "brings our vision to life with every stitch and detail.",
-        "order_position": 0,
-        "is_active": true
-      },
-      {
-        "section_id": "philosophy_3",
-        "content_type": "text_content",
-        "description": "Elisa Sanna is more than a brand. It's a family bound by respect",
-        "image_url": "creativity",
-        "image_alt": "and a commitment to timeless Italian craftsmanship.",
+        "section_id": "third_section",
+        "content_type": "section_content",
+        "title": "Viva il tutti",
+        "description": "Our craftsmen are the guardians of centuries-old techniques",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
+        "image_alt": "with every detail receiving the attention it deserves.",
         "order_position": 0,
         "is_active": true
       }
