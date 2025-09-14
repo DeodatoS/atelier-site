@@ -218,6 +218,14 @@
   color: #333;
 }
 
+.made-to-measure-note {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  color: #666;
+  margin: 5px 0 0 0;
+  font-style: italic;
+}
+
 /* Color Section - Ultra Compact */
 .color-section {
   margin-bottom: 15px;
