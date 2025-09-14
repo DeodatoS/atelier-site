@@ -636,6 +636,8 @@ async function initializePageContent() {
           pageId = 'hand_embroidery';
         } else if (window.location.pathname.includes('our-atelier')) {
           pageId = 'our_atelier';
+        } else if (window.location.pathname.includes('the-designer')) {
+          pageId = 'the_designer';
         }
 
     // Populate content based on page
@@ -668,6 +670,10 @@ async function initializePageContent() {
           populateThirdSection(pageId);
         }
         if (pageId === 'our_atelier') {
+          populateSecondSection(pageId);
+          populateThirdSection(pageId);
+        }
+        if (pageId === 'the_designer') {
           populateSecondSection(pageId);
           populateThirdSection(pageId);
         }
