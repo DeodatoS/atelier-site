@@ -81,7 +81,6 @@ function createProductCard(product) {
     <div class="product-card" data-product-id="${product.id}">
       <div class="product-image" onclick="viewDetails('${product.id}')" style="cursor: pointer;">
         <img src="${product.image}" alt="${product.name}" loading="lazy">
-        <div class="product-made-to">Made to ${product.madeTo}</div>
       </div>
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
