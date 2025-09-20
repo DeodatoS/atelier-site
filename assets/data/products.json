@@ -5,41 +5,10 @@
       "description": "Exquisite pieces for special occasions and refined experiences",
       "products": [
         {
-          "id": "pc001",
-          "name": "ABITO IN DOPPIO CREPE DI LANA CON CRISTALLI",
-          "category": "prive_ceremonial",
-          "description": "here the descr",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756651019/ELI_00925-1_1_qqzbo5.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736721/ELI_00912-1_n4yygp_ncto5i.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756651019/ELI_00925-1_1_qqzbo5.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736721/ELI_00912-1_n4yygp_ncto5i.jpg"
-          ],
-          "prices": {
-            "standard": 1300,
-            "minimum": 1300,
-            "maximum": 1500
-          },
-          "colors": [
-            "Emerald Green"
-          ],
-          "sizes": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-          ],
-          "fabric": ""
-        },
-        {
           "id": "pc002",
           "name": "TOP IN ORGANZA DI SETA CON PASSAMANERIA",
           "category": "prive_ceremonial",
-          "description": "Adorable mini suit perfect for special occasions",
+          "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806026/B132DD58-F396-4300-90FC-37BD669E50F4_pysydr.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806024/ELI_00519-1_fdhfbo.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806030/ELI_00567-1_v10nop.jpg",
@@ -73,7 +42,7 @@
           "id": "pc003",
           "name": "ABITO IN DOPPIO CREPE DI LANA CON DETTAGLIO GIOIELLO",
           "category": "prive_ceremonial",
-          "description": "Adorable mini suit perfect for special occasions",
+          "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756737527/ELI_00986_2_hwzjkp_cuhl6s.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756737526/ELI_00963-1_m9yt7n_zre4mt.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756737531/ELI_00995-1_vry2cc_r1ayah.jpg",
@@ -107,7 +76,7 @@
           "id": "pc004",
           "name": "ABITO IN LANA E SETA CON RICAMI A MANO",
           "category": "prive_ceremonial",
-          "description": "Adorable mini suit perfect for special occasions",
+          "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756655940/ELI_01048-1_jsjdub.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756817614/ELI_01011_1_czz9g4.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806334/ELI_01044-1_fpbcjb.jpg",
@@ -141,7 +110,7 @@
           "id": "pc005",
           "name": "TOP CON VOLANTS IN SETA",
           "category": "prive_ceremonial",
-          "description": "Adorable mini suit perfect for special occasions",
+          "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730552/ELISA__104336_1_yzv7rj.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730669/ELISA__104351_lprqxe.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg",
