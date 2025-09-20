@@ -6,7 +6,7 @@
       "products": [
         {
           "id": "pc001",
-          "name": "TOP IN ORGANZA DI SETA CON PASSAMANERIA",
+          "name": "ABITO IN DOPPIO CREPE DI LANA CON CRISTALLI",
           "category": "prive_ceremonial",
           "description": "test deo 1",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806026/B132DD58-F396-4300-90FC-37BD669E50F4_pysydr.jpg",
@@ -19,9 +19,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806030/ELI_00567-1_v10nop.jpg"
           ],
           "prices": {
-            "standard": 1050,
-            "minimum": 1050,
-            "maximum": 1290
+            "standard": 1300,
+            "minimum": 1300,
+            "maximum": 1500
           },
           "colors": [
             "Charcoal Gray",
