@@ -5,6 +5,40 @@
       "description": "Exquisite pieces for special occasions and refined experiences",
       "products": [
         {
+          "id": "pc001",
+          "name": "ABITO IN DOPPIO CREPE DI LANA CON CRISTALLI",
+          "category": "prive_ceremonial",
+          "description": "Ispirato all?estetica iconica degli anni ?60, questo abito richiama la silhouette distintiva del decennio e la reinterpreta in chiave contemporanea. La corposita del doppio crepe di lana scolpisce la linea con struttura e definizione, mentre la passamaneria impreziosita da cristalli cuciti a mano aggiunge un dettaglio luminoso e raffinato. Un modello dal fascino retro, capace di catturare l?energia e la personalita di un?epoca di grandi cambiamenti, rivisitato oggi con eleganza e rigore sartoriale. Una proposta senza tempo che unisce essenzialita e preziosita in perfetto equilibrio.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756651019/ELI_00925-1_1_qqzbo5.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736721/ELI_00912-1_n4yygp_ncto5i.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756651019/ELI_00925-1_1_qqzbo5.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736721/ELI_00912-1_n4yygp_ncto5i.jpg"
+          ],
+          "prices": {
+            "standard": 1300,
+            "minimum": 1300,
+            "maximum": 1500
+          },
+          "colors": [
+            "Charcoal Gray",
+            "Deep Navy",
+            "Classic Black"
+          ],
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "fabric": "100% Linen"
+        },
+        {
           "id": "pc002",
           "name": "TOP IN ORGANZA DI SETA CON PASSAMANERIA",
           "category": "prive_ceremonial",
