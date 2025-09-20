@@ -1,6 +1,9 @@
 /**
  * Google Apps Script for Elisa Sanna PRODUCTS Management
  * Simple and reliable version
+ * 
+ * UTF-8 Support: This script properly handles accented characters (à, è, ì, ò, ù, etc.)
+ * and special characters in CSV/JSON files for correct display on the website.
  */
 
 // 🔧 CONFIGURATION - UPDATE THESE VALUES
@@ -148,14 +151,19 @@ function sheetToCsv(sheet) {
     
     console.log(`📊 Processing ${data.length} rows from products sheet`);
     
-    // Convert to CSV with proper escaping
+    // Convert to CSV with proper escaping and UTF-8 handling
     const csvRows = data.map(row => 
       row.map(cell => {
         // Convert to string and handle special characters
         let cellValue = String(cell || '');
         
-        // Escape quotes and wrap in quotes if contains comma, quote, or newline
-        if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n')) {
+        // Ensure proper UTF-8 encoding for accented characters
+        cellValue = cellValue.replace(/[\u00C0-\u017F]/g, function(match) {
+          return match; // Keep accented characters as-is for UTF-8
+        });
+        
+        // Escape quotes and wrap in quotes if contains comma, quote, newline, or accented characters
+        if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n') || /[\u00C0-\u017F]/.test(cellValue)) {
           cellValue = '"' + cellValue.replace(/"/g, '""') + '"';
         }
         
@@ -335,12 +343,12 @@ function uploadToGitHub(content, filePath) {
       console.log('📄 File does not exist, will create new');
     }
     
-    // Prepare commit data
+    // Prepare commit data with proper UTF-8 encoding
     const commitData = {
       message: filePath.includes('.json') ? 
         `Auto-convert products CSV to JSON - ${new Date().toISOString()}` :
         `Update products CSV from Google Sheets - ${new Date().toISOString()}`,
-      content: Utilities.base64Encode(content),
+      content: Utilities.base64Encode(Utilities.newBlob(content, 'text/plain; charset=utf-8').getBytes()),
       branch: CONFIG.GITHUB_BRANCH
     };
     
