@@ -38,39 +38,6 @@
           "fabric": ""
         },
         {
-          "id": "pc002",
-          "name": "TOP IN ORGANZA DI SETA CON PASSAMANERIA",
-          "category": "prive_ceremonial",
-          "description": "test deo",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806026/B132DD58-F396-4300-90FC-37BD669E50F4_pysydr.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806024/ELI_00519-1_fdhfbo.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806030/ELI_00567-1_v10nop.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806026/B132DD58-F396-4300-90FC-37BD669E50F4_pysydr.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806024/ELI_00519-1_fdhfbo.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756806030/ELI_00567-1_v10nop.jpg"
-          ],
-          "prices": {
-            "standard": 1050,
-            "minimum": 1050,
-            "maximum": 1290
-          },
-          "colors": [
-            "Charcoal Gray",
-            "Deep Navy",
-            "Classic Black"
-          ],
-          "sizes": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-          ],
-          "fabric": ""
-        },
-        {
           "id": "pc003",
           "name": "ABITO IN DOPPIO CRÈPE DI LANA CON DETTAGLIO GIOIELLO",
           "category": "prive_ceremonial",
