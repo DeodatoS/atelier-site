@@ -678,17 +678,17 @@
         },
         {
           "id": "col006",
-          "name": "ABITO IN CADY E SETA",
+          "name": "ABITO IN VISCOSA CON FRANGE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894011/DSC3329-scaled_qxe1ii.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894076/DSC3309-scaled_rfyefu.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894045/DSC3316-Enhanced-NR-scaled_co2cu7.jpg",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992312/09_47519_3_nksi1i.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992660/09_47518_wbe0dp.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992634/09_47516_dil83w.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894011/DSC3329-scaled_qxe1ii.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894076/DSC3309-scaled_rfyefu.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756894045/DSC3316-Enhanced-NR-scaled_co2cu7.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992312/09_47519_3_nksi1i.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992660/09_47518_wbe0dp.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992634/09_47516_dil83w.jpg"
           ],
           "prices": {
             "standard": 850,
