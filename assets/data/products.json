@@ -565,6 +565,29 @@
         },
         {
           "id": "col004",
+          "name": "TOP IN GEORGETTE DI SETA",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071084/06122022_Elisa_Sanna5651_copia_c4mtcq.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071025/06122022_Elisa_Sanna5664_copia_exqn3t.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071084/06122022_Elisa_Sanna5651_copia_c4mtcq.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071025/06122022_Elisa_Sanna5664_copia_exqn3t.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
+          "id": "col005",
           "name": "BLUSA CON DETTAGLIO GIOIELLO",
           "category": "collections",
           "description": "Un top dal design essenziale e raffinato, realizzato in viscosa stretch che avvolge la silhouette con eleganza e comfort. Il colletto strutturato e i piccoli bottoncini frontali aggiungono un tocco di classicità senza tempo. Il dettaglio gioiello applicato sui polsi, cucito con cura artigianale, illumina il capo e lo rende unico, trasformandolo in un’espressione di femminilità sofisticata.",
@@ -598,7 +621,7 @@
           "fabric": ""
         },
         {
-          "id": "col005",
+          "id": "col006",
           "name": "ABITO IN FRESCO DI LANA CON DETTAGLIO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -666,7 +689,7 @@
           "fabric": ""
         },
         {
-          "id": "col006",
+          "id": "col007",
           "name": "ABITO IN LANA E SETA",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -700,7 +723,7 @@
           "fabric": ""
         },
         {
-          "id": "col007",
+          "id": "col008",
           "name": "ABITO IN VISCOSA CON FRANGE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -734,7 +757,7 @@
           "fabric": ""
         },
         {
-          "id": "col008",
+          "id": "col009",
           "name": "ABITO CON TULLE RICAMATO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -768,7 +791,7 @@
           "fabric": ""
         },
         {
-          "id": "col009",
+          "id": "col010",
           "name": "ABITO IN CADY E LANA",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -802,7 +825,7 @@
           "fabric": ""
         },
         {
-          "id": "col010",
+          "id": "col011",
           "name": "ABITO IN SETA E CADY",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -836,7 +859,7 @@
           "fabric": ""
         },
         {
-          "id": "col011",
+          "id": "col012",
           "name": "ABITO IN LANA CON NAPPINE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -870,7 +893,7 @@
           "fabric": ""
         },
         {
-          "id": "col012",
+          "id": "col013",
           "name": "CARDIGAN IN LANA CON BAGUETTE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -904,7 +927,7 @@
           "fabric": ""
         },
         {
-          "id": "col013",
+          "id": "col014",
           "name": "GIACCA IN CREPE CADY ",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -935,6 +958,29 @@
             "44",
             "46"
           ],
+          "fabric": ""
+        },
+        {
+          "id": "col014",
+          "name": "GIACCA IN LANA CON CRISTALLI",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071801/06122022_Elisa_Sanna5056BIS_1_1_zxrzhd.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071789/06122022_Elisa_Sanna5039BIS_2_1_edclv6.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071788/06122022_Elisa_Sanna5054BIS_1_yt7t2h.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071801/06122022_Elisa_Sanna5056BIS_1_1_zxrzhd.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071789/06122022_Elisa_Sanna5039BIS_2_1_edclv6.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071788/06122022_Elisa_Sanna5054BIS_1_yt7t2h.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "colors": [],
+          "sizes": [],
           "fabric": ""
         },
         {
