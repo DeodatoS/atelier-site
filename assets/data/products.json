@@ -542,6 +542,29 @@
         },
         {
           "id": "col003",
+          "name": "PANTALONI IN VELLUTO DI SETA ",
+          "category": "collections",
+          "description": "Realizzato in velluto di seta e viscosa, questo pantalone a palazzo si distingue per l’orlo rifinito con un inserto di paillettes dal tono sofisticato, applicate con cura artigianale. Lo spacco discreto al centro dell’inserto aggiunge movimento e leggerezza, creando un dettaglio di raffinata modernità. La linea a vita alta e il taglio ampio slanciano la figura, fondendo eleganza e comfort in una silhouette fluida e contemporanea.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759070794/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993483/05122022_Elisa_Sanna4240_copia_utzdul.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759070794/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993483/05122022_Elisa_Sanna4240_copia_utzdul.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
+          "id": "col004",
           "name": "BLUSA CON DETTAGLIO GIOIELLO",
           "category": "collections",
           "description": "Un top dal design essenziale e raffinato, realizzato in viscosa stretch che avvolge la silhouette con eleganza e comfort. Il colletto strutturato e i piccoli bottoncini frontali aggiungono un tocco di classicità senza tempo. Il dettaglio gioiello applicato sui polsi, cucito con cura artigianale, illumina il capo e lo rende unico, trasformandolo in un’espressione di femminilità sofisticata.",
@@ -575,7 +598,7 @@
           "fabric": ""
         },
         {
-          "id": "col004",
+          "id": "col005",
           "name": "ABITO IN FRESCO DI LANA CON DETTAGLIO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -609,7 +632,7 @@
           "fabric": ""
         },
         {
-          "id": "col005",
+          "id": "col006",
           "name": "MAGLIA IN MOHAIR E TULLE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -643,7 +666,7 @@
           "fabric": ""
         },
         {
-          "id": "col005",
+          "id": "col006",
           "name": "ABITO IN LANA E SETA",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -677,7 +700,7 @@
           "fabric": ""
         },
         {
-          "id": "col006",
+          "id": "col007",
           "name": "ABITO IN VISCOSA CON FRANGE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -711,7 +734,7 @@
           "fabric": ""
         },
         {
-          "id": "col007",
+          "id": "col008",
           "name": "ABITO CON TULLE RICAMATO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -745,7 +768,7 @@
           "fabric": ""
         },
         {
-          "id": "col008",
+          "id": "col009",
           "name": "ABITO IN CADY E LANA",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -779,7 +802,7 @@
           "fabric": ""
         },
         {
-          "id": "col009",
+          "id": "col010",
           "name": "ABITO IN SETA E CADY",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -813,7 +836,7 @@
           "fabric": ""
         },
         {
-          "id": "col010",
+          "id": "col011",
           "name": "ABITO IN LANA CON NAPPINE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -847,7 +870,7 @@
           "fabric": ""
         },
         {
-          "id": "col011",
+          "id": "col012",
           "name": "CARDIGAN IN LANA CON BAGUETTE",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
@@ -881,7 +904,7 @@
           "fabric": ""
         },
         {
-          "id": "col012",
+          "id": "col013",
           "name": "GIACCA IN CREPE CADY ",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
