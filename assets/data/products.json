@@ -1053,6 +1053,29 @@
           "fabric": ""
         },
         {
+          "id": "col019",
+          "name": "MAGLIA IN LANA ",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102730_kzbwx1.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102749_olajvy.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102730_kzbwx1.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102749_olajvy.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
           "id": "col002",
           "name": "TOP CON TULLE RICAMATO",
           "category": "collections",
