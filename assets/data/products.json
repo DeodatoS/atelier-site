@@ -1030,6 +1030,29 @@
           "fabric": ""
         },
         {
+          "id": "col018",
+          "name": "CAPPOTTO IN LANA ",
+          "category": "collections",
+          "description": "Lightweight linen suit perfect for spring occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074482/ELISA_102666_by7dh6.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074481/ELISA_102652_qga6zi.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074482/ELISA_102666_by7dh6.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074481/ELISA_102652_qga6zi.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
           "id": "col002",
           "name": "TOP CON TULLE RICAMATO",
           "category": "collections",
