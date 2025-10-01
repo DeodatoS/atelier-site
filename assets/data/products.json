@@ -555,9 +555,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
           ],
           "prices": {
-            "standard": 0,
-            "minimum": 0,
-            "maximum": 0
+            "standard": 620,
+            "minimum": 620,
+            "maximum": 720
           },
           "colors": [],
           "sizes": [],
@@ -578,9 +578,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg"
           ],
           "prices": {
-            "standard": 0,
-            "minimum": 0,
-            "maximum": 0
+            "standard": 590,
+            "minimum": 590,
+            "maximum": 740
           },
           "colors": [],
           "sizes": [],
