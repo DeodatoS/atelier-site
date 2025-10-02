@@ -521,9 +521,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
           ],
           "prices": {
-            "standard": 670,
-            "minimum": 670,
-            "maximum": 850
+            "standard": 700,
+            "minimum": 700,
+            "maximum": 900
           },
           "colors": [
             "Natural Beige",
@@ -601,9 +601,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg"
           ],
           "prices": {
-            "standard": 520,
-            "minimum": 520,
-            "maximum": 720
+            "standard": 580,
+            "minimum": 580,
+            "maximum": 760
           },
           "colors": [
             "Natural Beige",
