@@ -576,6 +576,63 @@
           "fabric": ""
         },
         {
+          "id": "col036",
+          "name": "CAPPOTTO IN LANA ",
+          "category": "collections",
+          "description": "Un cappotto elegante e avvolgente, realizzato in preziosa lana di alpaca. Il collo ampio a rever dona carattere e struttura alla linea, mentre la cintura in vita permette di modulare la vestibilità e sottolineare la silhouette con naturale raffinatezza. Le tasche invisibili si inseriscono con discrezione nella costruzione del capo, mantenendo la pulizia delle forme e la continuità del design. Un capo che rappresenta un equilibrio perfetto tra calore, comfort e stile senza tempo.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074482/ELISA_102666_by7dh6.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074481/ELISA_102652_qga6zi.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074482/ELISA_102666_by7dh6.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074481/ELISA_102652_qga6zi.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg"
+          ],
+          "prices": {
+            "standard": 1300,
+            "minimum": 1300,
+            "maximum": 1550
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
+          "id": "col023",
+          "name": "BLUSA CON DETTAGLIO GIOIELLO",
+          "category": "collections",
+          "description": "Un top dal design essenziale e raffinato, realizzato in viscosa stretch che avvolge la silhouette con eleganza e comfort. Il colletto strutturato e i piccoli bottoncini frontali aggiungono un tocco di classicità senza tempo. Il dettaglio gioiello applicato sui polsi, cucito con cura artigianale, illumina il capo e lo rende unico, trasformandolo in un’espressione di femminilità sofisticata.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736389/567CF7C9-8B4B-4E99-B968-0E43C76D7C82_nw01yw.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819864/ELI_00707-1_vke3b1.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736389/567CF7C9-8B4B-4E99-B968-0E43C76D7C82_nw01yw.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819864/ELI_00707-1_vke3b1.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg"
+          ],
+          "prices": {
+            "standard": 660,
+            "minimum": 660,
+            "maximum": 940
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "fabric": ""
+        },
+        {
           "id": "col020",
           "name": "BLUSA IN VELLUTO DI SETA",
           "category": "collections",
@@ -653,40 +710,6 @@
           },
           "colors": [],
           "sizes": [],
-          "fabric": ""
-        },
-        {
-          "id": "col023",
-          "name": "BLUSA CON DETTAGLIO GIOIELLO",
-          "category": "collections",
-          "description": "Un top dal design essenziale e raffinato, realizzato in viscosa stretch che avvolge la silhouette con eleganza e comfort. Il colletto strutturato e i piccoli bottoncini frontali aggiungono un tocco di classicità senza tempo. Il dettaglio gioiello applicato sui polsi, cucito con cura artigianale, illumina il capo e lo rende unico, trasformandolo in un’espressione di femminilità sofisticata.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736389/567CF7C9-8B4B-4E99-B968-0E43C76D7C82_nw01yw.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819864/ELI_00707-1_vke3b1.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736389/567CF7C9-8B4B-4E99-B968-0E43C76D7C82_nw01yw.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756819864/ELI_00707-1_vke3b1.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg"
-          ],
-          "prices": {
-            "standard": 660,
-            "minimum": 660,
-            "maximum": 940
-          },
-          "colors": [
-            "Natural Beige",
-            "Soft White",
-            "Light Gray",
-            "Pale Blue"
-          ],
-          "sizes": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-          ],
           "fabric": ""
         },
         {
@@ -1027,29 +1050,6 @@
             "44",
             "46"
           ],
-          "fabric": ""
-        },
-        {
-          "id": "col036",
-          "name": "CAPPOTTO IN LANA ",
-          "category": "collections",
-          "description": "Un cappotto elegante e avvolgente, realizzato in preziosa lana di alpaca. Il collo ampio a rever dona carattere e struttura alla linea, mentre la cintura in vita permette di modulare la vestibilità e sottolineare la silhouette con naturale raffinatezza. Le tasche invisibili si inseriscono con discrezione nella costruzione del capo, mantenendo la pulizia delle forme e la continuità del design. Un capo che rappresenta un equilibrio perfetto tra calore, comfort e stile senza tempo.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074482/ELISA_102666_by7dh6.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074481/ELISA_102652_qga6zi.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074482/ELISA_102666_by7dh6.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074481/ELISA_102652_qga6zi.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg"
-          ],
-          "prices": {
-            "standard": 1300,
-            "minimum": 1300,
-            "maximum": 1550
-          },
-          "colors": [],
-          "sizes": [],
           "fabric": ""
         },
         {
