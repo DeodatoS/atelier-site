@@ -998,9 +998,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1759073767/ELI_00283-1_oqhntg.jpg"
           ],
           "prices": {
-            "standard": 1100,
-            "minimum": 1100,
-            "maximum": 1250
+            "standard": 970,
+            "minimum": 970,
+            "maximum": 1190
           },
           "colors": [],
           "sizes": [],
