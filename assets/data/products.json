@@ -497,22 +497,22 @@
         },
         {
           "id": "col006",
-          "name": "GIACCA IN LANA CON CRISTALLI",
+          "name": "GONNA IN LANA CON CRISTALLI",
           "category": "collections",
-          "description": "Una giacca in lana che unisce praticità e preziosità grazie ai dettagli artigianali che la caratterizzano. Le tasche sono contornate da cristalli cuciti a mano, uno a uno, che illuminano il capo con riflessi discreti. La zip dorata sul centro davanti e l’elastico in vita donano carattere e movimento alla silhouette, trasformando una linea essenziale in una creazione dall’eleganza contemporanea.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071801/06122022_Elisa_Sanna5056BIS_1_1_zxrzhd.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071789/06122022_Elisa_Sanna5039BIS_2_1_edclv6.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071788/06122022_Elisa_Sanna5054BIS_1_yt7t2h.jpg",
+          "description": "",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072558/06122022_Elisa_Sanna5449bis_fevmil.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072559/06122022_Elisa_Sanna5439BIS_1_mvhxqs.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072560/06122022_Elisa_Sanna5455BIS_hunfkl.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071801/06122022_Elisa_Sanna5056BIS_1_1_zxrzhd.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071789/06122022_Elisa_Sanna5039BIS_2_1_edclv6.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071788/06122022_Elisa_Sanna5054BIS_1_yt7t2h.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072558/06122022_Elisa_Sanna5449bis_fevmil.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072559/06122022_Elisa_Sanna5439BIS_1_mvhxqs.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072560/06122022_Elisa_Sanna5455BIS_hunfkl.jpg"
           ],
           "prices": {
-            "standard": 1480,
-            "minimum": 1480,
-            "maximum": 1680
+            "standard": 800,
+            "minimum": 800,
+            "maximum": 950
           },
           "colors": [],
           "sizes": [],
@@ -1004,29 +1004,6 @@
             "44",
             "46"
           ],
-          "fabric": ""
-        },
-        {
-          "id": "col034",
-          "name": "GIACCA IN LANA CON CRISTALLI",
-          "category": "collections",
-          "description": "Una giacca in lana che unisce praticità e preziosità grazie ai dettagli artigianali che la caratterizzano. Le tasche sono contornate da cristalli cuciti a mano, uno a uno, che illuminano il capo con riflessi discreti. La zip dorata sul centro davanti e l’elastico in vita donano carattere e movimento alla silhouette, trasformando una linea essenziale in una creazione dall’eleganza contemporanea.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071801/06122022_Elisa_Sanna5056BIS_1_1_zxrzhd.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071789/06122022_Elisa_Sanna5039BIS_2_1_edclv6.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071788/06122022_Elisa_Sanna5054BIS_1_yt7t2h.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071801/06122022_Elisa_Sanna5056BIS_1_1_zxrzhd.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071789/06122022_Elisa_Sanna5039BIS_2_1_edclv6.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071788/06122022_Elisa_Sanna5054BIS_1_yt7t2h.jpg"
-          ],
-          "prices": {
-            "standard": 1480,
-            "minimum": 1480,
-            "maximum": 1680
-          },
-          "colors": [],
-          "sizes": [],
           "fabric": ""
         },
         {
