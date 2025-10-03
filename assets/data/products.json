@@ -984,6 +984,29 @@
           "fabric": ""
         },
         {
+          "id": "col016",
+          "name": "GONNA IN LANA CON CRISTALLI",
+          "category": "collections",
+          "description": "Una gonna in panno di lana dal taglio a trapezio, ispirata alle linee iconiche degli anni ’60. Il punto vita è impreziosito da cristalli cuciti a mano, uno ad uno, che donano luce e raffinatezza alla struttura essenziale del capo. Il design pulito e il volume leggermente svasato rendono questa creazione estremamente femminile, capace di coniugare rigore sartoriale ed eleganza senza tempo.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072558/06122022_Elisa_Sanna5449bis_fevmil.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072559/06122022_Elisa_Sanna5439BIS_1_mvhxqs.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072560/06122022_Elisa_Sanna5455BIS_hunfkl.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072558/06122022_Elisa_Sanna5449bis_fevmil.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072559/06122022_Elisa_Sanna5439BIS_1_mvhxqs.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072560/06122022_Elisa_Sanna5455BIS_hunfkl.jpg"
+          ],
+          "prices": {
+            "standard": 800,
+            "minimum": 800,
+            "maximum": 880
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
           "id": "col017",
           "name": "CAMICIA IN SETA CON CRISTALLI",
           "category": "collections",
@@ -1076,7 +1099,7 @@
           "fabric": ""
         },
         {
-          "id": "col002",
+          "id": "col021",
           "name": "TOP CON TULLE RICAMATO",
           "category": "collections",
           "description": "Lightweight linen suit perfect for spring occasions",
