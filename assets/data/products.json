@@ -690,6 +690,74 @@
           "fabric": ""
         },
         {
+          "id": "col31",
+          "name": "ABITO IN LANA CON NAPPINE",
+          "category": "collections",
+          "description": "Un modello dal taglio essenziale, realizzato in jersey di lana, caratterizzato da un motivo sartoriale che segna delicatamente il punto vita. Su questa linea, un filo di lana cucito a mano attraversa la silhouette e accoglie nappine gioiello applicate singolarmente, che donano luminosità e movimento. La costruzione pulita e la lavorazione artigianale rendono questo capo una sintesi di eleganza e unicità.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897901/ELISA_102873_zqto9c.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897906/ELISA_102885_iuzpe7.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897897/ELISA_102890_k4mifg.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897901/ELISA_102873_zqto9c.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897906/ELISA_102885_iuzpe7.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897897/ELISA_102890_k4mifg.jpg"
+          ],
+          "prices": {
+            "standard": 1100,
+            "minimum": 1100,
+            "maximum": 1300
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "fabric": ""
+        },
+        {
+          "id": "col029",
+          "name": "ABITO IN CADY E LANA",
+          "category": "collections",
+          "description": "Un abito midi elegante e contemporaneo, che gioca sul contrasto tra la fluidità del cady e la struttura della lana. La scollatura a portafoglio disegna linee essenziali e femminili, valorizzate in vita da un accessorio gioiello che chiude con raffinatezza la silhouette. Le diverse texture dei tessuti dialogano tra loro creando un equilibrio armonioso, che unisce forza e leggerezza in un capo sofisticato e senza tempo.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897469/ELISA_102800_1_ytubbi.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897467/ELISA_102813_qdodru.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897470/ELISA_102823_baskoi.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897469/ELISA_102800_1_ytubbi.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897467/ELISA_102813_qdodru.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897470/ELISA_102823_baskoi.jpg"
+          ],
+          "prices": {
+            "standard": 990,
+            "minimum": 990,
+            "maximum": 1090
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "fabric": ""
+        },
+        {
           "id": "col024",
           "name": "ABITO IN FRESCO DI LANA CON DETTAGLIO",
           "category": "collections",
@@ -860,40 +928,6 @@
           "fabric": ""
         },
         {
-          "id": "col029",
-          "name": "ABITO IN CADY E LANA",
-          "category": "collections",
-          "description": "Un abito midi elegante e contemporaneo, che gioca sul contrasto tra la fluidità del cady e la struttura della lana. La scollatura a portafoglio disegna linee essenziali e femminili, valorizzate in vita da un accessorio gioiello che chiude con raffinatezza la silhouette. Le diverse texture dei tessuti dialogano tra loro creando un equilibrio armonioso, che unisce forza e leggerezza in un capo sofisticato e senza tempo.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897469/ELISA_102800_1_ytubbi.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897467/ELISA_102813_qdodru.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897470/ELISA_102823_baskoi.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897469/ELISA_102800_1_ytubbi.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897467/ELISA_102813_qdodru.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897470/ELISA_102823_baskoi.jpg"
-          ],
-          "prices": {
-            "standard": 990,
-            "minimum": 990,
-            "maximum": 1090
-          },
-          "colors": [
-            "Natural Beige",
-            "Soft White",
-            "Light Gray",
-            "Pale Blue"
-          ],
-          "sizes": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-          ],
-          "fabric": ""
-        },
-        {
           "id": "col030",
           "name": "ABITO IN SETA E CADY",
           "category": "collections",
@@ -911,40 +945,6 @@
             "standard": 890,
             "minimum": 890,
             "maximum": 1090
-          },
-          "colors": [
-            "Natural Beige",
-            "Soft White",
-            "Light Gray",
-            "Pale Blue"
-          ],
-          "sizes": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-          ],
-          "fabric": ""
-        },
-        {
-          "id": "col31",
-          "name": "ABITO IN LANA CON NAPPINE",
-          "category": "collections",
-          "description": "Un modello dal taglio essenziale, realizzato in jersey di lana, caratterizzato da un motivo sartoriale che segna delicatamente il punto vita. Su questa linea, un filo di lana cucito a mano attraversa la silhouette e accoglie nappine gioiello applicate singolarmente, che donano luminosità e movimento. La costruzione pulita e la lavorazione artigianale rendono questo capo una sintesi di eleganza e unicità.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897901/ELISA_102873_zqto9c.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897906/ELISA_102885_iuzpe7.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897897/ELISA_102890_k4mifg.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897901/ELISA_102873_zqto9c.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897906/ELISA_102885_iuzpe7.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897897/ELISA_102890_k4mifg.jpg"
-          ],
-          "prices": {
-            "standard": 1100,
-            "minimum": 1100,
-            "maximum": 1300
           },
           "colors": [
             "Natural Beige",
