@@ -669,9 +669,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756830187/ELI_00064_kgmc8w.jpg"
           ],
           "prices": {
-            "standard": 990,
-            "minimum": 990,
-            "maximum": 1210
+            "standard": 890,
+            "minimum": 890,
+            "maximum": 1150
           },
           "colors": [
             "Natural Beige",
