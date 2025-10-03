@@ -671,7 +671,7 @@
           "prices": {
             "standard": 850,
             "minimum": 850,
-            "maximum": 950
+            "maximum": 980
           },
           "colors": [
             "Natural Beige",
@@ -1044,9 +1044,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg"
           ],
           "prices": {
-            "standard": 0,
-            "minimum": 0,
-            "maximum": 0
+            "standard": 750,
+            "minimum": 750,
+            "maximum": 880
           },
           "colors": [],
           "sizes": [],
