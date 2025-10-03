@@ -601,9 +601,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756820195/ELI_00724-1_cla2fn.jpg"
           ],
           "prices": {
-            "standard": 580,
-            "minimum": 580,
-            "maximum": 760
+            "standard": 660,
+            "minimum": 660,
+            "maximum": 940
           },
           "colors": [
             "Natural Beige",
@@ -635,8 +635,8 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729096/ELISA_102786_lkexp5.jpg"
           ],
           "prices": {
-            "standard": 890,
-            "minimum": 1050,
+            "standard": 780,
+            "minimum": 780,
             "maximum": 1050
           },
           "colors": [
@@ -669,9 +669,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756830187/ELI_00064_kgmc8w.jpg"
           ],
           "prices": {
-            "standard": 640,
-            "minimum": 640,
-            "maximum": 840
+            "standard": 990,
+            "minimum": 990,
+            "maximum": 1210
           },
           "colors": [
             "Natural Beige",
