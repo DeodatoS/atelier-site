@@ -487,9 +487,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756736322/ELI_00439-1_grobso_ooapjz.jpg"
           ],
           "prices": {
-            "standard": 620,
-            "minimum": 620,
-            "maximum": 790
+            "standard": 970,
+            "minimum": 970,
+            "maximum": 1190
           },
           "colors": [
             "Natural Beige",
