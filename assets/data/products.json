@@ -965,9 +965,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1757168830/ELISA_84121-1_u3t0tv.jpg"
           ],
           "prices": {
-            "standard": 890,
-            "minimum": 890,
-            "maximum": 1090
+            "standard": 990,
+            "minimum": 990,
+            "maximum": 1190
           },
           "colors": [
             "Natural Beige",
