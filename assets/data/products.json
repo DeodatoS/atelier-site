@@ -590,9 +590,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074480/ELISA_102692_rz6szz.jpg"
           ],
           "prices": {
-            "standard": 1550,
-            "minimum": 1550,
-            "maximum": 1800
+            "standard": 1750,
+            "minimum": 1750,
+            "maximum": 1900
           },
           "colors": [],
           "sizes": [],
