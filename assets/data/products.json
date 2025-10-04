@@ -286,9 +286,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729160/06122022_Elisa_Sanna5534BIS_copia_pjxrut.jpg"
           ],
           "prices": {
-            "standard": 920,
-            "minimum": 920,
-            "maximum": 1120
+            "standard": 1200,
+            "minimum": 1200,
+            "maximum": 1450
           },
           "colors": [
             "Charcoal Gray",
@@ -319,9 +319,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756809564/05122022_Elisa_Sanna4615_copia_1_h9dvrk.jpg"
           ],
           "prices": {
-            "standard": 990,
-            "minimum": 990,
-            "maximum": 1190
+            "standard": 1200,
+            "minimum": 1200,
+            "maximum": 1450
           },
           "colors": [
             "Charcoal Gray",
