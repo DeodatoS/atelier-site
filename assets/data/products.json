@@ -761,9 +761,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756897470/ELISA_102823_baskoi.jpg"
           ],
           "prices": {
-            "standard": 990,
-            "minimum": 990,
-            "maximum": 1090
+            "standard": 1100,
+            "minimum": 1100,
+            "maximum": 1190
           },
           "colors": [
             "Natural Beige",
