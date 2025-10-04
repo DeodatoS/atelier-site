@@ -197,9 +197,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1759073767/ELI_00283-1_oqhntg.jpg"
           ],
           "prices": {
-            "standard": 970,
-            "minimum": 970,
-            "maximum": 1190
+            "standard": 1230,
+            "minimum": 1230,
+            "maximum": 1430
           },
           "colors": [],
           "sizes": [],
@@ -220,9 +220,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg"
           ],
           "prices": {
-            "standard": 960,
-            "minimum": 960,
-            "maximum": 1140
+            "standard": 1230,
+            "minimum": 1230,
+            "maximum": 1430
           },
           "colors": [
             "Charcoal Gray",
