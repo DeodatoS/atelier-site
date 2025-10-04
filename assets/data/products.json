@@ -418,9 +418,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756722968/06122022_Elisa_Sanna5500BIS_2_qyorph.jpg"
           ],
           "prices": {
-            "standard": 950,
-            "minimum": 950,
-            "maximum": 1150
+            "standard": 1150,
+            "minimum": 1150,
+            "maximum": 1350
           },
           "colors": [
             "Charcoal Gray",
