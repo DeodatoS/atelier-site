@@ -451,9 +451,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756899751/DSC3358-Enhanced-NR-1-scaled_edrjip.jpg"
           ],
           "prices": {
-            "standard": 1180,
-            "minimum": 1180,
-            "maximum": 1380
+            "standard": 1450,
+            "minimum": 1450,
+            "maximum": 1750
           },
           "colors": [
             "Charcoal Gray",
