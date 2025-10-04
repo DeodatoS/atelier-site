@@ -1113,9 +1113,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756823791/_DSC1587_yws69r.jpg"
           ],
           "prices": {
-            "standard": 630,
-            "minimum": 630,
-            "maximum": 800
+            "standard": 680,
+            "minimum": 680,
+            "maximum": 850
           },
           "colors": [
             "Natural Beige",
