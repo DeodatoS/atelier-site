@@ -385,9 +385,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756816736/06122022_Elisa_Sanna5592BIS_h1cycg.jpg"
           ],
           "prices": {
-            "standard": 820,
-            "minimum": 820,
-            "maximum": 920
+            "standard": 950,
+            "minimum": 950,
+            "maximum": 1050
           },
           "colors": [
             "Charcoal Gray",
