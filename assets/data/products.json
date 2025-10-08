@@ -567,23 +567,23 @@
           "fabric": ""
         },
         {
-          "id": "col020",
-          "name": "BLUSA IN VELLUTO DI SETA",
+          "id": "col026",
+          "name": "CARDIGAN IN LANA RICAMATO",
           "category": "collections",
-          "description": "Realizzata in velluto di seta e viscosa, questa blusa si distingue per i due taschini frontali in tessuto di paillettes dal tono delicato, cuciti a mano con cura artigianale. Un dettaglio luminoso che dialoga con la morbidezza del velluto, creando un raffinato gioco di contrasti. Le linee pulite e le proporzioni essenziali valorizzano la figura con naturale eleganza, trasformando il capo in un esempio di sofisticata modernità.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993795/06122022_Elisa_Sanna5290BIS_2_wbkggf.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993110/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg",
+          "description": "Questo cardigan in lana è caratterizzato da una texture strutturata e arricchito da un lavoro di applicazione artigianale: ogni perlina baguette è stata cucita a mano singolarmente, creando raffinati giochi di luce. La cintura nello stesso tessuto valorizza il punto vita, donando equilibrio e femminilità alla silhouette.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756828889/ELI_00206_1_jmlxyt.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829203/ELI_00162_2_vbsk9h.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829141/ELI_00158_odhdgb.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993795/06122022_Elisa_Sanna5290BIS_2_wbkggf.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993110/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756828889/ELI_00206_1_jmlxyt.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829203/ELI_00162_2_vbsk9h.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829141/ELI_00158_odhdgb.jpg"
           ],
           "prices": {
             "standard": 940,
             "minimum": 940,
-            "maximum": 1160
+            "maximum": 1140
           },
           "colors": [
             "Natural Beige",
@@ -601,53 +601,64 @@
           "fabric": ""
         },
         {
-          "id": "col021",
-          "name": "PANTALONI IN VELLUTO DI SETA ",
+          "id": "col027",
+          "name": "CAPPOTTO IN LANA ",
           "category": "collections",
-          "description": "Realizzato in velluto di seta e viscosa, questo pantalone a palazzo si distingue per l’orlo rifinito con un inserto di paillettes dal tono sofisticato, applicate con cura artigianale. Lo spacco discreto al centro dell’inserto aggiunge movimento e leggerezza, creando un dettaglio di raffinata modernità. La linea a vita alta e il taglio ampio slanciano la figura, fondendo eleganza e comfort in una silhouette fluida e contemporanea.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759070794/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993483/05122022_Elisa_Sanna4240_copia_utzdul.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg",
+          "description": "",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922667/ELISA_102620_1_1_liysan.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922658/ELISA_102627_1_1_du8hhh.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922806/ELISA_102605_dehwfq.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759070794/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993483/05122022_Elisa_Sanna4240_copia_utzdul.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922667/ELISA_102620_1_1_liysan.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922658/ELISA_102627_1_1_du8hhh.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922806/ELISA_102605_dehwfq.jpg"
           ],
           "prices": {
-            "standard": 740,
-            "minimum": 740,
-            "maximum": 870
+            "standard": 1180,
+            "minimum": 1180,
+            "maximum": 1380
+          },
+          "colors": [
+            "Natural Beige",
+            "Soft White",
+            "Light Gray",
+            "Pale Blue"
+          ],
+          "sizes": [
+            "38",
+            "40",
+            "42",
+            "44",
+            "46"
+          ],
+          "fabric": ""
+        },
+        {
+          "id": "col028",
+          "name": "MAGLIA IN LANA ",
+          "category": "collections",
+          "description": "Una maglia dal design ricercato, realizzata in jersey di lana e caratterizzata da un collo dal taglio particolare che ne definisce l’eleganza contemporanea. I tagli laterali sagomano la figura, mettendo in risalto la silhouette con naturale raffinatezza. Le maniche sono arricchite da un taglio orizzontale da cui partono delle frange realizzate interamente a mano: i fili, ottenuti dal gomitolo di lana, sono stati tagliati e inseriti uno ad uno, in un paziente lavoro artigianale che testimonia l’unicità delle creazioni dell’Atelier.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102730_kzbwx1.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102749_olajvy.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102730_kzbwx1.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102749_olajvy.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg"
+          ],
+          "prices": {
+            "standard": 880,
+            "minimum": 880,
+            "maximum": 1050
           },
           "colors": [],
           "sizes": [],
           "fabric": ""
         },
         {
-          "id": "col022",
-          "name": "TOP IN GEORGETTE DI SETA",
-          "category": "collections",
-          "description": "Realizzato in georgette di seta, questo top è arricchito da un raffinato dettaglio in tessuto di paillettes, posizionato lungo la scollatura. La brillantezza delle paillettes dialoga con la leggerezza della seta, creando un contrasto elegante che illumina il capo con sofisticata discrezione. La linea essenziale esalta la femminilità con naturalezza, mentre la preziosità dei materiali e la cura artigianale lo trasformano in una creazione dall’allure contemporanea e senza tempo.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071084/06122022_Elisa_Sanna5651_copia_c4mtcq.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071025/06122022_Elisa_Sanna5664_copia_exqn3t.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071084/06122022_Elisa_Sanna5651_copia_c4mtcq.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071025/06122022_Elisa_Sanna5664_copia_exqn3t.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg"
-          ],
-          "prices": {
-            "standard": 760,
-            "minimum": 760,
-            "maximum": 940
-          },
-          "colors": [],
-          "sizes": [],
-          "fabric": ""
-        },
-        {
-          "id": "col31",
+          "id": "col29",
           "name": "ABITO IN LANA CON NAPPINE",
           "category": "collections",
           "description": "Un modello dal taglio essenziale, realizzato in jersey di lana, caratterizzato da un motivo sartoriale che segna delicatamente il punto vita. Su questa linea, un filo di lana cucito a mano attraversa la silhouette e accoglie nappine gioiello applicate singolarmente, che donano luminosità e movimento. La costruzione pulita e la lavorazione artigianale rendono questo capo una sintesi di eleganza e unicità.",
@@ -942,23 +953,23 @@
           "fabric": ""
         },
         {
-          "id": "col032",
-          "name": "CARDIGAN IN LANA RICAMATO",
+          "id": "col020",
+          "name": "BLUSA IN VELLUTO DI SETA",
           "category": "collections",
-          "description": "Questo cardigan in lana è caratterizzato da una texture strutturata e arricchito da un lavoro di applicazione artigianale: ogni perlina baguette è stata cucita a mano singolarmente, creando raffinati giochi di luce. La cintura nello stesso tessuto valorizza il punto vita, donando equilibrio e femminilità alla silhouette.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756828889/ELI_00206_1_jmlxyt.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829203/ELI_00162_2_vbsk9h.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829141/ELI_00158_odhdgb.jpg",
+          "description": "Realizzata in velluto di seta e viscosa, questa blusa si distingue per i due taschini frontali in tessuto di paillettes dal tono delicato, cuciti a mano con cura artigianale. Un dettaglio luminoso che dialoga con la morbidezza del velluto, creando un raffinato gioco di contrasti. Le linee pulite e le proporzioni essenziali valorizzano la figura con naturale eleganza, trasformando il capo in un esempio di sofisticata modernità.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993795/06122022_Elisa_Sanna5290BIS_2_wbkggf.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993110/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756828889/ELI_00206_1_jmlxyt.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829203/ELI_00162_2_vbsk9h.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756829141/ELI_00158_odhdgb.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993795/06122022_Elisa_Sanna5290BIS_2_wbkggf.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993110/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
           ],
           "prices": {
             "standard": 940,
             "minimum": 940,
-            "maximum": 1140
+            "maximum": 1160
           },
           "colors": [
             "Natural Beige",
@@ -976,57 +987,46 @@
           "fabric": ""
         },
         {
-          "id": "col033",
-          "name": "CAPPOTTO IN LANA ",
+          "id": "col021",
+          "name": "PANTALONI IN VELLUTO DI SETA ",
           "category": "collections",
-          "description": "",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922667/ELISA_102620_1_1_liysan.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922658/ELISA_102627_1_1_du8hhh.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922806/ELISA_102605_dehwfq.jpg",
+          "description": "Realizzato in velluto di seta e viscosa, questo pantalone a palazzo si distingue per l’orlo rifinito con un inserto di paillettes dal tono sofisticato, applicate con cura artigianale. Lo spacco discreto al centro dell’inserto aggiunge movimento e leggerezza, creando un dettaglio di raffinata modernità. La linea a vita alta e il taglio ampio slanciano la figura, fondendo eleganza e comfort in una silhouette fluida e contemporanea.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759070794/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993483/05122022_Elisa_Sanna4240_copia_utzdul.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922667/ELISA_102620_1_1_liysan.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922658/ELISA_102627_1_1_du8hhh.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922806/ELISA_102605_dehwfq.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759070794/06122022_Elisa_Sanna5299BIS_hu32j9.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993483/05122022_Elisa_Sanna4240_copia_utzdul.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1758993128/06122022_Elisa_Sanna5308BIS_j86kkr.jpg"
           ],
           "prices": {
-            "standard": 1180,
-            "minimum": 1180,
-            "maximum": 1380
+            "standard": 740,
+            "minimum": 740,
+            "maximum": 870
           },
-          "colors": [
-            "Natural Beige",
-            "Soft White",
-            "Light Gray",
-            "Pale Blue"
-          ],
-          "sizes": [
-            "38",
-            "40",
-            "42",
-            "44",
-            "46"
-          ],
+          "colors": [],
+          "sizes": [],
           "fabric": ""
         },
         {
-          "id": "col037",
-          "name": "MAGLIA IN LANA ",
+          "id": "col022",
+          "name": "TOP IN GEORGETTE DI SETA",
           "category": "collections",
-          "description": "Una maglia dal design ricercato, realizzata in jersey di lana e caratterizzata da un collo dal taglio particolare che ne definisce l’eleganza contemporanea. I tagli laterali sagomano la figura, mettendo in risalto la silhouette con naturale raffinatezza. Le maniche sono arricchite da un taglio orizzontale da cui partono delle frange realizzate interamente a mano: i fili, ottenuti dal gomitolo di lana, sono stati tagliati e inseriti uno ad uno, in un paziente lavoro artigianale che testimonia l’unicità delle creazioni dell’Atelier.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102730_kzbwx1.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102749_olajvy.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg",
+          "description": "Realizzato in georgette di seta, questo top è arricchito da un raffinato dettaglio in tessuto di paillettes, posizionato lungo la scollatura. La brillantezza delle paillettes dialoga con la leggerezza della seta, creando un contrasto elegante che illumina il capo con sofisticata discrezione. La linea essenziale esalta la femminilità con naturalezza, mentre la preziosità dei materiali e la cura artigianale lo trasformano in una creazione dall’allure contemporanea e senza tempo.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071084/06122022_Elisa_Sanna5651_copia_c4mtcq.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071025/06122022_Elisa_Sanna5664_copia_exqn3t.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102730_kzbwx1.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074798/ELISA_102749_olajvy.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759074797/ELISA_102710_1_ejbkep.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071084/06122022_Elisa_Sanna5651_copia_c4mtcq.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071025/06122022_Elisa_Sanna5664_copia_exqn3t.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759071024/05122022_Elisa_Sanna4587_copia_qtucde.jpg"
           ],
           "prices": {
-            "standard": 880,
-            "minimum": 880,
-            "maximum": 1050
+            "standard": 760,
+            "minimum": 760,
+            "maximum": 940
           },
           "colors": [],
           "sizes": [],
