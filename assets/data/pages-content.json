@@ -19,6 +19,7 @@
         "title": "PERSONALIZZAZIONE",
         "subtitle": "Prenota il tuo appuntamento",
         "description": "Prenota il tuo appuntamento",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759931280/IMG_6408_2_vkguw6.jpg",
         "order_position": 2,
         "is_active": true
       },
