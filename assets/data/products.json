@@ -885,6 +885,29 @@
           "fabric": ""
         },
         {
+          "id": "col029",
+          "name": "ABITO IN VELLUTO DI SETA",
+          "category": "collections",
+          "description": "",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922673/06122022_Elisa_Sanna5328BIS_1_dcktvv.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922628/06122022_Elisa_Sanna5317BIS_1_1_uqgmws.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922785/06122022_Elisa_Sanna5325BIS_apljkw.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922673/06122022_Elisa_Sanna5328BIS_1_dcktvv.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922628/06122022_Elisa_Sanna5317BIS_1_1_uqgmws.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922785/06122022_Elisa_Sanna5325BIS_apljkw.jpg"
+          ],
+          "prices": {
+            "standard": 0,
+            "minimum": 0,
+            "maximum": 0
+          },
+          "colors": [],
+          "sizes": [],
+          "fabric": ""
+        },
+        {
           "id": "col030",
           "name": "ABITO IN SETA E CADY",
           "category": "collections",
