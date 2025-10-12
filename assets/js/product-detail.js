@@ -273,7 +273,7 @@ function buyStandardSize() {
 // Buy made to measure
 function buyMadeToMeasure() {
   if (currentProduct) {
-    const orderDetails = `Buongiorno, sono interessato al servizio Su Misura per: "${currentProduct.name}"\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nVorrei prenotare una consulenza personale e le misurazioni.\n\nCome posso procedere?`;
+    const orderDetails = `Buongiorno, sono interessato al servizio Su Misura per: "${currentProduct.name}"\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nCome posso procedere?`;
     
     const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(orderDetails)}`;
     window.open(whatsappUrl, '_blank');
