@@ -257,7 +257,7 @@ function buyStandardSize() {
     const selectedColor = document.querySelector('.color-option.selected');
     const selectedSize = document.querySelector('.size-option.selected');
     
-    let orderDetails = `Ciao! Vorrei acquistare: "${currentProduct.name}" - Taglia Standard`;
+    let orderDetails = `Buongiorno, vorrei acquistare: "${currentProduct.name}" - Taglia Standard`;
     if (selectedColor) {
       orderDetails += `\nColore: ${selectedColor.title}`;
     }
@@ -265,6 +265,7 @@ function buyStandardSize() {
       orderDetails += `\nTaglia: ${selectedSize.getAttribute('data-size')}`;
     }
     orderDetails += `\nPrezzo: ${formatPrice(currentProduct.prices.standard)}`;
+    orderDetails += `\n\nCome posso procedere?`;
     
     const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(orderDetails)}`;
     window.open(whatsappUrl, '_blank');
@@ -274,7 +275,7 @@ function buyStandardSize() {
 // Buy made to measure
 function buyMadeToMeasure() {
   if (currentProduct) {
-    const orderDetails = `Ciao! Sono interessato al servizio Su Misura per: "${currentProduct.name}"\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nVorrei prenotare una consulenza personale e le misurazioni.`;
+    const orderDetails = `Buongiorno, sono interessato al servizio Su Misura per: "${currentProduct.name}"\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nVorrei prenotare una consulenza personale e le misurazioni.\n\nCome posso procedere?`;
     
     const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(orderDetails)}`;
     window.open(whatsappUrl, '_blank');
