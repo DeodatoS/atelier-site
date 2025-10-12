@@ -261,8 +261,10 @@ function buyStandardSize() {
     if (selectedColor) {
       orderDetails += `\nColore: ${selectedColor.title}`;
     }
+    if (selectedSize) {
+      orderDetails += `\nTaglia: ${selectedSize.getAttribute('data-size')}`;
+    }
     orderDetails += `\nPrezzo: ${formatPrice(currentProduct.prices.standard)}`;
-    orderDetails += `\n\nLa mia taglia è: `;
     orderDetails += `\n\nCome posso procedere?`;
     
     const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(orderDetails)}`;
