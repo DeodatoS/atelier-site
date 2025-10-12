@@ -248,7 +248,7 @@ function requestConsultation() {
 }
 
 function contactAtelier() {
-  alert(`Contatta l'Atelier Elisa Sanna\n\nTelefono: +39 3270329874\nEmail: info@elisasanna.com\nIndirizzo: [indirizzo atelier]\n\nOrari Atelier:\nLun-Ven: 9:00 - 18:00\nSab: 10:00 - 16:00\nDom: Solo su appuntamento`);
+  alert(`Contatta l'Atelier Elisa Sanna\n\nTelefono: +39 3270329874\nEmail: info@elisasanna.com\nIndirizzo: Via San Maurilio 18, 20123 Milano\n\nOrari Atelier:\nLun-Sab: 9:30 - 19:30\nDom: Su appuntamento`);
 }
 
 // Buy standard size
