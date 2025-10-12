@@ -248,7 +248,7 @@ function requestConsultation() {
 }
 
 function contactAtelier() {
-  alert(`Contact Elisa Sanna Atelier\n\nPhone: +39 [phone number]\nEmail: info@elisasanna.com\nAddress: [atelier address]\n\nAtelier Hours:\nMon-Fri: 9:00am - 6:00pm\nSat: 10:00am - 4:00pm\nSun: By appointment only`);
+  alert(`Contatta l'Atelier Elisa Sanna\n\nTelefono: +39 [numero di telefono]\nEmail: info@elisasanna.com\nIndirizzo: [indirizzo atelier]\n\nOrari Atelier:\nLun-Ven: 9:00 - 18:00\nSab: 10:00 - 16:00\nDom: Solo su appuntamento`);
 }
 
 // Buy standard size
@@ -257,15 +257,15 @@ function buyStandardSize() {
     const selectedColor = document.querySelector('.color-option.selected');
     const selectedSize = document.querySelector('.size-option.selected');
     
-    let orderDetails = `Order: "${currentProduct.name}" - Standard Size`;
+    let orderDetails = `Ordine: "${currentProduct.name}" - Taglia Standard`;
     if (selectedColor) {
-      orderDetails += `\nColor: ${selectedColor.title}`;
+      orderDetails += `\nColore: ${selectedColor.title}`;
     }
     if (selectedSize) {
-      orderDetails += `\nSize: ${selectedSize.getAttribute('data-size')}`;
+      orderDetails += `\nTaglia: ${selectedSize.getAttribute('data-size')}`;
     }
-    orderDetails += `\nPrice: ${formatPrice(currentProduct.prices.standard)}`;
-    orderDetails += `\n\nThank you for your order! Our team will contact you shortly to confirm details and arrange payment.`;
+    orderDetails += `\nPrezzo: ${formatPrice(currentProduct.prices.standard)}`;
+    orderDetails += `\n\nGrazie per il tuo ordine! Il nostro team ti contatterà a breve per confermare i dettagli e organizzare il pagamento.`;
     
     alert(orderDetails);
   }
@@ -274,7 +274,7 @@ function buyStandardSize() {
 // Buy made to measure
 function buyMadeToMeasure() {
   if (currentProduct) {
-    alert(`Made to Measure Order: "${currentProduct.name}"\n\nThank you for choosing our Made to Measure service! Our master tailor will contact you within 24 hours to schedule your personal consultation and measurements.\n\nPrice range: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nEach piece is crafted exclusively for you in our Italian atelier.`);
+    alert(`Ordine Su Misura: "${currentProduct.name}"\n\nGrazie per aver scelto il nostro servizio Su Misura! Il nostro sarto maestro ti contatterà entro 24 ore per programmare la tua consulenza personale e le misurazioni.\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nOgni capo è realizzato esclusivamente per te nel nostro atelier italiano.`);
   }
 }
 
