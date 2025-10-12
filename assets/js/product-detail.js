@@ -248,7 +248,7 @@ function requestConsultation() {
 }
 
 function contactAtelier() {
-  alert(`Contatta l'Atelier Elisa Sanna\n\nTelefono: +39 [numero di telefono]\nEmail: info@elisasanna.com\nIndirizzo: [indirizzo atelier]\n\nOrari Atelier:\nLun-Ven: 9:00 - 18:00\nSab: 10:00 - 16:00\nDom: Solo su appuntamento`);
+  alert(`Contatta l'Atelier Elisa Sanna\n\nTelefono: +39 3270329874\nEmail: info@elisasanna.com\nIndirizzo: [indirizzo atelier]\n\nOrari Atelier:\nLun-Ven: 9:00 - 18:00\nSab: 10:00 - 16:00\nDom: Solo su appuntamento`);
 }
 
 // Buy standard size
