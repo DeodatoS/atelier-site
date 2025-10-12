@@ -1,0 +1,186 @@
+/* Shipping and Returns Page Styles */
+
+/* Shipping Section Styles */
+.shipping-section {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.shipping-section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.shipping-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.shipping-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+}
+
+.shipping-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 0;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shipping-description strong {
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+/* Main Content Section */
+.pfy-main-content-section {
+  background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.pfy-main-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.pfy-main-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.pfy-main-description {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Hero Section */
+.pfy-hero {
+  height: 400px;
+  background: linear-gradient(135deg, #2c2c2c 0%, #4a4a4a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pfy-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="%23ffffff" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.pfy-hero-content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.pfy-hero-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shipping-content {
+    padding: 40px 15px;
+  }
+  
+  .shipping-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .shipping-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .pfy-main-content {
+    padding: 60px 15px;
+  }
+  
+  .pfy-main-title {
+    font-size: 2.2rem;
+  }
+  
+  .pfy-main-description {
+    font-size: 1.1rem;
+  }
+  
+  .pfy-hero {
+    height: 300px;
+  }
+  
+  .pfy-hero-logo {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shipping-content {
+    padding: 30px 10px;
+  }
+  
+  .shipping-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .shipping-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .pfy-main-content {
+    padding: 40px 10px;
+  }
+  
+  .pfy-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .pfy-main-description {
+    font-size: 1rem;
+  }
+  
+  .pfy-hero {
+    height: 250px;
+  }
+  
+  .pfy-hero-logo {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}
