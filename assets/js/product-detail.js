@@ -257,7 +257,7 @@ function buyStandardSize() {
     const selectedColor = document.querySelector('.color-option.selected');
     const selectedSize = document.querySelector('.size-option.selected');
     
-    let orderDetails = `Ordine: "${currentProduct.name}" - Taglia Standard`;
+    let orderDetails = `Ciao! Vorrei acquistare: "${currentProduct.name}" - Taglia Standard`;
     if (selectedColor) {
       orderDetails += `\nColore: ${selectedColor.title}`;
     }
@@ -265,16 +265,19 @@ function buyStandardSize() {
       orderDetails += `\nTaglia: ${selectedSize.getAttribute('data-size')}`;
     }
     orderDetails += `\nPrezzo: ${formatPrice(currentProduct.prices.standard)}`;
-    orderDetails += `\n\nGrazie per il tuo ordine! Il nostro team ti contatterà a breve per confermare i dettagli e organizzare il pagamento.`;
     
-    alert(orderDetails);
+    const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(orderDetails)}`;
+    window.open(whatsappUrl, '_blank');
   }
 }
 
 // Buy made to measure
 function buyMadeToMeasure() {
   if (currentProduct) {
-    alert(`Ordine Su Misura: "${currentProduct.name}"\n\nGrazie per aver scelto il nostro servizio Su Misura! Il nostro sarto maestro ti contatterà entro 24 ore per programmare la tua consulenza personale e le misurazioni.\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nOgni capo è realizzato esclusivamente per te nel nostro atelier italiano.`);
+    const orderDetails = `Ciao! Sono interessato al servizio Su Misura per: "${currentProduct.name}"\n\nFascia di prezzo: ${formatPrice(currentProduct.prices.minimum)} - ${formatPrice(currentProduct.prices.maximum)}\n\nVorrei prenotare una consulenza personale e le misurazioni.`;
+    
+    const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(orderDetails)}`;
+    window.open(whatsappUrl, '_blank');
   }
 }
 
