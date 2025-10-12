@@ -341,27 +341,5 @@ function showError(message) {
   errorElement.style.display = 'block';
 }
 
-// Load size guide image on demand
-function loadSizeGuideImage(container) {
-  // Show loading state
-  container.innerHTML = '<p style="margin: 0; color: #666; font-size: 16px;">⏳ Caricamento in corso...</p>';
-  
-  // Create new image element
-  const img = new Image();
-  img.onload = function() {
-    // Image loaded successfully - replace container content
-    container.innerHTML = '<img src="../assets/images/size-guide-table.jpg" alt="Tabella Taglie" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto; border-radius: 8px;">';
-    container.style.cursor = 'default';
-    container.onclick = null; // Remove click handler
-  };
-  img.onerror = function() {
-    // Image failed to load
-    container.innerHTML = '<p style="margin: 0; color: #e74c3c; font-size: 16px;">❌ Errore nel caricamento dell\'immagine</p>';
-  };
-  
-  // Start loading the image
-  img.src = '../assets/images/size-guide-table.jpg';
-}
-
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', initializeProductDetail);
