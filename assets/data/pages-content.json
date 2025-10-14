@@ -549,12 +549,12 @@
       }
     ]
   },
-  "kids": {
+  "accessories": {
     "category_hero": [
       {
         "section_id": "hero_image",
         "content_type": "category_hero",
-        "title": "Kids",
+        "title": "accessories",
         "description": "Charming and comfortable pieces designed especially for children",
         "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
         "image_alt": "Children's fashion and special occasion wear",
