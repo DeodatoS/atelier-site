@@ -137,7 +137,6 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "title": "Il servizio Made to Measure di Elisa Sanna trasforma i modelli della collezione in capi unici, realizzati sulle misure personali di ogni cliente.\nUn percorso sartoriale esclusivo che unisce precisione, cura artigianale e raffinatezza, per un?eleganza che veste in modo impeccabile e senza tempo.",
         "description": "ffffffffffffffffffffffffffff",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759939354/IMG_6471_atozth.jpg",
         "image_alt": "Made to measure hero",
@@ -149,9 +148,9 @@
       {
         "section_id": "main_section",
         "content_type": "main_content",
-        "title": "Personalizzato per te",
+        "title": "Su Misura",
         "subtitle": "eeeee",
-        "description": "Il servizio Personalized for You ? l?espressione pi? esclusiva del brand Elisa Sanna.\nNasce dal dialogo diretto con la designer, che interpreta desideri e suggestioni trasformandoli in creazioni uniche, pensate per celebrare l?individualit? di chi le indossa.Questo servizio di personalizzazione offre l?opportunit? di avere abiti irripetibili, nati dal confronto diretto con la designer e modellati sui desideri di ogni cliente.\nUn?esperienza esclusiva che unisce creativit?, savoir-faire artigianale e cura del dettaglio, trasformando ogni idea personale in un capo unico e senza tempo.",
+        "description": "Il servizio Made to Measure di Elisa Sanna trasforma i modelli della collezione in capi unici, realizzati sulle misure personali di chi li indosser?. Un percorso sartoriale esclusivo che unisce precisione, cura artigianale e raffinatezza, per un?eleganza che veste in modo impeccabile e senza tempo.",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759939354/IMG_6471_atozth.jpg",
         "image_alt": "Personalized garments display",
         "order_position": 2,
