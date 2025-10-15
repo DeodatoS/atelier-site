@@ -262,7 +262,7 @@
         "title": "HAND EMBROIDERY",
         "subtitle": "The Art of Italian Needlework",
         "description": "Discover the ancient art of hand embroidery, where every thread tells a story of tradition and mastery.",
-        "image_url": "https://picsum.photos/1200/800?random=1",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760445564/IMG_7598_t4my3l.jpg",
         "image_alt": "Hand embroidery hero",
         "order_position": 1,
         "is_active": true
@@ -297,7 +297,7 @@
         "title": "The Art of Hand Embroidery",
         "subtitle": "Preserving Ancient Traditions",
         "description": "Hand embroidery represents the pinnacle of Italian craftsmanship, where skilled artisans transform simple threads into works of art. Each piece tells a story of dedication, precision, and the timeless beauty of handmade creation.",
-        "image_url": "https://picsum.photos/800/600?random=2",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760445564/IMG_7598_t4my3l.jpg",
         "image_alt": "Hand embroidery craftsmanship",
         "order_position": 2,
         "is_active": true
