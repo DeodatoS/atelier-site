@@ -1,7 +1,6 @@
 // Products functionality
 let allProducts = [];
 let currentCategory = '';
-let filteredProducts = [];
 
 // Get category from URL parameter
 function getCategoryFromURL() {
@@ -114,49 +113,6 @@ function displayProducts(products) {
   productsGrid.innerHTML = products.map(createProductCard).join('');
 }
 
-// Populate filter options
-function populateFilters(products) {
-  const colorFilter = document.getElementById('color-filter');
-  
-  // Get unique colors
-  const allColors = [...new Set(products.flatMap(p => p.colors))].sort();
-  colorFilter.innerHTML = '<option value="">All Colors</option>';
-  allColors.forEach(color => {
-    colorFilter.innerHTML += `<option value="${color}">${color}</option>`;
-  });
-}
-
-// Filter products
-function filterProducts() {
-  const priceFilter = document.getElementById('price-filter').value;
-  const colorFilter = document.getElementById('color-filter').value;
-  
-  filteredProducts = allProducts.filter(product => {
-    // Price filter
-    if (priceFilter) {
-      const price = product.prices.standard;
-      if (priceFilter === '0-500' && price > 500) return false;
-      if (priceFilter === '500-1000' && (price < 500 || price > 1000)) return false;
-      if (priceFilter === '1000-2000' && (price < 1000 || price > 2000)) return false;
-      if (priceFilter === '2000+' && price < 2000) return false;
-    }
-    
-    // Color filter
-    if (colorFilter && !product.colors.includes(colorFilter)) return false;
-    
-    return true;
-  });
-  
-  displayProducts(filteredProducts);
-}
-
-// Clear all filters
-function clearFilters() {
-  document.getElementById('price-filter').value = '';
-  document.getElementById('color-filter').value = '';
-  filteredProducts = [...allProducts];
-  displayProducts(filteredProducts);
-}
 
 // View details functionality
 function viewDetails(productId) {
@@ -265,7 +221,6 @@ async function initializePage() {
     
     const categoryData = data.categories[currentCategory];
     allProducts = categoryData.products;
-    filteredProducts = [...allProducts];
     
     // Setup hero image or fallback
     setupHeroSection(categoryData);
@@ -273,14 +228,8 @@ async function initializePage() {
     // Update page title and content
     document.getElementById('page-title').textContent = `${categoryData.name} - ELISA SANNA`;
     
-    // Populate filters and display products
-    populateFilters(allProducts);
-    displayProducts(filteredProducts);
-    
-    // Add event listeners
-    document.getElementById('price-filter').addEventListener('change', filterProducts);
-    document.getElementById('color-filter').addEventListener('change', filterProducts);
-    document.getElementById('clear-filters').addEventListener('click', clearFilters);
+    // Display products
+    displayProducts(allProducts);
     
     // Update navigation active state
     updateNavigationActiveState();
