@@ -475,7 +475,6 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "title": "Artigianalit?",
         "subtitle": "bbbb",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
         "image_alt": "Personalized for you hero",
@@ -500,7 +499,7 @@
       {
         "section_id": "second_section",
         "content_type": "section_content",
-        "title": "Craftsmanship and Values",
+        "title": "Artiginalit?",
         "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
         "image_alt": "with every detail receiving the attention it deserves.",
@@ -510,7 +509,7 @@
       {
         "section_id": "third_section",
         "content_type": "section_content",
-        "title": "Craftsmanship and Values",
+        "title": "Valori",
         "description": "Our craftsmen are the guardians of centuries-old techniques",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
         "image_alt": "with every detail receiving the attention it deserves.",
