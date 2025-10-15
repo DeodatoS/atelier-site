@@ -272,7 +272,7 @@
         "title": "Craftsmanship and Values",
         "subtitle": "bbbb",
         "description": "ccccc",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760445564/IMG_7598_t4my3l.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760445584/IMG_7620_cmuda9.jpg",
         "image_alt": "Personalized for you hero",
         "order_position": 1,
         "is_active": true
@@ -285,7 +285,7 @@
         "title": "Elisa Sanna gnucca",
         "subtitle": "ARTIGIANALITA' E VALORI",
         "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760445564/IMG_7598_t4my3l.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759940136/IMG_7211_2_ywnung.jpg",
         "image_alt": "Craftsmanship and values",
         "order_position": 1,
         "is_active": true
@@ -296,6 +296,7 @@
         "title": "The Art of Hand Embroidery",
         "subtitle": "Preserving Ancient Traditions",
         "description": "Hand embroidery represents the pinnacle of Italian craftsmanship, where skilled artisans transform simple threads into works of art. Each piece tells a story of dedication, precision, and the timeless beauty of handmade creation.",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759940136/IMG_7211_2_ywnung.jpg",
         "image_alt": "Hand embroidery craftsmanship",
         "order_position": 2,
         "is_active": true
@@ -307,7 +308,7 @@
         "content_type": "section_content",
         "title": "Champagne",
         "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760445564/IMG_7598_t4my3l.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759940136/IMG_7211_2_ywnung.jpg",
         "image_alt": "with every detail receiving the attention it deserves.",
         "order_position": 0,
         "is_active": true
@@ -343,7 +344,6 @@
         "title": "vomito",
         "subtitle": "bbbb",
         "description": "ccccc",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756917078/Foto-n.-1-sartoria-1000x600-1_svrv27.jpg",
         "image_alt": "Personalized for you hero",
         "order_position": 1,
         "is_active": true
