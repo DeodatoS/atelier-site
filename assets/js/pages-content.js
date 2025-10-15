@@ -327,10 +327,21 @@ function populateHomepageAllSections(pageId) {
   // Populate two-column section
   const twoColumnContent = getTwoColumnContent(pageId);
   twoColumnContent.forEach((column, index) => {
+    // Update column title
     const columnElement = document.querySelector(`.two-column .column:nth-child(${index + 1}) .column-title`);
     if (columnElement && column.title) {
       columnElement.textContent = column.title;
       console.log(`🏛️ Updated two-column ${index + 1} title to:`, column.title);
+    }
+    
+    // Update column image
+    const imageElement = document.querySelector(`.two-column .column:nth-child(${index + 1}) .column-image img`);
+    if (imageElement && column.image_url) {
+      imageElement.src = column.image_url;
+      if (column.image_alt) {
+        imageElement.alt = column.image_alt;
+      }
+      console.log(`🖼️ Updated two-column ${index + 1} image to:`, column.image_url);
     }
   });
 
