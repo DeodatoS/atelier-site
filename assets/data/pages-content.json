@@ -432,18 +432,6 @@
         "is_active": true
       }
     ],
-    "": [
-      {
-        "section_id": "main_section",
-        "title": "Elisa Sanna SANTA",
-        "subtitle": "ARTIGIANALITA' E VALORI",
-        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
-        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-        "image_alt": "Craftsmanship and values",
-        "order_position": 1,
-        "is_active": true
-      }
-    ],
     "section_content": [
       {
         "section_id": "second_section",
@@ -510,6 +498,20 @@
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760541812/IMG_7726_1_pqcwy5.jpg",
         "image_alt": "with every detail receiving the attention it deserves.",
         "order_position": 0,
+        "is_active": true
+      }
+    ]
+  },
+  "": {
+    "": [
+      {
+        "section_id": "main_section",
+        "title": "Elisa Sanna SANTA",
+        "subtitle": "ARTIGIANALITA' E VALORI",
+        "description": "Our craftsmen are the guardians of centuries-old techniques passed down through generations of Italian artisans. Each garment is meticulously constructed by hand",
+        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_alt": "Craftsmanship and values",
+        "order_position": 1,
         "is_active": true
       }
     ]
