@@ -424,7 +424,7 @@
         "section_id": "main_section",
         "content_type": "main_content",
         "description": "Nel nostro Atelier, passione e precisione si incontrano per dar vita a capi esclusivi. Le tecniche della tradizione sartoriale italiana vengono reinterpretate con cura e visione contemporanea, per abiti di eleganza senza tempo.",
-        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760791762/IMG_4042_xltkk2.jpg",
         "image_alt": "Atelier craftsmanship",
         "order_position": 2,
         "is_active": true
