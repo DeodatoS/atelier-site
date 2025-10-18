@@ -402,7 +402,7 @@
         "content_type": "hero_section",
         "subtitle": "Where Craftsmanship Lives",
         "description": "Step into our world of Italian artistry and traditional craftsmanship.",
-        "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760791762/IMG_4042_xltkk2.jpg",
         "image_alt": "Our atelier workspace",
         "order_position": 1,
         "is_active": true
