@@ -2,7 +2,7 @@
   "categories": {
     "prive_ceremonial": {
       "name": "Couture e Cerimonia",
-      "description": "Questi abiti, impreziositi da ricami eseguiti a mano all’interno dell’Atelier Elisa Sanna, richiedono ore di lavorazione meticolosa. Ogni dettaglio riflette la dedizione e la precisione di un savoir-faire sartoriale che rende ogni creazione espressione di eleganza autentica.",
+      "description": "Exquisite pieces for special occasions and refined experiences",
       "products": [
         {
           "id": "pc001",
@@ -35,7 +35,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: 100% lana, fodera 100% seta. Dettagli: passamaneria con cristalli cuciti a mano. Lunghezza abito taglia 42:"
         },
         {
           "id": "pc002",
@@ -491,7 +491,7 @@
     },
     "collections": {
       "name": "Collections",
-      "description": "Capi realizzati artigianalmente all’interno dell’Atelier Elisa Sanna, con la stessa attenzione ai dettagli che contraddistingue il suo linguaggio sartoriale. Linee pure e materiali pregiati definiscono una visione di eleganza quotidiana, autentica e senza tempo.",
+      "description": "Curated seasonal collections showcasing contemporary Italian elegance",
       "products": [
         {
           "id": "col019",
