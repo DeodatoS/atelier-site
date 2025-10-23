@@ -1,5 +1,5 @@
 page_id,section_id,content_type,title,subtitle,description,image_url,image_alt,order_position,is_active
-homepage,hero,hero_section,,The Art of Italian Craftsmanship,"Welcome to a world where tradition meets innovation, where every stitch tells a story of passion and excellence.",https://res.cloudinary.com/do5fpt0co/image/upload/v1761145018/B132DD58-F396-4300-90FC-37BD669E50F4_3_zckkzw.png,Italian craftsmanship atelier,1,true
+homepage,hero,hero_section,,Scopri le creazioni Elisa Sanna,"Welcome to a world where tradition meets innovation, where every stitch tells a story of passion and excellence.",https://res.cloudinary.com/do5fpt0co/image/upload/v1761145018/B132DD58-F396-4300-90FC-37BD669E50F4_3_zckkzw.png,Italian craftsmanship atelier,1,true
 homepage,two_column_1,two_column,PERSONALIZZAZIONE,Prenota il tuo appuntamento,Prenota il tuo appuntamento,https://res.cloudinary.com/do5fpt0co/image/upload/v1759931280/IMG_6408_2_vkguw6.jpg,,2,true
 homepage,two_column_2,two_column,SU MISURA,Prenota il tuo appuntamento,,https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_2_qvjh2z.jpg,,3,true
 homepage,couture_section,section_header,Couture e cerimonia,,Curated looks for special occasions and refined experiences,,,4,true
