@@ -403,18 +403,21 @@ function initializePriveCarousel() {
   const totalItems = productGrid.children.length;
   const maxIndex = Math.max(0, totalItems - itemsPerView);
   
-  console.log(`🎠 Carousel initialized: ${totalItems} items, ${itemsPerView} per view`);
+  console.log(`🎠 Carousel initialized: ${totalItems} items, ${itemsPerView} per view, maxIndex: ${maxIndex}`);
   
   // Update carousel position
   function updateCarousel() {
-    const translateX = -currentIndex * (100 / itemsPerView);
+    // Calculate translateX based on item width (each item is 25% of container width for 4 items)
+    const translateX = -currentIndex * 25; // 25% per item (100% / 4 items)
     productGrid.style.transform = `translateX(${translateX}%)`;
     
-    // Update button states
+    // Update button states - disable when at limits
     prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
     nextButton.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+    prevButton.disabled = currentIndex === 0;
+    nextButton.disabled = currentIndex >= maxIndex;
     
-    console.log(`🎠 Carousel position: ${currentIndex}/${maxIndex}`);
+    console.log(`🎠 Carousel position: ${currentIndex}/${maxIndex}, translateX: ${translateX}%`);
   }
   
   // Previous button

@@ -326,6 +326,11 @@ body {
 .carousel-button.prev { left: 8px; }
 .carousel-button.next { right: 8px; }
 
+.carousel-button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .product-grid {
   display: grid;
   grid-auto-flow: column;
