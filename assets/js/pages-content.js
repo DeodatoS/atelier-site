@@ -665,7 +665,7 @@ async function populatePriveCarousel() {
       const productItem = document.createElement('div');
       productItem.className = 'product-item';
       productItem.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" loading="lazy" />
+        <img src="${product.image}" alt="${product.name}" loading="lazy" onclick="viewProductDetails('${product.id}')" style="cursor: pointer;" />
         <div class="product-info">
           <p>${product.name.toUpperCase()}</p>
         </div>
@@ -718,6 +718,14 @@ function initializeSimpleCarousel() {
   });
   
   console.log('✅ Simple carousel scroll functionality initialized');
+}
+
+/**
+ * Navigate to product detail page
+ */
+function viewProductDetails(productId) {
+  console.log('🔍 Navigating to product detail:', productId);
+  window.location.href = `product-detail.html?id=${productId}`;
 }
 
 /**
