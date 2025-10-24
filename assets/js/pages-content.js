@@ -321,130 +321,6 @@ function populateFeatures(pageId) {
 }
 
 /**
- * Load products data for homepage carousel
- */
-async function loadProductsForHomepage() {
-  try {
-    const response = await fetch('../assets/data/products.json');
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error loading products for homepage:', error);
-    return null;
-  }
-}
-
-/**
- * Populate Prive carousel with dynamic products
- */
-async function populatePriveCarousel() {
-  try {
-    console.log('🔄 Loading products for Prive carousel...');
-    const productsData = await loadProductsForHomepage();
-    
-    if (!productsData || !productsData.categories || !productsData.categories.prive_ceremonial) {
-      console.log('❌ No prive_ceremonial products found');
-      return;
-    }
-    
-    const priveProducts = productsData.categories.prive_ceremonial.products;
-    console.log(`📦 Found ${priveProducts.length} prive products`);
-    
-    const productGrid = document.querySelector('.prive-section .product-grid');
-    if (!productGrid) {
-      console.log('❌ Product grid not found');
-      return;
-    }
-    
-    // Clear existing static content
-    productGrid.innerHTML = '';
-    
-    // Add ALL dynamic products
-    priveProducts.forEach(product => {
-      const productItem = document.createElement('div');
-      productItem.className = 'product-item';
-      productItem.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" loading="lazy" />
-        <div class="product-info">
-          <p>${product.name.toUpperCase()}</p>
-        </div>
-      `;
-      productGrid.appendChild(productItem);
-    });
-    
-    // Initialize carousel functionality
-    initializePriveCarousel();
-    
-    console.log('✅ Prive carousel populated with dynamic products');
-    
-  } catch (error) {
-    console.error('Error populating Prive carousel:', error);
-  }
-}
-
-/**
- * Initialize Prive carousel scroll functionality
- */
-function initializePriveCarousel() {
-  const productGrid = document.querySelector('.prive-section .product-grid');
-  const prevButton = document.querySelector('.prive-section .carousel-button.prev');
-  const nextButton = document.querySelector('.prive-section .carousel-button.next');
-  
-  if (!productGrid || !prevButton || !nextButton) {
-    console.log('❌ Carousel elements not found');
-    return;
-  }
-  
-  let currentIndex = 0;
-  const itemsPerView = 4; // Number of items visible at once
-  const totalItems = productGrid.children.length;
-  const maxIndex = totalItems - itemsPerView;
-  
-  console.log(`🎠 Carousel initialized: ${totalItems} items, ${itemsPerView} per view, maxIndex: ${maxIndex}`);
-  
-  // Update carousel position
-  function updateCarousel() {
-    // Calculate translateX based on item width (each item is 25% of container width for 4 items)
-    const translateX = -currentIndex * 25; // 25% per item (100% / 4 items)
-    productGrid.style.transform = `translateX(${translateX}%)`;
-    
-    // Always enable buttons for circular carousel
-    prevButton.style.opacity = '1';
-    nextButton.style.opacity = '1';
-    prevButton.disabled = false;
-    nextButton.disabled = false;
-    
-    console.log(`🎠 Carousel position: ${currentIndex}, translateX: ${translateX}%`);
-  }
-  
-  // Previous button - circular navigation
-  prevButton.addEventListener('click', () => {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = maxIndex; // Go to last position
-    }
-    updateCarousel();
-  });
-  
-  // Next button - circular navigation
-  nextButton.addEventListener('click', () => {
-    currentIndex++;
-    if (currentIndex > maxIndex) {
-      currentIndex = 0; // Go to first position
-    }
-    updateCarousel();
-  });
-  
-  // Initialize position
-  updateCarousel();
-  
-  console.log('✅ Prive carousel scroll functionality initialized');
-}
-
-/**
  * Populate all homepage sections (two-column, sections, latest pieces)
  */
 function populateHomepageAllSections(pageId) {
@@ -740,6 +616,108 @@ function populateBookingOptions(pageId) {
       console.log(`📞 Updated booking option ${index + 1}:`, option.title);
     }
   });
+}
+
+/**
+ * Load products data for homepage carousel
+ */
+async function loadProductsForHomepage() {
+  try {
+    const response = await fetch('../assets/data/products.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error loading products for homepage:', error);
+    return null;
+  }
+}
+
+/**
+ * Populate Prive carousel with dynamic products
+ */
+async function populatePriveCarousel() {
+  try {
+    console.log('🔄 Loading products for Prive carousel...');
+    const productsData = await loadProductsForHomepage();
+    
+    if (!productsData || !productsData.categories || !productsData.categories.prive_ceremonial) {
+      console.log('❌ No prive_ceremonial products found');
+      return;
+    }
+    
+    const priveProducts = productsData.categories.prive_ceremonial.products;
+    console.log(`📦 Found ${priveProducts.length} prive products`);
+    
+    const productGrid = document.querySelector('.prive-section .product-grid');
+    if (!productGrid) {
+      console.log('❌ Product grid not found');
+      return;
+    }
+    
+    // Clear existing static content
+    productGrid.innerHTML = '';
+    
+    // Add ALL dynamic products
+    priveProducts.forEach(product => {
+      const productItem = document.createElement('div');
+      productItem.className = 'product-item';
+      productItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" loading="lazy" />
+        <div class="product-info">
+          <p>${product.name.toUpperCase()}</p>
+        </div>
+      `;
+      productGrid.appendChild(productItem);
+    });
+    
+    // Initialize simple scroll carousel
+    initializeSimpleCarousel();
+    
+    console.log('✅ Prive carousel populated with dynamic products');
+    
+  } catch (error) {
+    console.error('Error populating Prive carousel:', error);
+  }
+}
+
+/**
+ * Simple scroll-based carousel
+ */
+function initializeSimpleCarousel() {
+  const productGrid = document.querySelector('.prive-section .product-grid');
+  const prevButton = document.querySelector('.prive-section .carousel-button.prev');
+  const nextButton = document.querySelector('.prive-section .carousel-button.next');
+  
+  if (!productGrid || !prevButton || !nextButton) {
+    console.log('❌ Carousel elements not found');
+    return;
+  }
+  
+  const itemWidth = 300; // Approximate width of each item including gap
+  const itemsPerView = 4;
+  
+  console.log('🎠 Simple carousel initialized');
+  
+  // Previous button
+  prevButton.addEventListener('click', () => {
+    productGrid.scrollBy({
+      left: -itemWidth * itemsPerView,
+      behavior: 'smooth'
+    });
+  });
+  
+  // Next button
+  nextButton.addEventListener('click', () => {
+    productGrid.scrollBy({
+      left: itemWidth * itemsPerView,
+      behavior: 'smooth'
+    });
+  });
+  
+  console.log('✅ Simple carousel scroll functionality initialized');
 }
 
 /**
