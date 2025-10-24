@@ -401,7 +401,7 @@ function initializePriveCarousel() {
   let currentIndex = 0;
   const itemsPerView = 4; // Number of items visible at once
   const totalItems = productGrid.children.length;
-  const maxIndex = Math.max(0, totalItems - itemsPerView);
+  const maxIndex = totalItems - itemsPerView;
   
   console.log(`🎠 Carousel initialized: ${totalItems} items, ${itemsPerView} per view, maxIndex: ${maxIndex}`);
   
@@ -411,29 +411,31 @@ function initializePriveCarousel() {
     const translateX = -currentIndex * 25; // 25% per item (100% / 4 items)
     productGrid.style.transform = `translateX(${translateX}%)`;
     
-    // Update button states - disable when at limits
-    prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
-    nextButton.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
-    prevButton.disabled = currentIndex === 0;
-    nextButton.disabled = currentIndex >= maxIndex;
+    // Always enable buttons for circular carousel
+    prevButton.style.opacity = '1';
+    nextButton.style.opacity = '1';
+    prevButton.disabled = false;
+    nextButton.disabled = false;
     
-    console.log(`🎠 Carousel position: ${currentIndex}/${maxIndex}, translateX: ${translateX}%`);
+    console.log(`🎠 Carousel position: ${currentIndex}, translateX: ${translateX}%`);
   }
   
-  // Previous button
+  // Previous button - circular navigation
   prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = maxIndex; // Go to last position
     }
+    updateCarousel();
   });
   
-  // Next button
+  // Next button - circular navigation
   nextButton.addEventListener('click', () => {
-    if (currentIndex < maxIndex) {
-      currentIndex++;
-      updateCarousel();
+    currentIndex++;
+    if (currentIndex > maxIndex) {
+      currentIndex = 0; // Go to first position
     }
+    updateCarousel();
   });
   
   // Initialize position
