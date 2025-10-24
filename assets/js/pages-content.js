@@ -321,6 +321,69 @@ function populateFeatures(pageId) {
 }
 
 /**
+ * Load products data for homepage carousel
+ */
+async function loadProductsForHomepage() {
+  try {
+    const response = await fetch('../assets/data/products.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error loading products for homepage:', error);
+    return null;
+  }
+}
+
+/**
+ * Populate Prive carousel with dynamic products
+ */
+async function populatePriveCarousel() {
+  try {
+    console.log('🔄 Loading products for Prive carousel...');
+    const productsData = await loadProductsForHomepage();
+    
+    if (!productsData || !productsData.categories || !productsData.categories.prive_ceremonial) {
+      console.log('❌ No prive_ceremonial products found');
+      return;
+    }
+    
+    const priveProducts = productsData.categories.prive_ceremonial.products;
+    console.log(`📦 Found ${priveProducts.length} prive products`);
+    
+    const productGrid = document.querySelector('.prive-section .product-grid');
+    if (!productGrid) {
+      console.log('❌ Product grid not found');
+      return;
+    }
+    
+    // Clear existing static content
+    productGrid.innerHTML = '';
+    
+    // Add dynamic products (limit to 4 for carousel)
+    const productsToShow = priveProducts.slice(0, 4);
+    productsToShow.forEach(product => {
+      const productItem = document.createElement('div');
+      productItem.className = 'product-item';
+      productItem.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" loading="lazy" />
+        <div class="product-info">
+          <p>${product.name.toUpperCase()}</p>
+        </div>
+      `;
+      productGrid.appendChild(productItem);
+    });
+    
+    console.log('✅ Prive carousel populated with dynamic products');
+    
+  } catch (error) {
+    console.error('Error populating Prive carousel:', error);
+  }
+}
+
+/**
  * Populate all homepage sections (two-column, sections, latest pieces)
  */
 function populateHomepageAllSections(pageId) {
@@ -694,6 +757,7 @@ async function initializePageContent() {
     if (pageId === 'homepage') {
       populateHomepageAllSections(pageId);
       populateJourneySteps(pageId);
+      populatePriveCarousel();
     }
 
     console.log(`✅ Page content initialized for: ${pageId}`);
