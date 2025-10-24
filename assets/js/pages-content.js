@@ -725,7 +725,7 @@ function initializeSimpleCarousel() {
  */
 function viewProductDetails(productId) {
   console.log('🔍 Navigating to product detail:', productId);
-  window.location.href = `product-detail.html?id=${productId}`;
+  window.location.href = `pages/product-detail.html?id=${productId}`;
 }
 
 /**
