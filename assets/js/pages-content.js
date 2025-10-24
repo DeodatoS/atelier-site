@@ -362,9 +362,8 @@ async function populatePriveCarousel() {
     // Clear existing static content
     productGrid.innerHTML = '';
     
-    // Add dynamic products (limit to 4 for carousel)
-    const productsToShow = priveProducts.slice(0, 4);
-    productsToShow.forEach(product => {
+    // Add ALL dynamic products
+    priveProducts.forEach(product => {
       const productItem = document.createElement('div');
       productItem.className = 'product-item';
       productItem.innerHTML = `
@@ -376,11 +375,68 @@ async function populatePriveCarousel() {
       productGrid.appendChild(productItem);
     });
     
+    // Initialize carousel functionality
+    initializePriveCarousel();
+    
     console.log('✅ Prive carousel populated with dynamic products');
     
   } catch (error) {
     console.error('Error populating Prive carousel:', error);
   }
+}
+
+/**
+ * Initialize Prive carousel scroll functionality
+ */
+function initializePriveCarousel() {
+  const productGrid = document.querySelector('.prive-section .product-grid');
+  const prevButton = document.querySelector('.prive-section .carousel-button.prev');
+  const nextButton = document.querySelector('.prive-section .carousel-button.next');
+  
+  if (!productGrid || !prevButton || !nextButton) {
+    console.log('❌ Carousel elements not found');
+    return;
+  }
+  
+  let currentIndex = 0;
+  const itemsPerView = 4; // Number of items visible at once
+  const totalItems = productGrid.children.length;
+  const maxIndex = Math.max(0, totalItems - itemsPerView);
+  
+  console.log(`🎠 Carousel initialized: ${totalItems} items, ${itemsPerView} per view`);
+  
+  // Update carousel position
+  function updateCarousel() {
+    const translateX = -currentIndex * (100 / itemsPerView);
+    productGrid.style.transform = `translateX(${translateX}%)`;
+    
+    // Update button states
+    prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+    nextButton.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+    
+    console.log(`🎠 Carousel position: ${currentIndex}/${maxIndex}`);
+  }
+  
+  // Previous button
+  prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+  
+  // Next button
+  nextButton.addEventListener('click', () => {
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+  
+  // Initialize position
+  updateCarousel();
+  
+  console.log('✅ Prive carousel scroll functionality initialized');
 }
 
 /**

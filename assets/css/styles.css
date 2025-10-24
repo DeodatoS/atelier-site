@@ -337,6 +337,7 @@ body {
   padding: 0 2rem;
   max-width: 1400px;
   margin: 0 auto;
+  transition: transform 0.3s ease;
 }
 
 .product-item {
