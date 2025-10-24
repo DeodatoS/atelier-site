@@ -2,7 +2,7 @@ page_id,section_id,content_type,title,subtitle,description,image_url,image_alt,o
 homepage,hero,hero_section,,Scopri le creazioni Elisa Sanna,"Welcome to a world where tradition meets innovation, where every stitch tells a story of passion and excellence.",https://res.cloudinary.com/do5fpt0co/image/upload/v1761145018/B132DD58-F396-4300-90FC-37BD669E50F4_3_zckkzw.png,Italian craftsmanship atelier,1,true
 homepage,two_column_1,two_column,PERSONALIZZAZIONE,Prenota il tuo appuntamento,Prenota il tuo appuntamento,https://res.cloudinary.com/do5fpt0co/image/upload/v1759931280/IMG_6408_2_vkguw6.jpg,,2,true
 homepage,two_column_2,two_column,SU MISURA,Prenota il tuo appuntamento,,https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_2_qvjh2z.jpg,,3,true
-homepage,couture_section,section_header,Couture e cerimonia,,Scopri le nostre creazioni dedicate agli eventi piu' speciali,,,4,true
+homepage,couture_section,section_header,Couture e cerimonia,,Scopri le nostre creazioni dedicate agli eventi piu' speciali,https://res.cloudinary.com/do5fpt0co/image/upload/v1761145018/B132DD58-F396-4300-90FC-37BD669E50F4_3_zckkzw.png,,4,true
 homepage,craftsmanship_section,section_header,Artigianalita' e valori,,Creazioni curate realizzate dai nostri artigiani,,,5,true
 homepage,journey_section,section_header,Archivio,,Discover the story behind each creation through our craftsmanship journey,,,6,true
 homepage,latest_pieces_section,section_header,Scopri le nostre ultime creazioni,,"Discover the fashion that expresses different life goals, stories of style, handcrafted with care, designed to inspire.",,,7,true
