@@ -180,9 +180,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1759072560/06122022_Elisa_Sanna5455BIS_hunfkl.jpg"
           ],
           "prices": {
-            "standard": 880,
-            "minimum": 880,
-            "maximum": 1080
+            "standard": 660,
+            "minimum": 660,
+            "maximum": 820
           },
           "colors": [],
           "sizes": [
