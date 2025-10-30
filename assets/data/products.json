@@ -838,9 +838,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756729084/ELISA_102896_slthcl.jpg"
           ],
           "prices": {
-            "standard": 1150,
-            "minimum": 1150,
-            "maximum": 1500
+            "standard": 740,
+            "minimum": 740,
+            "maximum": 920
           },
           "colors": [
             "Natural Beige",
@@ -872,9 +872,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1758992634/09_47516_dil83w.jpg"
           ],
           "prices": {
-            "standard": 1250,
-            "minimum": 1250,
-            "maximum": 1550
+            "standard": 790,
+            "minimum": 790,
+            "maximum": 970
           },
           "colors": [
             "Natural Beige",
