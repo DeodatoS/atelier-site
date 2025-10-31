@@ -941,8 +941,8 @@
           ],
           "prices": {
             "standard": 790,
-            "minimum": 970,
-            "maximum": 0
+            "minimum": 790,
+            "maximum": 970
           },
           "colors": [],
           "sizes": [
