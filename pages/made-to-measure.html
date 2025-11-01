@@ -74,32 +74,31 @@
   <!-- Booking Section -->
   <section class="mtm-booking-section section-padding">
     <div class="container">
-      <h2 class="mtm-section-title">BOOK YOUR APPOINTMENT</h2>
+      <h2 class="mtm-section-title">PRENOTA IL TUO APPUNTAMENTO</h2>
       
       <div class="mtm-booking-options">
         <div class="mtm-booking-option">
-          <h3>Appointment at your convenience</h3>
+          <h3>Appuntamento riservato a casa tua</h3>
           <p>
-            We would love to help you find the perfect fit. Please contact us to schedule an appointment at your convenience. We look forward to working with you.
+            Un servizio esclusivo che porta l'esperienza dell'Atelier direttamente da te. Nel comfort della tua casa potrai vivere un momento privato e dedicato, con la possibilità di provare i capi e ricevere una consulenza su misura, pensata per valorizzare il tuo stile.
           </p>
-          <button class="mtm-btn">BOOK YOUR MEETING</button>
+          <button class="mtm-btn" onclick="contactWhatsApp()">CONTATTACI</button>
         </div>
         
         <div class="mtm-booking-option">
-          <h3>Virtual Appointment</h3>
+          <h3>Appuntamento virtuale</h3>
           <p>
-            Schedule a virtual appointment with our expert tailors. We'll guide you through the measurement process and fabric selection from the comfort of your home.
+            Un incontro digitale per restare vicino all'Atelier, ovunque tu sia. Attraverso una videochiamata avrai l'occasione di scoprire le nostre collezioni e ricevere suggerimenti personalizzati, vivendo un'esperienza sartoriale a distanza semplice e raffinata.
           </p>
-          <button class="mtm-btn">BOOK YOUR MEETING</button>
-          <a href="#" class="mtm-download-link">DOWNLOAD WHATSAPP</a>
+          <button class="mtm-btn" onclick="contactWhatsApp()">CONTATTACI</button>
         </div>
         
         <div class="mtm-booking-option">
-          <h3>Appointment in our Atelier</h3>
+          <h3>Appuntamento in Atelier</h3>
           <p>
-            Visit our atelier for a complete bespoke experience. Our master tailors will provide personalized consultation and precise measurements in our luxury showroom.
+            Nel cuore di Milano ti accogliamo nel nostro Atelier, uno spazio intimo e autentico dove ogni creazione prende vita. Elisa ti seguirà personalmente, guidandoti nella scelta dei tessuti e nelle prove, per trasformare il tuo desiderio in un capo unico e senza tempo.
           </p>
-          <button class="mtm-btn">BOOK YOUR MEETING</button>
+          <button class="mtm-btn" onclick="contactWhatsApp()">CONTATTACI</button>
         </div>
       </div>
     </div>
@@ -112,5 +111,12 @@
   <script src="../assets/js/header-loader.js"></script>
   <script src="../assets/js/pages-content.js"></script>
   <script src="../assets/js/footer-loader.js"></script>
+  <script>
+    function contactWhatsApp() {
+      const message = "Vorrei prenotare un appuntamento con l'Atelier Elisa Sanna. Grazie.";
+      const whatsappUrl = `https://wa.me/393270329874?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
 </body>
 </html>
