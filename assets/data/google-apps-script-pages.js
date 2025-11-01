@@ -94,14 +94,19 @@ function sheetToCsv(sheet) {
     
     console.log(`📊 Processing ${data.length} rows from pages sheet`);
     
-    // Convert to CSV with proper escaping
+    // Convert to CSV with proper escaping and UTF-8 handling
     const csvRows = data.map(row => 
       row.map(cell => {
         // Convert to string and handle special characters
         let cellValue = String(cell || '');
         
-        // Escape quotes and wrap in quotes if contains comma, quote, or newline
-        if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n')) {
+        // Ensure proper UTF-8 encoding for accented characters
+        cellValue = cellValue.replace(/[\u00C0-\u017F]/g, function(match) {
+          return match; // Keep accented characters as-is for UTF-8
+        });
+        
+        // Escape quotes and wrap in quotes if contains comma, quote, newline, or accented characters
+        if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n') || /[\u00C0-\u017F]/.test(cellValue)) {
           cellValue = '"' + cellValue.replace(/"/g, '""') + '"';
         }
         
@@ -147,10 +152,10 @@ function uploadToGitHub(csvContent) {
       console.log('📄 File does not exist, will create new');
     }
     
-    // Prepare commit data
+    // Prepare commit data with proper UTF-8 encoding
     const commitData = {
       message: `Update pages content from Google Sheets - ${new Date().toISOString()}`,
-      content: Utilities.base64Encode(csvContent),
+      content: Utilities.base64Encode(Utilities.newBlob(csvContent, 'text/plain; charset=utf-8').getBytes()),
       branch: CONFIG.GITHUB_BRANCH
     };
     
