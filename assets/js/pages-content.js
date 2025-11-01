@@ -477,55 +477,28 @@ function populateProcessSteps(pageId) {
  * Populate second section (for PFY pages)
  */
 function populateSecondSection(pageId) {
-  console.log('🔍 populateSecondSection called for:', pageId);
   const secondSection = getSectionContent(pageId, 'second_section');
-  console.log('📦 secondSection data:', secondSection);
-  if (!secondSection) {
-    console.log('❌ No secondSection found, returning early');
-    return;
-  }
+  if (!secondSection) return;
 
   // Update second section title
   const secondTitle = document.querySelector('.pfy-second-title');
-  console.log('📝 secondTitle element:', secondTitle);
   if (secondTitle && secondSection.title) {
     secondTitle.textContent = secondSection.title;
-    console.log('✅ Updated secondTitle:', secondSection.title);
   }
 
   // Update second section description
   const secondDescription = document.querySelector('.pfy-second-description');
-  console.log('📝 secondDescription element:', secondDescription);
   if (secondDescription && secondSection.description) {
     secondDescription.textContent = secondSection.description;
-    console.log('✅ Updated secondDescription');
   }
 
-  // Update second section image - try to find element with retry
-  function updateSecondImage() {
-    const secondImage = document.querySelector('.pfy-second-image img');
-    console.log('🖼️ secondImage element:', secondImage);
-    console.log('🖼️ image_url:', secondSection.image_url);
-    if (secondImage && secondSection.image_url) {
-      secondImage.src = secondSection.image_url;
-      console.log('✅ Updated secondImage src to:', secondSection.image_url);
-      if (secondSection.image_alt) {
-        secondImage.alt = secondSection.image_alt;
-      }
-      return true;
-    } else {
-      console.log('⚠️ Cannot update image - element:', !!secondImage, 'url:', !!secondSection.image_url);
-      return false;
+  // Update second section image - EXACTLY like third section
+  const secondImage = document.querySelector('.pfy-second-image img');
+  if (secondImage && secondSection.image_url) {
+    secondImage.src = secondSection.image_url;
+    if (secondSection.image_alt) {
+      secondImage.alt = secondSection.image_alt;
     }
-  }
-  
-  // Try immediately
-  if (!updateSecondImage()) {
-    // Retry after 100ms if element not found
-    console.log('🔄 Retrying to find image element in 100ms...');
-    setTimeout(() => {
-      updateSecondImage();
-    }, 100);
   }
 }
 
