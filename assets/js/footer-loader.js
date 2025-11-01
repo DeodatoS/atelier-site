@@ -68,18 +68,62 @@
    */
   function initializeNewsletterForm() {
     const newsletterButton = document.querySelector('.newsletter button');
-    if (newsletterButton) {
-      newsletterButton.addEventListener('click', (e) => {
+    const emailInput = document.querySelector('.newsletter input');
+    
+    if (newsletterButton && emailInput) {
+      newsletterButton.addEventListener('click', async (e) => {
         e.preventDefault();
-        const email = document.querySelector('.newsletter input').value;
+        const email = emailInput.value.trim();
         
-        if (email && email.includes('@')) {
-          alert('Thank you for subscribing to our newsletter!');
-          document.querySelector('.newsletter input').value = '';
-        } else {
-          alert('Please enter a valid email address.');
+        if (!email || !email.includes('@')) {
+          alert('Inserisci un indirizzo email valido.');
+          return;
+        }
+        
+        // Disable button during submission
+        newsletterButton.disabled = true;
+        newsletterButton.textContent = 'Invio...';
+        
+        try {
+          // Send email using FormSubmit (free service)
+          const response = await fetch('https://formsubmit.co/ajax/info@elisasanna.com', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              email: email,
+              subject: 'Nuova iscrizione Newsletter - Elisa Sanna',
+              message: `Nuova iscrizione alla newsletter:\n\nEmail: ${email}\n\nData: ${new Date().toLocaleString('it-IT')}`,
+              _captcha: false,
+              _template: 'basic'
+            })
+          });
+          
+          if (response.ok) {
+            alert('Grazie per esserti iscritto! Ti invieremo presto il codice sconto del 10%.');
+            emailInput.value = '';
+          } else {
+            throw new Error('Errore nell\'invio');
+          }
+        } catch (error) {
+          console.error('Newsletter submission error:', error);
+          alert('Si è verificato un errore. Per favore, riprova più tardi o contattaci direttamente.');
+        } finally {
+          // Re-enable button
+          newsletterButton.disabled = false;
+          newsletterButton.textContent = 'Iscriviti';
         }
       });
+      
+      // Also handle Enter key
+      emailInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          newsletterButton.click();
+        }
+      });
+      
       console.log('✅ Newsletter form initialized');
     } else {
       console.log('⚠️ Newsletter form not found in loaded footer');
