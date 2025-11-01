@@ -501,18 +501,31 @@ function populateSecondSection(pageId) {
     console.log('✅ Updated secondDescription');
   }
 
-  // Update second section image
-  const secondImage = document.querySelector('.pfy-second-image img');
-  console.log('🖼️ secondImage element:', secondImage);
-  console.log('🖼️ image_url:', secondSection.image_url);
-  if (secondImage && secondSection.image_url) {
-    secondImage.src = secondSection.image_url;
-    console.log('✅ Updated secondImage src to:', secondSection.image_url);
-    if (secondSection.image_alt) {
-      secondImage.alt = secondSection.image_alt;
+  // Update second section image - try to find element with retry
+  function updateSecondImage() {
+    const secondImage = document.querySelector('.pfy-second-image img');
+    console.log('🖼️ secondImage element:', secondImage);
+    console.log('🖼️ image_url:', secondSection.image_url);
+    if (secondImage && secondSection.image_url) {
+      secondImage.src = secondSection.image_url;
+      console.log('✅ Updated secondImage src to:', secondSection.image_url);
+      if (secondSection.image_alt) {
+        secondImage.alt = secondSection.image_alt;
+      }
+      return true;
+    } else {
+      console.log('⚠️ Cannot update image - element:', !!secondImage, 'url:', !!secondSection.image_url);
+      return false;
     }
-  } else {
-    console.log('⚠️ Cannot update image - element:', !!secondImage, 'url:', !!secondSection.image_url);
+  }
+  
+  // Try immediately
+  if (!updateSecondImage()) {
+    // Retry after 100ms if element not found
+    console.log('🔄 Retrying to find image element in 100ms...');
+    setTimeout(() => {
+      updateSecondImage();
+    }, 100);
   }
 }
 
