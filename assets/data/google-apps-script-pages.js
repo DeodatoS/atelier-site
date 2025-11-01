@@ -52,6 +52,13 @@ function showSystemInfo() {
 function syncPagesToGitHub() {
   try {
     console.log('🔄 Starting pages sync process...');
+    console.log('📋 Config check:', {
+      repo: CONFIG.GITHUB_REPO,
+      branch: CONFIG.GITHUB_BRANCH,
+      csvPath: CONFIG.CSV_FILE_PATH,
+      sheetName: CONFIG.SHEET_NAME,
+      tokenSet: !!CONFIG.GITHUB_TOKEN && CONFIG.GITHUB_TOKEN !== 'YOUR_GITHUB_TOKEN_HERE'
+    });
     
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
     const sheet = spreadsheet.getSheetByName(CONFIG.SHEET_NAME);
@@ -60,12 +67,16 @@ function syncPagesToGitHub() {
       throw new Error(`Sheet "${CONFIG.SHEET_NAME}" not found!`);
     }
     
+    console.log('📊 Sheet found:', CONFIG.SHEET_NAME, '- Rows:', sheet.getLastRow());
+    
     // Convert sheet to CSV
     const csvContent = sheetToCsv(sheet);
-    console.log('✅ Pages CSV generated');
+    console.log('✅ Pages CSV generated - Length:', csvContent.length, 'characters');
     
     // Upload to GitHub
+    console.log('🚀 Calling uploadToGitHub...');
     const result = uploadToGitHub(csvContent);
+    console.log('📥 Upload result:', result);
     
     if (result.success) {
       console.log('✅ Pages successfully synced to GitHub!');
@@ -76,6 +87,7 @@ function syncPagesToGitHub() {
     
   } catch (error) {
     console.error('❌ Pages sync failed:', error);
+    console.error('❌ Error stack:', error.stack);
     sendNotification('❌ Pages Sync Failed', `Error: ${error.toString()}`);
     throw error;
   }
@@ -175,6 +187,10 @@ function uploadToGitHub(csvContent) {
     }
     
     console.log('🚀 Uploading pages to GitHub...');
+    console.log('📍 Upload URL:', url);
+    console.log('🔑 Token configured:', !!CONFIG.GITHUB_TOKEN && CONFIG.GITHUB_TOKEN !== 'YOUR_GITHUB_TOKEN_HERE');
+    console.log('📦 Commit message:', commitData.message);
+    console.log('📊 Content size:', csvContent.length, 'bytes');
     
     // Upload to GitHub
     const response = UrlFetchApp.fetch(url, {
@@ -191,8 +207,13 @@ function uploadToGitHub(csvContent) {
     const responseCode = response.getResponseCode();
     const responseText = response.getContentText();
     
+    console.log('📡 GitHub API response code:', responseCode);
+    console.log('📄 GitHub API response:', responseText.substring(0, 200));
+    
     if (responseCode === 200 || responseCode === 201) {
       console.log('✅ Pages file uploaded successfully');
+      const responseData = JSON.parse(responseText);
+      console.log('🔗 Commit URL:', responseData.commit?.html_url || 'N/A');
       return { success: true };
     } else {
       console.error('❌ GitHub API error:', responseCode, responseText);
