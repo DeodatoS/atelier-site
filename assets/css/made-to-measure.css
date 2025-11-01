@@ -168,6 +168,71 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* Booking Section */
+.mtm-booking-section {
+  background: #f9f9f9;
+}
+
+.mtm-section-title {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mtm-booking-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.mtm-booking-option {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.mtm-booking-option h3 {
+  font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mtm-booking-option p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.mtm-btn {
+  font-family: 'Lato', sans-serif;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.mtm-btn:hover {
+  background: #555;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .mtm-hero {
@@ -208,6 +273,15 @@
   
   .mtm-image {
     height: 450px;
+  }
+  
+  .mtm-booking-options {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .mtm-booking-option {
+    padding: 30px 20px;
   }
 }
 
