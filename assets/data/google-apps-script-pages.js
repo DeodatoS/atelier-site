@@ -105,9 +105,20 @@ function sheetToCsv(sheet) {
           return match; // Keep accented characters as-is for UTF-8
         });
         
-        // Escape quotes and wrap in quotes if contains comma, quote, newline, or accented characters
-        if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n') || /[\u00C0-\u017F]/.test(cellValue)) {
-          cellValue = '"' + cellValue.replace(/"/g, '""') + '"';
+        // For URLs (containing http:// or https://), only escape if absolutely necessary
+        const isUrl = cellValue.includes('http://') || cellValue.includes('https://');
+        
+        // Escape quotes and wrap in quotes if contains comma, quote, newline
+        // For URLs, only quote if contains comma or newline (not just accented chars)
+        if (isUrl) {
+          if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n')) {
+            cellValue = '"' + cellValue.replace(/"/g, '""') + '"';
+          }
+        } else {
+          // For non-URLs: quote if contains comma, quote, newline, or accented characters
+          if (cellValue.includes(',') || cellValue.includes('"') || cellValue.includes('\n') || /[\u00C0-\u017F]/.test(cellValue)) {
+            cellValue = '"' + cellValue.replace(/"/g, '""') + '"';
+          }
         }
         
         return cellValue;
