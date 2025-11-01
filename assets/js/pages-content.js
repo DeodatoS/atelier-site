@@ -210,6 +210,11 @@ function populateHero(pageId, heroSelector = '#hero-title, .hero-content h1, .he
     if (heroContent.image_alt) {
       heroImgTag.alt = heroContent.image_alt;
     }
+    // Handle image loading errors silently
+    heroImgTag.onerror = function() {
+      console.log('⚠️ Hero image failed to load:', heroContent.image_url);
+      this.style.display = 'none';
+    };
     console.log('🖼️ Updated hero image to:', heroContent.image_url);
   }
 }
@@ -243,6 +248,11 @@ function populateMainContent(pageId) {
     if (mainContent.image_alt) {
       mainImage.alt = mainContent.image_alt;
     }
+    // Handle image loading errors silently
+    mainImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', mainContent.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
@@ -272,6 +282,11 @@ function populateMtmSecondSection(pageId) {
     if (secondSection.image_alt) {
       secondImage.alt = secondSection.image_alt;
     }
+    // Handle image loading errors silently
+    secondImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', secondSection.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
@@ -301,6 +316,11 @@ function populateMtmThirdSection(pageId) {
     if (thirdSection.image_alt) {
       thirdImage.alt = thirdSection.image_alt;
     }
+    // Handle image loading errors silently
+    thirdImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', thirdSection.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
@@ -504,6 +524,11 @@ function populateSecondSection(pageId) {
     if (secondSection.image_alt) {
       secondImage.alt = secondSection.image_alt;
     }
+    // Handle image loading errors silently
+    secondImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', secondSection.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
@@ -533,6 +558,11 @@ function populateThirdSection(pageId) {
     if (thirdSection.image_alt) {
       thirdImage.alt = thirdSection.image_alt;
     }
+    // Handle image loading errors silently
+    thirdImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', thirdSection.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
@@ -562,6 +592,11 @@ function populateMtmSecondSection(pageId) {
     if (secondSection.image_alt) {
       secondImage.alt = secondSection.image_alt;
     }
+    // Handle image loading errors silently
+    secondImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', secondSection.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
@@ -591,6 +626,11 @@ function populateMtmThirdSection(pageId) {
     if (thirdSection.image_alt) {
       thirdImage.alt = thirdSection.image_alt;
     }
+    // Handle image loading errors silently
+    thirdImage.onerror = function() {
+      console.log('⚠️ Image failed to load:', thirdSection.image_url);
+      this.style.display = 'none';
+    };
   }
 }
 
