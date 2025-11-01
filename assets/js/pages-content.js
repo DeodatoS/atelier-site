@@ -16,11 +16,16 @@ async function loadPagesContent() {
   try {
     // Add cache busting to force fresh data
     const timestamp = new Date().getTime();
-    const response = await fetch(`../assets/data/pages-content.json?v=${timestamp}`);
+    const response = await fetch(`../assets/data/pages-content.json?v=${timestamp}`, {
+      headers: {
+        'Accept': 'application/json; charset=utf-8'
+      }
+    });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    PAGES_CONTENT_DATA = await response.json();
+    const text = await response.text();
+    PAGES_CONTENT_DATA = JSON.parse(text);
     console.log('🔄 Pages content loaded with cache bust:', timestamp);
     return PAGES_CONTENT_DATA;
   } catch (error) {
