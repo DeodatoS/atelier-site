@@ -200,7 +200,16 @@ function populateHero(pageId, heroSelector = '#hero-title, .hero-content h1, .he
   // Update hero background image if exists
   const heroImage = document.querySelector('.hero-image, .pfy-hero-image, .mtm-hero-image');
   if (heroImage && heroContent.image_url) {
-    heroImage.style.backgroundImage = `url('${heroContent.image_url}')`;
+    // Preload image to check if it loads correctly
+    const testImage = new Image();
+    testImage.onerror = function() {
+      console.log('⚠️ Hero background image failed to load:', heroContent.image_url);
+      heroImage.style.backgroundImage = 'none';
+    };
+    testImage.onload = function() {
+      heroImage.style.backgroundImage = `url('${heroContent.image_url}')`;
+    };
+    testImage.src = heroContent.image_url;
   }
   
   // Update hero img tag if exists (for homepage)
@@ -366,6 +375,11 @@ function populateHomepageAllSections(pageId) {
       if (column.image_alt) {
         imageElement.alt = column.image_alt;
       }
+      // Handle image loading errors silently
+      imageElement.onerror = function() {
+        console.log('⚠️ Image failed to load:', column.image_url);
+        this.style.display = 'none';
+      };
       console.log(`🖼️ Updated two-column ${index + 1} image to:`, column.image_url);
     }
   });
@@ -424,6 +438,11 @@ function populateHomepageAllSections(pageId) {
         if (piece.image_alt) {
           imageElement.alt = piece.image_alt;
         }
+        // Handle image loading errors silently
+        imageElement.onerror = function() {
+          console.log('⚠️ Image failed to load:', piece.image_url);
+          this.style.display = 'none';
+        };
       }
       console.log(`🖼️ Updated latest piece ${index + 1}:`, piece.title);
     }
@@ -450,6 +469,11 @@ function populateJourneySteps(pageId) {
       if (stepImage && step.image_url) {
         stepImage.src = step.image_url;
         if (step.image_alt) stepImage.alt = step.image_alt;
+        // Handle image loading errors silently
+        stepImage.onerror = function() {
+          console.log('⚠️ Image failed to load:', step.image_url);
+          this.style.display = 'none';
+        };
         console.log(`🖼️ Updated journey step ${index + 1} image to:`, step.image_url);
       }
     }
@@ -710,7 +734,7 @@ async function populatePriveCarousel() {
       const productItem = document.createElement('div');
       productItem.className = 'product-item';
       productItem.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" loading="lazy" onclick="viewProductDetails('${product.id}')" style="cursor: pointer;" />
+                <img src="${product.image}" alt="${product.name}" loading="lazy" onclick="viewProductDetails('${product.id}')" style="cursor: pointer;" onerror="this.style.display='none'; console.log('⚠️ Product image failed to load:', '${product.image}');" />
         <div class="product-info">
           <p>${product.name.toUpperCase()}</p>
         </div>
