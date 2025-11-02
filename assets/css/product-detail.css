@@ -304,8 +304,8 @@
 }
 
 .size-option:hover {
-  background: white;
-  color: #333;
+  background: #333;
+  color: white;
 }
 
 .size-option.selected {
