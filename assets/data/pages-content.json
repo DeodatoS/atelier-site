@@ -28,7 +28,7 @@
         "content_type": "two_column",
         "title": "SU MISURA",
         "subtitle": "Prenota il tuo appuntamento",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762102953/IMG_6408_3_gc9bu7.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_2_qvjh2z.jpg",
         "order_position": 3,
         "is_active": true
       }
@@ -151,7 +151,6 @@
         "title": "Su Misura",
         "subtitle": "eeeee",
         "description": "Il servizio Made to Measure di Elisa Sanna trasforma i modelli della collezione in capi unici, realizzati sulle misure personali di chi li indosserà. Un percorso sartoriale esclusivo che unisce precisione, cura artigianale e raffinatezza, per un’eleganza che veste in modo impeccabile e senza tempo.",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762102672/IMG_6471_2_gjicy4.jpg",
         "image_alt": "Personalized garments display",
         "order_position": 2,
         "is_active": true
