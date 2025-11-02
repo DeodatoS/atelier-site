@@ -407,6 +407,18 @@ function populateHomepageAllSections(pageId) {
 
   // Populate latest pieces
   const latestPieces = getLatestPieces(pageId);
+  
+  // Map titles and links
+  const titleMapping = {
+    'Prêt-à-porter': 'COLLEZIONE',
+    'Bambina': 'ACCESSORI'
+  };
+  
+  const linkMapping = [
+    '/pages/products.html?category=collections',
+    '/pages/products.html?category=kids'
+  ];
+  
   latestPieces.forEach((piece, index) => {
     const pieceElement = document.querySelector(`.pieces-grid .piece-item:nth-child(${index + 1})`);
     if (pieceElement) {
@@ -414,23 +426,42 @@ function populateHomepageAllSections(pageId) {
       const descElement = pieceElement.querySelector('.piece-info p');
       const imageElement = pieceElement.querySelector('img');
       
-      if (titleElement && piece.title) {
-        titleElement.textContent = piece.title;
+      // Update title with mapping
+      if (titleElement) {
+        const originalTitle = piece.title || '';
+        titleElement.textContent = titleMapping[originalTitle] || originalTitle;
       }
+      
       if (descElement && piece.description) {
         descElement.textContent = piece.description;
       }
+      
       if (imageElement && piece.image_url) {
         imageElement.src = piece.image_url;
         if (piece.image_alt) {
           imageElement.alt = piece.image_alt;
         }
+        
+        // Add click handler or wrap in link
+        if (linkMapping[index]) {
+          imageElement.style.cursor = 'pointer';
+          imageElement.onclick = function() {
+            window.location.href = linkMapping[index];
+          };
+          
+          // Also make the entire piece-item clickable
+          pieceElement.style.cursor = 'pointer';
+          pieceElement.onclick = function() {
+            window.location.href = linkMapping[index];
+          };
+        }
+        
         // Handle image loading errors - log but don't hide
         imageElement.onerror = function() {
           console.error('❌ Image failed to load:', piece.image_url);
         };
       }
-      console.log(`🖼️ Updated latest piece ${index + 1}:`, piece.title);
+      console.log(`🖼️ Updated latest piece ${index + 1}:`, titleElement ? titleElement.textContent : piece.title);
     }
   });
 }
