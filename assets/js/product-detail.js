@@ -232,13 +232,7 @@ function addColorSizeHandlers() {
     });
   });
   
-  // Size selection
-  document.querySelectorAll('.size-option').forEach(option => {
-    option.addEventListener('click', () => {
-      document.querySelectorAll('.size-option').forEach(o => o.classList.remove('selected'));
-      option.classList.add('selected');
-    });
-  });
+  // Size options are now decorative only, no click handlers needed
 }
 
 // Action handlers
