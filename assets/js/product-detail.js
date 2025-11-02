@@ -190,7 +190,8 @@ function populateProductDetails(productData) {
   
   // Product information
   document.getElementById('product-name').textContent = product.name;
-  document.getElementById('product-subtitle').textContent = product.fabric;
+  // Fabric is shown only in "Dettagli prodotto" section, not under title
+  document.getElementById('product-subtitle').textContent = '';
   
   // Product description
   const descriptionContainer = document.getElementById('product-description');
