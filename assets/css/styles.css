@@ -680,7 +680,7 @@ body {
   
   .nav-left {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
   }
   
