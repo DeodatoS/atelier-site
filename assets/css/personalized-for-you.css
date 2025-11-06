@@ -338,7 +338,12 @@
   
   /* Add extra padding-top for first visible section on pages without hero */
   .pfy-second-section:first-of-type {
-    padding-top: 100px;
+    padding-top: 180px !important;
+  }
+  
+  /* Specific rule for the-designer page */
+  body .pfy-second-section:first-of-type {
+    padding-top: 180px !important;
   }
   
   .pfy-second-content,
@@ -388,6 +393,11 @@
   
   /* Add extra padding-top for first visible section on pages without hero */
   .pfy-second-section:first-of-type {
-    padding-top: 120px;
+    padding-top: 200px !important;
+  }
+  
+  /* Specific rule for the-designer page */
+  body .pfy-second-section:first-of-type {
+    padding-top: 200px !important;
   }
 }
