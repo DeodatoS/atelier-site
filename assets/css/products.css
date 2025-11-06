@@ -264,7 +264,7 @@
 
 .product-name {
   font-family: 'The Seasons', 'Bodoni 72', 'Bodoni 72 Oldstyle', 'Bodoni 72 Book', Didot, 'Bodoni MT', serif;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 10px;
   color: #333;
@@ -297,7 +297,7 @@
 
 .price-standard {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #333;
 }
