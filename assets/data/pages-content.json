@@ -19,7 +19,7 @@
         "title": "PERSONALIZZAZIONE",
         "subtitle": "Prenota il tuo appuntamento",
         "description": "Prenota il tuo appuntamento",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762102953/IMG_6408_.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_3.jpg",
         "order_position": 2,
         "is_active": true
       },
@@ -28,7 +28,6 @@
         "content_type": "two_column",
         "title": "SU MISURA",
         "subtitle": "Prenota il tuo appuntamento",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_3.jpg",
         "order_position": 3,
         "is_active": true
       }
