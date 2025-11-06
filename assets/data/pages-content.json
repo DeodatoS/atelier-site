@@ -137,7 +137,6 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762102672/IMG_6471_2_gjicy4.jpg",
         "image_alt": "Made to measure hero",
         "order_position": 1,
         "is_active": true
@@ -211,7 +210,7 @@
         "content_type": "hero_section",
         "subtitle": "bbbb",
         "description": "ccccc",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762102211/IMG_6665_2_fmciqq.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762102672/IMG_6471_2_gjicy4.jpg",
         "image_alt": "Personalized for you hero",
         "order_position": 1,
         "is_active": true
