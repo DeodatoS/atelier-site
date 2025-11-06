@@ -649,6 +649,18 @@ function populateThirdSection(pageId) {
     thirdDescription.textContent = thirdSection.description;
   }
 
+  // SKIP image update completely for the-designer page (image is static in HTML)
+  if (pageId === 'the_designer') {
+    console.log('ℹ️ the-designer page: skipping third section image update, using static image from HTML');
+    const thirdImage = document.querySelector('.pfy-third-image img');
+    if (thirdImage) {
+      // Just ensure it's visible, but don't change the src
+      thirdImage.style.display = 'block';
+      thirdImage.style.visibility = 'visible';
+    }
+    return;
+  }
+
   // Update third section image
   const thirdImage = document.querySelector('.pfy-third-image img');
   if (thirdImage && thirdSection.image_url) {
