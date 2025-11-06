@@ -339,7 +339,7 @@
   /* Add margin-top and padding-top for first visible section on pages without hero */
   /* This compensates for the fixed header on mobile */
   .pfy-second-section:first-of-type {
-    margin-top: 160px !important;
+    margin-top: 220px !important;
     padding-top: 40px !important;
   }
   
@@ -350,7 +350,7 @@
   
   /* Specific rule for the-designer page */
   body .pfy-second-section:first-of-type {
-    margin-top: 160px !important;
+    margin-top: 220px !important;
     padding-top: 40px !important;
   }
   
@@ -406,7 +406,7 @@
   /* Add margin-top and padding-top for first visible section on pages without hero */
   /* This compensates for the fixed header on mobile */
   .pfy-second-section:first-of-type {
-    margin-top: 180px !important;
+    margin-top: 240px !important;
     padding-top: 40px !important;
   }
   
@@ -417,7 +417,7 @@
   
   /* Specific rule for the-designer page */
   body .pfy-second-section:first-of-type {
-    margin-top: 180px !important;
+    margin-top: 240px !important;
     padding-top: 40px !important;
   }
   
