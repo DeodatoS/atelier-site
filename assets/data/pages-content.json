@@ -54,7 +54,7 @@
         "section_id": "latest_pieces_section",
         "content_type": "section_header",
         "title": "Scopri le nostre ultime creazioni",
-        "description": "Una collezione che racconta l'eleganza attravero linee pure e lavorazioni artigianali.",
+        "description": "Una collezione che racconta l'eleganza attraverso linee pure e lavorazioni artigianali.",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888916/ELI_00085_1_-1_kmwkay.jpg",
         "order_position": 7,
         "is_active": true
@@ -127,7 +127,6 @@
         "section_id": "latest_piece_2",
         "content_type": "latest_piece",
         "title": "Bambina",
-        "description": "llllllll",
         "image_url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1988&q=80",
         "image_alt": "White dress",
         "order_position": 13,
