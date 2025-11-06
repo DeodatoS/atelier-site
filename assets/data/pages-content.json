@@ -28,6 +28,7 @@
         "content_type": "two_column",
         "title": "SU MISURA",
         "subtitle": "Prenota il tuo appuntamento",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762432005/IMG_7667_1_dcknfn.jpg",
         "order_position": 3,
         "is_active": true
       }
