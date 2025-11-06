@@ -565,10 +565,13 @@ function populateSecondSection(pageId) {
 
   // Update second section image - EXACTLY like third section
   const secondImage = document.querySelector('.pfy-second-image img');
-  console.log('🔍 Second image element found:', !!secondImage);
+  console.log('🔍 populateSecondSection for', pageId, '- Second image element found:', !!secondImage);
   if (secondImage) {
     console.log('🔍 Second section image_url:', secondSection.image_url);
     if (secondSection.image_url) {
+      // Ensure image is visible
+      secondImage.style.display = 'block';
+      secondImage.style.visibility = 'visible';
       secondImage.src = secondSection.image_url;
       if (secondSection.image_alt) {
         secondImage.alt = secondSection.image_alt;
@@ -577,6 +580,9 @@ function populateSecondSection(pageId) {
       // Handle image loading errors - log but don't hide
       secondImage.onerror = function() {
         console.error('❌ Image failed to load:', secondSection.image_url);
+        // Keep image visible even on error
+        secondImage.style.display = 'block';
+        secondImage.style.visibility = 'visible';
       };
       secondImage.onload = function() {
         console.log('✅ Second section image loaded successfully');
@@ -586,6 +592,16 @@ function populateSecondSection(pageId) {
     }
   } else {
     console.error('❌ Second image element not found (.pfy-second-image img)');
+    // Try to find it with a delay (in case DOM is not ready)
+    setTimeout(() => {
+      const retryImage = document.querySelector('.pfy-second-image img');
+      if (retryImage && secondSection.image_url) {
+        retryImage.style.display = 'block';
+        retryImage.style.visibility = 'visible';
+        retryImage.src = secondSection.image_url;
+        console.log('✅ Retry: Updated second section image to:', secondSection.image_url);
+      }
+    }, 100);
   }
 }
 
