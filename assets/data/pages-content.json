@@ -44,15 +44,6 @@
         "is_active": true
       },
       {
-        "section_id": "craftsmanship_section",
-        "content_type": "section_header",
-        "title": "Artigianalita' e valori",
-        "description": "Creazioni curate e realizzate dai nostri artigiani",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762278095/paint_velvet_erdjfr.jpg",
-        "order_position": 5,
-        "is_active": true
-      },
-      {
         "section_id": "journey_section",
         "content_type": "section_header",
         "title": "Archivio",
@@ -65,7 +56,18 @@
         "content_type": "section_header",
         "title": "Scopri le nostre ultime creazioni",
         "description": "Discover the fashion that expresses different life goals, stories of style, handcrafted with care, designed to inspire.",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888916/ELI_00085_1_-1_kmwkay.jpg",
         "order_position": 7,
+        "is_active": true
+      }
+    ],
+    "": [
+      {
+        "section_id": "craftsmanship_section",
+        "title": "Artigianalita' e valori",
+        "description": "Creazioni curate e realizzate dai nostri artigiani",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762278095/paint_velvet_erdjfr.jpg",
+        "order_position": 5,
         "is_active": true
       }
     ],
