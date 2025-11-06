@@ -339,14 +339,23 @@
   /* Add margin-top and padding-top for first visible section on pages without hero */
   /* This compensates for the fixed header on mobile */
   .pfy-second-section:first-of-type {
-    margin-top: 100px !important;
-    padding-top: 60px !important;
+    margin-top: 160px !important;
+    padding-top: 40px !important;
+  }
+  
+  /* Add padding-top to text container to prevent text from being cut off */
+  .pfy-second-section:first-of-type .pfy-second-text {
+    padding-top: 20px !important;
   }
   
   /* Specific rule for the-designer page */
   body .pfy-second-section:first-of-type {
-    margin-top: 100px !important;
-    padding-top: 60px !important;
+    margin-top: 160px !important;
+    padding-top: 40px !important;
+  }
+  
+  body .pfy-second-section:first-of-type .pfy-second-text {
+    padding-top: 20px !important;
   }
   
   .pfy-second-content,
@@ -397,13 +406,22 @@
   /* Add margin-top and padding-top for first visible section on pages without hero */
   /* This compensates for the fixed header on mobile */
   .pfy-second-section:first-of-type {
-    margin-top: 120px !important;
-    padding-top: 60px !important;
+    margin-top: 180px !important;
+    padding-top: 40px !important;
+  }
+  
+  /* Add padding-top to text container to prevent text from being cut off */
+  .pfy-second-section:first-of-type .pfy-second-text {
+    padding-top: 30px !important;
   }
   
   /* Specific rule for the-designer page */
   body .pfy-second-section:first-of-type {
-    margin-top: 120px !important;
-    padding-top: 60px !important;
+    margin-top: 180px !important;
+    padding-top: 40px !important;
+  }
+  
+  body .pfy-second-section:first-of-type .pfy-second-text {
+    padding-top: 30px !important;
   }
 }
