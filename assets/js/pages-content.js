@@ -543,31 +543,49 @@ function populateProcessSteps(pageId) {
  */
 function populateSecondSection(pageId) {
   const secondSection = getSectionContent(pageId, 'second_section');
-  if (!secondSection) return;
+  console.log('🔍 populateSecondSection for', pageId, ':', secondSection);
+  if (!secondSection) {
+    console.log('❌ No second section content found for:', pageId);
+    return;
+  }
 
   // Update second section title
   const secondTitle = document.querySelector('.pfy-second-title');
   if (secondTitle && secondSection.title) {
     secondTitle.textContent = secondSection.title;
+    console.log('✅ Updated second section title:', secondSection.title);
   }
 
   // Update second section description
   const secondDescription = document.querySelector('.pfy-second-description');
   if (secondDescription && secondSection.description) {
     secondDescription.textContent = secondSection.description;
+    console.log('✅ Updated second section description');
   }
 
   // Update second section image - EXACTLY like third section
   const secondImage = document.querySelector('.pfy-second-image img');
-  if (secondImage && secondSection.image_url) {
-    secondImage.src = secondSection.image_url;
-    if (secondSection.image_alt) {
-      secondImage.alt = secondSection.image_alt;
+  console.log('🔍 Second image element found:', !!secondImage);
+  if (secondImage) {
+    console.log('🔍 Second section image_url:', secondSection.image_url);
+    if (secondSection.image_url) {
+      secondImage.src = secondSection.image_url;
+      if (secondSection.image_alt) {
+        secondImage.alt = secondSection.image_alt;
+      }
+      console.log('✅ Updated second section image to:', secondSection.image_url);
+      // Handle image loading errors - log but don't hide
+      secondImage.onerror = function() {
+        console.error('❌ Image failed to load:', secondSection.image_url);
+      };
+      secondImage.onload = function() {
+        console.log('✅ Second section image loaded successfully');
+      };
+    } else {
+      console.warn('⚠️ No image_url in second section for:', pageId);
     }
-    // Handle image loading errors - log but don't hide
-    secondImage.onerror = function() {
-      console.error('❌ Image failed to load:', secondSection.image_url);
-    };
+  } else {
+    console.error('❌ Second image element not found (.pfy-second-image img)');
   }
 }
 
