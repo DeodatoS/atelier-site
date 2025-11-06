@@ -4,7 +4,7 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "description": "Scopri le creazioni Elisa Sanna",
+        "subtitle": "Scopri le creazioni Elisa Sanna",
         "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1761839304/ELI_01076_2_bdqcyk.jpg",
         "image_alt": "Italian craftsmanship atelier",
         "order_position": 1,
