@@ -564,9 +564,19 @@ function populateSecondSection(pageId) {
   }
 
   // Update second section image - EXACTLY like third section
+  // Skip image update for the-designer page if image already has a static src
   const secondImage = document.querySelector('.pfy-second-image img');
   console.log('🔍 populateSecondSection for', pageId, '- Second image element found:', !!secondImage);
   if (secondImage) {
+    // For the-designer page, if image already has a src, don't overwrite it
+    if (pageId === 'the_designer' && secondImage.src && secondImage.src !== window.location.href) {
+      console.log('ℹ️ the-designer page: keeping static image, not overwriting');
+      // Just ensure it's visible
+      secondImage.style.display = 'block';
+      secondImage.style.visibility = 'visible';
+      return;
+    }
+    
     console.log('🔍 Second section image_url:', secondSection.image_url);
     if (secondSection.image_url) {
       // Ensure image is visible
@@ -596,6 +606,13 @@ function populateSecondSection(pageId) {
     setTimeout(() => {
       const retryImage = document.querySelector('.pfy-second-image img');
       if (retryImage && secondSection.image_url) {
+        // For the-designer page, if image already has a src, don't overwrite it
+        if (pageId === 'the_designer' && retryImage.src && retryImage.src !== window.location.href) {
+          console.log('ℹ️ the-designer page (retry): keeping static image, not overwriting');
+          retryImage.style.display = 'block';
+          retryImage.style.visibility = 'visible';
+          return;
+        }
         retryImage.style.display = 'block';
         retryImage.style.visibility = 'visible';
         retryImage.src = secondSection.image_url;
