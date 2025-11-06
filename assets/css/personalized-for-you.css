@@ -336,6 +336,11 @@
     max-width: 300px;
   }
   
+  /* Add extra padding-top for first visible section on pages without hero */
+  .pfy-second-section:first-of-type {
+    padding-top: 100px;
+  }
+  
   .pfy-second-content,
   .pfy-third-content {
     grid-template-columns: 1fr;
@@ -379,5 +384,10 @@
   
   .pfy-main-title {
     font-size: 1.8rem;
+  }
+  
+  /* Add extra padding-top for first visible section on pages without hero */
+  .pfy-second-section:first-of-type {
+    padding-top: 120px;
   }
 }
