@@ -336,14 +336,17 @@
     max-width: 300px;
   }
   
-  /* Add extra padding-top for first visible section on pages without hero */
+  /* Add margin-top and padding-top for first visible section on pages without hero */
+  /* This compensates for the fixed header on mobile */
   .pfy-second-section:first-of-type {
-    padding-top: 180px !important;
+    margin-top: 100px !important;
+    padding-top: 60px !important;
   }
   
   /* Specific rule for the-designer page */
   body .pfy-second-section:first-of-type {
-    padding-top: 180px !important;
+    margin-top: 100px !important;
+    padding-top: 60px !important;
   }
   
   .pfy-second-content,
@@ -391,13 +394,16 @@
     font-size: 1.8rem;
   }
   
-  /* Add extra padding-top for first visible section on pages without hero */
+  /* Add margin-top and padding-top for first visible section on pages without hero */
+  /* This compensates for the fixed header on mobile */
   .pfy-second-section:first-of-type {
-    padding-top: 200px !important;
+    margin-top: 120px !important;
+    padding-top: 60px !important;
   }
   
   /* Specific rule for the-designer page */
   body .pfy-second-section:first-of-type {
-    padding-top: 200px !important;
+    margin-top: 120px !important;
+    padding-top: 60px !important;
   }
 }
