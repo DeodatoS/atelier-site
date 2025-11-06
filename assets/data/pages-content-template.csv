@@ -1,7 +1,7 @@
 page_id,section_id,content_type,title,subtitle,description,image_url,image_alt,order_position,is_active
 homepage,hero,hero_section,,Scopri le creazioni Elisa Sanna,Scopri le creazioni Elisa Sanna,https://res.cloudinary.com/do5fpt0co/image/upload/v1761839304/ELI_01076_2_bdqcyk.jpg,Italian craftsmanship atelier,1,true
-homepage,two_column_1,two_column,PERSONALIZZAZIONE,Prenota il tuo appuntamento,Prenota il tuo appuntamento,https://res.cloudinary.com/do5fpt0co/image/upload/v1762102953/IMG_6408_.jpg,,2,true
-homepage,two_column_2,two_column,SU MISURA,Prenota il tuo appuntamento,,https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_3.jpg,,3,true
+homepage,two_column_1,two_column,PERSONALIZZAZIONE,Prenota il tuo appuntamento,Prenota il tuo appuntamento,https://res.cloudinary.com/do5fpt0co/image/upload/v1759935061/IMG_6542_3.jpg,,2,true
+homepage,two_column_2,two_column,SU MISURA,Prenota il tuo appuntamento,,,,3,true
 homepage,couture_section,section_header,Couture e cerimonia,,Scopri le nostre creazioni dedicate agli eventi piu' speciali,https://res.cloudinary.com/do5fpt0co/image/upload/v1761145018/B132DD58-F396-4300-90FC-37BD669E50F4_3_zckkzw.png,,4,true
 homepage,craftsmanship_section,section_header,Artigianalita' e valori,,Creazioni curate e realizzate dai nostri artigiani,,,5,true
 homepage,journey_section,section_header,Archivio,,Discover the story behind each creation through our craftsmanship journey,,,6,true
