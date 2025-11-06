@@ -87,7 +87,7 @@ function createProductCard(product) {
           <span class="price-standard">${standardPrice}</span>
         </div>
         <div class="product-actions">
-          <button class="btn-secondary" onclick="viewDetails('${product.id}')">View Details</button>
+          <button class="btn-secondary" onclick="viewDetails('${product.id}')">SCOPRI</button>
         </div>
       </div>
     </div>
