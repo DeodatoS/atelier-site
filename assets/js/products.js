@@ -172,6 +172,9 @@ function setupHeroSection(categoryData) {
     heroDescription: !!heroDescription
   });
   
+  // Determine display name (use "ACCESSORI" for kids category)
+  const displayName = currentCategory === 'kids' ? 'ACCESSORI' : categoryData.name;
+  
   if (categoryData.heroImage) {
     console.log(`✅ Hero image found: ${categoryData.heroImage}`);
     
@@ -181,20 +184,20 @@ function setupHeroSection(categoryData) {
     
     // Set image and content
     heroImage.src = categoryData.heroImage;
-    heroImage.alt = categoryData.heroImageAlt || `${categoryData.name} collection`;
-    heroTitle.textContent = categoryData.name;
+    heroImage.alt = categoryData.heroImageAlt || `${displayName} collection`;
+    heroTitle.textContent = displayName;
     heroDescription.textContent = categoryData.description;
     
-    console.log(`✅ Hero image section displayed for ${categoryData.name}`);
+    console.log(`✅ Hero image section displayed for ${displayName}`);
   } else {
-    console.log(`⚠️ No hero image found for ${categoryData.name}, using fallback`);
+    console.log(`⚠️ No hero image found for ${displayName}, using fallback`);
     
     // Show fallback section
     heroImageSection.style.display = 'none';
     heroFallbackSection.style.display = 'block';
     
     // Set fallback content
-    categoryTitle.textContent = categoryData.name;
+    categoryTitle.textContent = displayName;
     categoryDescription.textContent = categoryData.description;
   }
 }
@@ -225,8 +228,9 @@ async function initializePage() {
     // Setup hero image or fallback
     setupHeroSection(categoryData);
     
-    // Update page title and content
-    document.getElementById('page-title').textContent = `${categoryData.name} - ELISA SANNA`;
+    // Update page title and content (use "ACCESSORI" for kids category)
+    const displayName = currentCategory === 'kids' ? 'ACCESSORI' : categoryData.name;
+    document.getElementById('page-title').textContent = `${displayName} - ELISA SANNA`;
     
     // Display products
     displayProducts(allProducts);
