@@ -371,6 +371,17 @@
   
   .pfy-image {
     height: 450px;
+    object-fit: cover !important;
+    background: transparent !important;
+  }
+  
+  /* Ensure images are visible on mobile */
+  .pfy-second-image img,
+  .pfy-third-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: transparent !important;
   }
   
   .pfy-booking-options {
@@ -423,5 +434,30 @@
   
   body .pfy-second-section:first-of-type .pfy-second-text {
     padding-top: 30px !important;
+  }
+  
+  /* Fix white image issue on mobile - ensure images are visible */
+  .pfy-image {
+    height: 400px;
+    object-fit: cover !important;
+    background: transparent !important;
+  }
+  
+  .pfy-second-image img,
+  .pfy-third-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 300px;
+    object-fit: cover !important;
+  }
+  
+  /* Remove any white background from image containers */
+  .pfy-second-image,
+  .pfy-third-image {
+    background: transparent !important;
   }
 }
