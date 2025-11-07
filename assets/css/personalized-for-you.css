@@ -160,6 +160,12 @@
   align-items: center;
 }
 
+.pfy-third-image img {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 .pfy-image {
   width: 100%;
   height: 800px;
