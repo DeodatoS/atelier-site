@@ -128,7 +128,6 @@
         "content_type": "latest_piece",
         "title": "Bambina",
         "description": "Scopri",
-        "image_url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1988&q=80",
         "image_alt": "White dress",
         "order_position": 13,
         "is_active": true
@@ -140,7 +139,7 @@
       {
         "section_id": "hero",
         "content_type": "hero_section",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762436081/IMG_7688_7_h1ebeb.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762436081/IMG_7688_7jpg",
         "image_alt": "Made to measure hero",
         "order_position": 1,
         "is_active": true
