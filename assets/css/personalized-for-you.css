@@ -364,6 +364,20 @@
     gap: 40px;
   }
   
+  /* Invert order on mobile: text first, then image */
+  .pfy-third-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pfy-third-image {
+    order: 2;
+  }
+  
+  .pfy-third-text {
+    order: 1;
+  }
+  
   .pfy-second-text h2,
   .pfy-third-text h2 {
     font-size: 2rem;
