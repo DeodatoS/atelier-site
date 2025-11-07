@@ -438,8 +438,10 @@
   
   /* Fix white image issue on mobile - ensure images are visible */
   .pfy-image {
-    height: 400px;
-    object-fit: cover !important;
+    height: auto !important;
+    min-height: 300px;
+    max-height: 500px;
+    object-fit: contain !important;
     background: transparent !important;
   }
   
@@ -452,7 +454,8 @@
     width: 100% !important;
     height: auto !important;
     min-height: 300px;
-    object-fit: cover !important;
+    max-height: 500px;
+    object-fit: contain !important;
   }
   
   /* Remove any white background from image containers */
