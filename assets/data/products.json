@@ -1219,17 +1219,48 @@
             "12Y"
           ],
           "fabric": "Cotton Blend"
-        }
-      ]
-    },
-    "kids": {
-      "name": "Kids",
-      "description": "Charming and comfortable pieces designed especially for children",
-      "products": [
+        },
         {
           "id": "access02",
+          "name": "GUANTI IN CASHMERE RICAMATI A MANO",
+          "category": "access",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800579/ELI_00025_ocq5d5.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762602641/ELI_00021_cnmivm.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800579/ELI_00025_ocq5d5.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762602641/ELI_00021_cnmivm.jpg"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Cotton Blend"
+        },
+        {
+          "id": "access03",
           "name": "BORSETTA IN LANA CON CRISTALLO",
-          "category": "kids",
+          "category": "access",
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00020_fylddy.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00011_1_xgrsj3.jpg",
@@ -1263,6 +1294,47 @@
           ],
           "fabric": "Cotton Blend"
         },
+        {
+          "id": "access04",
+          "name": "NASTRO IN SETA CON FIBBIA GIOIELLO",
+          "category": "access",
+          "description": "aaaaaa",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
+          "image_2": "",
+          "image_3": "",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Cotton Blend"
+        }
+      ]
+    },
+    "kids": {
+      "name": "Kids",
+      "description": "Charming and comfortable pieces designed especially for children",
+      "products": [
         {
           "id": "kid002",
           "name": "Little Prince Suit2",
