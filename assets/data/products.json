@@ -1179,12 +1179,55 @@
         }
       ]
     },
+    "access": {
+      "name": "access",
+      "description": "",
+      "products": [
+        {
+          "id": "access01",
+          "name": "Little Prince Suit",
+          "category": "access",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
+          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
+            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Cotton Blend"
+        }
+      ]
+    },
     "kids": {
       "name": "Kids",
       "description": "Charming and comfortable pieces designed especially for children",
       "products": [
         {
-          "id": "kid001",
+          "id": "access02",
           "name": "Little Prince Suit",
           "category": "kids",
           "description": "Adorable mini suit perfect for special occasions",
