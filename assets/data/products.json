@@ -1221,6 +1221,41 @@
           "fabric": "Cotton Blend"
         },
         {
+          "id": "access02",
+          "name": "GUANTI IN CASHMERE RICAMATI A MANO",
+          "category": "access",
+          "description": "Adorable mini suit perfect for special occasions",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
+          "image_2": "",
+          "image_3": "",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Cotton Blend"
+        },
+        {
           "id": "access03",
           "name": "BORSETTA IN LANA CON CRISTALLO",
           "category": "access",
