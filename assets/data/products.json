@@ -1227,12 +1227,12 @@
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610110/ELI_00344_2_-1_cf94om.jpg",
           "video_url": "",
           "gallery": [
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610110/ELI_00344_2_-1_cf94om.jpg"
           ],
           "prices": {
             "standard": 380,
@@ -1270,78 +1270,6 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00011_1_xgrsj3.jpg",
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00012_cgta9s.jpg",
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00020_fylddy.jpg"
-          ],
-          "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
-          },
-          "colors": [
-            "Navy Blue",
-            "Charcoal Gray",
-            "Black"
-          ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
-          "fabric": "Cotton Blend"
-        },
-        {
-          "id": "access04",
-          "name": "NASTRO IN SETA CON FIBBIA GIOIELLO",
-          "category": "access",
-          "description": "aaaaaa",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
-          "image_2": "",
-          "image_3": "",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg"
-          ],
-          "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
-          },
-          "colors": [
-            "Navy Blue",
-            "Charcoal Gray",
-            "Black"
-          ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
-          "fabric": "Cotton Blend"
-        },
-        {
-          "id": "access05",
-          "name": "BORSETTA IN CADY CON RICAMO",
-          "category": "access",
-          "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607012/ELI_00008_cuvndn.jpg",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
-          "video_url": "",
-          "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607012/ELI_00008_cuvndn.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg"
           ],
           "prices": {
             "standard": 380,
