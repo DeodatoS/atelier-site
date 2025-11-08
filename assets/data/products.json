@@ -1224,7 +1224,7 @@
           "id": "access02",
           "name": "GUANTI IN CASHMERE RICAMATI A MANO",
           "category": "access",
-          "description": "Realizzati in morbido cashmere, questi guanti coniugano calore e leggerezza. Il ricamo di perline baguette, applicate a mano una ad una, dona un tocco luminoso e sofisticato, trasformando un accessorio quotidiano in un gesto di eleganza discreta. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
+          "description": "Realizzati in morbido cashmere, questi guanti coniugano calore e leggerezza. Il ricamo di perline baguette, applicate a mano una ad una, dona un tocco luminoso e sofisticato, trasformando un accessorio quotidiano in un gesto di eleganza discreta. Interamente ricamatoa Milano nell’Atelier Elisa Sanna. Made in Italy.",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610110/ELI_00344_2_-1_cf94om.jpg",
@@ -1255,7 +1255,7 @@
             "10Y",
             "12Y"
           ],
-          "fabric": "Cotton Blend"
+          "fabric": "Composizione: 40% lana, 60 % cashmere. Made in Italy."
         },
         {
           "id": "access03",
@@ -1329,7 +1329,7 @@
             "10Y",
             "12Y"
           ],
-          "fabric": "Cotton Blend"
+          "fabric": "Composizione: 100% seta. Made in Italy."
         }
       ]
     },
