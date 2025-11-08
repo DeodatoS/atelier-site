@@ -1226,11 +1226,13 @@
           "category": "access",
           "description": "Adorable mini suit perfect for special occasions",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
-          "image_2": "",
-          "image_3": "",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg"
           ],
           "prices": {
             "standard": 380,
