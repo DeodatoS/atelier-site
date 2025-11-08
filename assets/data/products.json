@@ -1326,26 +1326,20 @@
             "12Y"
           ],
           "fabric": "Cotton Blend"
-        }
-      ]
-    },
-    "kids": {
-      "name": "Kids",
-      "description": "Charming and comfortable pieces designed especially for children",
-      "products": [
+        },
         {
-          "id": "kid002",
-          "name": "Little Prince Suit2",
-          "category": "kids",
+          "id": "access05",
+          "name": "BORSETTA IN CADY CON RICAMO",
+          "category": "access",
           "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607012/ELI_00008_cuvndn.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607012/ELI_00008_cuvndn.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg"
           ],
           "prices": {
             "standard": 380,
@@ -1369,7 +1363,13 @@
             "12Y"
           ],
           "fabric": "Cotton Blend"
-        },
+        }
+      ]
+    },
+    "kids": {
+      "name": "Kids",
+      "description": "Charming and comfortable pieces designed especially for children",
+      "products": [
         {
           "id": "kid003",
           "name": "Little Prince Suit3",
