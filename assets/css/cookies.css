@@ -81,6 +81,10 @@ body .shipping-section div[style*="max-width: 700px"] {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  /* Add padding-top to body to compensate for fixed header on mobile */
+  body.cookies-page {
+    padding-top: 160px !important;
+  }
   body .shipping-content {
     padding: 20px 15px;
   }
@@ -118,6 +122,10 @@ body .shipping-section div[style*="max-width: 700px"] {
 }
 
 @media (max-width: 480px) {
+  /* Add padding-top to body to compensate for fixed header on mobile */
+  body.cookies-page {
+    padding-top: 180px !important;
+  }
   body .shipping-content {
     padding: 15px 10px;
   }
