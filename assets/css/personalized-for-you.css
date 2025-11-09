@@ -348,14 +348,18 @@
     padding-top: 20px !important;
   }
   
-  /* Specific rule for the-designer page - increased margin to fully compensate for fixed header */
+  /* Specific rule for the-designer page - use padding-top on body to compensate for fixed header */
+  body.the-designer-page {
+    padding-top: 200px !important;
+  }
+  
   body .pfy-second-section:first-of-type {
-    margin-top: 280px !important;
-    padding-top: 50px !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
   
   body .pfy-second-section:first-of-type .pfy-second-text {
-    padding-top: 40px !important;
+    padding-top: 0 !important;
   }
   
   .pfy-second-content,
@@ -440,14 +444,18 @@
     padding-top: 30px !important;
   }
   
-  /* Specific rule for the-designer page - increased margin to fully compensate for fixed header */
+  /* Specific rule for the-designer page - use padding-top on body to compensate for fixed header */
+  body.the-designer-page {
+    padding-top: 220px !important;
+  }
+  
   body .pfy-second-section:first-of-type {
-    margin-top: 280px !important;
-    padding-top: 50px !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
   
   body .pfy-second-section:first-of-type .pfy-second-text {
-    padding-top: 40px !important;
+    padding-top: 0 !important;
   }
   
   /* Fix white image issue on mobile - ensure images are visible */
