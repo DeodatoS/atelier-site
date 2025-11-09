@@ -228,12 +228,12 @@
           "name": "TOP CON VOLANTS IN SETA",
           "category": "prive_ceremonial",
           "description": "Questo top smanicato, dal design originale e sofisticato, è realizzato in un esclusivo mix di organza e cotone con una trama materica e raffinata. La silhouette corta, che termina all’altezza della vita, è arricchita da lunghi volants in georgette di seta che scendono fluidi fino alla caviglia, creando un movimento leggero e dinamico. Una creazione dall’eleganza audace, che unisce rigore sartoriale e leggerezza eterea. Il contrasto tra la compattezza della base tessile e la morbidezza dei volants dona al capo un carattere unico, perfetto per chi ricerca un equilibrio tra modernità e femminilità senza tempo. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762450292/Resize_foto_E-commerce_traqsi.png",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730669/ELISA__104351_lprqxe.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762450292/Resize_foto_E-commerce_traqsi.png",
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730669/ELISA__104351_lprqxe.jpg",
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1756730518/ELISA__104332_2_1_ohhwgg.jpg"
           ],
@@ -554,7 +554,7 @@
             "44",
             "46"
           ],
-          "fabric": "Composizione: 100% lana. Fodera: 100% viscosa. Chiusura con cintura. Lunghezza cappotto taglia 42 IT: 125cm.  La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
+          "fabric": "Composizione: 100% lana. Fodera: 100% viscosa. Chiusura con cintura. Lunghezza cappotto taglia 42 IT: 123 cm.  La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col025",
@@ -824,7 +824,7 @@
           "fabric": "Composizione: 80% acetato, 20% poliestere. Chiusura abbottonatura sul davanti. Lunghezza top taglia 42 IT: 60cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
-          "id": "col026",
+          "id": "col040",
           "name": "ABITO IN LANA E SETA",
           "category": "collections",
           "description": "Un abito dal carattere deciso, realizzato in crepella di lana con la parte superiore in pura seta a contrasto, che valorizza la linea con un elegante gioco di volumi e colori. La scollatura particolare sottolinea il décolleté con raffinatezza, mentre i bottoni centrali rivestiti donano ritmo e verticalità alla silhouette. Le maniche sono arricchite da un delicato spacchetto che lascia intravedere la pelle, dettaglio che aggiunge un tocco di femminilità discreta. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
@@ -858,7 +858,7 @@
           "fabric": "Composizione: 80% lana, 20% seta. Fodera: 100% viscosa. Chiusura con abbottonatura davanti. Lunghezza abito taglia 42 IT: 87cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
-          "id": "col027",
+          "id": "col041",
           "name": "ABITO CON PERLINE E FRANGE",
           "category": "collections",
           "description": "Un abito dal fascino intramontabile, realizzato in morbido tessuto e impreziosito da un corpino in tulle ricamato che dona luminosità e leggerezza. Gli spacchi laterali slanciano la figura con eleganza, mentre le frange applicate all’orlo accompagnano ogni movimento con dinamismo e sensualità. Ispirato agli anni ’20, richiama l’allure delle flapper girls, fondendo suggestioni d’epoca con una visione attuale. Interamente realizzato a mano con cura sartoriale, rappresenta l’incontro tra tradizione e modernità. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
@@ -889,10 +889,10 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: 80% acetato, 20% poliestere. Chiusura con zip invisibile sul dietro. Lunghezza abito taglia 42 IT: 116 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
-          "id": "col028",
+          "id": "col045",
           "name": "ABITO CON TULLE RICAMATO",
           "category": "collections",
           "description": "Un abito dalla linea leggermente svasata, realizzato in tulle preziosamente lavorato che cattura la luce con riflessi delicati. La struttura essenziale valorizza la silhouette, mentre la trasparenza sofisticata del tessuto dona movimento e leggerezza. Un capo che coniuga semplicità e luminosità, ideale per chi desidera un’eleganza raffinata e contemporanea. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
@@ -926,18 +926,18 @@
           "fabric": ""
         },
         {
-          "id": "col029",
+          "id": "col046",
           "name": "ABITO IN VELLUTO DI SETA",
           "category": "collections",
           "description": "Caratterizzato da un elegante equilibrio di texture, questo abito unisce la luminosità della parte superiore in tessuto di paillettes alla profondità vellutata della parte inferiore in velluto di seta. La linea essenziale è impreziosita da un fiocco realizzato a mano sul retro della scollatura, dettaglio che ne sottolinea il carattere femminile e sofisticato.",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762448718/2_xsjnfb.png",
-          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762278095/paint_velvet_erdjfr.jpg",
-          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762278095/paint_velvet_erdjfr.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922628/06122022_Elisa_Sanna5317BIS_1_1_uqgmws.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922785/06122022_Elisa_Sanna5325BIS_apljkw.jpg",
           "video_url": "",
           "gallery": [
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1762448718/2_xsjnfb.png",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762278095/paint_velvet_erdjfr.jpg",
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762278095/paint_velvet_erdjfr.jpg"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922628/06122022_Elisa_Sanna5317BIS_1_1_uqgmws.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922785/06122022_Elisa_Sanna5325BIS_apljkw.jpg"
           ],
           "prices": {
             "standard": 790,
@@ -952,7 +952,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: velluto 82% viscosa, 18% seta. Fodera 100% cupro. Chiusura con zip invisibile sul fianco. Lunghezza abito taglia 42 IT: 86 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col030",
@@ -986,7 +986,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: 40% seta, 30%viscosa, 30% poliestere. Fodera: 100% viscosa. Chiusura con zip invisibile sul dietro. Lunghezza abito: taglia 42 IT: 86 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col020",
@@ -1020,7 +1020,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: velluto 82% viscosa, 18% seta. Sfoderato. Chiusura con bottoncini sul davanti. Lunghezza blusa taglia 42 IT: 60 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col021",
@@ -1049,7 +1049,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: velluto 82% viscosa, 18% seta. Chiusura con zip invisibile sul retro. Lunghezza pantalone taglia 42 IT: 108 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col022",
@@ -1078,7 +1078,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: seta 100%, fascia in paillettes 100% poliestere. Lunghezza top taglia 42 IT: 58 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col038",
@@ -1141,7 +1141,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: 100% poliestere. Fodera: 100% viscosa. Abbottonatura sul davanti. Lunghezza giacca taglia 42 IT: 66 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col039",
@@ -1175,7 +1175,7 @@
             "44",
             "46"
           ],
-          "fabric": "100% Linen"
+          "fabric": "Composizione: 80% poliammide, 20% lino. Chiusura con zip invisibile sul dietro. Lunghezza top taglia 42 IT: 48 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         }
       ]
     },
@@ -1184,18 +1184,18 @@
       "description": "Charming and comfortable pieces designed especially for children",
       "products": [
         {
-          "id": "kid001",
-          "name": "Little Prince Suit",
+          "id": "access01",
+          "name": "BORSETTA IN CADY CON RICAMO",
           "category": "kids",
-          "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "description": "Un piccolo accessorio pensato come un gioiello. Realizzata in cady rivestito da un tessuto ricamato, presenta un bottone gioiello e un sottile cordino strass che aggiunge un tocco di luce discreta. Essenziale ma preziosa, riflette la raffinatezza artigianale e l’attenzione ai dettagli che contraddistinguono ogni creazione Elisa Sanna. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy. ",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607012/ELI_00008_cuvndn.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607012/ELI_00008_cuvndn.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00013_uqp9sf.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg"
           ],
           "prices": {
             "standard": 380,
@@ -1218,21 +1218,21 @@
             "10Y",
             "12Y"
           ],
-          "fabric": "Cotton Blend"
+          "fabric": "Composizione: 80% poliestere, 20% lurex. Fodera: 100% viscosa. Chiusura con bottoncino automatico. Misure: 20 cm x 13 cm. Made in Italy."
         },
         {
-          "id": "kid002",
-          "name": "Little Prince Suit2",
+          "id": "access02",
+          "name": "GUANTI IN CASHMERE RICAMATI A MANO",
           "category": "kids",
-          "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
+          "description": "Realizzati in morbido cashmere, questi guanti coniugano calore e leggerezza. Il ricamo di perline baguette, applicate a mano una ad una, dona un tocco luminoso e sofisticato, trasformando un accessorio quotidiano in un gesto di eleganza discreta. Interamente ricamatoa Milano nell’Atelier Elisa Sanna. Made in Italy.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610110/ELI_00344_2_-1_cf94om.jpg",
           "video_url": "",
           "gallery": [
-            "https://res.cloudinary.com/do5fpt0co/image/upload/v1756048634/E91E59FD-77AE-4280-851A-65C729214A6B_yolopv.jpg",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762607315/ELI_00021_fehhnv.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00024_1_y4ppti.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610110/ELI_00344_2_-1_cf94om.jpg"
           ],
           "prices": {
             "standard": 380,
@@ -1255,7 +1255,81 @@
             "10Y",
             "12Y"
           ],
-          "fabric": "Cotton Blend"
+          "fabric": "Composizione: 40% lana, 60 % cashmere. Made in Italy."
+        },
+        {
+          "id": "access03",
+          "name": "BORSETTA IN LANA CON CRISTALLO",
+          "category": "kids",
+          "description": "Realizzato in morbida lana, questo accessorio si distingue per l’equilibrio tra semplicità e preziosità. Il bottone gioiello al centro cattura la luce con discrezione, mentre il cordino in lurex aggiunge una nota luminosa e sofisticata. Un piccolo gesto di eleganza, essenziale e senza tempo. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00011_1_xgrsj3.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00012_cgta9s.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00020_fylddy.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00011_1_xgrsj3.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800575/ELI_00012_cgta9s.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00020_fylddy.jpg"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Composizione: 100% lana. Fodera: 100% viscosa. Chiusura con bottoncino automatico. Misure: 20 cm x 13 cm. Made in Italy."
+        },
+        {
+          "id": "access04",
+          "name": "NASTRO IN SETA CON FIBBIA GIOIELLO",
+          "category": "kids",
+          "description": "Un nastro in pura seta impreziosito da una fibbia gioiello. La sua versatilità permette di indossarlo come collana, bracciale o cinturina, aggiungendo una nota preziosa e discreta a ogni look. Un accessorio essenziale, definito da una luce delicata e senza tempo. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
+          "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610625/ELI_00695-1_oi9dod.jpg",
+          "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610878/ELI_00672_h3vwcn.jpg",
+          "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610892/ELI_00692_jnr4p3.jpg",
+          "video_url": "",
+          "gallery": [
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610625/ELI_00695-1_oi9dod.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610878/ELI_00672_h3vwcn.jpg",
+            "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610892/ELI_00692_jnr4p3.jpg"
+          ],
+          "prices": {
+            "standard": 380,
+            "minimum": 320,
+            "maximum": 450
+          },
+          "colors": [
+            "Navy Blue",
+            "Charcoal Gray",
+            "Black"
+          ],
+          "sizes": [
+            "2Y",
+            "3Y",
+            "4Y",
+            "5Y",
+            "6Y",
+            "7Y",
+            "8Y",
+            "10Y",
+            "12Y"
+          ],
+          "fabric": "Composizione: 100% seta. Made in Italy."
         },
         {
           "id": "kid003",
