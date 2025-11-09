@@ -283,6 +283,18 @@
   .mtm-booking-option {
     padding: 30px 20px;
   }
+  
+  /* Reduce title size and spacing for booking section on mobile */
+  .mtm-booking-section .mtm-section-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 30px !important;
+    margin-top: 0 !important;
+  }
+  
+  .mtm-booking-section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -303,5 +315,17 @@
   
   .mtm-main-title {
     font-size: 1.8rem;
+  }
+  
+  /* Reduce title size and spacing for booking section on small mobile */
+  .mtm-booking-section .mtm-section-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 25px !important;
+    margin-top: 0 !important;
+  }
+  
+  .mtm-booking-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
 }
