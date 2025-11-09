@@ -350,7 +350,7 @@
   
   /* Specific rule for the-designer page - use padding-top on body to compensate for fixed header */
   body.the-designer-page {
-    padding-top: 200px !important;
+    padding-top: 160px !important;
   }
   
   body .pfy-second-section:first-of-type {
@@ -446,7 +446,7 @@
   
   /* Specific rule for the-designer page - use padding-top on body to compensate for fixed header */
   body.the-designer-page {
-    padding-top: 220px !important;
+    padding-top: 180px !important;
   }
   
   body .pfy-second-section:first-of-type {
