@@ -410,6 +410,18 @@
   .pfy-booking-option {
     padding: 30px 20px;
   }
+  
+  /* Reduce title size and spacing for booking section on mobile */
+  .pfy-booking-section .pfy-section-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 30px !important;
+    margin-top: 0 !important;
+  }
+  
+  .pfy-booking-section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -456,6 +468,18 @@
   
   body .pfy-second-section:first-of-type .pfy-second-text {
     padding-top: 0 !important;
+  }
+  
+  /* Reduce title size and spacing for booking section on small mobile */
+  .pfy-booking-section .pfy-section-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 25px !important;
+    margin-top: 0 !important;
+  }
+  
+  .pfy-booking-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
   
   /* Fix white image issue on mobile - ensure images are visible */
