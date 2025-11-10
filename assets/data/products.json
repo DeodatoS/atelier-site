@@ -2,7 +2,7 @@
   "categories": {
     "prive_ceremonial": {
       "name": "Couture e Cerimonia",
-      "description": "Abiti ricamati a mano, simbolo di eleganza autentica",
+      "description": "Exquisite pieces for special occasions and refined experiences",
       "products": [
         {
           "id": "pc001",
@@ -491,7 +491,7 @@
     },
     "collections": {
       "name": "Collections",
-      "description": "Abiti ricamati a mano, simbolo di eleganza autentica",
+      "description": "Curated seasonal collections showcasing contemporary Italian elegance",
       "products": [
         {
           "id": "col019",
@@ -1107,7 +1107,7 @@
             "44",
             "46"
           ],
-          "fabric": ""
+          "fabric": "Composizione: 100% poliestere. Chiusura con bottoncino automatico sul fianco. Lunghezza cintura taglia 42 IT: 24 cm. La modella è alta 176 e indossa la taglia 42 IT. Made in Italy."
         },
         {
           "id": "col033",
