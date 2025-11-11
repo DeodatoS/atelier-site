@@ -38,7 +38,7 @@
         "content_type": "section_header",
         "title": "Couture e cerimonia",
         "description": "Scopri le nostre creazioni dedicate agli eventi piu' speciali",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762853557/ELI_00986_copia_bmjgih.png",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1761145018/B132DD58-F396-4300-90FC-37BD669E50F4_3_zckkzw.png",
         "order_position": 4,
         "is_active": true
       },
@@ -518,7 +518,7 @@
         "content_type": "category_hero",
         "title": "Couture e Cerimonia",
         "description": "Questi abiti, impreziositi da ricami eseguiti a mano all’interno dell’Atelier Elisa Sanna, richiedono ore di lavorazione meticolosa. Ogni dettaglio riflette la dedizione e la precisione di un savoir-faire sartoriale che rende ogni creazione espressione di eleganza autentica.",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762777894/couture_e_cerimonia_qx7mrm.png",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762853557/ELI_00986_copia_bmjgih.png",
         "image_alt": "Elegant formal gown for ceremonial occasions",
         "order_position": 1,
         "is_active": true
