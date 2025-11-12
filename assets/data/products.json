@@ -2,7 +2,7 @@
   "categories": {
     "prive_ceremonial": {
       "name": "Couture e Cerimonia",
-      "description": "Abiti ricamati a mano, simbolo di eleganza autentica",
+      "description": "Exquisite pieces for special occasions and refined experiences",
       "products": [
         {
           "id": "pc001",
@@ -458,7 +458,7 @@
     },
     "collections": {
       "name": "Collections",
-      "description": "Abiti ricamati a mano, simbolo di eleganza autentica",
+      "description": "Curated seasonal collections showcasing contemporary Italian elegance",
       "products": [
         {
           "id": "col019",
