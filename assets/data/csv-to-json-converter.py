@@ -16,11 +16,11 @@ def convert_csv_to_json(csv_file, json_file):
     category_info = {
         'prive_ceremonial': {
             'name': 'Couture e Cerimonia',
-            'description': 'Exquisite pieces for special occasions and refined experiences'
+            'description': 'Abiti ricamati a mano, simbolo di eleganza autentica'
         },
         'collections': {
             'name': 'Collezioni', 
-            'description': 'Curated seasonal collections showcasing contemporary Italian elegance'
+            'description': 'Abiti ricamati a mano, simbolo di eleganza autentica'
         },
         'kids': {
             'name': 'Kids',

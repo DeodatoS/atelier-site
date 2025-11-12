@@ -217,11 +217,11 @@ function convertCsvToJson(csvContent) {
     const categoryInfo = {
       'prive_ceremonial': {
         'name': 'Couture e Cerimonia',
-        'description': 'Exquisite pieces for special occasions and refined experiences'
+        'description': 'Abiti ricamati a mano, simbolo di eleganza autentica'
       },
       'collections': {
         'name': 'Collections',
-        'description': 'Curated seasonal collections showcasing contemporary Italian elegance'
+        'description': 'Abiti ricamati a mano, simbolo di eleganza autentica'
       },
       'kids': {
         'name': 'Kids',
