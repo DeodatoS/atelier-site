@@ -182,7 +182,7 @@ function setupHeroSection(categoryData) {
   // Category descriptions in Italian (hardcoded to override JSON)
   const categoryDescriptions = {
     'prive_ceremonial': 'Abiti ricamati a mano, simbolo di eleganza autentica',
-    'collections': 'Abiti ricamati a mano, simbolo di eleganza autentica',
+    'collections': 'Capi artigianali che incarnano un\'eleganza autentica',
     'kids': 'Ricami e texture che raccontano un\'eleganza autentica'
   };
   
