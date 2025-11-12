@@ -403,7 +403,7 @@
         "content_type": "hero_section",
         "subtitle": "Where Craftsmanship Lives",
         "description": "Step into our world of Italian artistry and traditional craftsmanship.",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762938170/IMG_6778_ilvwgk.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762938468/Copy_of_IMG_6778_dna05m.jpg",
         "image_alt": "Our atelier workspace",
         "order_position": 1,
         "is_active": true
@@ -425,7 +425,7 @@
         "section_id": "main_section",
         "content_type": "main_content",
         "description": "L’Atelier Elisa Sanna, situato in Via San Maurilio 18, nel cuore di Milano, è il luogo in cui passione e precisione si incontrano per dar vita a capi unici. Tecniche esclusive vengono reinterpretate con cura e visione contemporanea, dando forma ad abiti di eleganza senza tempo.",
-        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762938170/IMG_6778_ilvwgk.jpg",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762938468/Copy_of_IMG_6778_dna05m.jpg",
         "image_alt": "Atelier craftsmanship",
         "order_position": 2,
         "is_active": true
