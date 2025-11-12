@@ -1148,7 +1148,7 @@
     },
     "kids": {
       "name": "Kids",
-      "description": "Ricami e texture che raccontano un'eleganza autentica",
+      "description": "Charming and comfortable pieces designed especially for children",
       "products": [
         {
           "id": "access01",
@@ -1257,33 +1257,6 @@
           ],
           "sizes": [],
           "fabric": "Composizione: 100% seta. Made in Italy."
-        },
-        {
-          "id": "kid003",
-          "name": "Little Prince Suit3",
-          "category": "kids",
-          "description": "Adorable mini suit perfect for special occasions",
-          "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_2": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "image_3": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-          "video_url": "",
-          "gallery": [
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1",
-            "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
-          ],
-          "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
-          },
-          "colors": [
-            "Navy Blue",
-            "Charcoal Gray",
-            "Black"
-          ],
-          "sizes": [],
-          "fabric": "Cotton Blend"
         }
       ]
     }
