@@ -118,7 +118,7 @@
         "content_type": "latest_piece",
         "title": "Prêt-à-porter",
         "description": "Scopri",
-        "image_url": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "image_url": "https://res.cloudinary.com/do5fpt0co/image/upload/v1756888916/ELI_00085_1_-1_kmwkay.jpg",
         "image_alt": "Red dress",
         "order_position": 12,
         "is_active": true
