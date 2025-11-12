@@ -172,8 +172,12 @@ function setupHeroSection(categoryData) {
     heroDescription: !!heroDescription
   });
   
-  // Determine display name (use "ACCESSORI" for kids category)
-  const displayName = currentCategory === 'kids' ? 'ACCESSORI' : categoryData.name;
+  // Determine display name (hardcoded to override JSON)
+  const categoryDisplayNames = {
+    'kids': 'ACCESSORI',
+    'collections': 'Collezione'
+  };
+  const displayName = categoryDisplayNames[currentCategory] || categoryData.name;
   
   // Category descriptions in Italian (hardcoded to override JSON)
   const categoryDescriptions = {
@@ -238,8 +242,12 @@ async function initializePage() {
     // Setup hero image or fallback
     setupHeroSection(categoryData);
     
-    // Update page title and content (use "ACCESSORI" for kids category)
-    const displayName = currentCategory === 'kids' ? 'ACCESSORI' : categoryData.name;
+    // Update page title and content (hardcoded to override JSON)
+    const categoryDisplayNames = {
+      'kids': 'ACCESSORI',
+      'collections': 'Collezione'
+    };
+    const displayName = categoryDisplayNames[currentCategory] || categoryData.name;
     document.getElementById('page-title').textContent = `${displayName} - ELISA SANNA`;
     
     // Display products
