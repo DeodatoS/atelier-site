@@ -1198,9 +1198,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00017_2_qwbfxh.jpg"
           ],
           "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
+            "standard": 130,
+            "minimum": 0,
+            "maximum": 0
           },
           "colors": [
             "Navy Blue",
@@ -1235,9 +1235,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610110/ELI_00344_2_-1_cf94om.jpg"
           ],
           "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
+            "standard": 160,
+            "minimum": 0,
+            "maximum": 0
           },
           "colors": [
             "Navy Blue",
@@ -1272,9 +1272,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1760800578/ELI_00020_fylddy.jpg"
           ],
           "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
+            "standard": 120,
+            "minimum": 0,
+            "maximum": 0
           },
           "colors": [
             "Navy Blue",
@@ -1309,9 +1309,9 @@
             "https://res.cloudinary.com/do5fpt0co/image/upload/v1762610892/ELI_00692_jnr4p3.jpg"
           ],
           "prices": {
-            "standard": 380,
-            "minimum": 320,
-            "maximum": 450
+            "standard": 90,
+            "minimum": 0,
+            "maximum": 0
           },
           "colors": [
             "Navy Blue",
