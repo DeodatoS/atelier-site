@@ -175,6 +175,16 @@ function setupHeroSection(categoryData) {
   // Determine display name (use "ACCESSORI" for kids category)
   const displayName = currentCategory === 'kids' ? 'ACCESSORI' : categoryData.name;
   
+  // Category descriptions in Italian (hardcoded to override JSON)
+  const categoryDescriptions = {
+    'prive_ceremonial': 'Abiti ricamati a mano, simbolo di eleganza autentica',
+    'collections': 'Abiti ricamati a mano, simbolo di eleganza autentica',
+    'kids': 'Ricami e texture che raccontano un\'eleganza autentica'
+  };
+  
+  // Use hardcoded Italian description if available, otherwise fallback to JSON
+  const description = categoryDescriptions[currentCategory] || categoryData.description;
+  
   if (categoryData.heroImage) {
     console.log(`✅ Hero image found: ${categoryData.heroImage}`);
     
@@ -186,7 +196,7 @@ function setupHeroSection(categoryData) {
     heroImage.src = categoryData.heroImage;
     heroImage.alt = categoryData.heroImageAlt || `${displayName} collection`;
     heroTitle.textContent = displayName;
-    heroDescription.textContent = categoryData.description;
+    heroDescription.textContent = description;
     
     console.log(`✅ Hero image section displayed for ${displayName}`);
   } else {
@@ -198,7 +208,7 @@ function setupHeroSection(categoryData) {
     
     // Set fallback content
     categoryTitle.textContent = displayName;
-    categoryDescription.textContent = categoryData.description;
+    categoryDescription.textContent = description;
   }
 }
 
