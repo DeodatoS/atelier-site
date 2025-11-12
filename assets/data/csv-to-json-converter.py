@@ -19,12 +19,12 @@ def convert_csv_to_json(csv_file, json_file):
             'description': 'Exquisite pieces for special occasions and refined experiences'
         },
         'collections': {
-            'name': 'Collections', 
+            'name': 'Collezioni', 
             'description': 'Curated seasonal collections showcasing contemporary Italian elegance'
         },
         'kids': {
             'name': 'Kids',
-            'description': 'Charming and comfortable pieces designed especially for children'
+            'description': 'Ricami e texture che raccontano un\'eleganza autentica'
         }
     }
     
