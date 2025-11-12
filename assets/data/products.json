@@ -929,7 +929,7 @@
           "id": "col046",
           "name": "ABITO IN VELLUTO DI SETA",
           "category": "collections",
-          "description": "Caratterizzato da un elegante equilibrio di texture, questo abito unisce la luminosità della parte superiore in tessuto di paillettes alla profondità vellutata della parte inferiore in velluto di seta. La linea essenziale è impreziosita da un fiocco realizzato a mano sul retro della scollatura, dettaglio che ne sottolinea il carattere femminile e sofisticato.",
+          "description": "Un abito che unisce la delicatezza del rosa cipria alla profondità del velluto nero in un contrasto elegante e senza tempo. Il corpino, realizzato in un prezioso tessuto di paillettes dal riflesso luminoso e discreto, incontra la morbidezza del velluto di seta, dando vita a un insieme armonioso e sofisticato. Sul retro, un fiocco realizzato interamente a mano aggiunge una nota di grazia e femminilità al design essenziale. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762448718/2_xsjnfb.png",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922628/06122022_Elisa_Sanna5317BIS_1_1_uqgmws.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1759922785/06122022_Elisa_Sanna5325BIS_apljkw.jpg",
@@ -958,7 +958,7 @@
           "id": "col030",
           "name": "ABITO IN SETA E CADY",
           "category": "collections",
-          "description": "Un modello raffinato, con corpino in seta lavorata con delicate pieghe che creano movimento e morbidezza, sostenuto da sottili spalline. La parte inferiore, a contrasto, scende leggermente svasata donando equilibrio e leggerezza alla figura. Un capo essenziale e ricercato, capace di unire semplicità ed eleganza con un tocco contemporaneo. Interamente realizzato a Milano nell’Atelier Elisa Sanna. Made in Italy.",
+          "description": "",
           "image": "https://res.cloudinary.com/do5fpt0co/image/upload/v1762449022/3_px9xvl.png",
           "image_2": "https://res.cloudinary.com/do5fpt0co/image/upload/v1757169147/ELISA_84124-1_sqaokm.jpg",
           "image_3": "https://res.cloudinary.com/do5fpt0co/image/upload/v1757168830/ELISA_84121-1_u3t0tv.jpg",
@@ -1207,17 +1207,7 @@
             "Charcoal Gray",
             "Black"
           ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
+          "sizes": [],
           "fabric": "Composizione: 80% poliestere, 20% lurex. Fodera: 100% viscosa. Chiusura con bottoncino automatico. Misure: 20 cm x 13 cm. Made in Italy."
         },
         {
@@ -1244,17 +1234,7 @@
             "Charcoal Gray",
             "Black"
           ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
+          "sizes": [],
           "fabric": "Composizione: 40% lana, 60 % cashmere. Made in Italy."
         },
         {
@@ -1281,17 +1261,7 @@
             "Charcoal Gray",
             "Black"
           ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
+          "sizes": [],
           "fabric": "Composizione: 100% lana. Fodera: 100% viscosa. Chiusura con bottoncino automatico. Misure: 20 cm x 13 cm. Made in Italy."
         },
         {
@@ -1318,17 +1288,7 @@
             "Charcoal Gray",
             "Black"
           ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
+          "sizes": [],
           "fabric": "Composizione: 100% seta. Made in Italy."
         },
         {
@@ -1355,17 +1315,7 @@
             "Charcoal Gray",
             "Black"
           ],
-          "sizes": [
-            "2Y",
-            "3Y",
-            "4Y",
-            "5Y",
-            "6Y",
-            "7Y",
-            "8Y",
-            "10Y",
-            "12Y"
-          ],
+          "sizes": [],
           "fabric": "Cotton Blend"
         }
       ]
